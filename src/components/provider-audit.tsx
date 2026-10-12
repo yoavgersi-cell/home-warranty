@@ -23,7 +23,7 @@ export function ProviderAudit({
     <div className="mb-8 overflow-hidden rounded-2xl border border-gray-200 bg-white">
       <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-b border-gray-100 bg-gray-50/70 px-6 py-4 sm:px-7">
         <div className="flex items-center gap-2.5">
-          <BadgeCheck className="h-[19px] w-[19px] text-[#1D4ED8]" strokeWidth={2} />
+          <BadgeCheck className="h-[19px] w-[19px] text-[#C2570C]" strokeWidth={2} />
           <h2 className="text-[15px] font-bold uppercase tracking-[0.05em] text-[#191919]">
             What we verified
           </h2>

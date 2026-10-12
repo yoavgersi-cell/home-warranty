@@ -23,7 +23,7 @@ export default async function NotFound() {
   return (
     <div className="min-h-[70vh] bg-gray-50">
       <div className="mx-auto max-w-[760px] px-4 py-16 sm:px-6 sm:py-24">
-        <p className="text-[13px] font-bold uppercase tracking-[0.08em] text-[#1D4ED8]">Error 404</p>
+        <p className="text-[13px] font-bold uppercase tracking-[0.08em] text-[#C2570C]">Error 404</p>
         <h1 className="mt-2 text-[30px] font-extrabold leading-tight text-[#191919] sm:text-[38px]">
           We couldn&rsquo;t find that page
         </h1>

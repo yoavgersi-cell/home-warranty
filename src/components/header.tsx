@@ -15,10 +15,10 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="border-b-2 border-[#C9DAF6] bg-white">
+    <header className="border-b-2 border-[#F9D3B4] bg-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-baseline gap-1.5" aria-label="Home Warranty Picks home">
-          <span className="text-[20px] font-extrabold tracking-tight text-[#1D4ED8]">Home Warranty Picks</span>
+          <span className="text-[20px] font-extrabold tracking-tight text-[#C2570C]">Home Warranty Picks</span>
           <span className="text-[11px] font-semibold uppercase tracking-wider text-[#6B6B6B]">
             .com
           </span>
@@ -27,7 +27,7 @@ export function Header() {
         {/* Desktop nav */}
         <nav className="hidden sm:flex items-center gap-7 text-[14px] font-medium text-[#191919]">
           {NAV.map((item) => (
-            <Link key={item.label} href={item.href} className="hover:text-[#1D4ED8] hover:underline transition-colors">
+            <Link key={item.label} href={item.href} className="hover:text-[#C2570C] hover:underline transition-colors">
               {item.label}
             </Link>
           ))}
@@ -51,7 +51,7 @@ export function Header() {
               key={item.label}
               href={item.href}
               onClick={() => setIsOpen(false)}
-              className="block text-[15px] font-medium text-[#191919] hover:text-[#1D4ED8]"
+              className="block text-[15px] font-medium text-[#191919] hover:text-[#C2570C]"
             >
               {item.label}
             </Link>

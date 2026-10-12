@@ -60,7 +60,7 @@ export function MedicalSources({ vertical }: { vertical: string }) {
   return (
     <section className="mt-12 rounded-2xl border border-gray-200 bg-white p-6 sm:p-7">
       <div className="mb-3 flex items-center gap-2">
-        <BookOpen className="h-4 w-4 text-[#1D4ED8]" strokeWidth={2} />
+        <BookOpen className="h-4 w-4 text-[#C2570C]" strokeWidth={2} />
         <h2 className="text-[15px] font-bold uppercase tracking-[0.05em] text-[#191919]">
           Sources &amp; references
         </h2>
@@ -80,7 +80,7 @@ export function MedicalSources({ vertical }: { vertical: string }) {
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium text-[#1D4ED8] underline underline-offset-2 hover:text-[#1E3A8A]"
+                className="font-medium text-[#C2570C] underline underline-offset-2 hover:text-[#9A4309]"
               >
                 {s.label}
               </a>{" "}
@@ -102,7 +102,7 @@ export function TrustDisclosure({ disclaimerHref }: { disclaimerHref: string }) 
   return (
     <p className="mt-2.5 max-w-[720px] text-[11.5px] leading-[1.55] text-gray-500 sm:mt-3 sm:text-[12px]">
       We may earn a commission from links on this page - it never affects our rankings (
-      <a href={disclaimerHref} className="font-medium text-[#1D4ED8] hover:underline">
+      <a href={disclaimerHref} className="font-medium text-[#C2570C] hover:underline">
         how we stay objective
       </a>
       ).

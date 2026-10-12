@@ -162,7 +162,7 @@ export async function ReviewsIndexView({ ctx }: { ctx: SiteContext }) {
                     Expert Review
                   </span>
                 )}
-                <span className="text-sm font-semibold text-[#1D4ED8] group-hover:underline">
+                <span className="text-sm font-semibold text-[#C2570C] group-hover:underline">
                   Read Review
                 </span>
               </div>

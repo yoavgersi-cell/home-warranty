@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #F6F9FF;
+  --background: #FFFAF5;
   --foreground: #191919;
 }
 
@@ -136,7 +136,7 @@ html[data-hub] .hub-name {
   width: 6px;
   height: 6px;
   border-radius: 9999px;
-  background: #2563EB;
+  background: #F08A3C;
 }
 .article-body ol li {
   list-style: decimal;
@@ -193,7 +193,7 @@ html[data-hub] .hub-name {
   padding: 14px 18px;
   background: #fff;
   border: 1px solid #e5e7eb;
-  border-left: 3px solid #2563EB;
+  border-left: 3px solid #F08A3C;
   border-radius: 12px;
   color: #374151;
 }
@@ -204,20 +204,20 @@ html[data-hub] .hub-name {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #1D4ED8;
+  color: #C2570C;
 }
 .article-body .cta-row {
   margin: 1em 0;
 }
 .article-body .cta-row a {
   font-weight: 700;
-  color: #1D4ED8;
+  color: #C2570C;
   text-decoration: none;
-  border-bottom: 2px solid rgba(12, 75, 117, 0.25);
+  border-bottom: 2px solid rgba(194, 87, 12, 0.25);
   padding-bottom: 1px;
   transition: border-color 0.15s ease, color 0.15s ease;
 }
 .article-body .cta-row a:hover {
-  color: #1E3A8A;
-  border-bottom-color: #1E3A8A;
+  color: #9A4309;
+  border-bottom-color: #9A4309;
 }

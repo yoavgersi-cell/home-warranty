@@ -25,7 +25,7 @@ export function NotFoundLinks({
       <div className="mt-8 flex flex-col gap-3 sm:flex-row">
         <Link
           href={href("/")}
-          className="inline-flex h-[46px] items-center justify-center gap-2 rounded-xl bg-[#2563EB] px-6 text-[14px] font-bold text-white transition-colors hover:bg-[#1E40AF]"
+          className="inline-flex h-[46px] items-center justify-center gap-2 rounded-xl bg-[#F08A3C] px-6 text-[14px] font-bold text-white transition-colors hover:bg-[#DE7429]"
         >
           <Home className="h-4 w-4" strokeWidth={2} />
           Compare all providers
@@ -47,13 +47,13 @@ export function NotFoundLinks({
               <Link
                 key={p.id}
                 href={href(`/reviews/${p.id}`)}
-                className="group flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3 transition-colors hover:border-[#2563EB]/30"
+                className="group flex items-center gap-3 rounded-xl border border-gray-200 bg-white px-4 py-3 transition-colors hover:border-[#F08A3C]/30"
               >
                 <div className="flex h-[26px] w-[90px] items-center">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={p.logo} alt={`${p.name} logo`} className="max-h-full max-w-full object-contain" />
                 </div>
-                <span className="ml-auto text-[13px] font-semibold text-[#1D4ED8] group-hover:underline">Read review</span>
+                <span className="ml-auto text-[13px] font-semibold text-[#C2570C] group-hover:underline">Read review</span>
               </Link>
             ))}
           </div>
@@ -68,10 +68,10 @@ export function NotFoundLinks({
               <Link
                 key={c.slug}
                 href={href(`/${c.slug}`)}
-                className="group flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-3 text-[13px] font-semibold text-[#191919] transition-colors hover:border-[#2563EB]/30"
+                className="group flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-3 text-[13px] font-semibold text-[#191919] transition-colors hover:border-[#F08A3C]/30"
               >
                 {c.name}
-                <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0 text-[#1D4ED8]" strokeWidth={2.5} />
+                <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0 text-[#C2570C]" strokeWidth={2.5} />
               </Link>
             ))}
           </div>

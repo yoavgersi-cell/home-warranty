@@ -23,7 +23,7 @@ interface SourceProvider {
 function GroupLabel({ icon: Icon, children }: { icon: typeof FileText; children: React.ReactNode }) {
   return (
     <div className="mb-2.5 flex items-center gap-2">
-      <Icon className="h-[15px] w-[15px] text-[#1D4ED8]" strokeWidth={2} />
+      <Icon className="h-[15px] w-[15px] text-[#C2570C]" strokeWidth={2} />
       <p className="text-[12px] font-bold uppercase tracking-[0.06em] text-[#191919]">{children}</p>
     </div>
   );
@@ -50,7 +50,7 @@ export function SourcesMethodology({
     <section className="mt-12 overflow-hidden rounded-2xl border border-gray-200 bg-white">
       <div className="border-b border-gray-100 bg-gray-50/70 px-6 py-4 sm:px-7">
         <div className="flex items-center gap-2.5">
-          <ClipboardCheck className="h-[18px] w-[18px] text-[#1D4ED8]" strokeWidth={2} />
+          <ClipboardCheck className="h-[18px] w-[18px] text-[#C2570C]" strokeWidth={2} />
           <h2 className="text-[15px] font-bold uppercase tracking-[0.05em] text-[#191919]">
             Sources &amp; methodology
           </h2>
@@ -89,7 +89,7 @@ export function SourcesMethodology({
                     <>
                       <a
                         href={hubLink(ctx, `/reviews/${p.id}`)}
-                        className="font-semibold text-[#1D4ED8] underline underline-offset-2 hover:text-[#1E3A8A]"
+                        className="font-semibold text-[#C2570C] underline underline-offset-2 hover:text-[#9A4309]"
                       >
                         {p.name}
                       </a>
@@ -100,7 +100,7 @@ export function SourcesMethodology({
               ))}
             </ul>
             <p className="mt-3 inline-flex items-center gap-1.5 rounded-md bg-gray-50 px-2.5 py-1 text-[12px] font-semibold text-gray-500">
-              <ClipboardCheck className="h-3.5 w-3.5 text-[#1D4ED8]" strokeWidth={2} />
+              <ClipboardCheck className="h-3.5 w-3.5 text-[#C2570C]" strokeWidth={2} />
               Provider data checked {PROVIDER_DATA_CHECKED}
             </p>
           </div>
@@ -129,7 +129,7 @@ export function SourcesMethodology({
                         href={s.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline font-medium text-[#1D4ED8] underline underline-offset-2 hover:text-[#1E3A8A]"
+                        className="inline font-medium text-[#C2570C] underline underline-offset-2 hover:text-[#9A4309]"
                       >
                         {s.label}
                         <ExternalLink className="mb-0.5 ml-0.5 inline h-3 w-3" strokeWidth={2} />

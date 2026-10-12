@@ -52,7 +52,7 @@ export function RichComparisonCard({
     <article className="relative overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
       {/* Top ranked ribbon */}
       {product.badge && (
-        <div className="flex items-center gap-1.5 bg-[#2563EB] px-5 py-1.5 text-[12px] font-bold uppercase tracking-wide text-white">
+        <div className="flex items-center gap-1.5 bg-[#F08A3C] px-5 py-1.5 text-[12px] font-bold uppercase tracking-wide text-white">
           <BadgeCheck className="h-3.5 w-3.5" strokeWidth={2.5} />
           {product.badge}
         </div>
@@ -86,9 +86,9 @@ export function RichComparisonCard({
                   />
                 ))}
               </div>
-              <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-[#1D4ED8] sm:text-[11px]">{product.ratingLabel}</p>
+              <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-[#C2570C] sm:text-[11px]">{product.ratingLabel}</p>
             </div>
-            <div className="flex flex-col items-center justify-center rounded-lg bg-[#2563EB] px-2.5 py-1 text-white sm:rounded-xl sm:px-3 sm:py-1.5">
+            <div className="flex flex-col items-center justify-center rounded-lg bg-[#F08A3C] px-2.5 py-1 text-white sm:rounded-xl sm:px-3 sm:py-1.5">
               <span className="text-[20px] font-extrabold leading-none sm:text-[24px]">{product.rating.toFixed(1)}</span>
               <span className="mt-0.5 text-[8px] font-semibold uppercase tracking-wide text-white/70 sm:text-[9px]">out of 10</span>
             </div>
@@ -184,14 +184,14 @@ export function RichComparisonCard({
                 position={product.rank}
                 pageType="listing"
                 sourceFlow="main_comparison"
-                className="flex h-[48px] w-full items-center justify-center gap-1.5 rounded-xl bg-[#2563EB] text-[15px] font-bold text-white transition-colors hover:bg-[#1E40AF] sm:h-[50px]"
+                className="flex h-[48px] w-full items-center justify-center gap-1.5 rounded-xl bg-[#F08A3C] text-[15px] font-bold text-white transition-colors hover:bg-[#DE7429] sm:h-[50px]"
               >
                 Visit Site
                 <ArrowUpRight className="h-4 w-4" strokeWidth={2.5} />
               </ProviderCta>
               <Link
                 href={reviewHref}
-                className="text-center text-[12.5px] font-semibold text-[#1D4ED8] hover:underline"
+                className="text-center text-[12.5px] font-semibold text-[#C2570C] hover:underline"
               >
                 Read full review
               </Link>
@@ -213,7 +213,7 @@ export function RichComparisonCard({
             <p className="text-[12.5px] leading-relaxed text-gray-700 line-clamp-2 sm:text-[13.5px] sm:line-clamp-3">{intro}</p>
             <Link
               href={reviewHref}
-              className="mt-1.5 inline-flex items-center gap-1 text-[12.5px] font-semibold text-[#1D4ED8] hover:underline sm:text-[13px]"
+              className="mt-1.5 inline-flex items-center gap-1 text-[12.5px] font-semibold text-[#C2570C] hover:underline sm:text-[13px]"
             >
               Read full {product.name} review
               <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2.5} />

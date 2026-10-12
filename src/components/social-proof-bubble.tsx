@@ -29,8 +29,8 @@ export function SocialProofBubble({ number, text }: { number: string; text: stri
         <div className="relative rounded-2xl bg-white px-2.5 py-2 shadow-[0_12px_34px_-8px_rgba(16,24,40,0.28)] ring-1 ring-black/[0.06]">
           <div className="flex items-center gap-2">
             <span className="relative flex h-8 w-8 shrink-0 items-center justify-center rounded-full">
-              <span className="absolute inset-0 rounded-full ring-2 ring-[#2563EB]/30" />
-              <Users className="h-4 w-4 text-[#1D4ED8]" strokeWidth={2} />
+              <span className="absolute inset-0 rounded-full ring-2 ring-[#F08A3C]/30" />
+              <Users className="h-4 w-4 text-[#C2570C]" strokeWidth={2} />
             </span>
             <p className="text-[12px] leading-[1.3] text-gray-600">
               <span className="font-extrabold text-[#191919]">{number}</span> {text}

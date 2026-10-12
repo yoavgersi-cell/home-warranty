@@ -69,7 +69,7 @@ function ProductCard({
               className="max-h-full max-w-full object-contain"
             />
           ) : (
-            <div className="flex h-full w-full items-center justify-center rounded-lg bg-gradient-to-br from-[#EAF2F8] to-white">
+            <div className="flex h-full w-full items-center justify-center rounded-lg bg-gradient-to-br from-[#FFF1E6] to-white">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={provider.logo} alt={`${provider.name} logo`} className="max-h-[36px] max-w-[120px] object-contain" />
             </div>
@@ -77,7 +77,7 @@ function ProductCard({
         </div>
 
         <div className="flex flex-1 flex-col p-3.5">
-          <p className="text-[13px] font-semibold leading-snug text-[#1D4ED8] line-clamp-2">
+          <p className="text-[13px] font-semibold leading-snug text-[#C2570C] line-clamp-2">
             {product.name}
           </p>
           <div className="mt-2 flex items-baseline gap-1.5">

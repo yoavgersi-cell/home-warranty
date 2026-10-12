@@ -50,7 +50,7 @@ export function BattleStickyCta({
     >
       <div className="overflow-hidden rounded-t-2xl border-t border-gray-200 bg-white/95 shadow-[0_-6px_24px_rgba(0,0,0,0.10)] backdrop-blur">
         {/* Brand accent line */}
-        <div className="h-[3px] bg-gradient-to-r from-[#2563EB] via-[#A5C4F8] to-[#2563EB]" />
+        <div className="h-[3px] bg-gradient-to-r from-[#F08A3C] via-[#FBC9A0] to-[#F08A3C]" />
 
         <div className="px-3 pt-2.5 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
           {/* Reassurance strip - evergreen, always-positive, provider-agnostic */}
@@ -74,7 +74,7 @@ export function BattleStickyCta({
                   {recommendedId != null && (
                     <p
                       className={`mb-1 text-center text-[10px] font-bold uppercase tracking-[0.08em] ${
-                        isPick ? "text-[#1D4ED8]" : "text-transparent"
+                        isPick ? "text-[#C2570C]" : "text-transparent"
                       }`}
                     >
                       Our pick
@@ -88,8 +88,8 @@ export function BattleStickyCta({
                     sourceFlow="battle_page"
                     className={
                       isOther
-                        ? "flex h-[48px] items-center justify-center gap-1.5 rounded-xl border-2 border-[#2563EB] bg-white px-2 text-[14px] font-bold text-[#1D4ED8] transition-transform active:scale-[0.98]"
-                        : "flex h-[48px] items-center justify-center gap-1.5 rounded-xl bg-gradient-to-b from-[#2563EB] to-[#1E40AF] px-2 text-[14px] font-bold text-white shadow-sm transition-transform active:scale-[0.98]"
+                        ? "flex h-[48px] items-center justify-center gap-1.5 rounded-xl border-2 border-[#F08A3C] bg-white px-2 text-[14px] font-bold text-[#C2570C] transition-transform active:scale-[0.98]"
+                        : "flex h-[48px] items-center justify-center gap-1.5 rounded-xl bg-gradient-to-b from-[#F08A3C] to-[#DE7429] px-2 text-[14px] font-bold text-white shadow-sm transition-transform active:scale-[0.98]"
                     }
                   >
                     <span className="truncate">Visit {p.name}</span>

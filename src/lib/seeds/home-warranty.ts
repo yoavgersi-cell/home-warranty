@@ -1360,7 +1360,7 @@ export const homeWarrantyConfig: SiteConfig = {
       readTime: "7 min read",
       publishedAt: "2026-10-12",
       updatedAt: "2026-10-12",
-      heroColor: "#E3EDFD",
+      heroColor: "#FFEBDD",
       author: AUTHOR,
       keyTakeaways: [
         "A home warranty is a service contract that repairs or replaces covered home systems and appliances that fail from normal wear and tear.",
@@ -1404,7 +1404,7 @@ export const homeWarrantyConfig: SiteConfig = {
       readTime: "6 min read",
       publishedAt: "2026-10-12",
       updatedAt: "2026-10-12",
-      heroColor: "#D6E4FB",
+      heroColor: "#FDE1CB",
       author: AUTHOR,
       keyTakeaways: [
         "Homeowners insurance covers sudden, accidental damage and liability; a home warranty covers breakdowns from normal wear and tear.",
@@ -1440,7 +1440,7 @@ export const homeWarrantyConfig: SiteConfig = {
       readTime: "7 min read",
       publishedAt: "2026-10-12",
       updatedAt: "2026-10-12",
-      heroColor: "#EAF1FD",
+      heroColor: "#FFF3EA",
       author: AUTHOR,
       keyTakeaways: [
         "A warranty tends to pay off for homes with several aging systems or appliances and owners without a large repair fund.",
@@ -1476,7 +1476,7 @@ export const homeWarrantyConfig: SiteConfig = {
       readTime: "6 min read",
       publishedAt: "2026-10-12",
       updatedAt: "2026-10-12",
-      heroColor: "#E3EDFD",
+      heroColor: "#FFEBDD",
       author: AUTHOR,
       keyTakeaways: [
         "Most plans run roughly $300-$700 a year; premium tiers and add-ons cost more.",
@@ -1512,7 +1512,7 @@ export const homeWarrantyConfig: SiteConfig = {
       readTime: "7 min read",
       publishedAt: "2026-10-12",
       updatedAt: "2026-10-12",
-      heroColor: "#D6E4FB",
+      heroColor: "#FDE1CB",
       author: AUTHOR,
       keyTakeaways: [
         "Pre-existing conditions and lack of maintenance are the most common reasons for denial.",
@@ -1552,7 +1552,7 @@ export const homeWarrantyConfig: SiteConfig = {
       readTime: "6 min read",
       publishedAt: "2026-10-12",
       updatedAt: "2026-10-12",
-      heroColor: "#EAF1FD",
+      heroColor: "#FFF3EA",
       author: AUTHOR,
       keyTakeaways: [
         "Sellers often buy a home warranty to reassure buyers and smooth negotiations.",
@@ -1588,7 +1588,7 @@ export const homeWarrantyConfig: SiteConfig = {
       readTime: "8 min read",
       publishedAt: "2026-10-12",
       updatedAt: "2026-10-12",
-      heroColor: "#E3EDFD",
+      heroColor: "#FFEBDD",
       author: AUTHOR,
       keyTakeaways: [
         "Choice is our top pick for value: two simple plans and a $3,000 per-item cap.",
@@ -1628,7 +1628,7 @@ export const homeWarrantyConfig: SiteConfig = {
       readTime: "5 min read",
       publishedAt: "2026-10-12",
       updatedAt: "2026-10-12",
-      heroColor: "#EAF1FD",
+      heroColor: "#FFF3EA",
       author: AUTHOR,
       keyTakeaways: [
         "File as soon as a covered item stops working - online, in the app or by phone.",
@@ -1668,7 +1668,7 @@ export const homeWarrantyConfig: SiteConfig = {
       readTime: "6 min read",
       publishedAt: "2026-10-12",
       updatedAt: "2026-10-12",
-      heroColor: "#D6E4FB",
+      heroColor: "#FDE1CB",
       author: AUTHOR,
       keyTakeaways: [
         "ShieldSilver covers 14 home systems; ShieldGold adds 9 appliances; ShieldPlatinum adds roof leak, an HVAC tune-up and permits/code coverage.",
@@ -1704,7 +1704,7 @@ export const homeWarrantyConfig: SiteConfig = {
       readTime: "6 min read",
       publishedAt: "2026-10-12",
       updatedAt: "2026-10-12",
-      heroColor: "#E3EDFD",
+      heroColor: "#FFEBDD",
       author: AUTHOR,
       keyTakeaways: [
         "Choice Home Warranty is a legitimate company that has sold home warranties since 2008.",
@@ -1740,7 +1740,7 @@ export const homeWarrantyConfig: SiteConfig = {
       readTime: "5 min read",
       publishedAt: "2026-10-12",
       updatedAt: "2026-10-12",
-      heroColor: "#EAF1FD",
+      heroColor: "#FFF3EA",
       author: AUTHOR,
       keyTakeaways: [
         "Select's plans are reported at roughly $36-$64 a month before promotions.",

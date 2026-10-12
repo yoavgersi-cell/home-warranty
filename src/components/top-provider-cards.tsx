@@ -95,7 +95,7 @@ export function TopProviderCards({
       {quizHref && (
         <Link
           href={quizHref}
-          className="mt-4 block text-center text-[13px] font-semibold text-[#1D4ED8] hover:underline"
+          className="mt-4 block text-center text-[13px] font-semibold text-[#C2570C] hover:underline"
         >
           Not sure? Take our free matching quiz →
         </Link>

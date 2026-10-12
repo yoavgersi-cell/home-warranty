@@ -102,7 +102,7 @@ export async function ThreeWayPageView({ trio, ctx }: { trio: ThreeWayComparison
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-gray-200 bg-white">
-        <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#2563EB] via-[#A5C4F8] to-[#2563EB]" />
+        <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-[#F08A3C] via-[#FBC9A0] to-[#F08A3C]" />
         <div className="mx-auto max-w-[1100px] px-4 pb-10 pt-10 sm:px-6 sm:pb-12 sm:pt-12">
           <Breadcrumbs items={[{ label: "Home", href: hubLink(ctx, "/") }, { label: trio.title }]} />
           <h1 className="text-[26px] font-extrabold leading-[1.15] text-[#191919] sm:text-[36px]">{trio.title}</h1>
@@ -116,7 +116,7 @@ export async function ThreeWayPageView({ trio, ctx }: { trio: ThreeWayComparison
       <div className="mx-auto max-w-[1100px] px-4 pb-16 pt-10 sm:px-6">
         {/* Intro */}
         <div className="mb-10 max-w-[780px]">
-          <p className="mb-2.5 text-[12px] font-bold uppercase tracking-[0.07em] text-[#1D4ED8]">
+          <p className="mb-2.5 text-[12px] font-bold uppercase tracking-[0.07em] text-[#C2570C]">
             Here&rsquo;s the short version
           </p>
           <p className="text-[16px] leading-[1.85] text-gray-600">{trio.intro}</p>
@@ -143,7 +143,7 @@ export async function ThreeWayPageView({ trio, ctx }: { trio: ThreeWayComparison
                 providerSlug={p.id}
                 pageType="battle"
                 sourceFlow="battle_page"
-                className="flex h-[42px] items-center justify-center gap-1.5 rounded-xl bg-[#2563EB] text-[13.5px] font-bold text-white transition-colors hover:bg-[#1E40AF]"
+                className="flex h-[42px] items-center justify-center gap-1.5 rounded-xl bg-[#F08A3C] text-[13.5px] font-bold text-white transition-colors hover:bg-[#DE7429]"
               >
                 Visit {p.name}
                 <ArrowRight className="h-3.5 w-3.5" strokeWidth={2.5} />
@@ -191,8 +191,8 @@ export async function ThreeWayPageView({ trio, ctx }: { trio: ThreeWayComparison
         </div>
 
         {/* Verdict */}
-        <div className="mb-12 rounded-2xl border border-[#2563EB]/20 bg-white p-6 shadow-sm sm:p-8">
-          <p className="mb-2.5 text-[12px] font-bold uppercase tracking-[0.07em] text-[#1D4ED8]">Our verdict</p>
+        <div className="mb-12 rounded-2xl border border-[#F08A3C]/20 bg-white p-6 shadow-sm sm:p-8">
+          <p className="mb-2.5 text-[12px] font-bold uppercase tracking-[0.07em] text-[#C2570C]">Our verdict</p>
           <p className="text-[16px] leading-[1.85] text-gray-800">{trio.verdict}</p>
         </div>
 
@@ -222,7 +222,7 @@ export async function ThreeWayPageView({ trio, ctx }: { trio: ThreeWayComparison
                 <Link
                   key={b.slug}
                   href={hubLink(ctx, `/${b.slug}`)}
-                  className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-[14px] font-semibold text-[#1D4ED8] transition-colors hover:border-[#2563EB]/30 hover:bg-[#2563EB]/[0.02]"
+                  className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-[14px] font-semibold text-[#C2570C] transition-colors hover:border-[#F08A3C]/30 hover:bg-[#F08A3C]/[0.02]"
                 >
                   <span className="truncate">{b.matchupLabel ?? b.title.split(":")[0]}</span>
                   <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0" strokeWidth={2} />

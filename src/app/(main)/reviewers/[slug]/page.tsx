@@ -73,7 +73,7 @@ export default async function ReviewerProfilePage({ params }: { params: Promise<
     ],
   };
 
-  const ext = "font-semibold text-[#1D4ED8] hover:underline";
+  const ext = "font-semibold text-[#C2570C] hover:underline";
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -96,7 +96,7 @@ export default async function ReviewerProfilePage({ params }: { params: Promise<
               />
             </picture>
             <div className="min-w-0">
-              <p className="mb-1 flex items-center gap-1.5 text-[12px] font-semibold uppercase tracking-[0.06em] text-[#1D4ED8]">
+              <p className="mb-1 flex items-center gap-1.5 text-[12px] font-semibold uppercase tracking-[0.06em] text-[#C2570C]">
                 <ShieldCheck className="h-4 w-4" strokeWidth={2.25} />
                 Expert reviewer
               </p>
@@ -108,7 +108,7 @@ export default async function ReviewerProfilePage({ params }: { params: Promise<
               <p className="mt-1 text-[15px] leading-relaxed text-gray-500">{r.headline}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {r.licensure.map((c) => (
-                  <span key={c.title} className="inline-flex items-center gap-1.5 rounded-full border border-[#A5C4F8] bg-[#E8F0FE] px-3 py-1 text-[12px] font-semibold text-[#1D4ED8]">
+                  <span key={c.title} className="inline-flex items-center gap-1.5 rounded-full border border-[#FBC9A0] bg-[#FFF1E6] px-3 py-1 text-[12px] font-semibold text-[#C2570C]">
                     <BadgeCheck className="h-3.5 w-3.5" strokeWidth={2} />
                     {c.title}
                   </span>
@@ -138,7 +138,7 @@ export default async function ReviewerProfilePage({ params }: { params: Promise<
 
       <div className="mx-auto max-w-[900px] px-4 py-10 text-[16px] leading-[1.75] text-gray-800 sm:px-6">
         {/* Scope */}
-        <section className="mb-10 rounded-2xl border border-[#E8F0FE] bg-[#E8F0FE]/50 p-6">
+        <section className="mb-10 rounded-2xl border border-[#FFF1E6] bg-[#FFF1E6]/50 p-6">
           <h2 className="mb-2 text-[18px] font-bold text-[#191919]">What {r.name.split(" ")[0]} reviews on this site</h2>
           <p className="text-[15px] leading-[1.75] text-gray-600">{r.scope}</p>
           <p className="mt-2 text-[14px] text-gray-500">
@@ -162,7 +162,7 @@ export default async function ReviewerProfilePage({ params }: { params: Promise<
           <div className="grid gap-3 sm:grid-cols-2">
             {r.licensure.map((c) => (
               <div key={c.title} className="rounded-xl border border-[#E5E5E5] bg-white p-4">
-                <p className="mb-1 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.05em] text-[#1D4ED8]">
+                <p className="mb-1 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.05em] text-[#C2570C]">
                   <BadgeCheck className="h-3.5 w-3.5" strokeWidth={2} /> Licensure
                 </p>
                 <p className="text-[15px] font-bold text-[#191919]">{c.title}</p>
@@ -172,7 +172,7 @@ export default async function ReviewerProfilePage({ params }: { params: Promise<
             ))}
             {r.education.map((e) => (
               <div key={e.degree} className="rounded-xl border border-[#E5E5E5] bg-white p-4">
-                <p className="mb-1 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.05em] text-[#1D4ED8]">
+                <p className="mb-1 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.05em] text-[#C2570C]">
                   <GraduationCap className="h-3.5 w-3.5" strokeWidth={2} /> Education
                 </p>
                 <p className="text-[15px] font-bold text-[#191919]">{e.degree}</p>

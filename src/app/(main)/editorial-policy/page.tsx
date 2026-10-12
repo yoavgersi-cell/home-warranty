@@ -29,7 +29,7 @@ export default function EditorialPolicyPage() {
     isPartOf: { "@type": "WebSite", name: "Home Warranty Picks", url: SITE_ORIGIN },
     about: { "@type": "Organization", name: "Home Warranty Picks", url: SITE_ORIGIN, employee: REVIEWERS.map(reviewerPersonSchema) },
   };
-  const ext = "font-semibold text-[#1D4ED8] hover:underline";
+  const ext = "font-semibold text-[#C2570C] hover:underline";
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -53,7 +53,7 @@ export default function EditorialPolicyPage() {
             <h2 className="mb-3 text-[24px] font-bold text-[#191919]">Who reviews</h2>
             <div className="space-y-3">
               {REVIEWERS.map((r) => (
-                <Link key={r.slug} href={reviewerPath(r)} className="flex items-center gap-4 rounded-xl border border-[#E5E5E5] bg-white p-4 transition-colors hover:border-[#2563EB]/40">
+                <Link key={r.slug} href={reviewerPath(r)} className="flex items-center gap-4 rounded-xl border border-[#E5E5E5] bg-white p-4 transition-colors hover:border-[#F08A3C]/40">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={r.image.thumb} alt={r.name} width={56} height={56} className="h-14 w-14 rounded-full object-cover" />
                   <span>
@@ -100,9 +100,9 @@ export default function EditorialPolicyPage() {
           </p>
         </section>
 
-        <section className="mb-10 rounded-2xl border border-[#E8F0FE] bg-[#E8F0FE]/50 p-6">
+        <section className="mb-10 rounded-2xl border border-[#FFF1E6] bg-[#FFF1E6]/50 p-6">
           <h2 className="mb-2 flex items-center gap-2 text-[18px] font-bold text-[#191919]">
-            <ShieldCheck className="h-5 w-5 text-[#2563EB]" strokeWidth={2} />
+            <ShieldCheck className="h-5 w-5 text-[#F08A3C]" strokeWidth={2} />
             Found an error?
           </h2>
           <p className="text-[15px] leading-[1.75] text-gray-600">

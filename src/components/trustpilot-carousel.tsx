@@ -74,7 +74,7 @@ function ReviewCard({ r }: { r: TrustpilotReview }) {
         &ldquo;{r.text}&rdquo;
       </p>
       <div className="mt-auto flex items-center gap-2">
-        <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#2563EB]/10 text-[11px] font-bold text-[#1D4ED8]">
+        <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#F08A3C]/10 text-[11px] font-bold text-[#C2570C]">
           {r.name.charAt(0)}
         </div>
         <div className="min-w-0">
@@ -175,7 +175,7 @@ export function TrustpilotCarousel({
                   onClick={() => setPage(i)}
                   aria-label={`Go to reviews page ${i + 1}`}
                   className={`h-1.5 rounded-full transition-all ${
-                    i === page ? "w-5 bg-[#2563EB]" : "w-1.5 bg-gray-200 hover:bg-gray-300"
+                    i === page ? "w-5 bg-[#F08A3C]" : "w-1.5 bg-gray-200 hover:bg-gray-300"
                   }`}
                 />
               ))}
@@ -214,7 +214,7 @@ export function TrustpilotCarousel({
                 onClick={() => setCurrent(i)}
                 aria-label={`Go to review ${i + 1}`}
                 className={`h-1.5 rounded-full transition-all ${
-                  i === current ? "w-5 bg-[#2563EB]" : "w-1.5 bg-gray-200"
+                  i === current ? "w-5 bg-[#F08A3C]" : "w-1.5 bg-gray-200"
                 }`}
               />
             ))}

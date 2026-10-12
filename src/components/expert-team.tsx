@@ -23,7 +23,7 @@ export function ExpertTeam({ experts }: { experts: Expert[] }) {
         {experts.map((expert) => (
           <article key={expert.id} className="rounded-2xl border border-gray-200 bg-white p-6 shadow-[0_1px_3px_rgba(16,32,54,0.04)]">
             <div className="flex items-center gap-4">
-              <span className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-[#2563EB] to-[#2563EB] text-[16px] font-bold text-white">
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-[#F08A3C] to-[#F08A3C] text-[16px] font-bold text-white">
                 {expert.avatar ? (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img src={expert.avatar} alt={expert.name} className="h-full w-full object-cover" loading="lazy" decoding="async" />
@@ -37,9 +37,9 @@ export function ExpertTeam({ experts }: { experts: Expert[] }) {
                     {expert.name}
                     {expert.credentials && <span className="text-gray-500">, {expert.credentials}</span>}
                   </span>
-                  <BadgeCheck className="h-4 w-4 shrink-0 text-[#1D4ED8]" strokeWidth={2} />
+                  <BadgeCheck className="h-4 w-4 shrink-0 text-[#C2570C]" strokeWidth={2} />
                 </h3>
-                <p className="mt-0.5 text-[13px] font-semibold text-[#1D4ED8]">{expert.role}</p>
+                <p className="mt-0.5 text-[13px] font-semibold text-[#C2570C]">{expert.role}</p>
               </div>
             </div>
 
@@ -50,7 +50,7 @@ export function ExpertTeam({ experts }: { experts: Expert[] }) {
             {expert.specialties && expert.specialties.length > 0 && (
               <div className="mt-4 flex flex-wrap gap-1.5">
                 {expert.specialties.map((s) => (
-                  <span key={s} className="rounded-full bg-[#2563EB]/[0.06] px-2.5 py-1 text-[11px] font-semibold text-[#1D4ED8]">
+                  <span key={s} className="rounded-full bg-[#F08A3C]/[0.06] px-2.5 py-1 text-[11px] font-semibold text-[#C2570C]">
                     {s}
                   </span>
                 ))}

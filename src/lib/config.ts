@@ -329,7 +329,7 @@ export interface Vertical {
 // kept (the platform types expect it) but holds just the one vertical, served
 // at the domain root.
 export const VERTICALS: Vertical[] = [
-  { id: "home-warranty", name: "Home Warranty", tagline: "Compare the best home warranty companies", accent: "#2563EB" },
+  { id: "home-warranty", name: "Home Warranty", tagline: "Compare the best home warranty companies", accent: "#F08A3C" },
 ];
 
 export const DEFAULT_VERTICAL = "home-warranty";

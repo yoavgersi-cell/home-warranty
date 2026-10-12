@@ -68,7 +68,7 @@ function CompareTable({ rows }: { rows: [string, string, string, string][] }) {
 }
 
 export function EditorialContent({ midSlot }: { midSlot?: React.ReactNode }) {
-  const link = "font-semibold text-[#1D4ED8] hover:underline";
+  const link = "font-semibold text-[#C2570C] hover:underline";
   return (
     <div className="mx-auto max-w-[1200px] px-4 pt-6 pb-12 text-[16px] leading-[1.7] text-gray-800">
       <h2 className="mb-4 text-[24px] font-bold text-[#191919]">

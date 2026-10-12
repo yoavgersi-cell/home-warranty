@@ -38,9 +38,9 @@ export default function TermsPage() {
           The Site contains affiliate links. If you click a link to a provider and take a qualifying
           action, we may earn a commission at no additional cost to you. Our rankings and reviews are
           determined independently - see our{" "}
-          <Link href="/disclaimer" className="font-semibold text-[#1D4ED8] hover:underline">disclosure</Link>{" "}
+          <Link href="/disclaimer" className="font-semibold text-[#C2570C] hover:underline">disclosure</Link>{" "}
           and{" "}
-          <Link href="/how-we-rank" className="font-semibold text-[#1D4ED8] hover:underline">ranking methodology</Link>.
+          <Link href="/how-we-rank" className="font-semibold text-[#C2570C] hover:underline">ranking methodology</Link>.
         </p>
 
         <h2 className="pt-4 text-xl font-semibold text-[#191919]">No Warranty on Accuracy</h2>
@@ -86,7 +86,7 @@ export default function TermsPage() {
         <h2 className="pt-4 text-xl font-semibold text-[#191919]">Contact</h2>
         <p>
           Questions about these Terms? Reach us via our{" "}
-          <Link href="/contact" className="font-semibold text-[#1D4ED8] hover:underline">contact page</Link>.
+          <Link href="/contact" className="font-semibold text-[#C2570C] hover:underline">contact page</Link>.
         </p>
       </div>
     </div>

@@ -217,11 +217,11 @@ export default function AdminPage() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleLogin()}
-            className="mb-4 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-[#2563EB] focus:outline-none"
+            className="mb-4 w-full rounded-lg border px-4 py-2.5 text-sm focus:border-[#F08A3C] focus:outline-none"
           />
           <button
             onClick={handleLogin}
-            className="w-full rounded-lg bg-[#2563EB] py-2.5 text-sm font-bold text-white hover:bg-[#1E40AF]"
+            className="w-full rounded-lg bg-[#F08A3C] py-2.5 text-sm font-bold text-white hover:bg-[#DE7429]"
           >
             Login
           </button>
@@ -266,7 +266,7 @@ export default function AdminPage() {
             <select
               value={vertical}
               onChange={(e) => switchVertical(e.target.value)}
-              className="rounded-md border border-gray-200 bg-white px-2.5 py-1 text-sm font-semibold text-[#1D4ED8] focus:outline-none focus:ring-2 focus:ring-[#2563EB]/30"
+              className="rounded-md border border-gray-200 bg-white px-2.5 py-1 text-sm font-semibold text-[#C2570C] focus:outline-none focus:ring-2 focus:ring-[#F08A3C]/30"
             >
               {VERTICALS.map((v) => (
                 <option key={v.id} value={v.id}>{v.name}</option>
@@ -283,7 +283,7 @@ export default function AdminPage() {
           <button
             onClick={handleSave}
             disabled={saving}
-            className="rounded-lg bg-[#2563EB] px-6 py-2 text-sm font-bold text-white hover:bg-[#1E40AF] disabled:opacity-50"
+            className="rounded-lg bg-[#F08A3C] px-6 py-2 text-sm font-bold text-white hover:bg-[#DE7429] disabled:opacity-50"
           >
             {saving ? "Saving..." : "Save Changes"}
           </button>
@@ -349,7 +349,7 @@ export default function AdminPage() {
                           key={hi}
                           value={h}
                           onChange={(e) => updateHighlight(index, hi, e.target.value)}
-                          className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+                          className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
                         />
                       ))}
                     </div>
@@ -371,7 +371,7 @@ export default function AdminPage() {
                             enabled: e.target.checked,
                           })
                         }
-                        className="h-4 w-4 rounded border-gray-300 text-[#1D4ED8] focus:ring-[#2563EB]"
+                        className="h-4 w-4 rounded border-gray-300 text-[#C2570C] focus:ring-[#F08A3C]"
                       />
                       Enable popup for {provider.name || "this provider"}
                     </label>
@@ -421,7 +421,7 @@ export default function AdminPage() {
                               <select
                                 value={r.rating}
                                 onChange={(e) => updateTrustpilotReview(index, ri, "rating", parseInt(e.target.value, 10))}
-                                className="rounded border px-2 py-1 text-xs focus:border-[#2563EB] focus:outline-none"
+                                className="rounded border px-2 py-1 text-xs focus:border-[#F08A3C] focus:outline-none"
                               >
                                 {[5, 4, 3, 2, 1].map((n) => (
                                   <option key={n} value={n}>{n} star{n > 1 ? "s" : ""}</option>
@@ -442,19 +442,19 @@ export default function AdminPage() {
                             value={r.title}
                             onChange={(e) => updateTrustpilotReview(index, ri, "title", e.target.value)}
                             placeholder="Review title (e.g. Lost 22 lbs in 3 months)"
-                            className="mb-2 w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+                            className="mb-2 w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
                           />
                           <textarea
                             value={r.text}
                             onChange={(e) => updateTrustpilotReview(index, ri, "text", e.target.value)}
                             rows={2} placeholder="Review text..."
-                            className="mb-2 w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+                            className="mb-2 w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
                           />
                           <div className="flex gap-2">
                             <input value={r.name} onChange={(e) => updateTrustpilotReview(index, ri, "name", e.target.value)}
-                              placeholder="Name (e.g. Sarah M.)" className="flex-1 rounded border px-3 py-1.5 text-sm focus:border-[#2563EB] focus:outline-none" />
+                              placeholder="Name (e.g. Sarah M.)" className="flex-1 rounded border px-3 py-1.5 text-sm focus:border-[#F08A3C] focus:outline-none" />
                             <input value={r.location} onChange={(e) => updateTrustpilotReview(index, ri, "location", e.target.value)}
-                              placeholder="Location (e.g. TX)" className="w-32 rounded border px-3 py-1.5 text-sm focus:border-[#2563EB] focus:outline-none" />
+                              placeholder="Location (e.g. TX)" className="w-32 rounded border px-3 py-1.5 text-sm focus:border-[#F08A3C] focus:outline-none" />
                           </div>
                         </div>
                       ))}
@@ -464,7 +464,7 @@ export default function AdminPage() {
                         const reviews: TrustpilotReview[] = [...(provider.trustpilotReviews ?? []), { title: "", text: "", name: "", location: "", rating: 5 }];
                         updateProvider(index, "trustpilotReviews", reviews);
                       }}
-                      className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+                      className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
                     >
                       + Add Trustpilot Review
                     </button>
@@ -473,7 +473,7 @@ export default function AdminPage() {
               ))}
             <button
               onClick={addProvider}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
             >
               + Add Provider
             </button>
@@ -535,7 +535,7 @@ export default function AdminPage() {
               <div className="mt-3 flex gap-2">
                 <select
                   id="add-homepage-provider"
-                  className="flex-1 rounded border px-3 py-2 text-sm text-gray-600 focus:border-[#2563EB] focus:outline-none"
+                  className="flex-1 rounded border px-3 py-2 text-sm text-gray-600 focus:border-[#F08A3C] focus:outline-none"
                   defaultValue=""
                 >
                   <option value="" disabled>Add provider to homepage...</option>
@@ -558,7 +558,7 @@ export default function AdminPage() {
                     });
                     select.value = "";
                   }}
-                  className="rounded border border-[#2563EB] px-4 py-2 text-xs font-semibold text-[#1D4ED8] hover:bg-[#2563EB]/5"
+                  className="rounded border border-[#F08A3C] px-4 py-2 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5"
                 >
                   Add
                 </button>
@@ -665,7 +665,7 @@ export default function AdminPage() {
                 })}
               </div>
               <select
-                className="w-full rounded border px-3 py-1.5 text-sm text-gray-600 focus:border-[#2563EB] focus:outline-none"
+                className="w-full rounded border px-3 py-1.5 text-sm text-gray-600 focus:border-[#F08A3C] focus:outline-none"
                 value=""
                 onChange={(e) => {
                   if (!e.target.value) return;
@@ -726,14 +726,14 @@ export default function AdminPage() {
                     value={faq.answer}
                     onChange={(e) => updateFaq(index, "answer", e.target.value)}
                     rows={3}
-                    className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+                    className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
                   />
                 </div>
               </div>
             ))}
             <button
               onClick={addFaq}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
             >
               + Add FAQ
             </button>
@@ -773,7 +773,7 @@ export default function AdminPage() {
                       value={review.reviewIntro}
                       onChange={(e) => updateReview(index, "reviewIntro", e.target.value)}
                       rows={4}
-                      className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+                      className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
                     />
                   </div>
 
@@ -827,7 +827,7 @@ export default function AdminPage() {
                       value={review.finalVerdict}
                       onChange={(e) => updateReview(index, "finalVerdict", e.target.value)}
                       rows={4}
-                      className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+                      className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
                     />
                   </div>
                 </div>
@@ -845,7 +845,7 @@ export default function AdminPage() {
                   <div className="flex items-center gap-3">
                     <div
                       className="h-9 w-9 rounded-lg"
-                      style={{ backgroundColor: article.heroColor || "#EEF4FB" }}
+                      style={{ backgroundColor: article.heroColor || "#FFF4EC" }}
                     />
                     <div>
                       <h3 className="text-sm font-bold text-[#191919]">
@@ -987,7 +987,7 @@ export default function AdminPage() {
                               setConfig({ ...config, articles });
                             }}
                             rows={4}
-                            className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+                            className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
                           />
                         </div>
                       </div>
@@ -1000,7 +1000,7 @@ export default function AdminPage() {
                       articles[index] = { ...articles[index], sections };
                       setConfig({ ...config, articles });
                     }}
-                    className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+                    className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
                   >
                     + Add Section
                   </button>
@@ -1017,12 +1017,12 @@ export default function AdminPage() {
                   readTime: "5 min read",
                   publishedAt: new Date().toISOString().split("T")[0],
                   updatedAt: new Date().toISOString().split("T")[0],
-                  heroColor: "#EEF4FB",
+                  heroColor: "#FFF4EC",
                   sections: [{ heading: "Introduction", body: "" }],
                 };
                 setConfig({ ...config, articles: [...(config.articles ?? []), newArticle] });
               }}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
             >
               + Add Article
             </button>
@@ -1068,21 +1068,21 @@ export default function AdminPage() {
                     <Field label="Last Updated (YYYY-MM-DD, for SEO)" value={battle.updatedAt ?? ""} onChange={(v) => updateBattle({ updatedAt: v })} />
                     <div>
                       <label className="mb-1 block text-xs font-semibold text-gray-500 uppercase tracking-wider">Provider 1</label>
-                      <select value={battle.provider1Id} onChange={(e) => updateBattle({ provider1Id: e.target.value })} className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none">
+                      <select value={battle.provider1Id} onChange={(e) => updateBattle({ provider1Id: e.target.value })} className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none">
                         <option value="">Select...</option>
                         {config.providers.map((p) => (<option key={p.id} value={p.id}>{p.name}</option>))}
                       </select>
                     </div>
                     <div>
                       <label className="mb-1 block text-xs font-semibold text-gray-500 uppercase tracking-wider">Provider 2</label>
-                      <select value={battle.provider2Id} onChange={(e) => updateBattle({ provider2Id: e.target.value })} className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none">
+                      <select value={battle.provider2Id} onChange={(e) => updateBattle({ provider2Id: e.target.value })} className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none">
                         <option value="">Select...</option>
                         {config.providers.map((p) => (<option key={p.id} value={p.id}>{p.name}</option>))}
                       </select>
                     </div>
                     <div>
                       <label className="mb-1 block text-xs font-semibold text-gray-500 uppercase tracking-wider">Winner</label>
-                      <select value={battle.winnerId} onChange={(e) => updateBattle({ winnerId: e.target.value })} className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none">
+                      <select value={battle.winnerId} onChange={(e) => updateBattle({ winnerId: e.target.value })} className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none">
                         <option value="">Select...</option>
                         {battle.provider1Id && <option value={battle.provider1Id}>{bp1?.name ?? battle.provider1Id}</option>}
                         {battle.provider2Id && <option value={battle.provider2Id}>{bp2?.name ?? battle.provider2Id}</option>}
@@ -1092,12 +1092,12 @@ export default function AdminPage() {
 
                   <div className="mt-4">
                     <label className="mb-1 block text-xs font-semibold text-gray-500 uppercase tracking-wider">Intro</label>
-                    <textarea value={battle.intro} onChange={(e) => updateBattle({ intro: e.target.value })} rows={3} className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none" />
+                    <textarea value={battle.intro} onChange={(e) => updateBattle({ intro: e.target.value })} rows={3} className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none" />
                   </div>
 
                   <div className="mt-4">
                     <label className="mb-1 block text-xs font-semibold text-gray-500 uppercase tracking-wider">Verdict</label>
-                    <textarea value={battle.verdict} onChange={(e) => updateBattle({ verdict: e.target.value })} rows={3} className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none" />
+                    <textarea value={battle.verdict} onChange={(e) => updateBattle({ verdict: e.target.value })} rows={3} className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none" />
                   </div>
 
                   <ArrayField
@@ -1129,7 +1129,7 @@ export default function AdminPage() {
                             <Field label="Name" value={cat.name} onChange={(v) => { const cats = [...battle.categories]; cats[ci] = { ...cats[ci], name: v }; updateBattle({ categories: cats }); }} />
                             <div>
                               <label className="mb-1 block text-xs font-semibold text-gray-500 uppercase tracking-wider">Winner</label>
-                              <select value={cat.winner || ""} onChange={(e) => { const cats = [...battle.categories]; cats[ci] = { ...cats[ci], winner: e.target.value as "provider1" | "provider2" | "tie" }; updateBattle({ categories: cats }); }} className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none">
+                              <select value={cat.winner || ""} onChange={(e) => { const cats = [...battle.categories]; cats[ci] = { ...cats[ci], winner: e.target.value as "provider1" | "provider2" | "tie" }; updateBattle({ categories: cats }); }} className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none">
                                 <option value="provider1">{bp1?.name ?? "Provider 1"}</option>
                                 <option value="provider2">{bp2?.name ?? "Provider 2"}</option>
                                 <option value="tie">Tie</option>
@@ -1138,7 +1138,7 @@ export default function AdminPage() {
                           </div>
                           <div className="mt-2">
                             <label className="mb-1 block text-xs font-semibold text-gray-500 uppercase tracking-wider">Explanation</label>
-                            <textarea value={cat.explanation || ""} onChange={(e) => { const cats = [...battle.categories]; cats[ci] = { ...cats[ci], explanation: e.target.value }; updateBattle({ categories: cats }); }} rows={2} className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none" />
+                            <textarea value={cat.explanation || ""} onChange={(e) => { const cats = [...battle.categories]; cats[ci] = { ...cats[ci], explanation: e.target.value }; updateBattle({ categories: cats }); }} rows={2} className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none" />
                           </div>
                           <ArrayField
                             label="Supporting Points"
@@ -1150,7 +1150,7 @@ export default function AdminPage() {
                         </div>
                       ))}
                     </div>
-                    <button onClick={() => updateBattle({ categories: [...battle.categories, { name: "", winner: "tie" as const, explanation: "", supportingPoints: [] }] })} className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]">+ Add Category</button>
+                    <button onClick={() => updateBattle({ categories: [...battle.categories, { name: "", winner: "tie" as const, explanation: "", supportingPoints: [] }] })} className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]">+ Add Category</button>
                   </div>
 
                   {/* Feature Table */}
@@ -1160,9 +1160,9 @@ export default function AdminPage() {
                       {(battle.features ?? []).map((feat, fi) => (
                         <div key={fi} className="flex gap-2 items-start">
                           <div className="grid flex-1 gap-2 sm:grid-cols-3">
-                            <input value={feat.feature} onChange={(e) => { const feats = [...(battle.features ?? [])]; feats[fi] = { ...feats[fi], feature: e.target.value }; updateBattle({ features: feats }); }} placeholder="Feature" className="rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none" />
-                            <input value={feat.provider1Value} onChange={(e) => { const feats = [...(battle.features ?? [])]; feats[fi] = { ...feats[fi], provider1Value: e.target.value }; updateBattle({ features: feats }); }} placeholder={bp1?.name ?? "Provider 1"} className="rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none" />
-                            <input value={feat.provider2Value} onChange={(e) => { const feats = [...(battle.features ?? [])]; feats[fi] = { ...feats[fi], provider2Value: e.target.value }; updateBattle({ features: feats }); }} placeholder={bp2?.name ?? "Provider 2"} className="rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none" />
+                            <input value={feat.feature} onChange={(e) => { const feats = [...(battle.features ?? [])]; feats[fi] = { ...feats[fi], feature: e.target.value }; updateBattle({ features: feats }); }} placeholder="Feature" className="rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none" />
+                            <input value={feat.provider1Value} onChange={(e) => { const feats = [...(battle.features ?? [])]; feats[fi] = { ...feats[fi], provider1Value: e.target.value }; updateBattle({ features: feats }); }} placeholder={bp1?.name ?? "Provider 1"} className="rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none" />
+                            <input value={feat.provider2Value} onChange={(e) => { const feats = [...(battle.features ?? [])]; feats[fi] = { ...feats[fi], provider2Value: e.target.value }; updateBattle({ features: feats }); }} placeholder={bp2?.name ?? "Provider 2"} className="rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none" />
                           </div>
                           <button onClick={() => updateBattle({ features: (battle.features ?? []).filter((_, i) => i !== fi) })} className="flex h-9 w-9 shrink-0 items-center justify-center rounded border border-red-200 text-red-400 hover:bg-red-50 hover:text-red-600">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
@@ -1170,7 +1170,7 @@ export default function AdminPage() {
                         </div>
                       ))}
                     </div>
-                    <button onClick={() => updateBattle({ features: [...(battle.features ?? []), { feature: "", provider1Value: "", provider2Value: "" }] })} className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]">+ Add Feature Row</button>
+                    <button onClick={() => updateBattle({ features: [...(battle.features ?? []), { feature: "", provider1Value: "", provider2Value: "" }] })} className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]">+ Add Feature Row</button>
                   </div>
                 </div>
               );
@@ -1202,7 +1202,7 @@ export default function AdminPage() {
                 };
                 setConfig({ ...config, battles: [...(config.battles ?? []), newBattle] });
               }}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
             >
               + Add Battle Page
             </button>
@@ -1308,7 +1308,7 @@ export default function AdminPage() {
                     <div className="mt-2 flex gap-2">
                       <select
                         id={`add-provider-${index}`}
-                        className="flex-1 rounded border px-3 py-1.5 text-sm text-gray-600 focus:border-[#2563EB] focus:outline-none"
+                        className="flex-1 rounded border px-3 py-1.5 text-sm text-gray-600 focus:border-[#F08A3C] focus:outline-none"
                         defaultValue=""
                       >
                         <option value="" disabled>Add provider...</option>
@@ -1325,7 +1325,7 @@ export default function AdminPage() {
                           updateLP({ providerOrder: [...(lp.providerOrder ?? []), select.value] });
                           select.value = "";
                         }}
-                        className="rounded border border-[#2563EB] px-3 py-1.5 text-xs font-semibold text-[#1D4ED8] hover:bg-[#2563EB]/5"
+                        className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5"
                       >
                         Add
                       </button>
@@ -1372,7 +1372,7 @@ export default function AdminPage() {
                                 updateLP({ editorialSections: sections });
                               }}
                               rows={3}
-                              className="w-full rounded border px-3 py-2 text-sm text-gray-800 focus:border-[#2563EB] focus:outline-none"
+                              className="w-full rounded border px-3 py-2 text-sm text-gray-800 focus:border-[#F08A3C] focus:outline-none"
                             />
                           </div>
                           <div className="mt-2">
@@ -1386,7 +1386,7 @@ export default function AdminPage() {
                                 updateLP({ editorialSections: sections });
                               }}
                               rows={2}
-                              className="w-full rounded border px-3 py-2 text-sm text-gray-800 focus:border-[#2563EB] focus:outline-none"
+                              className="w-full rounded border px-3 py-2 text-sm text-gray-800 focus:border-[#F08A3C] focus:outline-none"
                             />
                           </div>
                         </div>
@@ -1397,7 +1397,7 @@ export default function AdminPage() {
                         const sections = [...(lp.editorialSections ?? []), { heading: "", body: "", bullets: [] }];
                         updateLP({ editorialSections: sections });
                       }}
-                      className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+                      className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
                     >
                       + Add Section
                     </button>
@@ -1419,7 +1419,7 @@ export default function AdminPage() {
                 };
                 setConfig({ ...config, landingPages: [...(config.landingPages ?? []), newLP] });
               }}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
             >
               + Add Landing Page
             </button>
@@ -1459,7 +1459,7 @@ export default function AdminPage() {
                     <Field label="ID" value={sb.id} onChange={(v) => updateSB({ id: v })} />
                     <div>
                       <label className="mb-1 block text-xs font-semibold text-gray-500 uppercase tracking-wider">Area</label>
-                      <select value={sb.area} onChange={(e) => updateSB({ area: e.target.value })} className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none">
+                      <select value={sb.area} onChange={(e) => updateSB({ area: e.target.value })} className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none">
                         <option value="homepage">Homepage</option>
                         <option value="articles">Articles</option>
                         <option value="reviews">Reviews</option>
@@ -1501,11 +1501,11 @@ export default function AdminPage() {
                       })}
                     </div>
                     <div className="mt-1.5 flex gap-2">
-                      <select id={`sb-prov-${index}`} className="flex-1 rounded border px-3 py-1.5 text-sm focus:border-[#2563EB] focus:outline-none" defaultValue="">
+                      <select id={`sb-prov-${index}`} className="flex-1 rounded border px-3 py-1.5 text-sm focus:border-[#F08A3C] focus:outline-none" defaultValue="">
                         <option value="" disabled>Add provider...</option>
                         {config.providers.filter((p) => !(sb.providerIds ?? []).includes(p.id)).map((p) => (<option key={p.id} value={p.id}>{p.name}</option>))}
                       </select>
-                      <button onClick={() => { const el = document.getElementById(`sb-prov-${index}`) as HTMLSelectElement; if (el?.value) { updateSB({ providerIds: [...(sb.providerIds ?? []), el.value] }); el.value = ""; } }} className="rounded border border-[#2563EB] px-3 py-1.5 text-xs font-semibold text-[#1D4ED8] hover:bg-[#2563EB]/5">Add</button>
+                      <button onClick={() => { const el = document.getElementById(`sb-prov-${index}`) as HTMLSelectElement; if (el?.value) { updateSB({ providerIds: [...(sb.providerIds ?? []), el.value] }); el.value = ""; } }} className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5">Add</button>
                     </div>
                   </div>
 
@@ -1535,11 +1535,11 @@ export default function AdminPage() {
                       })}
                     </div>
                     <div className="mt-1.5 flex gap-2">
-                      <select id={`sb-art-${index}`} className="flex-1 rounded border px-3 py-1.5 text-sm focus:border-[#2563EB] focus:outline-none" defaultValue="">
+                      <select id={`sb-art-${index}`} className="flex-1 rounded border px-3 py-1.5 text-sm focus:border-[#F08A3C] focus:outline-none" defaultValue="">
                         <option value="" disabled>Add article...</option>
                         {(config.articles ?? []).filter((a) => !(sb.articleSlugs ?? []).includes(a.slug)).map((a) => (<option key={a.slug} value={a.slug}>{a.title}</option>))}
                       </select>
-                      <button onClick={() => { const el = document.getElementById(`sb-art-${index}`) as HTMLSelectElement; if (el?.value) { updateSB({ articleSlugs: [...(sb.articleSlugs ?? []), el.value] }); el.value = ""; } }} className="rounded border border-[#2563EB] px-3 py-1.5 text-xs font-semibold text-[#1D4ED8] hover:bg-[#2563EB]/5">Add</button>
+                      <button onClick={() => { const el = document.getElementById(`sb-art-${index}`) as HTMLSelectElement; if (el?.value) { updateSB({ articleSlugs: [...(sb.articleSlugs ?? []), el.value] }); el.value = ""; } }} className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5">Add</button>
                     </div>
                   </div>
                 </div>
@@ -1563,7 +1563,7 @@ export default function AdminPage() {
                 };
                 setConfig({ ...config, sidebars: [...(config.sidebars ?? []), newSB] });
               }}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
             >
               + Add Sidebar
             </button>
@@ -1584,7 +1584,7 @@ export default function AdminPage() {
                     onClick={() => setConfig({ ...config, quiz: { ...config.quiz, panelType: type } })}
                     className={`flex-1 rounded-lg border px-4 py-3 text-sm font-medium transition-colors ${
                       (config.quiz.panelType || "classic") === type
-                        ? "border-[#2563EB] bg-[#2563EB]/5 text-[#1D4ED8]"
+                        ? "border-[#F08A3C] bg-[#F08A3C]/5 text-[#C2570C]"
                         : "border-gray-200 text-gray-500 hover:border-gray-300"
                     }`}
                   >
@@ -1672,7 +1672,7 @@ export default function AdminPage() {
               <div className="mt-2 flex gap-2">
                 <select
                   id="add-quiz-provider"
-                  className="flex-1 rounded border px-3 py-1.5 text-sm text-gray-600 focus:border-[#2563EB] focus:outline-none"
+                  className="flex-1 rounded border px-3 py-1.5 text-sm text-gray-600 focus:border-[#F08A3C] focus:outline-none"
                   defaultValue=""
                 >
                   <option value="" disabled>Add provider...</option>
@@ -1690,7 +1690,7 @@ export default function AdminPage() {
                     setConfig({ ...config, quiz: { ...config.quiz, providerOrder: order } });
                     select.value = "";
                   }}
-                  className="rounded border border-[#2563EB] px-3 py-1.5 text-xs font-semibold text-[#1D4ED8] hover:bg-[#2563EB]/5"
+                  className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5"
                 >
                   Add
                 </button>
@@ -1753,7 +1753,7 @@ export default function AdminPage() {
                       }}
                       rows={2}
                       placeholder="Review text..."
-                      className="mb-2 w-full rounded border px-3 py-2 text-sm text-gray-800 focus:border-[#2563EB] focus:outline-none"
+                      className="mb-2 w-full rounded border px-3 py-2 text-sm text-gray-800 focus:border-[#F08A3C] focus:outline-none"
                     />
                     <div className="flex gap-2">
                       <input
@@ -1764,7 +1764,7 @@ export default function AdminPage() {
                           setConfig({ ...config, quiz: { ...config.quiz, testimonials } });
                         }}
                         placeholder="Name (e.g. Sarah M.)"
-                        className="flex-1 rounded border px-3 py-1.5 text-sm focus:border-[#2563EB] focus:outline-none"
+                        className="flex-1 rounded border px-3 py-1.5 text-sm focus:border-[#F08A3C] focus:outline-none"
                       />
                       <input
                         value={t.state}
@@ -1774,7 +1774,7 @@ export default function AdminPage() {
                           setConfig({ ...config, quiz: { ...config.quiz, testimonials } });
                         }}
                         placeholder="State (e.g. Texas)"
-                        className="w-32 rounded border px-3 py-1.5 text-sm focus:border-[#2563EB] focus:outline-none"
+                        className="w-32 rounded border px-3 py-1.5 text-sm focus:border-[#F08A3C] focus:outline-none"
                       />
                     </div>
                   </div>
@@ -1785,7 +1785,7 @@ export default function AdminPage() {
                   const testimonials = [...(config.quiz.testimonials ?? []), { text: "", name: "", state: "" }];
                   setConfig({ ...config, quiz: { ...config.quiz, testimonials } });
                 }}
-                className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+                className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
               >
                 + Add Testimonial
               </button>
@@ -1862,7 +1862,7 @@ export default function AdminPage() {
                 <div className="mt-2 flex gap-2">
                   <select
                     id="add-loading-logo"
-                    className="flex-1 rounded border px-3 py-1.5 text-sm text-gray-600 focus:border-[#2563EB] focus:outline-none"
+                    className="flex-1 rounded border px-3 py-1.5 text-sm text-gray-600 focus:border-[#F08A3C] focus:outline-none"
                     defaultValue=""
                   >
                     <option value="" disabled>Add provider logo...</option>
@@ -1879,7 +1879,7 @@ export default function AdminPage() {
                       setConfig({ ...config, quiz: { ...config.quiz, loadingScreen: { ...(config.quiz.loadingScreen ?? { headline: "Finding your best match", supportingTexts: [], providerLogos: [], durationMs: 5000 }), providerLogos: [...(config.quiz.loadingScreen?.providerLogos ?? []), select.value] } } });
                       select.value = "";
                     }}
-                    className="rounded border border-[#2563EB] px-3 py-1.5 text-xs font-semibold text-[#1D4ED8] hover:bg-[#2563EB]/5"
+                    className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5"
                   >
                     Add
                   </button>
@@ -1921,14 +1921,14 @@ export default function AdminPage() {
                           options[oi] = { ...options[oi], label: e.target.value };
                           questions[qi] = { ...questions[qi], options };
                           setConfig({ ...config, quiz: { ...config.quiz, questions } });
-                        }} placeholder="Label" className="flex-1 rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none" />
+                        }} placeholder="Label" className="flex-1 rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none" />
                         <input value={opt.value} onChange={(e) => {
                           const questions = [...config.quiz.questions];
                           const options = [...questions[qi].options];
                           options[oi] = { ...options[oi], value: e.target.value };
                           questions[qi] = { ...questions[qi], options };
                           setConfig({ ...config, quiz: { ...config.quiz, questions } });
-                        }} placeholder="Value" className="w-28 rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none" />
+                        }} placeholder="Value" className="w-28 rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none" />
                       </div>
                     ))}
                   </div>
@@ -1990,7 +1990,7 @@ export default function AdminPage() {
                   const order = overrides[key] ?? [];
                   return (
                     <div key={key} className="rounded-lg border bg-gray-50 p-3">
-                      <p className="mb-2 text-xs font-bold text-[#1D4ED8]">{label}</p>
+                      <p className="mb-2 text-xs font-bold text-[#C2570C]">{label}</p>
                       <div className="space-y-1.5 mb-2">
                         {order.map((pid, pi) => {
                           const provider = config.providers.find((p) => p.id === pid);
@@ -2041,7 +2041,7 @@ export default function AdminPage() {
                         )}
                       </div>
                       <select
-                        className="w-full rounded border px-2 py-1 text-xs text-gray-500 focus:border-[#2563EB] focus:outline-none"
+                        className="w-full rounded border px-2 py-1 text-xs text-gray-500 focus:border-[#F08A3C] focus:outline-none"
                         value=""
                         onChange={(e) => {
                           if (!e.target.value) return;
@@ -2093,14 +2093,14 @@ export default function AdminPage() {
                     value={expert.bio}
                     onChange={(e) => { const experts = [...(config.experts ?? [])]; experts[index] = { ...experts[index], bio: e.target.value }; setConfig({ ...config, experts }); }}
                     rows={3}
-                    className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+                    className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
                   />
                 </div>
               </div>
             ))}
             <button
               onClick={() => setConfig({ ...config, experts: [...(config.experts ?? []), { id: `expert-${Date.now()}`, name: "New Expert", role: "Health Researcher", bio: "" }] })}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
             >
               + Add Team Member
             </button>
@@ -2125,7 +2125,7 @@ export default function AdminPage() {
                   value={config.disclosureText}
                   onChange={(e) => setConfig({ ...config, disclosureText: e.target.value })}
                   rows={3}
-                  className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+                  className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
                 />
               </div>
             </div>
@@ -2153,20 +2153,20 @@ export default function AdminPage() {
                       value={t.text}
                       onChange={(e) => { const ts = [...(config.reviewTestimonials ?? [])]; ts[ti] = { ...ts[ti], text: e.target.value }; setConfig({ ...config, reviewTestimonials: ts }); }}
                       rows={2} placeholder="Review text..."
-                      className="mb-2 w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+                      className="mb-2 w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
                     />
                     <div className="flex gap-2">
                       <input value={t.name} onChange={(e) => { const ts = [...(config.reviewTestimonials ?? [])]; ts[ti] = { ...ts[ti], name: e.target.value }; setConfig({ ...config, reviewTestimonials: ts }); }}
-                        placeholder="Name (e.g. Sarah M.)" className="flex-1 rounded border px-3 py-1.5 text-sm focus:border-[#2563EB] focus:outline-none" />
+                        placeholder="Name (e.g. Sarah M.)" className="flex-1 rounded border px-3 py-1.5 text-sm focus:border-[#F08A3C] focus:outline-none" />
                       <input value={t.state} onChange={(e) => { const ts = [...(config.reviewTestimonials ?? [])]; ts[ti] = { ...ts[ti], state: e.target.value }; setConfig({ ...config, reviewTestimonials: ts }); }}
-                        placeholder="State" className="w-28 rounded border px-3 py-1.5 text-sm focus:border-[#2563EB] focus:outline-none" />
+                        placeholder="State" className="w-28 rounded border px-3 py-1.5 text-sm focus:border-[#F08A3C] focus:outline-none" />
                     </div>
                   </div>
                 ))}
               </div>
               <button
                 onClick={() => setConfig({ ...config, reviewTestimonials: [...(config.reviewTestimonials ?? []), { text: "", name: "", state: "" }] })}
-                className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+                className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
               >
                 + Add Testimonial
               </button>
@@ -2198,7 +2198,7 @@ function Field({
         type={type}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+        className="w-full rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
       />
     </div>
   );
@@ -2242,10 +2242,10 @@ function ImageField({
           type="text"
           value={value}
           onChange={(e) => onChange(e.target.value)}
-          className="flex-1 rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+          className="flex-1 rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
           placeholder="URL or upload..."
         />
-        <label className="flex cursor-pointer items-center gap-1 rounded border border-[#2563EB] px-3 py-2 text-xs font-semibold text-[#1D4ED8] hover:bg-[#2563EB]/5">
+        <label className="flex cursor-pointer items-center gap-1 rounded border border-[#F08A3C] px-3 py-2 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5">
           {uploading ? "Uploading..." : "Upload"}
           <input
             type="file"
@@ -2289,7 +2289,7 @@ function ArrayField({
             <input
               value={item}
               onChange={(e) => onUpdate(i, e.target.value)}
-              className="flex-1 rounded border px-3 py-2 text-sm focus:border-[#2563EB] focus:outline-none"
+              className="flex-1 rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
             />
             <button
               onClick={() => onRemove(i)}
@@ -2302,7 +2302,7 @@ function ArrayField({
       </div>
       <button
         onClick={onAdd}
-        className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#2563EB] hover:text-[#1D4ED8]"
+        className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
       >
         + Add Item
       </button>

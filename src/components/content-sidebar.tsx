@@ -53,7 +53,7 @@ export function ContentSidebar({ config, providers, articles, pageType, sourceFl
                           position={pi + 1}
                           pageType={pageType}
                           sourceFlow={sourceFlow}
-                          className="shrink-0 rounded-lg bg-[#2563EB] px-3 py-1.5 text-[12px] font-bold text-white transition-colors hover:bg-[#1E40AF]"
+                          className="shrink-0 rounded-lg bg-[#F08A3C] px-3 py-1.5 text-[12px] font-bold text-white transition-colors hover:bg-[#DE7429]"
                         >
                           Visit
                         </ProviderCta>
@@ -66,7 +66,7 @@ export function ContentSidebar({ config, providers, articles, pageType, sourceFl
 
             if (block.type === "quizCta") {
               return (
-                <div key={i} className="rounded-xl border border-[#2563EB]/15 bg-[#2563EB]/[0.03] p-5">
+                <div key={i} className="rounded-xl border border-[#F08A3C]/15 bg-[#F08A3C]/[0.03] p-5">
                   <h3 className="text-[15px] font-bold text-[#191919]">
                     {config.quizCta.headline}
                   </h3>
@@ -75,7 +75,7 @@ export function ContentSidebar({ config, providers, articles, pageType, sourceFl
                   </p>
                   <Link
                     href={config.quizCta.ctaUrl}
-                    className="mt-4 flex h-[40px] w-full items-center justify-center gap-1.5 rounded-lg bg-[#2563EB] text-[13px] font-bold text-white transition-colors hover:bg-[#1E40AF]"
+                    className="mt-4 flex h-[40px] w-full items-center justify-center gap-1.5 rounded-lg bg-[#F08A3C] text-[13px] font-bold text-white transition-colors hover:bg-[#DE7429]"
                   >
                     {config.quizCta.ctaText}
                     <ArrowRight className="h-3.5 w-3.5" strokeWidth={2.5} />
@@ -97,7 +97,7 @@ export function ContentSidebar({ config, providers, articles, pageType, sourceFl
                         href={`/articles/${article.slug}`}
                         className="group block"
                       >
-                        <p className="text-[13px] font-semibold leading-snug text-[#191919] group-hover:text-[#1D4ED8] transition-colors">
+                        <p className="text-[13px] font-semibold leading-snug text-[#191919] group-hover:text-[#C2570C] transition-colors">
                           {article.title}
                         </p>
                         {article.category && (
@@ -122,7 +122,7 @@ export function ContentSidebar({ config, providers, articles, pageType, sourceFl
         {sortedBlocks.map((block, i) => {
           if (block.type === "quizCta") {
             return (
-              <div key={i} className="rounded-xl border border-[#2563EB]/15 bg-[#2563EB]/[0.03] p-5 text-center">
+              <div key={i} className="rounded-xl border border-[#F08A3C]/15 bg-[#F08A3C]/[0.03] p-5 text-center">
                 <h3 className="text-[16px] font-bold text-[#191919]">
                   {config.quizCta.headline}
                 </h3>
@@ -131,7 +131,7 @@ export function ContentSidebar({ config, providers, articles, pageType, sourceFl
                 </p>
                 <Link
                   href={config.quizCta.ctaUrl}
-                  className="mt-4 inline-flex h-[44px] items-center justify-center gap-1.5 rounded-lg bg-[#2563EB] px-6 text-[14px] font-bold text-white"
+                  className="mt-4 inline-flex h-[44px] items-center justify-center gap-1.5 rounded-lg bg-[#F08A3C] px-6 text-[14px] font-bold text-white"
                 >
                   {config.quizCta.ctaText}
                   <ArrowRight className="h-3.5 w-3.5" strokeWidth={2.5} />
@@ -159,7 +159,7 @@ export function ContentSidebar({ config, providers, articles, pageType, sourceFl
                         position={pi + 1}
                         pageType={pageType}
                         sourceFlow={sourceFlow}
-                        className="shrink-0 rounded-lg bg-[#2563EB] px-3 py-1.5 text-[12px] font-bold text-white"
+                        className="shrink-0 rounded-lg bg-[#F08A3C] px-3 py-1.5 text-[12px] font-bold text-white"
                       >
                         Visit
                       </ProviderCta>

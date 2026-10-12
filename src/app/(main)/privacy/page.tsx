@@ -80,7 +80,7 @@ export default function PrivacyPage() {
         <p>
           This site contains affiliate links. When you click a link to a provider and take a qualifying
           action, we may earn a commission at no additional cost to you. See our{" "}
-          <Link href="/disclaimer" className="font-semibold text-[#1D4ED8] hover:underline">disclosure</Link>{" "}
+          <Link href="/disclaimer" className="font-semibold text-[#C2570C] hover:underline">disclosure</Link>{" "}
           for details. We do not control, and are not responsible for, the privacy practices of the
           third-party sites you visit through these links - please review their policies.
         </p>
@@ -116,11 +116,11 @@ export default function PrivacyPage() {
         <h2 className="pt-4 text-xl font-semibold text-[#191919]">Contact Us</h2>
         <p>
           Questions about this policy or your data? Email us at{" "}
-          <a href="mailto:privacy@homewarrantypicks.com" className="font-semibold text-[#1D4ED8] hover:underline">
+          <a href="mailto:privacy@homewarrantypicks.com" className="font-semibold text-[#C2570C] hover:underline">
             privacy@homewarrantypicks.com
           </a>{" "}
           or visit our{" "}
-          <Link href="/contact" className="font-semibold text-[#1D4ED8] hover:underline">contact page</Link>.
+          <Link href="/contact" className="font-semibold text-[#C2570C] hover:underline">contact page</Link>.
         </p>
       </div>
     </div>

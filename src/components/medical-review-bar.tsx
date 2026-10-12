@@ -55,7 +55,7 @@ export function MedicalReviewBar({
   const size = compact ? 28 : 32;
 
   const nameLink = (
-    <Link href={profile} className="font-bold text-[#191919] hover:text-[#1D4ED8] hover:underline">
+    <Link href={profile} className="font-bold text-[#191919] hover:text-[#C2570C] hover:underline">
       {reviewer.name}
       {reviewer.credentials.length > 0 && <span className="whitespace-nowrap">, {reviewer.credentials.join(", ")}</span>}
     </Link>
@@ -72,7 +72,7 @@ export function MedicalReviewBar({
     </a>
   );
   const policy = (
-    <Link href="/editorial-policy" className="font-medium text-[#1D4ED8] hover:underline">
+    <Link href="/editorial-policy" className="font-medium text-[#C2570C] hover:underline">
       How we review
     </Link>
   );
@@ -98,7 +98,7 @@ export function MedicalReviewBar({
       <div className={`min-w-0 ${compact ? "text-[12.5px] leading-[1.4]" : "text-[13px] leading-[1.45]"}`}>
         <p className="text-gray-700">
           <span className={compact ? "" : "block sm:inline"}>
-            <ShieldCheck className="mr-1 inline h-[14px] w-[14px] align-[-2px] text-[#2563EB]" strokeWidth={2.25} />
+            <ShieldCheck className="mr-1 inline h-[14px] w-[14px] align-[-2px] text-[#F08A3C]" strokeWidth={2.25} />
             {review ? "Reviewed for accuracy by " : "Expert reviewer: "}
           </span>
           {nameLink}
