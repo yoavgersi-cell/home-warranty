@@ -4,12 +4,12 @@ import { DEFAULT_VERTICAL } from "./config";
 // Site context (single-vertical build)
 //
 // This site is a single standalone vertical served at the domain root
-// (homewarrantypicks.com), so there is no hub prefix and no per-vertical branding.
+// (tophomewarranty.com), so there is no hub prefix and no per-vertical branding.
 // The SiteContext shape and the helper exports are kept intact so the shared
 // page components compile unchanged - every context is just the one root site.
 // ─────────────────────────────────────────────────────────────────────────────
 
-const ORIGIN = "https://www.homewarrantypicks.com";
+const ORIGIN = "https://www.tophomewarranty.com";
 
 // Retained for import compatibility; always true on this single-site build.
 export const WEIGHT_LOSS_MIGRATED = true;
@@ -35,8 +35,8 @@ export const ROOT_CONTEXT: SiteContext = {
   prefix: "",
   origin: ORIGIN,
   canonicalPrefix: "",
-  brandDomain: "homewarrantypicks.com",
-  brandTeam: "Home Warranty Picks Team",
+  brandDomain: "tophomewarranty.com",
+  brandTeam: "Top Home Warranty Team",
   noindex: false,
 };
 

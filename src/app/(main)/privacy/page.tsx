@@ -4,8 +4,8 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Home Warranty Picks (homewarrantypicks.com) collects, uses, and protects your information, including analytics, cookies, and affiliate tracking.",
-  alternates: { canonical: "https://www.homewarrantypicks.com/privacy" },
+    "How Top Home Warranty (tophomewarranty.com) collects, uses, and protects your information, including analytics, cookies, and affiliate tracking.",
+  alternates: { canonical: "https://www.tophomewarranty.com/privacy" },
 };
 
 const UPDATED = "September 2026";
@@ -17,9 +17,9 @@ export default function PrivacyPage() {
       <p className="mb-6 text-sm text-gray-500">Last updated: {UPDATED}</p>
       <div className="space-y-4 text-gray-600 leading-relaxed">
         <p>
-          This Privacy Policy explains how Home Warranty Picks (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;),
-          operating the website homewarrantypicks.com, collects, uses, and shares information when you
-          visit our site. Home Warranty Picks is an independent publisher that compares home
+          This Privacy Policy explains how Top Home Warranty (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;),
+          operating the website tophomewarranty.com, collects, uses, and shares information when you
+          visit our site. Top Home Warranty is an independent publisher that compares home
           warranty companies; we are not a home warranty company and do not sell
           service contracts.
         </p>
@@ -116,8 +116,8 @@ export default function PrivacyPage() {
         <h2 className="pt-4 text-xl font-semibold text-[#191919]">Contact Us</h2>
         <p>
           Questions about this policy or your data? Email us at{" "}
-          <a href="mailto:privacy@homewarrantypicks.com" className="font-semibold text-[#C2570C] hover:underline">
-            privacy@homewarrantypicks.com
+          <a href="mailto:privacy@tophomewarranty.com" className="font-semibold text-[#C2570C] hover:underline">
+            privacy@tophomewarranty.com
           </a>{" "}
           or visit our{" "}
           <Link href="/contact" className="font-semibold text-[#C2570C] hover:underline">contact page</Link>.

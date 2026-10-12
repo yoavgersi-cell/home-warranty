@@ -40,7 +40,7 @@ export async function articleMetadata(slug: string, ctx: SiteContext): Promise<M
 
   return {
     // Long, query-led titles carry their own keywords; appending the
-    // " | Home Warranty Picks" template suffix would push them past the ~60-character
+    // " | Top Home Warranty" template suffix would push them past the ~60-character
     // SERP cut-off, so those render as-is.
     title: seoTitle.length > 48 ? { absolute: seoTitle } : seoTitle,
     description: override?.description ?? article.description,

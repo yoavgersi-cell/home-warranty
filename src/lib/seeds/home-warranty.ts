@@ -1,7 +1,7 @@
 import type { BattleData, BattleFeatureRow, SiteConfig } from "@/lib/config";
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Home warranty vertical content - homewarrantypicks.com
+// Home warranty vertical content - tophomewarranty.com
 //
 // Launch content for the single-vertical home warranty comparison site, built
 // on the same template as hrtwomen.com. Seven providers, in operator order:
@@ -727,12 +727,12 @@ const battles: BattleData[] = [
   },
 ];
 
-const AUTHOR = "Home Warranty Picks Editorial Team";
+const AUTHOR = "Top Home Warranty Editorial Team";
 const DISCLAIMER =
   "<p><em>This article is general information, not legal, insurance or financial advice. Coverage, prices and terms vary by company, plan and state - always read the full sample contract before you buy.</em></p>";
 
 export const homeWarrantyConfig: SiteConfig = {
-  siteName: "Home Warranty Picks",
+  siteName: "Top Home Warranty",
   disclosureText:
     "Some providers featured on this site may compensate us. This may affect the order and placement of listings but does not influence our editorial ratings or reviews.",
 

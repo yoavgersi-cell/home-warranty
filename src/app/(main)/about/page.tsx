@@ -8,11 +8,11 @@ import { ExpertTeam } from "@/components/expert-team";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "About Home Warranty Picks - Our Mission, Team & Review Methodology",
+  title: "About Top Home Warranty - Our Mission, Team & Review Methodology",
   description:
-    "Learn how homewarrantypicks.com independently ranks and reviews home warranty companies. Our editorial methodology, review process, and commitment to unbiased comparisons.",
+    "Learn how tophomewarranty.com independently ranks and reviews home warranty companies. Our editorial methodology, review process, and commitment to unbiased comparisons.",
   alternates: {
-    canonical: "https://www.homewarrantypicks.com/about",
+    canonical: "https://www.tophomewarranty.com/about",
   },
 };
 
@@ -23,8 +23,8 @@ export default async function AboutPage() {
   const teamSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "homewarrantypicks.com",
-    url: "https://www.homewarrantypicks.com",
+    name: "tophomewarranty.com",
+    url: "https://www.tophomewarranty.com",
     employee: [
       ...REVIEWERS.map(reviewerPersonSchema),
       ...experts.map((e) => ({
@@ -43,7 +43,7 @@ export default async function AboutPage() {
       <div className="border-b border-gray-200 bg-white">
         <div className="mx-auto max-w-[900px] px-4 py-12 sm:px-6 sm:py-16">
           <h1 className="text-[28px] font-extrabold text-[#191919] sm:text-[36px]">
-            About Home Warranty Picks
+            About Top Home Warranty
           </h1>
           <p className="mt-3 max-w-[600px] text-[16px] leading-relaxed text-gray-500">
             We help homeowners, buyers and sellers make informed decisions about home
@@ -64,7 +64,7 @@ export default async function AboutPage() {
             disappointment starts.
           </p>
           <p className="text-[16px] leading-[1.75] text-gray-600">
-            Home Warranty Picks exists to simplify this decision. We independently research,
+            Top Home Warranty exists to simplify this decision. We independently research,
             compare, and review every major provider so you can find the right fit for your
             home, budget, and risk tolerance - without spending hours doing the research yourself.
           </p>
@@ -214,7 +214,7 @@ export default async function AboutPage() {
           <h2 className="mb-4 text-[22px] font-bold text-[#191919]">Disclaimer</h2>
           <div className="rounded-xl border border-gray-200 bg-white p-6">
             <p className="text-[15px] leading-[1.75] text-gray-600">
-              Home Warranty Picks is not a home warranty company and does not sell, underwrite or
+              Top Home Warranty is not a home warranty company and does not sell, underwrite or
               administer service contracts. The information on this site is for general information and
               comparison purposes only and is not legal, insurance or financial advice. Home warranty
               coverage, prices, limits and exclusions vary by company, plan, state and ZIP code, and

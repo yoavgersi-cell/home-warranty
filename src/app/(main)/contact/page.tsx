@@ -5,8 +5,8 @@ import { Mail } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with the Home Warranty Picks editorial team - corrections, feedback, provider and partnership inquiries for homewarrantypicks.com.",
-  alternates: { canonical: "https://www.homewarrantypicks.com/contact" },
+    "Get in touch with the Top Home Warranty editorial team - corrections, feedback, provider and partnership inquiries for tophomewarranty.com.",
+  alternates: { canonical: "https://www.tophomewarranty.com/contact" },
 };
 
 export default function ContactPage() {
@@ -26,8 +26,8 @@ export default function ContactPage() {
           </div>
           <div>
             <p className="text-sm font-semibold text-[#191919]">Email us</p>
-            <a href="mailto:hello@homewarrantypicks.com" className="text-[15px] font-semibold text-[#C2570C] hover:underline">
-              hello@homewarrantypicks.com
+            <a href="mailto:hello@tophomewarranty.com" className="text-[15px] font-semibold text-[#C2570C] hover:underline">
+              hello@tophomewarranty.com
             </a>
           </div>
         </div>

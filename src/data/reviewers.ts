@@ -13,7 +13,7 @@
 //   - The byline wording is "Reviewed for accuracy by" - it must never imply a
 //     credential or licence the reviewer does not hold.
 
-export const SITE_ORIGIN = "https://www.homewarrantypicks.com";
+export const SITE_ORIGIN = "https://www.tophomewarranty.com";
 
 export interface ReviewerCredential {
   title: string;
@@ -137,7 +137,7 @@ export function reviewerPersonSchema(r: Reviewer) {
     description: r.shortBio,
     url: reviewerUrl(r),
     image: `${SITE_ORIGIN}${r.image.src}`,
-    worksFor: { "@type": "Organization", name: "Home Warranty Picks", url: SITE_ORIGIN },
+    worksFor: { "@type": "Organization", name: "Top Home Warranty", url: SITE_ORIGIN },
     knowsAbout: r.specialties,
     alumniOf: r.education.map((e) => ({ "@type": "CollegeOrUniversity", name: e.school })),
     hasCredential: [

@@ -4,8 +4,8 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "The terms governing your use of Home Warranty Picks (homewarrantypicks.com), including our informational-only nature, affiliate disclosure, and limitation of liability.",
-  alternates: { canonical: "https://www.homewarrantypicks.com/terms" },
+    "The terms governing your use of Top Home Warranty (tophomewarranty.com), including our informational-only nature, affiliate disclosure, and limitation of liability.",
+  alternates: { canonical: "https://www.tophomewarranty.com/terms" },
 };
 
 const UPDATED = "September 2026";
@@ -17,15 +17,15 @@ export default function TermsPage() {
       <p className="mb-6 text-sm text-gray-500">Last updated: {UPDATED}</p>
       <div className="space-y-4 text-gray-600 leading-relaxed">
         <p>
-          These Terms of Service (&quot;Terms&quot;) govern your access to and use of homewarrantypicks.com
-          (the &quot;Site&quot;), operated by Home Warranty Picks (&quot;we,&quot; &quot;us,&quot; or
+          These Terms of Service (&quot;Terms&quot;) govern your access to and use of tophomewarranty.com
+          (the &quot;Site&quot;), operated by Top Home Warranty (&quot;we,&quot; &quot;us,&quot; or
           &quot;our&quot;). By using the Site, you agree to these Terms. If you do not agree, please do
           not use the Site.
         </p>
 
         <h2 className="pt-4 text-xl font-semibold text-[#191919]">Informational Purpose Only - Not Professional Advice</h2>
         <p>
-          Home Warranty Picks is an independent comparison and information publisher. All content is provided
+          Top Home Warranty is an independent comparison and information publisher. All content is provided
           for general informational purposes only and is <strong>not legal, insurance or financial advice</strong>. We are not
           a home warranty company, insurer or agent, and we do not sell, underwrite or administer
           service contracts. Home warranty coverage, limits, exclusions and prices vary by company,
@@ -53,7 +53,7 @@ export default function TermsPage() {
 
         <h2 className="pt-4 text-xl font-semibold text-[#191919]">Intellectual Property</h2>
         <p>
-          The content, design, and branding on this Site are owned by Home Warranty Picks or its licensors and
+          The content, design, and branding on this Site are owned by Top Home Warranty or its licensors and
           are protected by applicable intellectual-property laws. You may not copy, reproduce, or
           redistribute our content without permission. Third-party names and logos are the property of
           their respective owners and are used for identification only.
@@ -68,7 +68,7 @@ export default function TermsPage() {
 
         <h2 className="pt-4 text-xl font-semibold text-[#191919]">Limitation of Liability</h2>
         <p>
-          To the fullest extent permitted by law, Home Warranty Picks and its operators will not be liable for
+          To the fullest extent permitted by law, Top Home Warranty and its operators will not be liable for
           any indirect, incidental, or consequential damages arising from your use of the Site or
           reliance on its content, including decisions made about plans or providers. Your use of
           the Site is at your own risk.

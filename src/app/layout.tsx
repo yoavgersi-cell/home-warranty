@@ -12,13 +12,13 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://www.homewarrantypicks.com";
+const SITE_URL = "https://www.tophomewarranty.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Home Warranty Picks - Compare the Best Home Warranty Companies",
-    template: "%s | Home Warranty Picks",
+    default: "Top Home Warranty - Compare the Best Home Warranty Companies",
+    template: "%s | Top Home Warranty",
   },
   description:
     "Compare the best home warranty companies of 2026 - plans ranked by coverage, price, service fees, claim limits and real customer support.",
@@ -33,17 +33,17 @@ export const metadata: Metadata = {
     "American Home Shield vs Choice",
   ],
   openGraph: {
-    title: "Home Warranty Picks - Compare the Best Home Warranty Companies",
+    title: "Top Home Warranty - Compare the Best Home Warranty Companies",
     description:
       "Independent, side-by-side comparisons of top home warranty companies - ranked on coverage, price and claims service.",
     type: "website",
-    siteName: "Home Warranty Picks",
+    siteName: "Top Home Warranty",
     locale: "en_US",
     url: SITE_URL,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Home Warranty Picks - Compare the Best Home Warranty Companies",
+    title: "Top Home Warranty - Compare the Best Home Warranty Companies",
     description:
       "Independent, side-by-side comparisons of top home warranty companies.",
   },
@@ -87,7 +87,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "Home Warranty Picks",
+              name: "Top Home Warranty",
               url: SITE_URL,
               areaServed: { "@type": "Country", name: "United States" },
               description:
@@ -102,7 +102,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "Home Warranty Picks",
+              name: "Top Home Warranty",
               url: SITE_URL,
               description:
                 "Compare trusted home warranty companies side by side.",

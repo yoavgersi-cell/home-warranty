@@ -5,9 +5,9 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { SITE_ORIGIN, REVIEWERS, reviewerDisplayName, reviewerPath, reviewerPersonSchema } from "@/data/reviewers";
 
 const CANONICAL = `${SITE_ORIGIN}/editorial-policy`;
-const TITLE = "Editorial Policy: How Home Warranty Picks Researches and Checks Content";
+const TITLE = "Editorial Policy: How Top Home Warranty Researches and Checks Content";
 const DESCRIPTION =
-  "How Home Warranty Picks researches home warranty companies, what we verify, what we do not, how update dates work, and how to report an error.";
+  "How Top Home Warranty researches home warranty companies, what we verify, what we do not, how update dates work, and how to report an error.";
 const UPDATED = "2026-10-12";
 
 export const metadata: Metadata = {
@@ -26,8 +26,8 @@ export default function EditorialPolicyPage() {
     name: TITLE,
     description: DESCRIPTION,
     dateModified: UPDATED,
-    isPartOf: { "@type": "WebSite", name: "Home Warranty Picks", url: SITE_ORIGIN },
-    about: { "@type": "Organization", name: "Home Warranty Picks", url: SITE_ORIGIN, employee: REVIEWERS.map(reviewerPersonSchema) },
+    isPartOf: { "@type": "WebSite", name: "Top Home Warranty", url: SITE_ORIGIN },
+    about: { "@type": "Organization", name: "Top Home Warranty", url: SITE_ORIGIN, employee: REVIEWERS.map(reviewerPersonSchema) },
   };
   const ext = "font-semibold text-[#C2570C] hover:underline";
 
@@ -39,7 +39,7 @@ export default function EditorialPolicyPage() {
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Editorial policy" }]} />
           <h1 className="text-[28px] font-extrabold leading-[1.15] text-[#191919] sm:text-[36px]">How we research and check our content</h1>
           <p className="mt-3 max-w-[720px] text-[16px] leading-relaxed text-gray-500">
-            Home Warranty Picks compares home warranty companies and publishes guides on how home warranties work, what
+            Top Home Warranty compares home warranty companies and publishes guides on how home warranties work, what
             they cost and where they fall short. This page says exactly how that content is produced, what we verify,
             and what we do not.
           </p>

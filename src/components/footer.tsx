@@ -71,7 +71,7 @@ export async function Footer() {
           {/* Brand blurb */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <p className="text-[13px] leading-relaxed text-gray-500">
-              <span className="font-bold text-[#C2570C]">Home Warranty Picks</span> is an independent comparison
+              <span className="font-bold text-[#C2570C]">Top Home Warranty</span> is an independent comparison
               publisher for home warranty plans and companies.
             </p>
           </div>
@@ -92,16 +92,16 @@ export async function Footer() {
 
         <div className="mt-8 border-t border-gray-100 pt-5">
           <p className="mb-4 text-xs text-gray-500">
-            <strong className="text-gray-500">Affiliate Disclosure:</strong> Home Warranty Picks may earn a commission
+            <strong className="text-gray-500">Affiliate Disclosure:</strong> Top Home Warranty may earn a commission
             when you click on links and make a purchase. This does not affect our rankings or reviews. We are
             committed to providing honest, independent comparisons to help you make informed decisions.
           </p>
           <div className="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
             <p className="text-[12px] text-gray-500">
-              &copy; {new Date().getFullYear()} Home Warranty Picks. All rights reserved.
+              &copy; {new Date().getFullYear()} Top Home Warranty. All rights reserved.
             </p>
             <p className="text-[11px] text-gray-500">
-              homewarrantypicks.com is not a home warranty company. Always read the full contract before buying.
+              tophomewarranty.com is not a home warranty company. Always read the full contract before buying.
             </p>
           </div>
         </div>

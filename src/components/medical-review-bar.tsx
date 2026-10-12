@@ -32,7 +32,7 @@ function LinkedInMark({ className }: { className?: string }) {
 
 export function MedicalReviewBar({
   path,
-  writer = "Home Warranty Picks Editorial Team",
+  writer = "Top Home Warranty Editorial Team",
   className = "",
   compact = false,
   schema = true,

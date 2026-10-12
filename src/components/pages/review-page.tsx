@@ -228,7 +228,7 @@ export async function reviewMetadata(slug: string, ctx: SiteContext): Promise<Me
   const isThinNoindex = ctx.vertical === "weight-loss" && NOINDEX_WL_REVIEW_SLUGS.has(slug);
 
   return {
-    // Long review titles render without the " | Home Warranty Picks" suffix (SERP
+    // Long review titles render without the " | Top Home Warranty" suffix (SERP
     // cut-off ~60 characters); short ones keep it.
     title: pageTitle.length > 48 ? { absolute: pageTitle } : pageTitle,
     description: pageDescription,
@@ -295,7 +295,7 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
     url: canonicalUrl(ctx, `/reviews/${slug}`),
     name: `${provider.name} Review`,
     dateModified: latestUpdate(review.updatedAt),
-    isPartOf: { "@type": "WebSite", name: "Home Warranty Picks", url: ctx.origin },
+    isPartOf: { "@type": "WebSite", name: "Top Home Warranty", url: ctx.origin },
     ...pageReviewSchema(`/reviews/${slug}`),
   };
 
@@ -608,7 +608,7 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
           <ReadableProse text={review.pricingSummary} paragraphClassName="text-[15px] leading-[1.75] text-gray-600" />
         </Section>
 
-        {/* The Home Warranty Picks audit - verified-facts card. Registry-gated:
+        {/* The Top Home Warranty audit - verified-facts card. Registry-gated:
             providers whose data isn't fully verified render nothing. */}
         <ProviderAudit providerId={provider.id} providerName={provider.name} vertical={ctx.vertical} />
 

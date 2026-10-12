@@ -12,7 +12,7 @@ import { CONTENT_LAST_UPDATED } from "@/lib/config";
 
 export const revalidate = 60;
 
-const SITE_URL = "https://www.homewarrantypicks.com";
+const SITE_URL = "https://www.tophomewarranty.com";
 
 export const metadata: Metadata = {
   title: {
@@ -97,7 +97,7 @@ export default async function HomePage() {
     inLanguage: "en-US",
     datePublished: "2026-06-01",
     dateModified: CONTENT_LAST_UPDATED,
-    isPartOf: { "@type": "WebSite", name: "Home Warranty Picks", url: SITE_URL },
+    isPartOf: { "@type": "WebSite", name: "Top Home Warranty", url: SITE_URL },
     about: { "@type": "Thing", name: "Home warranty companies" },
     ...(author && {
       author: { "@type": "Organization", name: author.name, url: `${SITE_URL}/about` },
@@ -105,7 +105,7 @@ export default async function HomePage() {
     ...pageReviewSchema("/"),
     publisher: {
       "@type": "Organization",
-      name: "Home Warranty Picks",
+      name: "Top Home Warranty",
       url: SITE_URL,
       logo: { "@type": "ImageObject", url: `${SITE_URL}/icon.png` },
     },

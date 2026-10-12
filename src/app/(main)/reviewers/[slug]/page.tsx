@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const r = getReviewer(slug);
   if (!r) return {};
-  const title = `${reviewerDisplayName(r)} - ${r.jobTitle} | Home Warranty Picks`;
+  const title = `${reviewerDisplayName(r)} - ${r.jobTitle} | Top Home Warranty`;
   const description = r.shortBio;
   return {
     title: { absolute: title },
@@ -61,7 +61,7 @@ export default async function ReviewerProfilePage({ params }: { params: Promise<
     name: `${reviewerDisplayName(r)} - ${r.jobTitle}`,
     dateCreated: `${r.since}-01`,
     mainEntity: person,
-    isPartOf: { "@type": "WebSite", name: "Home Warranty Picks", url: SITE_ORIGIN },
+    isPartOf: { "@type": "WebSite", name: "Top Home Warranty", url: SITE_ORIGIN },
   };
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -104,7 +104,7 @@ export default async function ReviewerProfilePage({ params }: { params: Promise<
                 {r.name}
                 <span className="font-semibold text-gray-500">, {r.credentials.join(", ")}</span>
               </h1>
-              <p className="mt-1 text-[16px] font-semibold text-[#191919]">{r.jobTitle}, Home Warranty Picks</p>
+              <p className="mt-1 text-[16px] font-semibold text-[#191919]">{r.jobTitle}, Top Home Warranty</p>
               <p className="mt-1 text-[15px] leading-relaxed text-gray-500">{r.headline}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {r.licensure.map((c) => (

@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Disclaimer - FTC Disclosure & Affiliate Information",
   description:
-    "FTC disclosure, affiliate relationship details, coverage disclaimer, and revenue model transparency for homewarrantypicks.com.",
+    "FTC disclosure, affiliate relationship details, coverage disclaimer, and revenue model transparency for tophomewarranty.com.",
   alternates: {
-    canonical: "https://www.homewarrantypicks.com/disclaimer",
+    canonical: "https://www.tophomewarranty.com/disclaimer",
   },
 };
 
@@ -18,7 +18,7 @@ export default function DisclaimerPage() {
           FTC Disclosure
         </h2>
         <p>
-          In accordance with the Federal Trade Commission guidelines, Home Warranty Picks
+          In accordance with the Federal Trade Commission guidelines, Top Home Warranty
           discloses that this website contains affiliate links. When you click
           on a link and make a purchase or sign up for a service, we may receive
           a commission at no additional cost to you.
@@ -28,7 +28,7 @@ export default function DisclaimerPage() {
           Affiliate Relationships
         </h2>
         <p>
-          Home Warranty Picks participates in affiliate programs with various home warranty
+          Top Home Warranty participates in affiliate programs with various home warranty
           companies. This means we may earn
           referral fees when visitors click through our links and complete
           qualifying actions. These relationships help support the operation of
@@ -49,7 +49,7 @@ export default function DisclaimerPage() {
           Coverage Disclaimer
         </h2>
         <p>
-          The content on Home Warranty Picks is for general information purposes only and is not
+          The content on Top Home Warranty is for general information purposes only and is not
           legal, insurance or financial advice. Home warranties are service contracts, not
           insurance policies, and what is covered depends on the exact contract you sign -
           including per-item caps, exclusions, waiting periods and service call fees. Prices and
@@ -61,7 +61,7 @@ export default function DisclaimerPage() {
           Revenue Model
         </h2>
         <p>
-          Home Warranty Picks generates revenue primarily through affiliate commissions.
+          Top Home Warranty generates revenue primarily through affiliate commissions.
           When you use our links to visit a provider&apos;s website and take a
           qualifying action (such as scheduling a consultation or making a
           purchase), we may receive compensation. This model allows us to

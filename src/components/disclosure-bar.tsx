@@ -36,7 +36,7 @@ export function DisclosureBar() {
 
             <div className="space-y-4 text-[14px] leading-[1.7] text-gray-600">
               <p>
-                Home Warranty Picks is an independent comparison website designed to help consumers explore and evaluate home warranty companies. We research, review, and compare available plans, coverage options, and pricing to make the decision process easier.
+                Top Home Warranty is an independent comparison website designed to help consumers explore and evaluate home warranty companies. We research, review, and compare available plans, coverage options, and pricing to make the decision process easier.
               </p>
               <p>
                 The information presented on this website is provided for general informational purposes only. While we strive to keep content accurate and up to date, we cannot guarantee the completeness, accuracy, or availability of every provider, offer, or plan currently available in the market.

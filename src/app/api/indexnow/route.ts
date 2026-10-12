@@ -31,7 +31,7 @@ export async function GET(req: NextRequest) {
   const limit = Math.min(500, Math.max(1, Number(params.get("limit")) || 100));
 
   // The sitemap module is host-aware via request headers; it returns the full
-  // homewarrantypicks sitemap. Filter to URLs modified inside the window - the key
+  // tophomewarranty sitemap. Filter to URLs modified inside the window - the key
   // file only vouches for this host.
   const entries = await sitemap();
   const urlList = entries

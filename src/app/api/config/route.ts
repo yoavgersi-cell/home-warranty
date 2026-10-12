@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getConfig, saveConfig } from "@/lib/config-store";
 import { type SiteConfig, DEFAULT_VERTICAL, isVertical } from "@/lib/config";
 
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "homewarrantypicks2026";
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "tophomewarranty2026";
 
 function isAuthorized(req: NextRequest): boolean {
   const auth = req.headers.get("authorization");

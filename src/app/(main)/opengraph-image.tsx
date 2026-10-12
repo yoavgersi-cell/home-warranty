@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Home Warranty Picks - Compare Top Home Warranty Companies 2026";
+export const alt = "Top Home Warranty - Compare Top Home Warranty Companies 2026";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -49,7 +49,7 @@ export default function OGImage() {
               color: "white",
             }}
           >
-            homewarrantypicks.com
+            tophomewarranty.com
           </span>
         </div>
         <div
