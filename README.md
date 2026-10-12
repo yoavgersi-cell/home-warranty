@@ -9,7 +9,6 @@ Providers: Choice Home Warranty, American Home Shield, Select Home Warranty, Fir
 ## Before launch
 
 - Replace each provider's `affiliateUrl` (currently the provider homepage) with your tracking link.
-- Replace the text wordmarks in `public/logos/` with approved brand logos.
 - Refresh Trustpilot ratings and add verbatim `trustpilotReviews` from the live profiles.
 - Confirm plan names, prices and state exclusions flagged in the seed file header.
 - Set the real domain in `src/lib/site-context.ts`, `src/data/reviewers.ts` and the page metadata (search for `tophomewarranty.com`).

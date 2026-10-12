@@ -61,8 +61,6 @@ import type { BattleData, BattleFeatureRow, SiteConfig } from "@/lib/config";
 // PLACEHOLDERS / OPERATOR TO VERIFY:
 //  - affiliateUrl values point to each provider's homepage. Replace them with
 //    your real tracking links.
-//  - Logos in /public/logos are simple text wordmarks. Replace them with
-//    approved brand assets.
 //  - Trustpilot figures are third-party snapshots; refresh them from each
 //    live profile. Ratings for Select, The Home Service Club and 2-10 are
 //    left blank because sources conflicted. No Trustpilot review TEXT is
@@ -790,8 +788,8 @@ export const homeWarrantyConfig: SiteConfig = {
       name: "Choice Home Warranty",
       tagline:
         "Two simple plans covering home systems and appliances, with a $3,000 per-item cap and coverage in 49 states",
-      logo: "/logos/choice-home-warranty.svg",
-      smallLogo: "/logos/choice-home-warranty.svg",
+      logo: "/logos/choice-home-warranty.png",
+      smallLogo: "/logos/choice-home-warranty.png",
       highlights: [
         "Basic & Total plans",
         "$3,000 per covered item",
@@ -811,8 +809,8 @@ export const homeWarrantyConfig: SiteConfig = {
       name: "American Home Shield",
       tagline:
         "The industry's oldest home warranty company - three plan tiers, a choice of service fee and some of the highest coverage caps",
-      logo: "/logos/american-home-shield.svg",
-      smallLogo: "/logos/american-home-shield.svg",
+      logo: "/logos/american-home-shield.png",
+      smallLogo: "/logos/american-home-shield.png",
       highlights: [
         "ShieldSilver, Gold & Platinum",
         "Up to $5,000 HVAC coverage",
@@ -832,8 +830,8 @@ export const homeWarrantyConfig: SiteConfig = {
       name: "Select Home Warranty",
       tagline:
         "One of the lowest-cost plans available, with frequent free-month and free roof coverage promotions",
-      logo: "/logos/select-home-warranty.svg",
-      smallLogo: "/logos/select-home-warranty.svg",
+      logo: "/logos/select-home-warranty.png",
+      smallLogo: "/logos/select-home-warranty.png",
       highlights: [
         "Bronze, Gold & Platinum Care",
         "Low starting price",
@@ -849,8 +847,8 @@ export const homeWarrantyConfig: SiteConfig = {
       name: "First American Home Warranty",
       tagline:
         "A real-estate favorite backed by First American Financial, with high appliance limits and generous HVAC terms",
-      logo: "/logos/first-american.svg",
-      smallLogo: "/logos/first-american.svg",
+      logo: "/logos/first-american.png",
+      smallLogo: "/logos/first-american.png",
       highlights: [
         "Up to $7,000 appliance limit",
         "Choose a $75-$125 service fee",
@@ -868,8 +866,8 @@ export const homeWarrantyConfig: SiteConfig = {
       name: "Home Warranty of America",
       tagline:
         "Nationwide coverage with up to $5,000 on most approved repairs and 13-month contracts",
-      logo: "/logos/home-warranty-of-america.svg",
-      smallLogo: "/logos/home-warranty-of-america.svg",
+      logo: "/logos/home-warranty-of-america.png",
+      smallLogo: "/logos/home-warranty-of-america.png",
       highlights: [
         "Premier & Premier Plus plans",
         "Up to $5,000 on most repairs",
@@ -887,8 +885,8 @@ export const homeWarrantyConfig: SiteConfig = {
       name: "The Home Service Club",
       tagline:
         "Two straightforward plans with no age limit on covered systems and appliances",
-      logo: "/logos/home-service-club.svg",
-      smallLogo: "/logos/home-service-club.svg",
+      logo: "/logos/home-service-club.png",
+      smallLogo: "/logos/home-service-club.png",
       highlights: [
         "Standard & Comprehensive plans",
         "No age limit on covered items",
@@ -903,8 +901,8 @@ export const homeWarrantyConfig: SiteConfig = {
       name: "2-10 Home Buyers Warranty",
       tagline:
         "A structural-warranty specialist owned by Frontdoor, with low-cost home warranty plans for buyers and homeowners",
-      logo: "/logos/2-10-home-buyers-warranty.svg",
-      smallLogo: "/logos/2-10-home-buyers-warranty.svg",
+      logo: "/logos/2-10-home-buyers-warranty.png",
+      smallLogo: "/logos/2-10-home-buyers-warranty.png",
       highlights: [
         "Low starting price",
         "$25,000 annual coverage limit",
