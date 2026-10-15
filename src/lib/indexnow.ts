@@ -3,5 +3,5 @@
 // engines can verify we own the host; it only authorizes submitting THIS
 // host's URLs. Rotate by minting a new hex string, updating here, and
 // renaming the public key file to match.
-export const INDEXNOW_KEY = "52ade3fe789d097f6c99f3a9a8e5711aca6816ad9f65ebadcfb82c676dcd328c";
+export const INDEXNOW_KEY = "3a8a985c207070853c6284b33d48b12b41b28579510725fadb384d3ceab7f41b";
 export const INDEXNOW_HOST = "www.tophomewarranty.com";

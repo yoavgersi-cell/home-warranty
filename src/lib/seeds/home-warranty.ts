@@ -74,8 +74,8 @@ const UPDATED = "2026-10-12";
 
 // One row of comparable facts per provider - feeds every head-to-head
 // "Feature" table so values stay identical across comparisons.
-type FactKey = "price" | "fee" | "plans" | "caps" | "wait" | "states" | "since";
-const FACTS: Record<string, Record<FactKey, string>> = {
+export type FactKey = "price" | "fee" | "plans" | "caps" | "wait" | "states" | "since";
+export const FACTS: Record<string, Record<FactKey, string>> = {
   "choice-home-warranty": {
     price: "~$46-$58/mo (reported)",
     fee: "~$100 per visit",
@@ -141,7 +141,7 @@ const FACTS: Record<string, Record<FactKey, string>> = {
   },
 };
 
-const FEATURE_LABELS: [FactKey, string][] = [
+export const FEATURE_LABELS: [FactKey, string][] = [
   ["price", "Starting price"],
   ["fee", "Service call fee"],
   ["plans", "Plans"],
@@ -785,6 +785,8 @@ export const homeWarrantyConfig: SiteConfig = {
   providers: [
     {
       id: "choice-home-warranty",
+      websiteUrl: "https://www.choicehomewarranty.com/",
+      foundingYear: "2008",
       name: "Choice Home Warranty",
       tagline:
         "Two simple plans covering home systems and appliances, with a $3,000 per-item cap and coverage in 49 states",
@@ -806,6 +808,8 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       id: "american-home-shield",
+      websiteUrl: "https://www.ahs.com/",
+      foundingYear: "1971",
       name: "American Home Shield",
       tagline:
         "The industry's oldest home warranty company - three plan tiers, a choice of service fee and some of the highest coverage caps",
@@ -827,6 +831,8 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       id: "select-home-warranty",
+      websiteUrl: "https://www.selecthomewarranty.com/",
+      foundingYear: "2012",
       name: "Select Home Warranty",
       tagline:
         "One of the lowest-cost plans available, with frequent free-month and free roof coverage promotions",
@@ -844,6 +850,8 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       id: "first-american",
+      websiteUrl: "https://homewarranty.firstam.com/",
+      foundingYear: "1984",
       name: "First American Home Warranty",
       tagline:
         "A real-estate favorite backed by First American Financial, with high appliance limits and generous HVAC terms",
@@ -863,6 +871,8 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       id: "home-warranty-of-america",
+      websiteUrl: "https://www.hwahomewarranty.com/",
+      foundingYear: "1996",
       name: "Home Warranty of America",
       tagline:
         "Nationwide coverage with up to $5,000 on most approved repairs and 13-month contracts",
@@ -882,6 +892,7 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       id: "home-service-club",
+      websiteUrl: "https://hscwarranty.com/",
       name: "The Home Service Club",
       tagline:
         "Two straightforward plans with no age limit on covered systems and appliances",
@@ -898,6 +909,7 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       id: "2-10-home-buyers-warranty",
+      websiteUrl: "https://www.2-10.com/",
       name: "2-10 Home Buyers Warranty",
       tagline:
         "A structural-warranty specialist owned by Frontdoor, with low-cost home warranty plans for buyers and homeowners",
@@ -1351,7 +1363,7 @@ export const homeWarrantyConfig: SiteConfig = {
   articles: [
     {
       slug: "what-is-a-home-warranty",
-      title: "What Is a Home Warranty? How It Works, What It Covers and What It Costs",
+      title: "What Is a Home Warranty? Coverage, Cost & How It Works",
       description:
         "A plain-English guide to home warranties - what they cover, how claims work, what they cost, and how they differ from homeowners insurance.",
       category: "Guides",
@@ -1505,7 +1517,7 @@ export const homeWarrantyConfig: SiteConfig = {
       slug: "why-home-warranty-claims-get-denied",
       title: "Why Home Warranty Claims Get Denied (and How to Avoid It)",
       description:
-        "The most common reasons home warranty claims are denied or only partly paid - pre-existing conditions, maintenance, caps, code upgrades - and how to protect yourself.",
+        "The most common reasons home warranty claims are denied or partly paid - pre-existing conditions, maintenance, caps, code upgrades - and how to avoid them.",
       category: "Claims",
       readTime: "7 min read",
       publishedAt: "2026-10-12",
@@ -1543,7 +1555,7 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       slug: "home-warranty-for-home-buyers-and-sellers",
-      title: "Home Warranties for Buyers and Sellers: How They Work in a Real Estate Deal",
+      title: "Home Warranties for Buyers and Sellers: How They Work",
       description:
         "Why sellers offer home warranties, how buyer and seller coverage works at closing, and what to check before accepting a plan.",
       category: "Buying",
@@ -1659,7 +1671,7 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       slug: "american-home-shield-plans",
-      title: "American Home Shield Plans Explained: ShieldSilver vs ShieldGold vs ShieldPlatinum",
+      title: "American Home Shield Plans: Silver vs Gold vs Platinum",
       description:
         "What each American Home Shield plan covers, reported prices, coverage caps, add-ons and which tier fits your home.",
       category: "Provider Guides",
@@ -1695,9 +1707,9 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       slug: "is-choice-home-warranty-legit",
-      title: "Is Choice Home Warranty Legit? Settlements, Reviews and What to Know",
+      title: "Is Choice Home Warranty Legit? Settlements & Reviews",
       description:
-        "Choice Home Warranty is a real company - but it has a notable regulatory history. Here's what the Arizona and New Jersey settlements were about and how to protect yourself.",
+        "Choice Home Warranty is a real company with a notable regulatory history. What the Arizona and New Jersey settlements were about and how to protect yourself.",
       category: "Provider Guides",
       readTime: "6 min read",
       publishedAt: "2026-10-12",

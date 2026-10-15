@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Disclaimer - FTC Disclosure & Affiliate Information",
+  title: "Disclaimer & Affiliate Disclosure",
   description:
     "FTC disclosure, affiliate relationship details, coverage disclaimer, and revenue model transparency for tophomewarranty.com.",
   alternates: {

@@ -8,9 +8,9 @@ import { ExpertTeam } from "@/components/expert-team";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "About Top Home Warranty - Our Mission, Team & Review Methodology",
+  title: { absolute: "About Top Home Warranty - Mission, Team & Methodology" },
   description:
-    "Learn how tophomewarranty.com independently ranks and reviews home warranty companies. Our editorial methodology, review process, and commitment to unbiased comparisons.",
+    "How tophomewarranty.com independently ranks and reviews home warranty companies: our editorial methodology, review process and commitment to unbiased comparisons.",
   alternates: {
     canonical: "https://www.tophomewarranty.com/about",
   },

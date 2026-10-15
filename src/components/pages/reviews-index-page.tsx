@@ -30,16 +30,19 @@ export async function reviewsIndexMetadata(ctx: SiteContext): Promise<Metadata> 
     .slice(0, 2)
     .map((id) => config.providers.find((p) => p.id === id)?.name)
     .filter(Boolean) as string[];
+  const full = topNames.length === 2 ? `${vName} Reviews 2026: ${topNames[0]}, ${topNames[1]} & More` : "";
   const title =
-    topNames.length === 2
-      ? `${vName} Reviews 2026: ${topNames[0]}, ${topNames[1]} & More`
-      : `${vName} Reviews 2026 - Every Provider Tested`;
+    full && full.length <= 65
+      ? full
+      : topNames.length
+        ? `${vName} Reviews 2026: ${topNames[0]} & More`
+        : `${vName} Reviews 2026 - Every Provider Tested`;
   // Weight-loss names the category searchers actually use (GLP-1); other
   // verticals keep the vertical name.
   const categoryLabel = ctx.vertical === "weight-loss" ? "GLP-1 weight loss" : lowerKeepAcronyms(vName);
   const description = `Independent 2026 reviews of ${config.reviews?.length ?? "the top"} ${categoryLabel} companies${topNames.length ? ` - ${topNames.join(", ")} and more` : ""} - with verified ratings, pricing, pros and cons.`;
   return {
-    title,
+    title: { absolute: title },
     description,
     robots: ctx.noindex ? { index: false, follow: false } : undefined,
     alternates: {
@@ -49,6 +52,7 @@ export async function reviewsIndexMetadata(ctx: SiteContext): Promise<Metadata> 
       title,
       description,
       url,
+      images: [{ url: "https://www.tophomewarranty.com/opengraph-image", width: 1200, height: 630 }],
     },
   };
 }

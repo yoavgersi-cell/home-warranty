@@ -89,7 +89,9 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Top Home Warranty",
               url: SITE_URL,
+              logo: `${SITE_URL}/logo-mark.png`,
               areaServed: { "@type": "Country", name: "United States" },
+              knowsAbout: ["Home warranties", "Home warranty plans", "Home service contracts", "Home warranty claims"],
               description:
                 "Independent guides and provider comparisons for home warranties - in-depth reviews, pricing research, and side-by-side comparisons.",
               sameAs: [],

@@ -39,6 +39,7 @@ export async function articlesIndexMetadata(ctx: SiteContext): Promise<Metadata>
       title,
       description,
       url,
+      images: [{ url: "https://www.tophomewarranty.com/opengraph-image", width: 1200, height: 630 }],
     },
   };
 }

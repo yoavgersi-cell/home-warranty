@@ -14,9 +14,9 @@ export const revalidate = 60;
 const CANONICAL = "https://www.tophomewarranty.com/how-we-rank";
 
 export const metadata: Metadata = {
-  title: "How We Rank & Review Home Warranty Companies - Our Methodology",
+  title: { absolute: "How We Rank Home Warranty Companies | Top Home Warranty" },
   description:
-    "Our full methodology for ranking and reviewing home warranty companies: the factors we score, where our data comes from, how we verify accuracy, and how we pick winners in head-to-head comparisons.",
+    "How we rank home warranty companies: the 6 factors we score, where our data comes from, how we verify prices and caps, and how we pick comparison winners.",
   alternates: { canonical: CANONICAL },
   openGraph: {
     title: "How We Rank & Review Home Warranty Companies - Our Methodology",
@@ -24,6 +24,7 @@ export const metadata: Metadata = {
       "The factors we score, where our data comes from, how we verify accuracy, and how we pick winners in our home warranty comparisons.",
     url: CANONICAL,
     type: "article",
+    images: [{ url: "https://www.tophomewarranty.com/opengraph-image", width: 1200, height: 630 }],
   },
 };
 

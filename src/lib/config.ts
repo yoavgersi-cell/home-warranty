@@ -35,6 +35,10 @@ export interface ProviderPromoPopup {
 export interface Provider {
   id: string;
   name: string;
+  /** The provider's own homepage (not the affiliate link) - used for schema entity linking. */
+  websiteUrl?: string;
+  /** Year founded, for schema foundingDate. */
+  foundingYear?: string;
   tagline: string;
   logo: string;
   smallLogo: string;
