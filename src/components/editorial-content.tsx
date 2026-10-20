@@ -82,7 +82,10 @@ export function EditorialContent({ midSlot }: { midSlot?: React.ReactNode }) {
         <Link href="/articles/best-home-warranty-companies-compared" className={link}>
           guide to the best home warranty companies
         </Link>{" "}
-        for the full breakdown.
+        for the full breakdown, or go deep with{" "}
+        <Link href="/articles/home-warranty-guide" className={link}>
+          the complete home warranty guide
+        </Link>.
       </p>
       <p className="mb-8">
         This page is a practical overview of what a home warranty is, how plans differ, what they

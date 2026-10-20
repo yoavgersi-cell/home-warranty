@@ -21,6 +21,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
   {
     title: "Guides",
     links: [
+      { label: "Complete Home Warranty Guide", href: "/articles/home-warranty-guide" },
       { label: "What Is a Home Warranty?", href: "/articles/what-is-a-home-warranty" },
       { label: "Is a Home Warranty Worth It?", href: "/articles/is-a-home-warranty-worth-it" },
       { label: "Home Warranty Cost", href: "/articles/how-much-does-a-home-warranty-cost" },

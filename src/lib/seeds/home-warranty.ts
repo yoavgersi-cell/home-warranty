@@ -1,4 +1,5 @@
 import type { BattleData, BattleFeatureRow, SiteConfig } from "@/lib/config";
+import { homeWarrantyGuide } from "./articles/home-warranty-guide";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Home warranty vertical content - tophomewarranty.com
@@ -1361,6 +1362,7 @@ export const homeWarrantyConfig: SiteConfig = {
   battles,
 
   articles: [
+    homeWarrantyGuide,
     {
       slug: "what-is-a-home-warranty",
       title: "What Is a Home Warranty? Coverage, Cost & How It Works",
@@ -1401,7 +1403,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "Home warranty vs homeowners insurance",
-          body: `<p>Homeowners insurance covers sudden, accidental damage - fire, storms, theft - and liability. A home warranty covers the slow, inevitable breakdown of systems and appliances. They cover different risks, and a warranty never replaces the insurance your lender requires. See <a href="/articles/home-warranty-vs-homeowners-insurance">home warranty vs homeowners insurance</a>.</p><p>Ready to compare? See our <a href="/">home warranty rankings</a> or reviews of <a href="/reviews/choice-home-warranty">Choice</a> and <a href="/reviews/american-home-shield">American Home Shield</a>.</p>${DISCLAIMER}`,
+          body: `<p>Homeowners insurance covers sudden, accidental damage - fire, storms, theft - and liability. A home warranty covers the slow, inevitable breakdown of systems and appliances. They cover different risks, and a warranty never replaces the insurance your lender requires. See <a href="/articles/home-warranty-vs-homeowners-insurance">home warranty vs homeowners insurance</a>.</p><p>Ready to compare? See our <a href="/">home warranty rankings</a> or reviews of <a href="/reviews/choice-home-warranty">Choice</a> and <a href="/reviews/american-home-shield">American Home Shield</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1437,7 +1439,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "Do you need both?",
-          body: `<p>If you have a mortgage, homeowners insurance is almost always required. A home warranty is optional and worth considering if you have several aging systems or appliances and want predictable repair costs. Read <a href="/articles/is-a-home-warranty-worth-it">is a home warranty worth it?</a> to decide, then compare plans on our <a href="/">rankings page</a>.</p>${DISCLAIMER}`,
+          body: `<p>If you have a mortgage, homeowners insurance is almost always required. A home warranty is optional and worth considering if you have several aging systems or appliances and want predictable repair costs. Read <a href="/articles/is-a-home-warranty-worth-it">is a home warranty worth it?</a> to decide, then compare plans on our <a href="/">rankings page</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1473,7 +1475,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "Questions to ask before buying",
-          body: `<ol><li>What is the per-item cap for my HVAC, water heater and appliances?</li><li>Is there an overall annual or contract limit?</li><li>How are pre-existing conditions and maintenance defined?</li><li>Are code upgrades, permits and haul-away covered?</li><li>Can I choose my own contractor?</li><li>What's the workmanship guarantee on repairs?</li></ol><p>Our reviews answer these for each company - start with <a href="/reviews/choice-home-warranty">Choice</a>, <a href="/reviews/american-home-shield">American Home Shield</a> and <a href="/reviews/select-home-warranty">Select</a>, or read <a href="/articles/why-home-warranty-claims-get-denied">why claims get denied</a>.</p>${DISCLAIMER}`,
+          body: `<ol><li>What is the per-item cap for my HVAC, water heater and appliances?</li><li>Is there an overall annual or contract limit?</li><li>How are pre-existing conditions and maintenance defined?</li><li>Are code upgrades, permits and haul-away covered?</li><li>Can I choose my own contractor?</li><li>What's the workmanship guarantee on repairs?</li></ol><p>Our reviews answer these for each company - start with <a href="/reviews/choice-home-warranty">Choice</a>, <a href="/reviews/american-home-shield">American Home Shield</a> and <a href="/reviews/select-home-warranty">Select</a>, or read <a href="/articles/why-home-warranty-claims-get-denied">why claims get denied</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1509,7 +1511,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "How to compare fairly",
-          body: `<p>Add the yearly premium to the service fees you expect to pay, then check the caps on the items you're most worried about. A cheaper plan with a $500 per-item cap can cost you far more after one big repair than a pricier plan with a $3,000-$5,000 cap. Compare head-to-head in <a href="/choice-home-warranty-vs-select-home-warranty">Choice vs Select</a> or <a href="/american-home-shield-vs-choice-home-warranty">American Home Shield vs Choice</a>.</p>${DISCLAIMER}`,
+          body: `<p>Add the yearly premium to the service fees you expect to pay, then check the caps on the items you're most worried about. A cheaper plan with a $500 per-item cap can cost you far more after one big repair than a pricier plan with a $3,000-$5,000 cap. Compare head-to-head in <a href="/choice-home-warranty-vs-select-home-warranty">Choice vs Select</a> or <a href="/american-home-shield-vs-choice-home-warranty">American Home Shield vs Choice</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1549,7 +1551,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "How to protect yourself",
-          body: `<ol><li>Read the sample contract's exclusions and limits before buying.</li><li>Keep maintenance records and photos of major systems.</li><li>File claims promptly when something stops working.</li><li>Never pay for repairs before approval unless the company authorizes it.</li><li>If denied, ask for the reason in writing and escalate if you disagree.</li></ol><p>See <a href="/articles/how-to-file-a-home-warranty-claim">how to file a claim</a> and compare caps across companies on our <a href="/">rankings page</a>.</p>${DISCLAIMER}`,
+          body: `<ol><li>Read the sample contract's exclusions and limits before buying.</li><li>Keep maintenance records and photos of major systems.</li><li>File claims promptly when something stops working.</li><li>Never pay for repairs before approval unless the company authorizes it.</li><li>If denied, ask for the reason in writing and escalate if you disagree.</li></ol><p>See <a href="/articles/how-to-file-a-home-warranty-claim">how to file a claim</a> and compare caps across companies on our <a href="/">rankings page</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1585,7 +1587,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "Comparing real estate plans",
-          body: `<p>Compare <a href="/american-home-shield-vs-first-american">American Home Shield vs First American</a> and <a href="/first-american-vs-2-10-home-buyers-warranty">First American vs 2-10</a>, or see all companies on our <a href="/">rankings page</a>.</p>${DISCLAIMER}`,
+          body: `<p>Compare <a href="/american-home-shield-vs-first-american">American Home Shield vs First American</a> and <a href="/first-american-vs-2-10-home-buyers-warranty">First American vs 2-10</a>, or see all companies on our <a href="/">rankings page</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1625,7 +1627,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "4-7. First American, HWA, The Home Service Club and 2-10",
-          body: `<ul><li><a href="/reviews/first-american">First American</a> - high appliance limits and generous HVAC terms, but fewer states.</li><li><a href="/reviews/home-warranty-of-america">Home Warranty of America</a> - all 50 states and up to $5,000 on most repairs.</li><li><a href="/reviews/home-service-club">The Home Service Club</a> - no age limit on items, but low caps.</li><li><a href="/reviews/2-10-home-buyers-warranty">2-10 Home Buyers Warranty</a> - low starting price and builder expertise, modest caps.</li></ul><p>See our full <a href="/">rankings</a>.</p>${DISCLAIMER}`,
+          body: `<ul><li><a href="/reviews/first-american">First American</a> - high appliance limits and generous HVAC terms, but fewer states.</li><li><a href="/reviews/home-warranty-of-america">Home Warranty of America</a> - all 50 states and up to $5,000 on most repairs.</li><li><a href="/reviews/home-service-club">The Home Service Club</a> - no age limit on items, but low caps.</li><li><a href="/reviews/2-10-home-buyers-warranty">2-10 Home Buyers Warranty</a> - low starting price and builder expertise, modest caps.</li></ul><p>See our full <a href="/">rankings</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1665,7 +1667,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "If your claim is denied",
-          body: `<p>Ask for the reason and the contract clause in writing, provide maintenance records if relevant, and escalate to a supervisor. If you still disagree, you can file a complaint with your state's regulator or attorney general. Read <a href="/articles/why-home-warranty-claims-get-denied">why claims get denied</a> to avoid common pitfalls.</p>${DISCLAIMER}`,
+          body: `<p>Ask for the reason and the contract clause in writing, provide maintenance records if relevant, and escalate to a supervisor. If you still disagree, you can file a complaint with your state's regulator or attorney general. Read <a href="/articles/why-home-warranty-claims-get-denied">why claims get denied</a> to avoid common pitfalls.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1701,7 +1703,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "Add-ons and service fees",
-          body: `<p>Optional add-ons include pool/spa, well pump, septic pump, guest unit and electronics, reported at roughly $5-$18 a month each. You choose a $100 or $125 service fee per request. See the full <a href="/reviews/american-home-shield">American Home Shield review</a> or compare <a href="/american-home-shield-vs-choice-home-warranty">AHS vs Choice</a>.</p>${DISCLAIMER}`,
+          body: `<p>Optional add-ons include pool/spa, well pump, septic pump, guest unit and electronics, reported at roughly $5-$18 a month each. You choose a $100 or $125 service fee per request. See the full <a href="/reviews/american-home-shield">American Home Shield review</a> or compare <a href="/american-home-shield-vs-choice-home-warranty">AHS vs Choice</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1737,7 +1739,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "Should you buy from Choice?",
-          body: `<p>Choice offers good value on paper - two simple plans and a $3,000 per-item cap. If you buy, read the contract's exclusions carefully, keep maintenance records and document every claim. Compare it with <a href="/american-home-shield-vs-choice-home-warranty">American Home Shield</a> and <a href="/choice-home-warranty-vs-select-home-warranty">Select</a>, or read the full <a href="/reviews/choice-home-warranty">Choice review</a>.</p>${DISCLAIMER}`,
+          body: `<p>Choice offers good value on paper - two simple plans and a $3,000 per-item cap. If you buy, read the contract's exclusions carefully, keep maintenance records and document every claim. Compare it with <a href="/american-home-shield-vs-choice-home-warranty">American Home Shield</a> and <a href="/choice-home-warranty-vs-select-home-warranty">Select</a>, or read the full <a href="/reviews/choice-home-warranty">Choice review</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1773,7 +1775,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "The fine print: caps",
-          body: `<p>Third-party reviews report caps of about $500 per item for many appliances, plumbing and electrical repairs, and about $3,000 per term for HVAC. That's the key trade-off. Compare with <a href="/choice-home-warranty-vs-select-home-warranty">Choice vs Select</a> or read the full <a href="/reviews/select-home-warranty">Select review</a>.</p>${DISCLAIMER}`,
+          body: `<p>Third-party reviews report caps of about $500 per item for many appliances, plumbing and electrical repairs, and about $3,000 per term for HVAC. That's the key trade-off. Compare with <a href="/choice-home-warranty-vs-select-home-warranty">Choice vs Select</a> or read the full <a href="/reviews/select-home-warranty">Select review</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
