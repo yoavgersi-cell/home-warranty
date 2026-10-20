@@ -1593,7 +1593,7 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       slug: "best-home-warranty-companies-compared",
-      title: "Best Home Warranty Companies of 2026, Compared",
+      title: "7 Home Warranty Companies Compared Side by Side (2026)",
       description:
         "Our side-by-side comparison of Choice, American Home Shield, Select, First American, Home Warranty of America, The Home Service Club and 2-10.",
       category: "Provider Guides",

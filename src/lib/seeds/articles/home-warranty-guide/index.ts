@@ -14,7 +14,7 @@ export const homeWarrantyGuide: ArticleData = {
   slug: "home-warranty-guide",
   title: "The Complete Home Warranty Guide (2026): Cost, Coverage & Claims",
   description:
-    "Everything to know before buying a home warranty in 2026: what's covered, real costs and service fees, coverage caps, exclusions, claims, denials and the best companies.",
+    "Everything to know before buying a home warranty in 2026: what's covered, real costs, service fees, coverage caps, exclusions, claims and the best companies.",
   category: "Guides",
   readTime: "55 min read",
   publishedAt: "2026-10-20",
