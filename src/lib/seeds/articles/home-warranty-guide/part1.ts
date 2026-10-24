@@ -126,10 +126,10 @@ export const part1: ArticleSection[] = [
 <thead><tr><th>Company</th><th>Reported caps (approximate)</th><th>What it means in practice</th></tr></thead>
 <tbody>
 <tr><td><a href="/reviews/american-home-shield">American Home Shield</a></td><td>$2,000 per appliance (ShieldGold), $4,000 per appliance (ShieldPlatinum), $5,000 HVAC, $1,000 roof leak</td><td>Among the highest limits we track, especially on the top tier</td></tr>
-<tr><td><a href="/reviews/first-american">First American</a></td><td>$3,500 appliances on lower tiers, $7,000 on Premium; contracts note no dollar limit on AC refrigerant</td><td>High limits and generous HVAC terms where available</td></tr>
+<tr><td><a href="/reviews/first-american">First American</a></td><td>$3,500 appliances on lower tiers, $7,000 on Premium; Premium covers 100% of refrigerant costs (lower tiers up to $20/lb)</td><td>High limits and generous HVAC terms where available</td></tr>
 <tr><td><a href="/reviews/home-warranty-of-america">Home Warranty of America</a></td><td>Up to $5,000 on most approved repairs; lower limits on some items</td><td>Solid headline limit; check plumbing and electrical sub-limits</td></tr>
 <tr><td><a href="/reviews/choice-home-warranty">Choice</a></td><td>$3,000 per covered item per term</td><td>Simple, solid single number for most items</td></tr>
-<tr><td><a href="/reviews/2-10-home-buyers-warranty">2-10</a></td><td>$2,000 per core system; $25,000 annual aggregate</td><td>Modest system caps</td></tr>
+<tr><td><a href="/reviews/2-10-home-buyers-warranty">2-10</a></td><td>$5,000 AC limit (2025 sample contract); $25,000 annual aggregate</td><td>$10/lb refrigerant limit inside the AC limit; some reviews cite lower limits on other systems</td></tr>
 <tr><td><a href="/reviews/home-service-club">The Home Service Club</a></td><td>Mostly $300-$2,000 per item; $6,000 (Standard) or $9,000 (Comprehensive) per year</td><td>Low item caps plus an annual ceiling</td></tr>
 <tr><td><a href="/reviews/select-home-warranty">Select</a></td><td>About $500 per item for many appliances, plumbing and electrical; about $3,000 per term for HVAC</td><td>Lowest item caps we track - the trade-off for its low price</td></tr>
 </tbody>

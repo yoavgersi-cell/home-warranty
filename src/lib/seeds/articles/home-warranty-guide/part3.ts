@@ -79,7 +79,7 @@ export const part3: ArticleSection[] = [
 <tr><td><a href="/reviews/first-american">First American</a></td><td>1984</td><td>Starter, Essential, Premium</td><td>~$40-$140/mo</td><td>$3,500-$7,000 appliances</td><td>About 13-15 states incl. AK, CT, DE, HI, LA</td></tr>
 <tr><td><a href="/reviews/home-warranty-of-america">Home Warranty of America</a></td><td>1996</td><td>Premier, Premier Plus</td><td>~$48-$61/mo</td><td>Up to $5,000 most repairs</td><td>None - all 50 states</td></tr>
 <tr><td><a href="/reviews/home-service-club">The Home Service Club</a></td><td>~2008</td><td>Standard, Comprehensive</td><td>~$54-$67/mo</td><td>$300-$2,000 per item; $6,000-$9,000/yr</td><td>None reported</td></tr>
-<tr><td><a href="/reviews/2-10-home-buyers-warranty">2-10</a></td><td>~1980</td><td>Systems and combo tiers</td><td>From ~$27-$35/mo</td><td>$2,000 per core system; $25,000/yr</td><td>AK, HI, NH, OK, WI, WY (reported)</td></tr>
+<tr><td><a href="/reviews/2-10-home-buyers-warranty">2-10</a></td><td>~1980</td><td>Systems and combo tiers</td><td>From ~$27-$35/mo</td><td>$5,000 AC limit; $25,000/yr</td><td>AK, HI, NH, OK, WI, WY (reported)</td></tr>
 </tbody>
 </table>
 <h3>Choice Home Warranty</h3>
@@ -95,7 +95,7 @@ export const part3: ArticleSection[] = [
 <h3>The Home Service Club</h3>
 <p>The Home Service Club's standout feature is <strong>no age limit on covered items</strong>, which matters in homes with very old equipment. But its per-item caps are mostly $300-$2,000, an annual aggregate cap of about $6,000-$9,000 applies, and recent customer reviews are largely negative. <a href="/reviews/home-service-club">Read the Home Service Club review</a>.</p>
 <h3>2-10 Home Buyers Warranty</h3>
-<p>Best known for new-home structural warranties sold through builders, 2-10 has operated since about 1980 and was acquired by Frontdoor in December 2024. Its consumer home warranty plans start cheap, but reported caps of $2,000 per core system are modest. <a href="/reviews/2-10-home-buyers-warranty">Read the 2-10 review</a>.</p>
+<p>Best known for new-home structural warranties sold through builders, 2-10 has operated since about 1980 and was acquired by Frontdoor in December 2024. Its consumer home warranty plans start cheap, but its refrigerant limit of $10 per pound and system limits that some reviews put at $2,000 are modest. <a href="/reviews/2-10-home-buyers-warranty">Read the 2-10 review</a>.</p>
 <p class="cta-row"><a href="/">→ See our full ranking of home warranty companies</a></p>`,
   },
   {

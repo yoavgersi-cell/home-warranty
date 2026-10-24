@@ -1,5 +1,6 @@
 import type { BattleData, BattleFeatureRow, SiteConfig } from "@/lib/config";
 import { homeWarrantyGuide } from "./articles/home-warranty-guide";
+import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Home warranty vertical content - tophomewarranty.com
@@ -43,7 +44,8 @@ import { homeWarrantyGuide } from "./articles/home-warranty-guide";
 //  - First American: Santa Rosa, CA; First American Financial. 2026 sources
 //    list Starter / Essential / Premium (older: Basic / Premier). ~$37-$142/mo.
 //    Service fee $75 / $100 / $125. Appliance caps $3,500 (lower tiers) /
-//    $7,000 (Premium); contracts note no dollar limit on AC refrigerant.
+//    $7,000 (Premium). Refrigerant (FAQ): 100% on Premium and real estate
+//    plans, up to $20/lb on Starter and Essential.
 //    Roughly 35-37 states + DC; not in AK, CT, DE, HI, LA among others.
 //    Trustpilot 4.0 / ~19,270 reviews.
 //  - HWA: founded 1996; acquired by Choice Feb 2022. Premier (no AC) and
@@ -56,7 +58,8 @@ import { homeWarrantyGuide } from "./articles/home-warranty-guide";
 //    age limit on covered items. Recent Trustpilot snapshots low (1.2-1.9).
 //  - 2-10 HBW: since ~1980; Frontdoor acquired it Dec 2024 ($585M). Best
 //    known for builder structural warranties. From ~$27-$35/mo. Service fee
-//    $65-$125. $2,000 per core system; $25,000 annual aggregate. Reported not
+//    $65-$125. 2025 sample contract: $5,000 AC limit incl. $10/lb refrigerant
+//    (some reviews cite $2,000 system limits); $25,000 annual aggregate. Reported not
 //    available in AK, HI, NH, OK, WI, WY.
 //
 // PLACEHOLDERS / OPERATOR TO VERIFY:
@@ -135,7 +138,7 @@ export const FACTS: Record<string, Record<FactKey, string>> = {
     price: "From ~$27-$35/mo",
     fee: "$65-$125",
     plans: "Systems & combo tiers (check site)",
-    caps: "$2,000 per core system; $25,000 per year",
+    caps: "$5,000 AC limit; $25,000 per year",
     wait: "30 days",
     states: "AK, HI, NH, OK, WI, WY (reported)",
     since: "~1980",
@@ -345,7 +348,7 @@ const battles: BattleData[] = [
       {
         name: "Coverage caps",
         winner: "provider2",
-        explanation: "First American's Premium plan reportedly raises appliance limits to $7,000 and its contracts note no dollar limit on AC refrigerant.",
+        explanation: "First American's Premium plan reportedly raises appliance limits to $7,000 and covers 100% of refrigerant costs (Starter and Essential: up to $20 per pound).",
         supportingPoints: ["$7,000 appliances (Premium)", "Generous HVAC terms"],
       },
       {
@@ -519,8 +522,8 @@ const battles: BattleData[] = [
       {
         name: "Coverage caps",
         winner: "provider1",
-        explanation: "AHS offers $2,000-$4,000 per appliance and $5,000 for HVAC; 2-10 reportedly caps core systems at $2,000 each.",
-        supportingPoints: ["$5,000 HVAC at AHS", "$2,000 per core system at 2-10"],
+        explanation: "Both list a $5,000 AC limit, but AHS offers up to $4,000 per appliance and covers all refrigerant on ShieldPlatinum, while 2-10 limits refrigerant to $10 per pound and some reviews cite $2,000 limits on other systems.",
+        supportingPoints: ["All refrigerant on AHS ShieldPlatinum", "$10/lb refrigerant at 2-10"],
       },
       {
         name: "Price",
@@ -564,8 +567,8 @@ const battles: BattleData[] = [
       {
         name: "Coverage caps",
         winner: "provider1",
-        explanation: "First American reportedly offers $3,500-$7,000 appliance limits; 2-10 reportedly caps core systems at $2,000 each.",
-        supportingPoints: ["Up to $7,000 at First American", "$2,000 per core system at 2-10"],
+        explanation: "First American reportedly offers $3,500-$7,000 appliance limits; 2-10's 2025 sample contract sets a $5,000 AC limit and some reviews cite $2,000 limits on other systems.",
+        supportingPoints: ["Up to $7,000 at First American", "$10/lb refrigerant at 2-10"],
       },
       {
         name: "Customer reviews",
@@ -1132,7 +1135,7 @@ export const homeWarrantyConfig: SiteConfig = {
       keyFeatures: [
         "Tiered plans (Starter, Essential, Premium per 2026 sources)",
         "Appliance limits of $3,500 (lower tiers) to $7,000 (Premium), reported",
-        "Contracts note no dollar limit on AC refrigerant",
+        "100% refrigerant coverage on Premium and real estate plans",
         "Choose a $75, $100 or $125 service fee",
         "Real estate plans for buyers and sellers",
         "4.0 on Trustpilot across roughly 19,000 reviews",
@@ -1316,7 +1319,7 @@ export const homeWarrantyConfig: SiteConfig = {
         "2-10 Home Buyers Warranty has operated since around 1980 and is best known for new-home structural warranties that builders provide to buyers. In December 2024, Frontdoor, Inc. - the parent of American Home Shield - completed its $585 million acquisition of 2-10. The company also sells home warranties covering systems and appliances through agents and directly. This review covers those plans, what they cost and who they suit.",
       keyFeatures: [
         "Home warranty plans for systems and appliances",
-        "Reported $2,000 cap per core system (heating, AC, plumbing, electrical)",
+        "$5,000 AC limit with a $10-per-pound refrigerant limit (2025 sample contract)",
         "Reported $25,000 annual aggregate limit",
         "Service fee options of about $65-$125",
         "Network of 6,000+ independent contractors",
@@ -1337,7 +1340,7 @@ export const homeWarrantyConfig: SiteConfig = {
         "Waiting period waived for renewals and real estate coverage",
       ],
       cons: [
-        "Modest $2,000 caps on core systems",
+        "Refrigerant limited to $10 per pound; some reviews cite $2,000 limits on other systems",
         "Small, mostly negative Trustpilot sample",
         "Reported unavailable in six states",
         "Plan names and details are hard to pin down",
@@ -1348,7 +1351,7 @@ export const homeWarrantyConfig: SiteConfig = {
         "Budget shoppers who accept lower caps",
       ],
       finalVerdict:
-        "2-10 Home Buyers Warranty is a respected name in builder structural warranties and now shares a parent with American Home Shield. Its consumer home warranty plans start cheap, but their $2,000 caps on core systems and thin customer record keep it seventh on our list. If it's offered through your builder or agent it's a reasonable option; if you're shopping on your own, compare caps first.",
+        "2-10 Home Buyers Warranty is a respected name in builder structural warranties and now shares a parent with American Home Shield. Its consumer home warranty plans start cheap, but a $10-per-pound refrigerant limit, limits on other systems that some reviews put at $2,000, and a thin customer record keep it seventh on our list. If it's offered through your builder or agent it's a reasonable option; if you're shopping on your own, compare caps first.",
       howItWorks: [
         { timing: "Step 1", title: "Get a plan", detail: "Buy directly, through your agent at closing, or receive structural coverage from your builder." },
         { timing: "Step 2", title: "Coverage begins", detail: "Direct plans have a 30-day waiting period; seller and buyer coverage start at enrollment and closing." },
@@ -1363,6 +1366,7 @@ export const homeWarrantyConfig: SiteConfig = {
 
   articles: [
     homeWarrantyGuide,
+    refrigerantTransitionGuide,
     {
       slug: "what-is-a-home-warranty",
       title: "What Is a Home Warranty? Coverage, Cost & How It Works",
