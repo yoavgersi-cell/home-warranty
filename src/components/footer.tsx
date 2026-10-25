@@ -34,6 +34,17 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
     ],
   },
   {
+    title: "Best Home Warranty For",
+    links: [
+      { label: "Water Heaters", href: "/articles/best-home-warranty-for-water-heaters" },
+      { label: "Heat Pumps", href: "/articles/best-home-warranty-for-heat-pumps" },
+      { label: "Electrical Systems", href: "/articles/best-home-warranty-for-electrical-systems" },
+      { label: "Dishwashers & Appliances", href: "/articles/best-home-warranty-for-dishwashers" },
+      { label: "Most Comprehensive", href: "/articles/most-comprehensive-home-warranty" },
+      { label: "No / Low Deductible", href: "/articles/best-home-warranty-no-deductible" },
+    ],
+  },
+  {
     title: "Company",
     links: [
       { label: "About", href: "/about" },
@@ -70,7 +81,7 @@ export async function Footer() {
   return (
     <footer className="mt-auto border-t border-[#E5E5E5] bg-white">
       <div className="mx-auto max-w-6xl px-4 py-10">
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
           {/* Brand blurb */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <p className="text-[13px] leading-relaxed text-gray-500">

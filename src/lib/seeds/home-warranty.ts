@@ -2,6 +2,9 @@ import type { BattleData, BattleFeatureRow, SiteConfig } from "@/lib/config";
 import { homeWarrantyGuide } from "./articles/home-warranty-guide";
 import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
 import { applianceInsuranceGuide } from "./articles/appliance-insurance";
+import { bestForWaterHeaters, bestForHeatPumps } from "./articles/best-for/water-heaters-heat-pumps";
+import { bestForElectrical, bestForDishwashers } from "./articles/best-for/electrical-dishwashers";
+import { mostComprehensive, noDeductible } from "./articles/best-for/comprehensive-deductible";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Home warranty vertical content - thetophomewarranty.com
@@ -110,7 +113,7 @@ export const FACTS: Record<string, Record<FactKey, string>> = {
   },
   "first-american": {
     price: "~$40-$140/mo by plan & state",
-    fee: "$75, $100 or $125",
+    fee: "$100 or $125 (older reviews: $75)",
     plans: "Starter, Essential, Premium",
     caps: "$3,500-$7,000 appliances; high HVAC limits",
     wait: "30 days",
@@ -1369,6 +1372,12 @@ export const homeWarrantyConfig: SiteConfig = {
     homeWarrantyGuide,
     refrigerantTransitionGuide,
     applianceInsuranceGuide,
+    bestForWaterHeaters,
+    bestForHeatPumps,
+    bestForElectrical,
+    bestForDishwashers,
+    mostComprehensive,
+    noDeductible,
     {
       slug: "what-is-a-home-warranty",
       title: "What Is a Home Warranty? Coverage, Cost & How It Works",
