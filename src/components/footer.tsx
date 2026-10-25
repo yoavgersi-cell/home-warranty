@@ -21,6 +21,9 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
   {
     title: "Guides",
     links: [
+      { label: "Complete Home Warranty Guide", href: "/articles/home-warranty-guide" },
+      { label: "R-410A Phase-Out & Warranties", href: "/articles/r-410a-phase-out-home-warranty" },
+      { label: "Best Appliance Insurance", href: "/articles/best-appliance-insurance" },
       { label: "What Is a Home Warranty?", href: "/articles/what-is-a-home-warranty" },
       { label: "Is a Home Warranty Worth It?", href: "/articles/is-a-home-warranty-worth-it" },
       { label: "Home Warranty Cost", href: "/articles/how-much-does-a-home-warranty-cost" },
@@ -101,7 +104,7 @@ export async function Footer() {
               &copy; {new Date().getFullYear()} Top Home Warranty. All rights reserved.
             </p>
             <p className="text-[11px] text-gray-500">
-              tophomewarranty.com is not a home warranty company. Always read the full contract before buying.
+              thetophomewarranty.com is not a home warranty company. Always read the full contract before buying.
             </p>
           </div>
         </div>

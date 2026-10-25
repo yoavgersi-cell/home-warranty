@@ -5,7 +5,7 @@ import { Breadcrumbs } from "@/components/breadcrumbs";
 import { SITE_ORIGIN, REVIEWERS, reviewerDisplayName, reviewerPath, reviewerPersonSchema } from "@/data/reviewers";
 
 const CANONICAL = `${SITE_ORIGIN}/editorial-policy`;
-const TITLE = "Editorial Policy: How Top Home Warranty Researches and Checks Content";
+const TITLE = "Editorial Policy: How We Research Home Warranties";
 const DESCRIPTION =
   "How Top Home Warranty researches home warranty companies, what we verify, what we do not, how update dates work, and how to report an error.";
 const UPDATED = "2026-10-12";
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: CANONICAL },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: CANONICAL, type: "article" },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: CANONICAL, type: "article", images: [{ url: "https://www.thetophomewarranty.com/opengraph-image", width: 1200, height: 630 }], },
 };
 
 export default function EditorialPolicyPage() {

@@ -25,6 +25,7 @@ import { REDDIT_COMMUNITY_FEEDBACK as REVIEW_COMMUNITY_FEEDBACK, RedditMark } fr
 import { YoutubeReviewSection } from "@/components/youtube-review";
 import { ReadableProse } from "@/components/prose";
 import { ProviderAudit } from "@/components/provider-audit";
+import { providerEntity } from "@/lib/schema";
 
 // Per-provider SEO overrides, "is X legit?" trust blocks and extra FAQs for
 // the home warranty reviews. Everything here is written from facts researched
@@ -33,22 +34,22 @@ import { ProviderAudit } from "@/components/provider-audit";
 
 const REVIEW_SEO_OVERRIDES: Record<string, { title: string; description: string }> = {
   "choice-home-warranty": {
-    title: "Choice Home Warranty Review (2026): Plans, Cost, Caps & Is It Legit?",
+    title: "Choice Home Warranty Review (2026): Cost, Caps & Is It Legit?",
     description:
-      "Choice Home Warranty reviewed: Basic vs Total plans, monthly cost, service fee, the $3,000 per-item cap, state availability, regulatory history and whether it's worth it.",
+      "Choice Home Warranty reviewed: Basic vs Total plans, monthly cost, service fee, the $3,000 per-item cap, regulatory history and whether it's worth it.",
   },
   "american-home-shield": {
-    title: "American Home Shield Review (2026): ShieldSilver, Gold & Platinum Compared",
+    title: "American Home Shield Review (2026): Plans, Cost & Caps",
     description:
       "American Home Shield reviewed: ShieldSilver, ShieldGold and ShieldPlatinum coverage, cost, service fee options, coverage caps and whether AHS is worth it.",
   },
   "select-home-warranty": {
-    title: "Select Home Warranty Review (2026): Cost, Coverage Limits & Is It Legit?",
+    title: "Select Home Warranty Review (2026): Cost, Limits & Legit?",
     description:
       "Select Home Warranty reviewed: Bronze, Gold and Platinum Care plans, low prices and promotions, the coverage caps to watch, and whether it's a good value.",
   },
   "first-american": {
-    title: "First American Home Warranty Review (2026): Plans, Cost & Coverage",
+    title: "First American Home Warranty Review (2026): Plans & Cost",
     description:
       "First American Home Warranty reviewed: plan tiers, monthly cost, service fee options, high HVAC coverage, state availability and who it's best for.",
   },
@@ -58,7 +59,7 @@ const REVIEW_SEO_OVERRIDES: Record<string, { title: string; description: string 
       "Home Warranty of America reviewed: Premier and Premier Plus plans, cost, the $5,000 repair limit, 13-month contracts, nationwide availability and complaints.",
   },
   "home-service-club": {
-    title: "The Home Service Club Review (2026): Cost, Coverage Caps & Complaints",
+    title: "The Home Service Club Review (2026): Cost, Caps & Complaints",
     description:
       "The Home Service Club reviewed: Standard vs Comprehensive plans, price, no age limits, per-item and annual caps, and what customers report about claims.",
   },
@@ -294,8 +295,11 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
     "@id": canonicalUrl(ctx, `/reviews/${slug}`),
     url: canonicalUrl(ctx, `/reviews/${slug}`),
     name: `${provider.name} Review`,
+    description: review.shortSummary,
     dateModified: latestUpdate(review.updatedAt),
     isPartOf: { "@type": "WebSite", name: "Top Home Warranty", url: ctx.origin },
+    about: providerEntity(provider),
+    author: { "@type": "Organization", name: ctx.brandTeam, url: ctx.origin },
     ...pageReviewSchema(`/reviews/${slug}`),
   };
 

@@ -4,8 +4,8 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description:
-    "The terms governing your use of Top Home Warranty (tophomewarranty.com), including our informational-only nature, affiliate disclosure, and limitation of liability.",
-  alternates: { canonical: "https://www.tophomewarranty.com/terms" },
+    "The terms governing your use of Top Home Warranty (thetophomewarranty.com), including our informational nature, affiliate disclosure and liability limits.",
+  alternates: { canonical: "https://www.thetophomewarranty.com/terms" },
 };
 
 const UPDATED = "September 2026";
@@ -17,7 +17,7 @@ export default function TermsPage() {
       <p className="mb-6 text-sm text-gray-500">Last updated: {UPDATED}</p>
       <div className="space-y-4 text-gray-600 leading-relaxed">
         <p>
-          These Terms of Service (&quot;Terms&quot;) govern your access to and use of tophomewarranty.com
+          These Terms of Service (&quot;Terms&quot;) govern your access to and use of thetophomewarranty.com
           (the &quot;Site&quot;), operated by Top Home Warranty (&quot;we,&quot; &quot;us,&quot; or
           &quot;our&quot;). By using the Site, you agree to these Terms. If you do not agree, please do
           not use the Site.

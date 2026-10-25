@@ -26,6 +26,7 @@ import { ProductCarousel } from "@/components/product-carousel";
 import { RedditThreadCarousel, REDDIT_COMMUNITY_FEEDBACK } from "@/components/reddit-community";
 import { threeWayBySlug, THREE_WAY_COMPARISONS } from "@/lib/three-way";
 import { ThreeWayPageView, threeWayMetadata } from "@/components/pages/three-way-page";
+import { providerEntity } from "@/lib/schema";
 
 // Per-battle 12-month cost math and code-side CTR overrides were a weight-loss-
 // vertical feature (all keyed by WL matchup slugs and gated to ctx.vertical ===
@@ -121,22 +122,29 @@ export async function battleMetadata(slug: string, ctx: SiteContext): Promise<Me
   // "Big Brand?" hook because the price rewrite tanked its clicks). The override
   // is title-cased at the matchup so it never starts lowercase. Battles without
   // an override fall back to the uniform, competitor-style neutral pattern
-  // "{A} vs {B} (2026): {Category} Cost, Plans & Meds Compared". DESCRIPTIONS
+  // "{A} vs {B} (2026): Plans, Cost & Caps Compared". DESCRIPTIONS
   // are always the bespoke override (real prices) when present.
   const override = ctx.vertical === "weight-loss" ? BATTLE_SEO_OVERRIDES[slug] : undefined;
   const baseLabel = (battle.matchupLabel ?? battle.title.split(":")[0]).trim();
   const battleCategory = BATTLE_CATEGORY_BY_VERTICAL[ctx.vertical];
   const metaTitle = override?.title
     ? titleCaseOverrideTitle(override.title)
-    : `${titleCaseMatchup(baseLabel)} (2026): ${battleCategory ? `${battleCategory} ` : ""}Cost, Plans & Meds Compared`;
+    : (() => {
+        const long = `${titleCaseMatchup(baseLabel)} (2026): Plans, Cost & Caps Compared`;
+        // Long matchups drop the tail so the title stays inside the ~65-char SERP cut-off.
+        return long.length <= 65 ? long : `${titleCaseMatchup(baseLabel)} (2026) Compared`;
+      })();
   const metaDescription = override?.description ?? battle.description;
 
   // Thin, low-demand matchups (Tier-2-brand pairs) are noindex,follow so crawl
   // budget concentrates on the money battles - see NOINDEX_WL_BATTLE_SLUGS.
   const isThinNoindex = ctx.vertical === "weight-loss" && NOINDEX_WL_BATTLE_SLUGS.has(slug);
 
+  void battleCategory;
   return {
-    title: metaTitle,
+    // Titles are sized for the SERP already; the " | Top Home Warranty"
+    // template suffix would push them past the cut-off.
+    title: { absolute: metaTitle },
     description: metaDescription,
     robots: ctx.noindex
       ? { index: false, follow: false }
@@ -440,6 +448,7 @@ export async function BattlePageView({ slug, ctx }: { slug: string; ctx: SiteCon
     author: { "@type": "Organization", name: ctx.brandTeam, url: ctx.origin },
     publisher: { "@type": "Organization", name: ctx.brandDomain, url: ctx.origin },
     mainEntityOfPage: canonicalUrl(ctx, `/${battle.slug}`),
+    about: [providerEntity(p1), providerEntity(p2)],
   };
 
   const battleBreadcrumbSchema = {

@@ -3,7 +3,7 @@ import { getConfig } from "@/lib/config-store";
 import { CONTENT_LAST_UPDATED, latestUpdate, NOINDEX_ARTICLE_SLUGS } from "@/lib/config";
 import { REVIEWERS } from "@/data/reviewers";
 
-const SITE_URL = "https://www.tophomewarranty.com";
+const SITE_URL = "https://www.thetophomewarranty.com";
 const FALLBACK_DATE = new Date(CONTENT_LAST_UPDATED);
 const flooredLastModified = (updatedAt?: string) => new Date(latestUpdate(updatedAt));
 

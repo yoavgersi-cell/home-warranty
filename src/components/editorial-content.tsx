@@ -82,7 +82,10 @@ export function EditorialContent({ midSlot }: { midSlot?: React.ReactNode }) {
         <Link href="/articles/best-home-warranty-companies-compared" className={link}>
           guide to the best home warranty companies
         </Link>{" "}
-        for the full breakdown.
+        for the full breakdown, or go deep with{" "}
+        <Link href="/articles/home-warranty-guide" className={link}>
+          the complete home warranty guide
+        </Link>.
       </p>
       <p className="mb-8">
         This page is a practical overview of what a home warranty is, how plans differ, what they
@@ -137,6 +140,11 @@ export function EditorialContent({ midSlot }: { midSlot?: React.ReactNode }) {
       </ul>
 
       <h3 className="mb-2 text-[20px] font-bold text-[#191919]">Appliances</h3>
+      <p className="mb-2">
+        Looking for &ldquo;appliance insurance&rdquo;? In the US that usually means a home warranty -
+        see our guide to the{" "}
+        <Link href="/articles/best-appliance-insurance" className={link}>best appliance insurance</Link>.
+      </p>
       <ul className="mb-4 list-disc space-y-1 pl-6">
         <li>Refrigerator, oven/range, cooktop and built-in microwave</li>
         <li>Dishwasher and garbage disposal</li>

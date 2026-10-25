@@ -1,7 +1,10 @@
 import type { BattleData, BattleFeatureRow, SiteConfig } from "@/lib/config";
+import { homeWarrantyGuide } from "./articles/home-warranty-guide";
+import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
+import { applianceInsuranceGuide } from "./articles/appliance-insurance";
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Home warranty vertical content - tophomewarranty.com
+// Home warranty vertical content - thetophomewarranty.com
 //
 // Launch content for the single-vertical home warranty comparison site, built
 // on the same template as hrtwomen.com. Seven providers, in operator order:
@@ -42,7 +45,8 @@ import type { BattleData, BattleFeatureRow, SiteConfig } from "@/lib/config";
 //  - First American: Santa Rosa, CA; First American Financial. 2026 sources
 //    list Starter / Essential / Premium (older: Basic / Premier). ~$37-$142/mo.
 //    Service fee $75 / $100 / $125. Appliance caps $3,500 (lower tiers) /
-//    $7,000 (Premium); contracts note no dollar limit on AC refrigerant.
+//    $7,000 (Premium). Refrigerant (FAQ): 100% on Premium and real estate
+//    plans, up to $20/lb on Starter and Essential.
 //    Roughly 35-37 states + DC; not in AK, CT, DE, HI, LA among others.
 //    Trustpilot 4.0 / ~19,270 reviews.
 //  - HWA: founded 1996; acquired by Choice Feb 2022. Premier (no AC) and
@@ -55,7 +59,8 @@ import type { BattleData, BattleFeatureRow, SiteConfig } from "@/lib/config";
 //    age limit on covered items. Recent Trustpilot snapshots low (1.2-1.9).
 //  - 2-10 HBW: since ~1980; Frontdoor acquired it Dec 2024 ($585M). Best
 //    known for builder structural warranties. From ~$27-$35/mo. Service fee
-//    $65-$125. $2,000 per core system; $25,000 annual aggregate. Reported not
+//    $65-$125. 2025 sample contract: $5,000 AC limit incl. $10/lb refrigerant
+//    (some reviews cite $2,000 system limits); $25,000 annual aggregate. Reported not
 //    available in AK, HI, NH, OK, WI, WY.
 //
 // PLACEHOLDERS / OPERATOR TO VERIFY:
@@ -74,8 +79,8 @@ const UPDATED = "2026-10-12";
 
 // One row of comparable facts per provider - feeds every head-to-head
 // "Feature" table so values stay identical across comparisons.
-type FactKey = "price" | "fee" | "plans" | "caps" | "wait" | "states" | "since";
-const FACTS: Record<string, Record<FactKey, string>> = {
+export type FactKey = "price" | "fee" | "plans" | "caps" | "wait" | "states" | "since";
+export const FACTS: Record<string, Record<FactKey, string>> = {
   "choice-home-warranty": {
     price: "~$46-$58/mo (reported)",
     fee: "~$100 per visit",
@@ -134,14 +139,14 @@ const FACTS: Record<string, Record<FactKey, string>> = {
     price: "From ~$27-$35/mo",
     fee: "$65-$125",
     plans: "Systems & combo tiers (check site)",
-    caps: "$2,000 per core system; $25,000 per year",
+    caps: "$5,000 AC limit; $25,000 per year",
     wait: "30 days",
     states: "AK, HI, NH, OK, WI, WY (reported)",
     since: "~1980",
   },
 };
 
-const FEATURE_LABELS: [FactKey, string][] = [
+export const FEATURE_LABELS: [FactKey, string][] = [
   ["price", "Starting price"],
   ["fee", "Service call fee"],
   ["plans", "Plans"],
@@ -344,7 +349,7 @@ const battles: BattleData[] = [
       {
         name: "Coverage caps",
         winner: "provider2",
-        explanation: "First American's Premium plan reportedly raises appliance limits to $7,000 and its contracts note no dollar limit on AC refrigerant.",
+        explanation: "First American's Premium plan reportedly raises appliance limits to $7,000 and covers 100% of refrigerant costs (Starter and Essential: up to $20 per pound).",
         supportingPoints: ["$7,000 appliances (Premium)", "Generous HVAC terms"],
       },
       {
@@ -518,8 +523,8 @@ const battles: BattleData[] = [
       {
         name: "Coverage caps",
         winner: "provider1",
-        explanation: "AHS offers $2,000-$4,000 per appliance and $5,000 for HVAC; 2-10 reportedly caps core systems at $2,000 each.",
-        supportingPoints: ["$5,000 HVAC at AHS", "$2,000 per core system at 2-10"],
+        explanation: "Both list a $5,000 AC limit, but AHS offers up to $4,000 per appliance and covers all refrigerant on ShieldPlatinum, while 2-10 limits refrigerant to $10 per pound and some reviews cite $2,000 limits on other systems.",
+        supportingPoints: ["All refrigerant on AHS ShieldPlatinum", "$10/lb refrigerant at 2-10"],
       },
       {
         name: "Price",
@@ -563,8 +568,8 @@ const battles: BattleData[] = [
       {
         name: "Coverage caps",
         winner: "provider1",
-        explanation: "First American reportedly offers $3,500-$7,000 appliance limits; 2-10 reportedly caps core systems at $2,000 each.",
-        supportingPoints: ["Up to $7,000 at First American", "$2,000 per core system at 2-10"],
+        explanation: "First American reportedly offers $3,500-$7,000 appliance limits; 2-10's 2025 sample contract sets a $5,000 AC limit and some reviews cite $2,000 limits on other systems.",
+        supportingPoints: ["Up to $7,000 at First American", "$10/lb refrigerant at 2-10"],
       },
       {
         name: "Customer reviews",
@@ -785,6 +790,8 @@ export const homeWarrantyConfig: SiteConfig = {
   providers: [
     {
       id: "choice-home-warranty",
+      websiteUrl: "https://www.choicehomewarranty.com/",
+      foundingYear: "2008",
       name: "Choice Home Warranty",
       tagline:
         "Two simple plans covering home systems and appliances, with a $3,000 per-item cap and coverage in 49 states",
@@ -806,6 +813,8 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       id: "american-home-shield",
+      websiteUrl: "https://www.ahs.com/",
+      foundingYear: "1971",
       name: "American Home Shield",
       tagline:
         "The industry's oldest home warranty company - three plan tiers, a choice of service fee and some of the highest coverage caps",
@@ -827,6 +836,8 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       id: "select-home-warranty",
+      websiteUrl: "https://www.selecthomewarranty.com/",
+      foundingYear: "2012",
       name: "Select Home Warranty",
       tagline:
         "One of the lowest-cost plans available, with frequent free-month and free roof coverage promotions",
@@ -844,6 +855,8 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       id: "first-american",
+      websiteUrl: "https://homewarranty.firstam.com/",
+      foundingYear: "1984",
       name: "First American Home Warranty",
       tagline:
         "A real-estate favorite backed by First American Financial, with high appliance limits and generous HVAC terms",
@@ -863,6 +876,8 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       id: "home-warranty-of-america",
+      websiteUrl: "https://www.hwahomewarranty.com/",
+      foundingYear: "1996",
       name: "Home Warranty of America",
       tagline:
         "Nationwide coverage with up to $5,000 on most approved repairs and 13-month contracts",
@@ -882,6 +897,7 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       id: "home-service-club",
+      websiteUrl: "https://hscwarranty.com/",
       name: "The Home Service Club",
       tagline:
         "Two straightforward plans with no age limit on covered systems and appliances",
@@ -898,6 +914,7 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       id: "2-10-home-buyers-warranty",
+      websiteUrl: "https://www.2-10.com/",
       name: "2-10 Home Buyers Warranty",
       tagline:
         "A structural-warranty specialist owned by Frontdoor, with low-cost home warranty plans for buyers and homeowners",
@@ -1119,7 +1136,7 @@ export const homeWarrantyConfig: SiteConfig = {
       keyFeatures: [
         "Tiered plans (Starter, Essential, Premium per 2026 sources)",
         "Appliance limits of $3,500 (lower tiers) to $7,000 (Premium), reported",
-        "Contracts note no dollar limit on AC refrigerant",
+        "100% refrigerant coverage on Premium and real estate plans",
         "Choose a $75, $100 or $125 service fee",
         "Real estate plans for buyers and sellers",
         "4.0 on Trustpilot across roughly 19,000 reviews",
@@ -1303,7 +1320,7 @@ export const homeWarrantyConfig: SiteConfig = {
         "2-10 Home Buyers Warranty has operated since around 1980 and is best known for new-home structural warranties that builders provide to buyers. In December 2024, Frontdoor, Inc. - the parent of American Home Shield - completed its $585 million acquisition of 2-10. The company also sells home warranties covering systems and appliances through agents and directly. This review covers those plans, what they cost and who they suit.",
       keyFeatures: [
         "Home warranty plans for systems and appliances",
-        "Reported $2,000 cap per core system (heating, AC, plumbing, electrical)",
+        "$5,000 AC limit with a $10-per-pound refrigerant limit (2025 sample contract)",
         "Reported $25,000 annual aggregate limit",
         "Service fee options of about $65-$125",
         "Network of 6,000+ independent contractors",
@@ -1324,7 +1341,7 @@ export const homeWarrantyConfig: SiteConfig = {
         "Waiting period waived for renewals and real estate coverage",
       ],
       cons: [
-        "Modest $2,000 caps on core systems",
+        "Refrigerant limited to $10 per pound; some reviews cite $2,000 limits on other systems",
         "Small, mostly negative Trustpilot sample",
         "Reported unavailable in six states",
         "Plan names and details are hard to pin down",
@@ -1335,7 +1352,7 @@ export const homeWarrantyConfig: SiteConfig = {
         "Budget shoppers who accept lower caps",
       ],
       finalVerdict:
-        "2-10 Home Buyers Warranty is a respected name in builder structural warranties and now shares a parent with American Home Shield. Its consumer home warranty plans start cheap, but their $2,000 caps on core systems and thin customer record keep it seventh on our list. If it's offered through your builder or agent it's a reasonable option; if you're shopping on your own, compare caps first.",
+        "2-10 Home Buyers Warranty is a respected name in builder structural warranties and now shares a parent with American Home Shield. Its consumer home warranty plans start cheap, but a $10-per-pound refrigerant limit, limits on other systems that some reviews put at $2,000, and a thin customer record keep it seventh on our list. If it's offered through your builder or agent it's a reasonable option; if you're shopping on your own, compare caps first.",
       howItWorks: [
         { timing: "Step 1", title: "Get a plan", detail: "Buy directly, through your agent at closing, or receive structural coverage from your builder." },
         { timing: "Step 2", title: "Coverage begins", detail: "Direct plans have a 30-day waiting period; seller and buyer coverage start at enrollment and closing." },
@@ -1349,9 +1366,12 @@ export const homeWarrantyConfig: SiteConfig = {
   battles,
 
   articles: [
+    homeWarrantyGuide,
+    refrigerantTransitionGuide,
+    applianceInsuranceGuide,
     {
       slug: "what-is-a-home-warranty",
-      title: "What Is a Home Warranty? How It Works, What It Covers and What It Costs",
+      title: "What Is a Home Warranty? Coverage, Cost & How It Works",
       description:
         "A plain-English guide to home warranties - what they cover, how claims work, what they cost, and how they differ from homeowners insurance.",
       category: "Guides",
@@ -1389,7 +1409,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "Home warranty vs homeowners insurance",
-          body: `<p>Homeowners insurance covers sudden, accidental damage - fire, storms, theft - and liability. A home warranty covers the slow, inevitable breakdown of systems and appliances. They cover different risks, and a warranty never replaces the insurance your lender requires. See <a href="/articles/home-warranty-vs-homeowners-insurance">home warranty vs homeowners insurance</a>.</p><p>Ready to compare? See our <a href="/">home warranty rankings</a> or reviews of <a href="/reviews/choice-home-warranty">Choice</a> and <a href="/reviews/american-home-shield">American Home Shield</a>.</p>${DISCLAIMER}`,
+          body: `<p>Homeowners insurance covers sudden, accidental damage - fire, storms, theft - and liability. A home warranty covers the slow, inevitable breakdown of systems and appliances. They cover different risks, and a warranty never replaces the insurance your lender requires. See <a href="/articles/home-warranty-vs-homeowners-insurance">home warranty vs homeowners insurance</a>.</p><p>Ready to compare? See our <a href="/">home warranty rankings</a> or reviews of <a href="/reviews/choice-home-warranty">Choice</a> and <a href="/reviews/american-home-shield">American Home Shield</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1425,7 +1445,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "Do you need both?",
-          body: `<p>If you have a mortgage, homeowners insurance is almost always required. A home warranty is optional and worth considering if you have several aging systems or appliances and want predictable repair costs. Read <a href="/articles/is-a-home-warranty-worth-it">is a home warranty worth it?</a> to decide, then compare plans on our <a href="/">rankings page</a>.</p>${DISCLAIMER}`,
+          body: `<p>If you have a mortgage, homeowners insurance is almost always required. A home warranty is optional and worth considering if you have several aging systems or appliances and want predictable repair costs. Read <a href="/articles/is-a-home-warranty-worth-it">is a home warranty worth it?</a> to decide, then compare plans on our <a href="/">rankings page</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1461,7 +1481,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "Questions to ask before buying",
-          body: `<ol><li>What is the per-item cap for my HVAC, water heater and appliances?</li><li>Is there an overall annual or contract limit?</li><li>How are pre-existing conditions and maintenance defined?</li><li>Are code upgrades, permits and haul-away covered?</li><li>Can I choose my own contractor?</li><li>What's the workmanship guarantee on repairs?</li></ol><p>Our reviews answer these for each company - start with <a href="/reviews/choice-home-warranty">Choice</a>, <a href="/reviews/american-home-shield">American Home Shield</a> and <a href="/reviews/select-home-warranty">Select</a>, or read <a href="/articles/why-home-warranty-claims-get-denied">why claims get denied</a>.</p>${DISCLAIMER}`,
+          body: `<ol><li>What is the per-item cap for my HVAC, water heater and appliances?</li><li>Is there an overall annual or contract limit?</li><li>How are pre-existing conditions and maintenance defined?</li><li>Are code upgrades, permits and haul-away covered?</li><li>Can I choose my own contractor?</li><li>What's the workmanship guarantee on repairs?</li></ol><p>Our reviews answer these for each company - start with <a href="/reviews/choice-home-warranty">Choice</a>, <a href="/reviews/american-home-shield">American Home Shield</a> and <a href="/reviews/select-home-warranty">Select</a>, or read <a href="/articles/why-home-warranty-claims-get-denied">why claims get denied</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1497,7 +1517,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "How to compare fairly",
-          body: `<p>Add the yearly premium to the service fees you expect to pay, then check the caps on the items you're most worried about. A cheaper plan with a $500 per-item cap can cost you far more after one big repair than a pricier plan with a $3,000-$5,000 cap. Compare head-to-head in <a href="/choice-home-warranty-vs-select-home-warranty">Choice vs Select</a> or <a href="/american-home-shield-vs-choice-home-warranty">American Home Shield vs Choice</a>.</p>${DISCLAIMER}`,
+          body: `<p>Add the yearly premium to the service fees you expect to pay, then check the caps on the items you're most worried about. A cheaper plan with a $500 per-item cap can cost you far more after one big repair than a pricier plan with a $3,000-$5,000 cap. Compare head-to-head in <a href="/choice-home-warranty-vs-select-home-warranty">Choice vs Select</a> or <a href="/american-home-shield-vs-choice-home-warranty">American Home Shield vs Choice</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1505,7 +1525,7 @@ export const homeWarrantyConfig: SiteConfig = {
       slug: "why-home-warranty-claims-get-denied",
       title: "Why Home Warranty Claims Get Denied (and How to Avoid It)",
       description:
-        "The most common reasons home warranty claims are denied or only partly paid - pre-existing conditions, maintenance, caps, code upgrades - and how to protect yourself.",
+        "The most common reasons home warranty claims are denied or partly paid - pre-existing conditions, maintenance, caps, code upgrades - and how to avoid them.",
       category: "Claims",
       readTime: "7 min read",
       publishedAt: "2026-10-12",
@@ -1537,13 +1557,13 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "How to protect yourself",
-          body: `<ol><li>Read the sample contract's exclusions and limits before buying.</li><li>Keep maintenance records and photos of major systems.</li><li>File claims promptly when something stops working.</li><li>Never pay for repairs before approval unless the company authorizes it.</li><li>If denied, ask for the reason in writing and escalate if you disagree.</li></ol><p>See <a href="/articles/how-to-file-a-home-warranty-claim">how to file a claim</a> and compare caps across companies on our <a href="/">rankings page</a>.</p>${DISCLAIMER}`,
+          body: `<ol><li>Read the sample contract's exclusions and limits before buying.</li><li>Keep maintenance records and photos of major systems.</li><li>File claims promptly when something stops working.</li><li>Never pay for repairs before approval unless the company authorizes it.</li><li>If denied, ask for the reason in writing and escalate if you disagree.</li></ol><p>See <a href="/articles/how-to-file-a-home-warranty-claim">how to file a claim</a> and compare caps across companies on our <a href="/">rankings page</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
     {
       slug: "home-warranty-for-home-buyers-and-sellers",
-      title: "Home Warranties for Buyers and Sellers: How They Work in a Real Estate Deal",
+      title: "Home Warranties for Buyers and Sellers: How They Work",
       description:
         "Why sellers offer home warranties, how buyer and seller coverage works at closing, and what to check before accepting a plan.",
       category: "Buying",
@@ -1573,13 +1593,13 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "Comparing real estate plans",
-          body: `<p>Compare <a href="/american-home-shield-vs-first-american">American Home Shield vs First American</a> and <a href="/first-american-vs-2-10-home-buyers-warranty">First American vs 2-10</a>, or see all companies on our <a href="/">rankings page</a>.</p>${DISCLAIMER}`,
+          body: `<p>Compare <a href="/american-home-shield-vs-first-american">American Home Shield vs First American</a> and <a href="/first-american-vs-2-10-home-buyers-warranty">First American vs 2-10</a>, or see all companies on our <a href="/">rankings page</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
     {
       slug: "best-home-warranty-companies-compared",
-      title: "Best Home Warranty Companies of 2026, Compared",
+      title: "7 Home Warranty Companies Compared Side by Side (2026)",
       description:
         "Our side-by-side comparison of Choice, American Home Shield, Select, First American, Home Warranty of America, The Home Service Club and 2-10.",
       category: "Provider Guides",
@@ -1613,7 +1633,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "4-7. First American, HWA, The Home Service Club and 2-10",
-          body: `<ul><li><a href="/reviews/first-american">First American</a> - high appliance limits and generous HVAC terms, but fewer states.</li><li><a href="/reviews/home-warranty-of-america">Home Warranty of America</a> - all 50 states and up to $5,000 on most repairs.</li><li><a href="/reviews/home-service-club">The Home Service Club</a> - no age limit on items, but low caps.</li><li><a href="/reviews/2-10-home-buyers-warranty">2-10 Home Buyers Warranty</a> - low starting price and builder expertise, modest caps.</li></ul><p>See our full <a href="/">rankings</a>.</p>${DISCLAIMER}`,
+          body: `<ul><li><a href="/reviews/first-american">First American</a> - high appliance limits and generous HVAC terms, but fewer states.</li><li><a href="/reviews/home-warranty-of-america">Home Warranty of America</a> - all 50 states and up to $5,000 on most repairs.</li><li><a href="/reviews/home-service-club">The Home Service Club</a> - no age limit on items, but low caps.</li><li><a href="/reviews/2-10-home-buyers-warranty">2-10 Home Buyers Warranty</a> - low starting price and builder expertise, modest caps.</li></ul><p>See our full <a href="/">rankings</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1653,13 +1673,13 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "If your claim is denied",
-          body: `<p>Ask for the reason and the contract clause in writing, provide maintenance records if relevant, and escalate to a supervisor. If you still disagree, you can file a complaint with your state's regulator or attorney general. Read <a href="/articles/why-home-warranty-claims-get-denied">why claims get denied</a> to avoid common pitfalls.</p>${DISCLAIMER}`,
+          body: `<p>Ask for the reason and the contract clause in writing, provide maintenance records if relevant, and escalate to a supervisor. If you still disagree, you can file a complaint with your state's regulator or attorney general. Read <a href="/articles/why-home-warranty-claims-get-denied">why claims get denied</a> to avoid common pitfalls.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
     {
       slug: "american-home-shield-plans",
-      title: "American Home Shield Plans Explained: ShieldSilver vs ShieldGold vs ShieldPlatinum",
+      title: "American Home Shield Plans: Silver vs Gold vs Platinum",
       description:
         "What each American Home Shield plan covers, reported prices, coverage caps, add-ons and which tier fits your home.",
       category: "Provider Guides",
@@ -1689,15 +1709,15 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "Add-ons and service fees",
-          body: `<p>Optional add-ons include pool/spa, well pump, septic pump, guest unit and electronics, reported at roughly $5-$18 a month each. You choose a $100 or $125 service fee per request. See the full <a href="/reviews/american-home-shield">American Home Shield review</a> or compare <a href="/american-home-shield-vs-choice-home-warranty">AHS vs Choice</a>.</p>${DISCLAIMER}`,
+          body: `<p>Optional add-ons include pool/spa, well pump, septic pump, guest unit and electronics, reported at roughly $5-$18 a month each. You choose a $100 or $125 service fee per request. See the full <a href="/reviews/american-home-shield">American Home Shield review</a> or compare <a href="/american-home-shield-vs-choice-home-warranty">AHS vs Choice</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
     {
       slug: "is-choice-home-warranty-legit",
-      title: "Is Choice Home Warranty Legit? Settlements, Reviews and What to Know",
+      title: "Is Choice Home Warranty Legit? Settlements & Reviews",
       description:
-        "Choice Home Warranty is a real company - but it has a notable regulatory history. Here's what the Arizona and New Jersey settlements were about and how to protect yourself.",
+        "Choice Home Warranty is a real company with a notable regulatory history. What the Arizona and New Jersey settlements were about and how to protect yourself.",
       category: "Provider Guides",
       readTime: "6 min read",
       publishedAt: "2026-10-12",
@@ -1725,7 +1745,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "Should you buy from Choice?",
-          body: `<p>Choice offers good value on paper - two simple plans and a $3,000 per-item cap. If you buy, read the contract's exclusions carefully, keep maintenance records and document every claim. Compare it with <a href="/american-home-shield-vs-choice-home-warranty">American Home Shield</a> and <a href="/choice-home-warranty-vs-select-home-warranty">Select</a>, or read the full <a href="/reviews/choice-home-warranty">Choice review</a>.</p>${DISCLAIMER}`,
+          body: `<p>Choice offers good value on paper - two simple plans and a $3,000 per-item cap. If you buy, read the contract's exclusions carefully, keep maintenance records and document every claim. Compare it with <a href="/american-home-shield-vs-choice-home-warranty">American Home Shield</a> and <a href="/choice-home-warranty-vs-select-home-warranty">Select</a>, or read the full <a href="/reviews/choice-home-warranty">Choice review</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1761,7 +1781,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "The fine print: caps",
-          body: `<p>Third-party reviews report caps of about $500 per item for many appliances, plumbing and electrical repairs, and about $3,000 per term for HVAC. That's the key trade-off. Compare with <a href="/choice-home-warranty-vs-select-home-warranty">Choice vs Select</a> or read the full <a href="/reviews/select-home-warranty">Select review</a>.</p>${DISCLAIMER}`,
+          body: `<p>Third-party reviews report caps of about $500 per item for many appliances, plumbing and electrical repairs, and about $3,000 per term for HVAC. That's the key trade-off. Compare with <a href="/choice-home-warranty-vs-select-home-warranty">Choice vs Select</a> or read the full <a href="/reviews/select-home-warranty">Select review</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
