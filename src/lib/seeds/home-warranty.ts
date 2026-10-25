@@ -1,9 +1,10 @@
 import type { BattleData, BattleFeatureRow, SiteConfig } from "@/lib/config";
 import { homeWarrantyGuide } from "./articles/home-warranty-guide";
 import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
+import { applianceInsuranceGuide } from "./articles/appliance-insurance";
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Home warranty vertical content - tophomewarranty.com
+// Home warranty vertical content - thetophomewarranty.com
 //
 // Launch content for the single-vertical home warranty comparison site, built
 // on the same template as hrtwomen.com. Seven providers, in operator order:
@@ -1367,6 +1368,7 @@ export const homeWarrantyConfig: SiteConfig = {
   articles: [
     homeWarrantyGuide,
     refrigerantTransitionGuide,
+    applianceInsuranceGuide,
     {
       slug: "what-is-a-home-warranty",
       title: "What Is a Home Warranty? Coverage, Cost & How It Works",

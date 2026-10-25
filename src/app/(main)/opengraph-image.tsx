@@ -49,7 +49,7 @@ export default function OGImage() {
               color: "white",
             }}
           >
-            tophomewarranty.com
+            thetophomewarranty.com
           </span>
         </div>
         <div

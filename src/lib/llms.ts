@@ -7,7 +7,7 @@ import { FACTS, FEATURE_LABELS } from "@/lib/seeds/home-warranty";
 // never drift from what the site says. `full` adds every review verdict,
 // comparison verdict and article body as plain text (llms-full.txt).
 
-const ORIGIN = "https://www.tophomewarranty.com";
+const ORIGIN = "https://www.thetophomewarranty.com";
 
 const stripHtml = (html: string) =>
   html

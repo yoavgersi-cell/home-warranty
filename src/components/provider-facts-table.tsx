@@ -13,7 +13,7 @@ export function ProviderFactsTable({ providers }: { providers: Provider[] }) {
   return (
     <section className="mx-auto max-w-[1200px] px-4 pb-4" aria-labelledby="facts-table-heading">
       <h2 id="facts-table-heading" className="mb-1.5 text-[22px] font-bold text-[#191919]">
-        Home Warranty Companies Compared at a Glance
+        Home Warranty Comparison: 7 Companies Side by Side
       </h2>
       <p className="mb-4 text-[14px] text-gray-500">
         Approximate published figures, checked {PROVIDER_DATA_CHECKED}. Prices vary by ZIP code and plan - always confirm in

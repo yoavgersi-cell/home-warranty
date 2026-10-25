@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://www.tophomewarranty.com";
+const SITE_URL = "https://www.thetophomewarranty.com";
 
 // AI search and answer-engine crawlers are named explicitly (GEO): being
 // crawlable by them is the precondition for being cited in ChatGPT Search,

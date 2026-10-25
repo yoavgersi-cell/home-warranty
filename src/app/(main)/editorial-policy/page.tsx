@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: CANONICAL },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: CANONICAL, type: "article", images: [{ url: "https://www.tophomewarranty.com/opengraph-image", width: 1200, height: 630 }], },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: CANONICAL, type: "article", images: [{ url: "https://www.thetophomewarranty.com/opengraph-image", width: 1200, height: 630 }], },
 };
 
 export default function EditorialPolicyPage() {

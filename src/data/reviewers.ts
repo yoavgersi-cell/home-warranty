@@ -13,7 +13,7 @@
 //   - The byline wording is "Reviewed for accuracy by" - it must never imply a
 //     credential or licence the reviewer does not hold.
 
-export const SITE_ORIGIN = "https://www.tophomewarranty.com";
+export const SITE_ORIGIN = "https://www.thetophomewarranty.com";
 
 export interface ReviewerCredential {
   title: string;

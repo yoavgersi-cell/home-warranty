@@ -12,7 +12,7 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://www.tophomewarranty.com";
+const SITE_URL = "https://www.thetophomewarranty.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { getConfig } from "@/lib/config-store";
 
 export const runtime = "edge";
-export const alt = "Provider Comparison - tophomewarranty.com";
+export const alt = "Provider Comparison - thetophomewarranty.com";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -57,7 +57,7 @@ export default async function OGImage({
             marginBottom: "40px",
           }}
         >
-          tophomewarranty.com
+          thetophomewarranty.com
         </span>
         <div
           style={{

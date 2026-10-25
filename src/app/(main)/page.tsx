@@ -13,17 +13,17 @@ import { CONTENT_LAST_UPDATED } from "@/lib/config";
 
 export const revalidate = 60;
 
-const SITE_URL = "https://www.tophomewarranty.com";
+const SITE_URL = "https://www.thetophomewarranty.com";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Best Home Warranty Companies of 2026, Compared",
+    absolute: "Top Home Warranty Companies 2026: Compare Plans & Prices",
   },
   description:
-    "The best home warranty companies of 2026, compared: plans ranked by what they cover, monthly price, service call fees, coverage caps and claims experience.",
+    "Home warranty comparison for 2026: compare the top home warranty companies side by side by price, coverage, appliance and HVAC caps, service fees and reviews.",
   alternates: { canonical: SITE_URL },
   openGraph: {
-    title: "Best Home Warranty Companies of 2026, Compared",
+    title: "Top Home Warranty Companies 2026: Compare Plans & Prices",
     description:
       "Compare the best home warranty plans of 2026 - top companies ranked by coverage, price, claims service and value.",
     url: SITE_URL,
@@ -91,7 +91,7 @@ export default async function HomePage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Best Home Warranty Companies of 2026, Compared",
+    name: "Top Home Warranty Companies 2026: Compare Plans & Prices",
     description:
       "Compare coverage, pricing, service fees and overall value across the top home warranty companies of 2026.",
     url: SITE_URL,

@@ -1,6 +1,6 @@
 import type { Provider } from "@/lib/config";
 
-const ORIGIN = "https://www.tophomewarranty.com";
+const ORIGIN = "https://www.thetophomewarranty.com";
 
 // Schema.org Organization entity for a reviewed provider. Linking each page to
 // the company it is about (by name, official site and founding date) helps

@@ -11,7 +11,7 @@ import { CONTENT_LAST_UPDATED } from "@/lib/config";
 
 export const revalidate = 60;
 
-const CANONICAL = "https://www.tophomewarranty.com/how-we-rank";
+const CANONICAL = "https://www.thetophomewarranty.com/how-we-rank";
 
 export const metadata: Metadata = {
   title: { absolute: "How We Rank Home Warranty Companies | Top Home Warranty" },
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
       "The factors we score, where our data comes from, how we verify accuracy, and how we pick winners in our home warranty comparisons.",
     url: CANONICAL,
     type: "article",
-    images: [{ url: "https://www.tophomewarranty.com/opengraph-image", width: 1200, height: 630 }],
+    images: [{ url: "https://www.thetophomewarranty.com/opengraph-image", width: 1200, height: 630 }],
   },
 };
 
@@ -79,14 +79,14 @@ export default async function HowWeRankPage() {
       "Our full methodology for ranking and reviewing home warranty companies: the factors we score, where our data comes from, how we verify accuracy, and how we pick winners.",
     url: CANONICAL,
     ...pageReviewSchema("/how-we-rank"),
-    publisher: { "@type": "Organization", name: "tophomewarranty.com", url: "https://www.tophomewarranty.com" },
+    publisher: { "@type": "Organization", name: "thetophomewarranty.com", url: "https://www.thetophomewarranty.com" },
   };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.tophomewarranty.com" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.thetophomewarranty.com" },
       { "@type": "ListItem", position: 2, name: "How We Rank", item: CANONICAL },
     ],
   };
@@ -330,7 +330,7 @@ export default async function HowWeRankPage() {
           <h2 className="mb-4 text-[22px] font-bold text-[#191919]">Disclaimer</h2>
           <div className="rounded-xl border border-gray-200 bg-white p-6">
             <p className="text-[15px] leading-[1.75] text-gray-600">
-              tophomewarranty.com is not a home warranty company and does not sell or administer service
+              thetophomewarranty.com is not a home warranty company and does not sell or administer service
               contracts. The information on this site is for general information and comparison purposes only
               and is not legal, insurance or financial advice. Coverage, prices, caps and exclusions vary by
               company, plan, state and ZIP code. Your signed contract determines what is covered - read the
