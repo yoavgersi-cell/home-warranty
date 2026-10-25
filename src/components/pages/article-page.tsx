@@ -70,6 +70,11 @@ const categoryColors: Record<string, string> = {
   Advice: "bg-amber-50 text-amber-700",
   Wellness: "bg-purple-50 text-purple-700",
   "Provider Guides": "bg-[#FFF1E6] text-[#C2570C]",
+  Guides: "bg-emerald-50 text-emerald-700",
+  Costs: "bg-amber-50 text-amber-700",
+  Claims: "bg-blue-50 text-blue-700",
+  Buying: "bg-purple-50 text-purple-700",
+  "Best For": "bg-[#FFF1E6] text-[#C2570C]",
 };
 
 // Article categories typed as MedicalWebPage in schema (see the note below).

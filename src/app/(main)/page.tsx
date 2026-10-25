@@ -6,6 +6,7 @@ import { Sidebar } from "@/components/sidebar";
 import { EditorialContent } from "@/components/editorial-content";
 import { FaqAccordion } from "@/components/faq-accordion";
 import { ProviderFactsTable } from "@/components/provider-facts-table";
+import { BestForLinks } from "@/components/best-for-links";
 import { MedicalReviewBar } from "@/components/medical-review-bar";
 import { pageReviewSchema } from "@/data/reviewers";
 import { getConfig } from "@/lib/config-store";
@@ -162,6 +163,7 @@ export default async function HomePage() {
       </section>
 
       <ProviderFactsTable providers={sidebarProviders} />
+      <BestForLinks />
       <EditorialContent />
       <FaqAccordion items={config.faqs} />
     </>
