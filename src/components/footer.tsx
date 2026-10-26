@@ -22,6 +22,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
     title: "Guides",
     links: [
       { label: "Complete Home Warranty Guide", href: "/articles/home-warranty-guide" },
+      { label: "Claim Denied? How to Fight Back", href: "/articles/home-warranty-claim-denied" },
       { label: "R-410A Phase-Out & Warranties", href: "/articles/r-410a-phase-out-home-warranty" },
       { label: "Best Appliance Insurance", href: "/articles/best-appliance-insurance" },
       { label: "What Is a Home Warranty?", href: "/articles/what-is-a-home-warranty" },

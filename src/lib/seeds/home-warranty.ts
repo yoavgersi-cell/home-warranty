@@ -2,6 +2,7 @@ import type { BattleData, BattleFeatureRow, SiteConfig } from "@/lib/config";
 import { homeWarrantyGuide } from "./articles/home-warranty-guide";
 import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
 import { applianceInsuranceGuide } from "./articles/appliance-insurance";
+import { claimDeniedGuide } from "./articles/claim-denied";
 import { bestForWaterHeaters, bestForHeatPumps } from "./articles/best-for/water-heaters-heat-pumps";
 import { bestForElectrical, bestForDishwashers } from "./articles/best-for/electrical-dishwashers";
 import { mostComprehensive, noDeductible } from "./articles/best-for/comprehensive-deductible";
@@ -1391,6 +1392,7 @@ export const homeWarrantyConfig: SiteConfig = {
 
   articles: [
     homeWarrantyGuide,
+    claimDeniedGuide,
     refrigerantTransitionGuide,
     applianceInsuranceGuide,
     bestForWaterHeaters,

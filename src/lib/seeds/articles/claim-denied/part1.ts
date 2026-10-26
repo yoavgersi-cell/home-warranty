@@ -1,0 +1,38 @@
+import type { ArticleSection } from "@/lib/config";
+
+// Part 1: the short answer, why this matters now, what the guide covers and
+// how we researched it. Sources are cited inline and listed in part 9.
+export const part1: ArticleSection[] = [
+  {
+    heading: "The short version: why home warranty claims get denied or underpaid",
+    body: `<div class="qa"><strong>Quick answer</strong>Home warranty claims are most often denied because the company concludes the problem was <strong>pre-existing</strong>, caused by <strong>missing maintenance</strong> or improper installation, involves a part or area the contract <strong>doesn't cover</strong>, or exceeds a <strong>coverage cap</strong>. Claims that are approved can still leave you paying a lot: most contracts let the company pay <strong>cash instead of replacing</strong> an item, calculated at its own discounted cost rather than retail, and exclude permits, code upgrades and "modifications" unless your plan specifically includes them. You can push back - by getting the technician's diagnosis in writing, citing the exact contract language, appealing in writing, documenting replacement prices, and escalating to your state regulator if the company won't move.</div>
+<p>If you've just had a home warranty claim denied - or you've been offered a check that won't come close to buying a replacement - you're not alone, and you're not powerless. In the 351 recent customer reviews we analyzed for this guide, denied claims and inadequate cash-out offers were among the five most common complaints at every company we track. State attorneys general and insurance regulators have taken action against home warranty companies over the same issues, and some of those actions resulted in multimillion-dollar settlements.</p>
+<p>This guide explains, in plain language and with sources:</p>
+<ul>
+<li><strong>What real customers are reporting right now</strong> - our original analysis of 351 Trustpilot reviews of Choice, American Home Shield, Select, First American and Home Warranty of America, captured October 26, 2026.</li>
+<li><strong>The ten most common reasons claims are denied</strong>, the contract language behind each one, and how to tell whether a denial is solid or worth challenging.</li>
+<li><strong>How cash-in-lieu offers are calculated</strong> at each company, why they often fall short, and how to negotiate a better number.</li>
+<li><strong>Where the extra charges come from</strong> - service fees on denied claims, "modifications," permits and code upgrades.</li>
+<li><strong>A step-by-step plan to fight a denial</strong>, including what to put in writing, which state regulator handles home warranty complaints where you live, and when a credit card dispute or small claims court makes sense.</li>
+<li><strong>A company-by-company summary</strong> of the denial-related terms at all seven companies we track.</li>
+</ul>`,
+  },
+  {
+    heading: "Why denials and cash-out disputes are a bigger issue in 2026",
+    body: `<p>Home warranty disputes aren't new, but several things have come together to make them more common and more expensive.</p>
+<p><strong>Repair and replacement costs have moved unevenly.</strong> In June 2025 the federal government extended Section 232 steel tariffs to the steel content of major appliances - refrigerators, freezers, washers, dryers, dishwashers, ranges, ovens and garbage disposals - effective June 23, 2025 (Federal Register, 90 FR 25208). Retail appliance prices haven't simply climbed since then; trade reporting on Bureau of Labor Statistics data shows the major-appliance price index was down year over year in mid-2026, even as several manufacturers announced price increases. Heating and cooling equipment has been a different story: HVAC manufacturers announced repeated price increases through 2025 and 2026 - ACHR News' monthly lists showed increases of mostly 3% to 6% in October 2026, with some as high as 15% - on top of the refrigerant transition that has made many AC replacements more involved (our <a href="/articles/r-410a-phase-out-home-warranty">R-410A phase-out guide</a> explains that in depth). When costs shift, the distance between what a warranty company pays and what you'd pay a contractor or retailer can grow - and disputes follow.</p>
+<p><strong>The companies are managing claim costs closely.</strong> Frontdoor, the parent of American Home Shield and (since December 2024) 2-10 Home Buyers Warranty, handles roughly 3.8 million home warranty service requests a year through about 17,000 contractor firms, according to its 2025 annual report. On its earnings calls, management has described raising service fees partly as an offset to claims costs. That's a normal business decision - but it's a reminder that every claim is a cost the company is actively trying to control.</p>
+<p><strong>Regulators have been active.</strong> In February 2026, the Arizona Attorney General announced an <strong>$11.8 million</strong> consent judgment with Choice Home Warranty - which the office called the largest home warranty settlement in the state's history - resolving a 2019 consumer fraud lawsuit over how coverage was marketed. Choice denied the allegations and did not admit wrongdoing. Oregon's Division of Financial Regulation has also issued an order against Choice that cited, among other things, insufficient cash payments offered instead of repairs. We cover these and other actions below; they show which practices regulators consider over the line.</p>
+<p><strong>Customers now have more data than ever - and so do you.</strong> Between public review sites, regulator complaint databases and published sample contracts, it's possible to check how a company actually handles claims before you buy, and to build a well-documented case if a claim goes wrong. This guide puts that information in one place.</p>`,
+  },
+  {
+    heading: "How we researched this guide",
+    body: `<p>We combined three kinds of sources:</p>
+<ul>
+<li><strong>Original review analysis.</strong> On October 26, 2026 we captured the most recent reviews on the Trustpilot profiles of the five companies we track that have one - 351 reviews in total - and tagged every review by theme. The same data powers the "what customers praise and complain about" sections of our <a href="/reviews/choice-home-warranty">company reviews</a>. Review details quoted here are as reported by the reviewers; we can't independently verify individual claims.</li>
+<li><strong>Contracts.</strong> Sample contracts, terms pages and FAQs published by American Home Shield, Choice Home Warranty, Select Home Warranty, First American Home Warranty, Home Warranty of America, The Home Service Club and 2-10 Home Buyers Warranty. Terms differ by state, plan and contract version, so we describe the language we found and tell you what to look for in your own contract.</li>
+<li><strong>Government and industry sources.</strong> State regulators (Texas Department of Licensing and Regulation, California Department of Insurance, Florida Office of Insurance Regulation and Department of Financial Services, Arizona Department of Insurance and Financial Institutions, Nevada Division of Insurance, Oregon Division of Financial Regulation and others), attorney general press releases, the Federal Trade Commission, the Consumer Financial Protection Bureau, the Federal Register, the Bureau of Labor Statistics, Frontdoor's SEC filings and earnings materials, and HVAC trade press.</li>
+</ul>
+<p>Where sources disagreed or we couldn't confirm something, we left it out or said so. This guide is general information, not legal advice. Your signed contract and your state's law control.</p>`,
+  },
+];

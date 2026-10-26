@@ -62,7 +62,7 @@ export const part2: ArticleSection[] = [
 </tbody>
 </table>
 <p>Two things explain most of these gaps, and we cover both in detail below. First, most contracts say cash-in-lieu payments are based on <em>the company's</em> cost - what it would pay through its own suppliers or contractors - not the retail price you'd pay. Second, the replacement standard in most contracts is "similar features, capacity and efficiency," not the same brand, model or finish, and companies and customers often disagree about what counts as "similar." The AHS refrigerator dispute above is a textbook example: the reviewer quoted AHS's own contract language about "similar capacity, dimensions, capability, color, and finish," and AHS's public reply repeated that standard while noting that "replacement items may differ in brand or model."</p>
-<p>A third factor is timing. Appliance prices rose in 2025-2026, and a cash figure built from older negotiated pricing can trail what you'll actually pay at a store - one reason this complaint feels sharper now than it did a few years ago.</p>`,
+<p>A third factor is the type of item. The biggest gaps in our table involve built-in, high-end or specialty equipment (an 84-inch panel-ready refrigerator, a high-end cooktop) and situations where the customer had already paid for a repair or replacement out of pocket. Standard appliances bought at big-box prices tend to produce smaller disputes.</p>`,
   },
   {
     heading: "Why the star ratings don't tell the whole story",
