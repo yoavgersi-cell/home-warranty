@@ -5,6 +5,11 @@ import { applianceInsuranceGuide } from "./articles/appliance-insurance";
 import { bestForWaterHeaters, bestForHeatPumps } from "./articles/best-for/water-heaters-heat-pumps";
 import { bestForElectrical, bestForDishwashers } from "./articles/best-for/electrical-dishwashers";
 import { mostComprehensive, noDeductible } from "./articles/best-for/comprehensive-deductible";
+import { choiceReviews, choiceVoice } from "./trustpilot/choice-home-warranty";
+import { ahsReviews, ahsVoice } from "./trustpilot/american-home-shield";
+import { selectReviews, selectVoice } from "./trustpilot/select-home-warranty";
+import { firstAmericanReviews, firstAmericanVoice } from "./trustpilot/first-american";
+import { hwaReviews, hwaVoice } from "./trustpilot/home-warranty-of-america";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Home warranty vertical content - thetophomewarranty.com
@@ -51,15 +56,15 @@ import { mostComprehensive, noDeductible } from "./articles/best-for/comprehensi
 //    $7,000 (Premium). Refrigerant (FAQ): 100% on Premium and real estate
 //    plans, up to $20/lb on Starter and Essential.
 //    Roughly 35-37 states + DC; not in AK, CT, DE, HI, LA among others.
-//    Trustpilot 4.0 / ~19,270 reviews.
+//    Trustpilot 4.0 / 19,350 reviews (Oct 26, 2026).
 //  - HWA: founded 1996; acquired by Choice Feb 2022. Premier (no AC) and
 //    Premier Plus. Sample quote ~$48 / ~$61 per month with a $100 fee. Up to
 //    $5,000 on most approved repairs. 13-month contracts. All 50 states.
-//    30-day workmanship guarantee. Trustpilot 4.0 / ~3,365 reviews.
+//    30-day workmanship guarantee. Trustpilot 4.0 / 3,403 reviews (Oct 26, 2026).
 //  - The Home Service Club: since ~2008-2009. Standard (18 items) and
 //    Comprehensive (33 items). ~$54 / ~$67 per month. Service fee ~$65-$125.
 //    Per-item caps mostly $300-$2,000; annual aggregate $6,000 / $9,000. No
-//    age limit on covered items. Recent Trustpilot snapshots low (1.2-1.9).
+//    age limit on covered items. No Trustpilot profile (operator-confirmed).
 //  - 2-10 HBW: since ~1980; Frontdoor acquired it Dec 2024 ($585M). Best
 //    known for builder structural warranties. From ~$27-$35/mo. Service fee
 //    $65-$125. 2025 sample contract: $5,000 AC limit incl. $10/lb refrigerant
@@ -70,10 +75,10 @@ import { mostComprehensive, noDeductible } from "./articles/best-for/comprehensi
 //  - affiliateUrl values point to each provider's homepage. Replace them with
 //    your real tracking links.
 //  - Trustpilot figures are third-party snapshots; refresh them from each
-//    live profile. Ratings for Select, The Home Service Club and 2-10 are
-//    left blank because sources conflicted. No Trustpilot review TEXT is
-//    included: none could be verified verbatim. Add real reviews (exact text,
-//    name, date) to `trustpilotReviews` to light up the review carousels.
+//    live profile. The Home Service Club and 2-10 have no Trustpilot
+//    profile (operator-confirmed Oct 26, 2026), so no rating is shown. Verbatim review text and theme
+//    tallies live in ./trustpilot/<provider>.ts, assembled from Trustpilot
+//    page captures (Choice, AHS, Select, First American and HWA; Oct 26, 2026).
 //  - Plan names for First American and 2-10 and all state exclusions should
 //    be confirmed on each provider's site.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -359,7 +364,7 @@ const battles: BattleData[] = [
         name: "Customer reviews",
         winner: "provider2",
         explanation: "First American shows 4.0 on Trustpilot across roughly 19,000 reviews; AHS sits in the mid-3s.",
-        supportingPoints: ["First American: 4.0", "AHS: ~3.5-3.7"],
+        supportingPoints: ["First American: 4.0 across 19,350", "AHS: 3.5 across 16,329"],
       },
       {
         name: "Plan options",
@@ -449,7 +454,7 @@ const battles: BattleData[] = [
         name: "Customer reviews",
         winner: "provider1",
         explanation: "Choice has a far larger Trustpilot review base (60,000+) at a similar average score.",
-        supportingPoints: ["Choice: ~3.9 across 62,000+", "HWA: ~4.0 across 3,300+"],
+        supportingPoints: ["Choice: 3.9 across 63,234", "HWA: 4.0 across 3,403"],
       },
       {
         name: "Price",
@@ -544,8 +549,8 @@ const battles: BattleData[] = [
       {
         name: "Reputation",
         winner: "provider1",
-        explanation: "AHS has a much larger public customer record; 2-10's Trustpilot sample is small and mostly negative.",
-        supportingPoints: ["AHS: 15,000+ Trustpilot reviews", "2-10: small sample"],
+        explanation: "AHS has a large public review record to check; 2-10 has no Trustpilot profile, so there is far less public feedback on its consumer plans.",
+        supportingPoints: ["AHS: 3.5 across 16,329 Trustpilot reviews", "2-10: no Trustpilot profile"],
       },
     ],
     features: features("american-home-shield", "2-10-home-buyers-warranty", { caps: "provider1", price: "provider2", states: "provider1" }),
@@ -563,7 +568,7 @@ const battles: BattleData[] = [
     intro:
       "First American and 2-10 are both heavily used in real estate transactions - First American through its title and settlement parent, 2-10 through its builder and agent network. Here's how their home warranty plans compare.",
     verdict:
-      "First American wins on coverage limits and customer reviews, with a 4.0 Trustpilot score across roughly 19,000 reviews. 2-10 is the cheaper starting point and covers some states First American doesn't, so check which is offered at your closing.",
+      "First American wins on coverage limits and customer reviews, with a 4.0 Trustpilot score across 19,350 reviews. 2-10 is the cheaper starting point and covers some states First American doesn't, so check which is offered at your closing.",
     verdictWinnerPoints: ["Higher appliance limits", "4.0 on Trustpilot", "Generous HVAC terms"],
     verdictLoserPoints: ["Lower starting price", "Builder structural-warranty expertise", "Frontdoor-owned"],
     winnerId: "first-american",
@@ -577,8 +582,8 @@ const battles: BattleData[] = [
       {
         name: "Customer reviews",
         winner: "provider1",
-        explanation: "First American has a large, positive Trustpilot record; 2-10's sample is small and mostly negative.",
-        supportingPoints: ["4.0 across ~19,000", "2-10: small sample"],
+        explanation: "First American has a large, positive Trustpilot record; 2-10 has no Trustpilot profile to compare.",
+        supportingPoints: ["4.0 across 19,350", "2-10: no Trustpilot profile"],
       },
       {
         name: "Price",
@@ -609,7 +614,7 @@ const battles: BattleData[] = [
       "Choice and The Home Service Club both sell direct to homeowners. The Home Service Club's standout feature is no age limit on covered systems and appliances; Choice's is a higher, simpler $3,000 per-item cap. Here's how they compare.",
     verdict:
       "Choice wins: its $3,000 per-item cap beats The Home Service Club's mostly $300-$2,000 item caps and $6,000-$9,000 annual limits, and its customer record is much stronger. The Home Service Club's no-age-limit policy is appealing for very old equipment, but read the caps carefully.",
-    verdictWinnerPoints: ["$3,000 per covered item", "No annual aggregate cap reported", "Much larger, stronger review record"],
+    verdictWinnerPoints: ["$3,000 per covered item", "No annual aggregate cap reported", "Much larger public review record"],
     verdictLoserPoints: ["No age limit on covered items", "Lower service fee options", "Two simple plans"],
     winnerId: "choice-home-warranty",
     categories: [
@@ -628,8 +633,8 @@ const battles: BattleData[] = [
       {
         name: "Customer reviews",
         winner: "provider1",
-        explanation: "Choice's Trustpilot score is far higher than The Home Service Club's recent low snapshots.",
-        supportingPoints: ["Choice: ~3.9", "HSC: low recent scores"],
+        explanation: "Choice has a large public review record (3.9 across 63,234 Trustpilot reviews); The Home Service Club has no Trustpilot profile.",
+        supportingPoints: ["Choice: 3.9 on Trustpilot", "HSC: no Trustpilot profile"],
       },
       {
         name: "Price",
@@ -673,8 +678,8 @@ const battles: BattleData[] = [
       {
         name: "Reputation",
         winner: "provider1",
-        explanation: "AHS has a long track record and BBB accreditation; recent Home Service Club reviews are largely negative.",
-        supportingPoints: ["AHS since 1971", "HSC low recent reviews"],
+        explanation: "AHS has a long track record and a large public review record; The Home Service Club has no Trustpilot profile, so there is less public feedback to check.",
+        supportingPoints: ["AHS since 1971", "HSC: no Trustpilot profile"],
       },
       {
         name: "Plan options",
@@ -698,7 +703,7 @@ const battles: BattleData[] = [
     intro:
       "HWA and The Home Service Club are mid-priced alternatives to the biggest brands. HWA offers higher repair limits and nationwide availability; The Home Service Club covers items regardless of age. Here's how they compare.",
     verdict:
-      "Home Warranty of America wins on limits (up to $5,000 on most repairs), 50-state availability and a better Trustpilot record. The Home Service Club suits homes with very old equipment, within its lower caps.",
+      "Home Warranty of America wins on limits (up to $5,000 on most repairs), 50-state availability and a public Trustpilot record (4.0). The Home Service Club suits homes with very old equipment, within its lower caps.",
     verdictWinnerPoints: ["Up to $5,000 on most repairs", "All 50 states", "4.0 on Trustpilot"],
     verdictLoserPoints: ["No age limit on items", "Lower service fee options", "Comprehensive plan covers 33 items"],
     winnerId: "home-warranty-of-america",
@@ -718,8 +723,8 @@ const battles: BattleData[] = [
       {
         name: "Customer reviews",
         winner: "provider1",
-        explanation: "HWA shows ~4.0 on Trustpilot; The Home Service Club's recent snapshots are far lower.",
-        supportingPoints: ["HWA: ~4.0", "HSC: low recent scores"],
+        explanation: "HWA shows 4.0 across 3,403 Trustpilot reviews; The Home Service Club has no Trustpilot profile.",
+        supportingPoints: ["HWA: 4.0 on Trustpilot", "HSC: no Trustpilot profile"],
       },
       {
         name: "Price",
@@ -809,10 +814,12 @@ export const homeWarrantyConfig: SiteConfig = {
       affiliateUrl: "https://www.choicehomewarranty.com/",
       ctaText: "Get a Quote",
       excludedStates: ["WA"],
-      // Third-party snapshot (Oct 2026): ~3.9 across ~62,000 reviews on the
-      // choicehomewarranty.com profile. Refresh from the live profile.
+      // Trustpilot profile header captured Oct 26, 2026: 3.9 across 63,234
+      // reviews (claimed profile, paid Trustpilot subscription).
       trustpilotRating: "3.9",
-      trustpilotReviewCount: "62,000+",
+      trustpilotReviewCount: "63,234",
+      trustpilotReviews: choiceReviews,
+      customerVoice: choiceVoice,
     },
     {
       id: "american-home-shield",
@@ -832,10 +839,12 @@ export const homeWarrantyConfig: SiteConfig = {
       affiliateUrl: "https://www.ahs.com/",
       ctaText: "Get a Quote",
       excludedStates: ["AK", "HI"],
-      // Third-party snapshot (Oct 2026): the ahs.com profile showed 3.5-3.7
-      // across ~15,450 reviews. Conservative figure used; refresh from live.
+      // Trustpilot profile header captured Oct 26, 2026: 3.5 across 16,329
+      // reviews (claimed profile, paid Trustpilot subscription).
       trustpilotRating: "3.5",
-      trustpilotReviewCount: "15,450",
+      trustpilotReviewCount: "16,329",
+      trustpilotReviews: ahsReviews,
+      customerVoice: ahsVoice,
     },
     {
       id: "select-home-warranty",
@@ -855,6 +864,12 @@ export const homeWarrantyConfig: SiteConfig = {
       affiliateUrl: "https://www.selecthomewarranty.com/",
       ctaText: "Get a Quote",
       excludedStates: ["NV", "WA", "WI"],
+      // Trustpilot profile header captured Oct 26, 2026: 3.2 across 6,413
+      // reviews (claimed profile; no paid-subscription badge shown).
+      trustpilotRating: "3.2",
+      trustpilotReviewCount: "6,413",
+      trustpilotReviews: selectReviews,
+      customerVoice: selectVoice,
     },
     {
       id: "first-american",
@@ -873,9 +888,12 @@ export const homeWarrantyConfig: SiteConfig = {
       ],
       affiliateUrl: "https://homewarranty.firstam.com/",
       ctaText: "Get a Quote",
-      // Third-party snapshot (Oct 2026): 4.0 across ~19,270 reviews.
+      // Trustpilot profile header captured Oct 26, 2026: 4.0 across 19,350
+      // reviews (claimed profile, paid Trustpilot subscription).
       trustpilotRating: "4.0",
-      trustpilotReviewCount: "19,270",
+      trustpilotReviewCount: "19,350",
+      trustpilotReviews: firstAmericanReviews,
+      customerVoice: firstAmericanVoice,
     },
     {
       id: "home-warranty-of-america",
@@ -894,9 +912,12 @@ export const homeWarrantyConfig: SiteConfig = {
       ],
       affiliateUrl: "https://www.hwahomewarranty.com/",
       ctaText: "Get a Quote",
-      // Third-party snapshot (Oct 2026): 4.0 across ~3,365 reviews.
+      // Trustpilot profile header captured Oct 26, 2026: 4.0 across 3,403
+      // reviews (claimed profile, paid Trustpilot subscription).
       trustpilotRating: "4.0",
-      trustpilotReviewCount: "3,365",
+      trustpilotReviewCount: "3,403",
+      trustpilotReviews: hwaReviews,
+      customerVoice: hwaVoice,
     },
     {
       id: "home-service-club",
@@ -1305,7 +1326,7 @@ export const homeWarrantyConfig: SiteConfig = {
         "Buyers who understand and accept the caps",
       ],
       finalVerdict:
-        "The Home Service Club stands out for covering items regardless of age, which can matter in older homes. But its per-item caps are low, an annual aggregate limit applies, and recent customer reviews are largely negative. It ranks sixth: consider it only after comparing caps against the bigger brands, and read the contract carefully.",
+        "The Home Service Club stands out for covering items regardless of age, which can matter in older homes. But its per-item caps are low, an annual aggregate limit applies, and it has no Trustpilot profile, so there is little public review data to check. It ranks sixth: consider it only after comparing caps against the bigger brands, and read the contract carefully.",
       howItWorks: [
         { timing: "Step 1", title: "Choose a plan", detail: "Pick Standard or Comprehensive and any add-ons." },
         { timing: "Step 2", title: "Coverage begins", detail: "Check your contract for the waiting period." },
@@ -1345,7 +1366,7 @@ export const homeWarrantyConfig: SiteConfig = {
       ],
       cons: [
         "Refrigerant limited to $10 per pound; some reviews cite $2,000 limits on other systems",
-        "Small, mostly negative Trustpilot sample",
+        "No Trustpilot profile for its consumer plans",
         "Reported unavailable in six states",
         "Plan names and details are hard to pin down",
       ],
@@ -1737,7 +1758,7 @@ export const homeWarrantyConfig: SiteConfig = {
         "Choice Home Warranty is a legitimate company that has sold home warranties since 2008.",
         "In 2026 it agreed to an $11.8 million consent judgment with the Arizona Attorney General over claim-handling and disclosure allegations, without admitting wrongdoing.",
         "It also settled with New Jersey in 2015.",
-        "Its Trustpilot score is around 3.9 across 60,000+ reviews, while its BBB customer average is very low - a split common in the industry.",
+        "Its Trustpilot score is 3.9 across 63,234 reviews (Oct 2026), while its BBB customer average is very low - a split common in the industry.",
       ],
       sections: [
         {

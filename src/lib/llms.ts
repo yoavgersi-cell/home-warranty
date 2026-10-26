@@ -53,6 +53,12 @@ export async function buildLlmsTxt(full: boolean): Promise<string> {
     out.push(`### ${p.name}`);
     for (const [key, label] of FEATURE_LABELS) out.push(`- ${label}: ${f[key]}`);
     if (p.trustpilotRating) out.push(`- Trustpilot: ${p.trustpilotRating}/5 (${p.trustpilotReviewCount} reviews, third-party snapshot)`);
+    const v = p.customerVoice;
+    if (v) {
+      const top = (xs: typeof v.praise) =>
+        [...xs].sort((a, b) => b.count - a.count).slice(0, 3).map((t) => `${t.theme} (${t.count}/${v.sampleSize})`).join("; ");
+      out.push(`- What customers say (${v.sampleSize} recent ${v.source} reviews, ${v.window}): praised for ${top(v.praise)}; complaints about ${top(v.complaints)}. ${v.labelName ? `${v.labeledCount}/${v.sampleSize} carried the "${v.labelName}" label (avg ${v.labeledAverage}) vs avg ${v.unlabeledAverage} without it.` : (v.notes ?? []).join(" ")}`);
+    }
     out.push(`- Full review: ${ORIGIN}/reviews/${p.id}`);
     out.push("");
   }

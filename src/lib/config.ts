@@ -7,6 +7,36 @@ export interface TrustpilotReview {
   date?: string; // e.g. "Aug 3, 2026" - shown on the review card when present
 }
 
+// Editorial tally of one captured batch of recent public reviews. Counts are
+// how many reviews in the batch mention each theme (one review can count under
+// several themes). Kept separate from star markup on purpose: we never emit
+// third-party ratings as AggregateRating/Review structured data.
+export interface CustomerVoiceTheme {
+  theme: string;
+  count: number;
+  detail: string;
+}
+
+export interface CustomerVoice {
+  source: string;          // e.g. "Trustpilot"
+  capturedOn: string;      // e.g. "Oct 26, 2026"
+  window: string;          // date range the batch covers
+  sampleSize: number;
+  distribution: Record<1 | 2 | 3 | 4 | 5, number>;
+  sampleAverage: number;
+  /** Trustpilot label on solicited reviews ("Invited" or "Verified"), when the batch shows one. */
+  labelName?: string;
+  labeledCount?: number;
+  labeledAverage?: number;
+  unlabeledAverage?: number;
+  /** Reviews in the batch that carried a public company reply. */
+  companyReplies?: number;
+  /** Plain-language observations about the batch itself (shown as context). */
+  notes?: string[];
+  praise: CustomerVoiceTheme[];
+  complaints: CustomerVoiceTheme[];
+}
+
 // Reusable expert-team member for the site's credibility (E-E-A-T) layer.
 // Populate with REAL team members; only attach medical credentials to people
 // who actually hold them.
@@ -50,6 +80,7 @@ export interface Provider {
   trustpilotRating?: string;
   trustpilotReviewCount?: string;
   trustpilotReviews?: TrustpilotReview[];
+  customerVoice?: CustomerVoice;
   promoPopup?: ProviderPromoPopup;
 }
 

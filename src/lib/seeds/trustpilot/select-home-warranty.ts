@@ -1,0 +1,148 @@
+// AUTO-ASSEMBLED from the Trustpilot page text the site operator captured on
+// Oct 26, 2026 (recent reviews feed; repeated entries removed). Review text is verbatim; the only
+// change is line breaks collapsed to spaces. Dates are approximate (the feed
+// showed relative times such as "3 days ago").
+import type { CustomerVoice, TrustpilotReview } from "@/lib/config";
+
+export const selectReviews: TrustpilotReview[] = [
+  {
+    title: "I've had this company for a year and…",
+    text: "I've had this company for a year and have had to use it twice. Both issues were resolved. When it came time for renewal they offered a really good deal and I renewed for 3 years.",
+    name: "Jane Shain",
+    location: "US",
+    rating: 5,
+    date: "Oct 14, 2026",
+  },
+  {
+    title: "This is the first time using Select…",
+    text: "This is the first time using Select Home warranty. Our dishwasher pump broke. So we call and started a claim . It took 2 business to get a technician out . I had no problem with the technician. It took 2 more business days to get a determination to say that our dishwasher wasn't worth fixing and they are offering 175 dollars towards repairs or replacement . They don't even pay the total cost to repair the dishwasher. Or even replacement with a basic model . I paid 85 dollars to the tech and they said only 175 dollars for the dishwasher so that's only 90 dollars towards a new dishwasher. It's not worth dealing with these people. They don't let you speak to a manager. They should have an F - minus rating . Don't believe the salesman's pitch he's lying and then laughing at you when you fall for it .",
+    name: "Rayna Smith",
+    location: "US",
+    rating: 1,
+    date: "Oct 23, 2026",
+  },
+  {
+    title: "They are always willing to solve a…",
+    text: "They are always willing to solve a problem even if it takes a second time. They stay with you until resolution.",
+    name: "Dale Ford",
+    location: "US",
+    rating: 5,
+    date: "Sep 25, 2026",
+  },
+  {
+    title: "Extremely Disappointing Experience",
+    text: "Extremely Disappointing Experience – Claim Filed June 18, Still No Payment! I am extremely disappointed with Select Home Warranty and want to share my experience so other customers know what they may be dealing with. I filed a claim on June 18 for my washing machine, which was only five years old. After a technician inspected it, the total repair estimate came to approximately $450, including labor and parts. The replacement parts themselves cost less than $150. Despite this, Select Home Warranty decided that repairing the washing machine was not cost-effective. Instead of approving the repair, they offered me just $150 as compensation toward a replacement washing machine. Keep in mind that I had already paid a $65 service call fee, meaning the difference was only $85. Apparently, Select Home Warranty believes that $85 is enough to replace a washing machine! After numerous arguments, complaints, and frustrating conversations, they finally agreed to increase the compensation to $250. However, as of October 21, I STILL HAVE NOT RECEIVED A SINGLE DOLLAR! It has been more than four months since I originally filed my claim. What is the point of paying for a home warranty if the company refuses to authorize a reasonable repair, offers compensation that doesn't come close to covering a replacement, and then fails to pay even the amount it eventually agrees to? This entire experience has been exhausting, frustrating, and incredibly disappointing. I paid for coverage expecting help when something broke, not months of disputes and unanswered questions about money that was already promised to me. I would strongly advise anyone considering Select Home Warranty to read the fine print and think very carefully before purchasing a policy. Based on my experience, I cannot recommend this company. I am still waiting for the $250 they agreed to pay, and I believe potential customers deserve to know how this claim has been handled.",
+    name: "Anton Yershov",
+    location: "US",
+    rating: 1,
+    date: "Oct 21, 2026",
+  },
+  {
+    title: "First Claims",
+    text: "So far, I've been very pleased with my experience with Select Home Warranty. The person who signed me up was very helpful in understanding what was covered and the costs involved, offering a reduced service call rate for the period I signed up for and the first claim has gone well so far. Looking forward to see how well these first claims work.",
+    name: "RUSS",
+    location: "US",
+    rating: 5,
+    date: "Sep 25, 2026",
+  },
+  {
+    title: "I submitted my first claim with Select…What a waste of money",
+    text: "I submitted my first claim with Select Home Warranty for a leaking drain under my kitchen sink. This happened in early October in Pennsylvania, so there were absolutely no frozen pipes involved. Despite that, Select denied my claim and labeled it as “frozen pipes,” which made no sense at all. After several phone calls explaining that the leak was under my kitchen sink and had nothing to do with freezing, they finally sent a plumber. I had to pay the service fee directly to him, in his name. I thought this was very odd. The plumber did not identify the correct issue as he thought it was the pipe; however the leak is coming from the drain not the pipe going into the garabage disposal. He then confirmed the issue was not frozen pipes and agreed the leak is at the metal drain connection. He told me Select would review the claim. A couple hours later, he called back and said Select would cover $56 in parts but none of the labor. When I asked how much the labor would be, he estimated around $200 — all out of pocket for me. Pay for labor? Seriously! Isn't this why homebuyers buy a home warranty? Select never contacted me directly to explain what was approved or denied. I had to hear everything through the plumber. When I called Select myself, they simply told me its in the fine print and repeated that they do not cover labor. The communication was poor, the claim was misdiagnosed, and the coverage was minimal. I paid for this warranty expecting real protection, but instead I was left with unexpected costs, confusion, and frustration. Based on my experience, I cannot recommend Select Home Warranty. They are a total scam.",
+    name: "Lucey Myers",
+    location: "US",
+    rating: 1,
+    date: "Oct 19, 2026",
+  },
+  {
+    title: "Home Warrsanty Companies",
+    text: "they permit you to make a claim completely online(good) as they need more operators to answer their calls(bad).",
+    name: "Dr. K",
+    location: "US",
+    rating: 4,
+    date: "Sep 25, 2026",
+  },
+  {
+    title: "This is the worst ripoff company I ever…",
+    text: "This is the worst ripoff company I ever did business with. I chose them for my appliance repair and warranty company. Big mistake! I've been paying into this company every month for about 3 years without a claim, and I just had a problem with my dryer. It took them almost a month to get me a company to come and diagnose my problem. The 1st guy lied to me about coming 3 times. I begged them to get another company. They finally did on Oct.9th. He did and left. I never heard anything until today; Oct. 19th. Now they told me it is too expensive to fix and I would either fix it myself or buy a new one, and they will give me a lousy $150.00 after I did either one. I will have to show them my receipt first, and then they would send me the $150.00. This company is a total ripoff. They should be put out of business",
+    name: "Ronald Verbit",
+    location: "US",
+    rating: 1,
+    date: "Oct 19, 2026",
+  },
+  {
+    title: "Great onboarding experience.",
+    text: "I haven’t had to file a claim yet - but the onboarding experience was great. I wasn’t overly sold, I got a great deal, I spoke to a person who I can still reach out to if I need.",
+    name: "Lorie Garnett",
+    location: "US",
+    rating: 5,
+    date: "Sep 25, 2026",
+  },
+  {
+    title: "BEWARE, DON'T BUY FROM THEM",
+    text: "7/17 - 1st service call. Tech came, diagnosed, took my $81.50 check and never came back, never contacted Select fo approval. 2nd tech, diagnosed, Select DENIED claim for high end cooktop, less than 3 years old. \"cost of repair exceeds current value\"!!! Will give me $225 buyout and I paid $400 for repair. 8/17, 8/28, 9/7, 9/30 emailed for update. NO RESPONSE. 10/5 told I had not responded to email to proceed. I NEVER RECEIVED THAT EMAIL. Ruth resent it twice with no result. She tried a different email and I received it, sent it back. $225 being processed, will get in 30 days! 10/6 asked for refund on balance of warranty. They can send $125 but will cancel the $225! According to Loyalty Dept, they don't cover high end appliances. When I bought the policy, Lucas Smart assured me they replace like for like parts and appliances. Is this FRAUD??? Stay away from them",
+    name: "Screwed in Texas",
+    location: "US",
+    rating: 1,
+    date: "Oct 6, 2026",
+  },
+  {
+    title: "Happy to have been notified by JP.",
+    text: "Within minutes of doing my search I looked up Select Home Warranty and saw good reviews so when JP reached out he explained what would be covered and what service contracts were available. JP answered my questions and was extremely professional. I chose the 5 year plan with 1 extra year for a total of 6 years of coverage. I was impressed with JP and how easy the whole process was. Great job JP!!",
+    name: "Michelle Mason",
+    location: "US",
+    rating: 5,
+    date: "Sep 25, 2026",
+  },
+  {
+    title: "Extremely disappointing experience with…",
+    text: "Extremely disappointing experience with Select Home Warranty. I am still waiting for a reimbursement check that Select Home Warranty confirmed in writing on September 4, 2026 had already been processed. Their email stated that reimbursement checks could take 14–30 days to arrive. After that timeframe passed, I was told I now have to wait 30 business days—a completely different timeframe than what was originally provided. I contacted Customer Service, but they were unable to give me a clear answer about where my check is, when it was mailed, or when I will actually receive my money. I have already filed a BBB complaint and am now considering disputing the charges with my credit card company and pursuing the matter in small claims court if this isn’t resolved. A company should stand behind its commitments and provide clear answers when it owes a customer money. Based on my experience, I would not recommend Select Home Warranty.",
+    name: "Vic Her",
+    location: "US",
+    rating: 1,
+    date: "Oct 3, 2026",
+  },
+  {
+    title: "This company is the worst",
+    text: "This company is the worst. They deny every claim and make excuses why things are not covered after they send a technician and collect $65 from you. The technicians they send are subpar and unprofessional. Waste of money. This is a total scam! You are better off putting money in a savings accout than paying these scam artists.",
+    name: "Paul Drew",
+    location: "US",
+    rating: 1,
+    date: "Oct 13, 2026",
+  },
+  {
+    title: "DON'T USE Select Home Warranty",
+    text: "DON'T USE Select Home Warranty. I bought a 3 year home warranty from Select Home Warranty and they have denied every claim I've made for the past 3 years. Plus they charge you $65 to send a technician out anytime you make a claim to veryify the issue. Select Home Warranty is a TOTAL SCAM!!!",
+    name: "Darryl",
+    location: "US",
+    rating: 1,
+    date: "Oct 13, 2026",
+  },
+];
+
+export const selectVoice: CustomerVoice = {
+  source: "Trustpilot",
+  capturedOn: "Oct 26, 2026",
+  window: "Sep 17-Oct 25, 2026",
+  sampleSize: 72,
+  distribution: { 5: 32, 4: 8, 3: 0, 2: 0, 1: 32 },
+  sampleAverage: 3.1,
+  notes: [
+    "26 of the 40 four- and five-star reviews describe buying a policy or talking to a sales rep, not a repair claim.",
+    "24 reviews in the batch were posted on one day (Sep 25, 2026), all rated 4 or 5 stars.",
+    "Two one-star reviewers said Select offered free months of coverage in exchange for a favorable review.",
+  ],
+  praise: [
+    { theme: "Helpful, no-pressure sales reps", count: 17, detail: "Agents who explained plans patiently when customers signed up" },
+    { theme: "Easy sign-up and a good price", count: 9, detail: "Quick online quotes, fast purchase, multi-year deals" },
+    { theme: "Claims that went well", count: 5, detail: "Issues resolved, a quick response, or a good contractor" },
+  ],
+  complaints: [
+    { theme: "Claim denied over fine print", count: 19, detail: "Exclusions for faucets, 'outside' pipes, copper pipe in walls, maintenance records, 'improper previous repair'" },
+    { theme: "Waiting for a technician, payment or refund", count: 12, detail: "No tech dispatched, month-long waits, promised checks not received" },
+    { theme: "Service fee paid, little or nothing covered", count: 9, detail: "$65-$100 fee (often paid to the tech directly) before a denial or low offer" },
+    { theme: "Low cash-out instead of a repair", count: 7, detail: "Offers of $90-$250 toward washers, dishwashers, dryers and a cooktop" },
+    { theme: "Customer service and escalation", count: 12, detail: "Scripted or overseas reps, supervisors who don't call back" },
+    { theme: "Cancellation, billing and calls", count: 5, detail: "Charged after cancelling, 45-minute cancel holds, 83 voicemails after leaving" },
+    { theme: "Parts covered, labor not", count: 3, detail: "$56 in parts but ~$200 labor; no installation; wiring excluded" },
+  ],
+};

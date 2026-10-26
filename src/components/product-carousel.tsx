@@ -164,20 +164,14 @@ export function ProductCarousel({
                 ? { min: parseInt(dayMatch[1], 10), max: parseInt(dayMatch[2] ?? dayMatch[1], 10) }
                 : null;
             // GSC-requested enrichment, verified data only: description from
-            // the catalog's own honest fields; aggregateRating + one review
-            // only when the provider has a verified Trustpilot record; free-
+            // the catalog's own honest fields (no aggregateRating/review: Google
+            // disallows ratings aggregated from third-party sites); free-
             // shipping details only when the catalog says shipping is free.
             // Return policy: dispensed prescription medication cannot be
             // returned (US pharmacy practice), so MerchantReturnNotPermitted
             // is the accurate, conservative declaration for every product -
             // refund guarantees some providers offer are a separate thing and
             // are deliberately not represented here.
-            const tpCount = provider.trustpilotReviewCount
-              ? parseInt(provider.trustpilotReviewCount.replace(/,/g, ""), 10)
-              : NaN;
-            const hasAggregate =
-              !!provider.trustpilotRating && Number.isFinite(tpCount) && tpCount > 0;
-            const firstReview = provider.trustpilotReviews?.[0];
             // "included" (SHED's "home delivery included") means no shipping
             // charge, same as free - both earn the $0 shippingRate.
             const freeShipping = /free|included/i.test(p.shipping);
@@ -190,23 +184,6 @@ export function ProductCarousel({
                 description: `${p.name} from ${provider.name} - $${productPriceValue(p)}/month (${p.priceNote}). ${p.shipping}.`,
                 ...(p.image ? { image: `https://www.thetophomewarranty.com${p.image}` } : {}),
                 brand: { "@type": "Brand", name: provider.name },
-                ...(hasAggregate && {
-                  aggregateRating: {
-                    "@type": "AggregateRating",
-                    ratingValue: provider.trustpilotRating,
-                    reviewCount: tpCount,
-                    bestRating: "5",
-                  },
-                }),
-                ...(hasAggregate &&
-                  firstReview && {
-                    review: {
-                      "@type": "Review",
-                      reviewRating: { "@type": "Rating", ratingValue: String(firstReview.rating), bestRating: "5" },
-                      author: { "@type": "Person", name: firstReview.name },
-                      reviewBody: firstReview.text,
-                    },
-                  }),
                 offers: {
                   "@type": "Offer",
                   price: String(productPriceValue(p)),

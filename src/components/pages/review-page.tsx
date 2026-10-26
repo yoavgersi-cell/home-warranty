@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { ProviderCta } from "@/components/provider-cta";
 import { TrustpilotCarousel } from "@/components/trustpilot-carousel";
+import { CustomerVoice, customerVoiceFaqs } from "@/components/customer-voice";
 import { MedicalReviewBar } from "@/components/medical-review-bar";
 import { pageReviewSchema } from "@/data/reviewers";
 import { LastUpdated } from "@/components/last-updated";
@@ -99,7 +100,7 @@ const REVIEW_LEGIT: Record<string, { verdict: string; signals: string[] }> = {
   },
   "home-service-club": {
     verdict:
-      "Yes - The Home Service Club is a real company that has sold home warranties since around 2008-2009. Its standout feature is no age limit on covered items, but its per-item caps are low and recent customer reviews are mostly negative, so it is a cautious pick.",
+      "Yes - The Home Service Club is a real company that has sold home warranties since around 2008-2009. Its standout feature is no age limit on covered items, but its per-item caps are low and it has no Trustpilot profile, so there is little public review data to check - a cautious pick.",
     signals: ["Selling plans since about 2008", "No age limit on covered systems and appliances", "Two straightforward plans"],
   },
   "2-10-home-buyers-warranty": {
@@ -328,6 +329,7 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
     { question: `Is ${provider.name} worth it?`, answer: review.finalVerdict },
     // Extra FAQs are keyed by provider slug.
     ...(REVIEW_EXTRA_FAQS[slug] ?? []),
+    ...(provider.customerVoice ? customerVoiceFaqs(provider.name, provider.customerVoice) : []),
   ].filter((f): f is { question: string; answer: string } => !!f && !!f.answer);
 
   const faqSchema = {
@@ -724,6 +726,10 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
               reviewCount={provider.trustpilotReviewCount}
             />
           </div>
+        )}
+
+        {provider.customerVoice && (
+          <CustomerVoice providerName={provider.name} voice={provider.customerVoice} />
         )}
 
         {/* Community feedback - real Reddit threads, rendered Reddit-style.

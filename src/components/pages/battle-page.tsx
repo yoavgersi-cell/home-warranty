@@ -17,6 +17,7 @@ import { LastUpdated } from "@/components/last-updated";
 import { ProviderCta } from "@/components/provider-cta";
 import { BattleStickyCta } from "@/components/battle-sticky-cta";
 import { TrustpilotCarousel } from "@/components/trustpilot-carousel";
+import { CustomerVoice } from "@/components/customer-voice";
 import { TrustpilotRating } from "@/components/trustpilot-rating";
 import { PromoPopup } from "@/components/promo-popup";
 import { resolvePromoPopup } from "@/lib/promo-popups";
@@ -928,6 +929,10 @@ export async function BattlePageView({ slug, ctx }: { slug: string; ctx: SiteCon
                             reviewCount={provider.trustpilotReviewCount}
                           />
                         </div>
+                      )}
+
+                      {provider.customerVoice && (
+                        <CustomerVoice providerName={provider.name} voice={provider.customerVoice} compact />
                       )}
 
                       {/* Bottom CTA */}
