@@ -7,7 +7,7 @@ export const stateHubGuide: ArticleData = {
   slug: "home-warranty-by-state",
   title: "Home Warranty Laws by State (2026): Regulators & Your Rights",
   description:
-    "How home warranties are regulated in each state - who licenses them, refund and cancellation rules, pre-existing condition protections and where to file a complaint.",
+    "How home warranties are regulated in each state: who licenses them, refund rules, pre-existing condition protections and where to complain.",
   category: "State Guides",
   readTime: "12 min read",
   publishedAt: "2026-10-27",

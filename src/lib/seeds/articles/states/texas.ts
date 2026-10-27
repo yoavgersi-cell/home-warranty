@@ -10,7 +10,7 @@ export const texasGuide: ArticleData = {
   slug: "best-home-warranty-texas",
   title: "Best Home Warranty in Texas (2026): Companies, Laws & Costs",
   description:
-    "The best home warranty companies in Texas for 2026, how TDLR regulates them, your refund rights, and what Texas heat, freezes and slab foundations mean for coverage.",
+    "The best home warranty companies in Texas for 2026, how TDLR regulates them, your refund rights, and what heat, freezes and slab homes mean for coverage.",
   category: "State Guides",
   readTime: "18 min read",
   publishedAt: "2026-10-27",

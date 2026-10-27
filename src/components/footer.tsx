@@ -46,6 +46,18 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
     ],
   },
   {
+    title: "Home Warranty by State",
+    links: [
+      { label: "Texas", href: "/articles/best-home-warranty-texas" },
+      { label: "California", href: "/articles/best-home-warranty-california" },
+      { label: "Florida", href: "/articles/best-home-warranty-florida" },
+      { label: "Arizona", href: "/articles/best-home-warranty-arizona" },
+      { label: "Georgia", href: "/articles/best-home-warranty-georgia" },
+      { label: "North Carolina", href: "/articles/best-home-warranty-north-carolina" },
+      { label: "Laws by State", href: "/articles/home-warranty-by-state" },
+    ],
+  },
+  {
     title: "Company",
     links: [
       { label: "About", href: "/about" },
@@ -82,7 +94,7 @@ export async function Footer() {
   return (
     <footer className="mt-auto border-t border-[#E5E5E5] bg-white">
       <div className="mx-auto max-w-6xl px-4 py-10">
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-7">
           {/* Brand blurb */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <p className="text-[13px] leading-relaxed text-gray-500">

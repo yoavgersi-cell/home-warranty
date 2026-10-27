@@ -3,6 +3,7 @@ import { homeWarrantyGuide } from "./articles/home-warranty-guide";
 import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
 import { applianceInsuranceGuide } from "./articles/appliance-insurance";
 import { claimDeniedGuide } from "./articles/claim-denied";
+import { stateHubGuide, texasGuide, californiaGuide, floridaGuide, arizonaGuide, georgiaGuide, northCarolinaGuide } from "./articles/states";
 import { bestForWaterHeaters, bestForHeatPumps } from "./articles/best-for/water-heaters-heat-pumps";
 import { bestForElectrical, bestForDishwashers } from "./articles/best-for/electrical-dishwashers";
 import { mostComprehensive, noDeductible } from "./articles/best-for/comprehensive-deductible";
@@ -1393,6 +1394,13 @@ export const homeWarrantyConfig: SiteConfig = {
   articles: [
     homeWarrantyGuide,
     claimDeniedGuide,
+    stateHubGuide,
+    texasGuide,
+    californiaGuide,
+    floridaGuide,
+    arizonaGuide,
+    georgiaGuide,
+    northCarolinaGuide,
     refrigerantTransitionGuide,
     applianceInsuranceGuide,
     bestForWaterHeaters,
