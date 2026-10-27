@@ -73,6 +73,7 @@ const categoryColors: Record<string, string> = {
   Guides: "bg-emerald-50 text-emerald-700",
   Costs: "bg-amber-50 text-amber-700",
   Claims: "bg-blue-50 text-blue-700",
+  "State Guides": "bg-sky-50 text-sky-700",
   Buying: "bg-purple-50 text-purple-700",
   "Best For": "bg-[#FFF1E6] text-[#C2570C]",
 };
