@@ -3,6 +3,7 @@ import { homeWarrantyGuide } from "./articles/home-warranty-guide";
 import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
 import { applianceInsuranceGuide } from "./articles/appliance-insurance";
 import { claimDeniedGuide } from "./articles/claim-denied";
+import { worthItGuide } from "./articles/worth-it";
 import { stateHubGuide, texasGuide, californiaGuide, floridaGuide, arizonaGuide, georgiaGuide, northCarolinaGuide } from "./articles/states";
 import { bestForWaterHeaters, bestForHeatPumps } from "./articles/best-for/water-heaters-heat-pumps";
 import { bestForElectrical, bestForDishwashers } from "./articles/best-for/electrical-dishwashers";
@@ -1489,42 +1490,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
       ],
     },
-    {
-      slug: "is-a-home-warranty-worth-it",
-      title: "Is a Home Warranty Worth It? An Honest Cost-Benefit Look for 2026",
-      description:
-        "When a home warranty pays off, when it doesn't, and how to decide for your home - with the questions to ask before you buy.",
-      category: "Buying",
-      readTime: "7 min read",
-      publishedAt: "2026-10-12",
-      updatedAt: "2026-10-12",
-      heroColor: "#FFF3EA",
-      author: AUTHOR,
-      keyTakeaways: [
-        "A warranty tends to pay off for homes with several aging systems or appliances and owners without a large repair fund.",
-        "It's less likely to pay off on a new or recently renovated home.",
-        "Coverage caps and exclusions decide value as much as price - a low-cap plan can leave you paying most of a big repair.",
-        "Consumer surveys have found a large share of warranty holders had a claim denied or only partly paid.",
-      ],
-      sections: [
-        {
-          heading: "The basic math",
-          body: `<p>A typical plan costs roughly $300-$700 a year plus a service fee of $60-$150 per visit. A single furnace, AC or water heater replacement can cost several thousand dollars. So a warranty can come out well ahead in a year when a major item fails - and behind in a year when nothing does.</p>`,
-        },
-        {
-          heading: "When a home warranty is more likely to be worth it",
-          body: `<ul><li>Your home has <strong>several aging systems or appliances</strong> - especially HVAC and water heaters past mid-life.</li><li>You don't have a comfortable <strong>emergency fund</strong> for surprise repairs.</li><li>You're <strong>buying a home</strong> and want predictable costs in the first year (often the seller pays).</li><li>You're a <strong>landlord</strong> who wants a single number to call for tenant repairs.</li></ul>`,
-        },
-        {
-          heading: "When it's less likely to be worth it",
-          body: `<ul><li>Your home or major systems are <strong>new</strong> and still under manufacturer or builder warranties.</li><li>You can comfortably pay repairs from savings.</li><li>The plan's <strong>caps are too low</strong> to cover the repairs you're actually worried about.</li><li>You're handy and prefer to choose your own contractors.</li></ul>`,
-        },
-        {
-          heading: "Questions to ask before buying",
-          body: `<ol><li>What is the per-item cap for my HVAC, water heater and appliances?</li><li>Is there an overall annual or contract limit?</li><li>How are pre-existing conditions and maintenance defined?</li><li>Are code upgrades, permits and haul-away covered?</li><li>Can I choose my own contractor?</li><li>What's the workmanship guarantee on repairs?</li></ol><p>Our reviews answer these for each company - start with <a href="/reviews/choice-home-warranty">Choice</a>, <a href="/reviews/american-home-shield">American Home Shield</a> and <a href="/reviews/select-home-warranty">Select</a>, or read <a href="/articles/why-home-warranty-claims-get-denied">why claims get denied</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
-        },
-      ],
-    },
+    worthItGuide,
     {
       slug: "how-much-does-a-home-warranty-cost",
       title: "How Much Does a Home Warranty Cost in 2026?",
