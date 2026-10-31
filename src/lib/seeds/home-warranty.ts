@@ -4,6 +4,7 @@ import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
 import { applianceInsuranceGuide } from "./articles/appliance-insurance";
 import { claimDeniedGuide } from "./articles/claim-denied";
 import { worthItGuide } from "./articles/worth-it";
+import { warrantyVsInsuranceGuide } from "./articles/warranty-vs-insurance";
 import { stateHubGuide, texasGuide, californiaGuide, floridaGuide, arizonaGuide, georgiaGuide, northCarolinaGuide } from "./articles/states";
 import { bestForWaterHeaters, bestForHeatPumps } from "./articles/best-for/water-heaters-heat-pumps";
 import { bestForElectrical, bestForDishwashers } from "./articles/best-for/electrical-dishwashers";
@@ -1454,42 +1455,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
       ],
     },
-    {
-      slug: "home-warranty-vs-homeowners-insurance",
-      title: "Home Warranty vs Homeowners Insurance: What's the Difference?",
-      description:
-        "Home warranties and homeowners insurance protect against different things. Here's what each covers, how you pay, and whether you need both.",
-      category: "Guides",
-      readTime: "6 min read",
-      publishedAt: "2026-10-12",
-      updatedAt: "2026-10-12",
-      heroColor: "#FDE1CB",
-      author: AUTHOR,
-      keyTakeaways: [
-        "Homeowners insurance covers sudden, accidental damage and liability; a home warranty covers breakdowns from normal wear and tear.",
-        "Insurance is usually required by mortgage lenders; a home warranty is always optional.",
-        "Insurance claims carry a deductible; warranty claims carry a per-visit service fee.",
-        "Many homeowners carry both because they cover different risks.",
-      ],
-      sections: [
-        {
-          heading: "The core difference",
-          body: `<p><strong>Homeowners insurance</strong> protects your home and belongings against sudden, accidental events - fire, windstorms, hail, theft, some water damage - and covers liability if someone is hurt on your property. A <strong>home warranty</strong> is a service contract that repairs or replaces covered systems and appliances when they fail from normal wear and tear.</p><p>Put simply: if a storm destroys your AC unit, that's an insurance question. If your AC unit simply wears out, that's a warranty question.</p>`,
-        },
-        {
-          heading: "How you pay",
-          body: `<ul><li><strong>Insurance:</strong> an annual premium plus a deductible per claim - often $500 to $2,500 or more.</li><li><strong>Home warranty:</strong> an annual or monthly premium plus a service call fee per visit - often $60 to $150.</li></ul><p>That structure makes a warranty better suited to frequent small-to-mid repairs, and insurance better suited to rare, expensive events.</p>`,
-        },
-        {
-          heading: "Who does the work",
-          body: `<p>With insurance, you generally choose your own contractor and the insurer pays the claim. With most home warranties, the company assigns a technician from its own network; some plans let you use your own contractor with approval and reimburse you up to the plan's limits.</p>`,
-        },
-        {
-          heading: "Do you need both?",
-          body: `<p>If you have a mortgage, homeowners insurance is almost always required. A home warranty is optional and worth considering if you have several aging systems or appliances and want predictable repair costs. Read <a href="/articles/is-a-home-warranty-worth-it">is a home warranty worth it?</a> to decide, then compare plans on our <a href="/">rankings page</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
-        },
-      ],
-    },
+    warrantyVsInsuranceGuide,
     worthItGuide,
     {
       slug: "how-much-does-a-home-warranty-cost",
