@@ -8,18 +8,24 @@ export const part4: ArticleSection[] = [
     heading: "The service fee: the cost most buyers underestimate",
     body: `<p>Every home warranty claim comes with a <strong>service fee</strong> (also called a trade call fee or deductible) - typically <strong>$60 to $150</strong>, and most commonly $100 to $125 at the larger companies today. It's the second half of your real cost, and it behaves differently from the premium in three important ways.</p>
 <h3>1. A lower fee usually means a higher premium</h3>
-<p>Several companies let you choose your fee. American Home Shield, for example, offers a choice of $100 or $125, and choosing the higher fee lowers the monthly price. The right choice depends on how often you expect to file:</p>
+<p>Several companies let you choose your fee, and the trade-off differs by company. Two real examples from 2026 quotes:</p>
+<ul>
+<li><strong>American Home Shield:</strong> choosing the $125 fee instead of $100 lowers the price by about <strong>$10 a month</strong> on every plan tier, according to quotes reported by ConsumerAffairs and This Old House (for example, $39.99 vs. $29.99 for ShieldSilver on one Texas ZIP code).</li>
+<li><strong>First American:</strong> the same $100-vs-$125 choice changes the price by about <strong>$5 a month</strong>, according to ConsumerAffairs quotes (about $47 vs. $42 for its Starter plan).</li>
+</ul>
+<p>The math is simple: the lower fee saves $25 per claim, so it pays off only if you file more claims than the extra annual premium divided by $25.</p>
 <table>
-<thead><tr><th>Claims per year</th><th>Plan A: $125 fee, $50/month</th><th>Plan B: $100 fee, $55/month</th><th>Cheaper plan</th></tr></thead>
+<thead><tr><th>Claims per year</th><th>AHS-style: $125 fee vs. $100 fee (+$120/yr)</th><th>First American-style: $125 fee vs. $100 fee (+$60/yr)</th></tr></thead>
 <tbody>
-<tr><td>0</td><td>$600</td><td>$660</td><td>A by $60</td></tr>
-<tr><td>1</td><td>$725</td><td>$760</td><td>A by $35</td></tr>
-<tr><td>2</td><td>$850</td><td>$860</td><td>A by $10</td></tr>
-<tr><td>3</td><td>$975</td><td>$960</td><td>B by $15</td></tr>
-<tr><td>4</td><td>$1,100</td><td>$1,060</td><td>B by $40</td></tr>
+<tr><td>0</td><td>$125 fee saves $120</td><td>$125 fee saves $60</td></tr>
+<tr><td>1</td><td>$125 fee saves $95</td><td>$125 fee saves $35</td></tr>
+<tr><td>2</td><td>$125 fee saves $70</td><td>$125 fee saves $10</td></tr>
+<tr><td>3</td><td>$125 fee saves $45</td><td>$100 fee saves $15</td></tr>
+<tr><td>4</td><td>$125 fee saves $20</td><td>$100 fee saves $40</td></tr>
+<tr><td>Break-even</td><td><strong>4.8 claims a year</strong></td><td><strong>2.4 claims a year</strong></td></tr>
 </tbody>
 </table>
-<p>In this illustration, where the lower fee costs $5 more a month ($60 a year) and saves $25 per claim, the break-even is 2.4 claims a year. Below that, take the higher fee and lower premium. Frontdoor, American Home Shield's parent, reports roughly 3.8 million service requests across about 2.1 million warranties a year - an average of roughly 1.8 per warranty - so for a typical customer the choice is close. Older homes with more claims lean toward the lower fee.</p>
+<p>Frontdoor, American Home Shield's parent, reports roughly 3.8 million service requests across about 2.1 million warranties a year - an average of roughly 1.8 per warranty. For a typical household, that means <strong>the higher fee and lower premium usually come out ahead at AHS</strong>, while at First American the choice is close and leans toward the lower fee only for homes that file three or more claims a year.</p>
 <h3>2. The fee is usually owed even when a claim is denied</h3>
 <p>Most contracts charge the fee when a technician is dispatched, regardless of outcome. Select's terms say the fee is owed whether a claim is granted, excluded, limited or denied; Home Warranty of America's say the trade call fee applies to calls where coverage is denied; American Home Shield describes its fee as non-refundable. In our analysis of 351 recent customer reviews, 24 complained about paying a fee and getting little or nothing repaired. Budget for the fee as a cost of <em>using</em> the plan, not just of successful claims.</p>
 <h3>3. Per claim versus per visit</h3>
@@ -49,7 +55,7 @@ export const part4: ArticleSection[] = [
 <thead><tr><th>State</th><th>Cancellation and refund rule</th></tr></thead>
 <tbody>
 <tr><td>Texas</td><td>Full refund (minus claims paid) within 30 days with no fee; after that, a pro rata refund minus a cancellation fee of no more than <strong>$50</strong>; late refunds carry a 10%-per-month penalty</td></tr>
-<tr><td>Florida</td><td>Full refund (minus claims paid and up to a 5% fee) within <strong>10 days</strong>; after that, 90% of the unearned pro rata premium minus claims paid</td></tr>
+<tr><td>Florida</td><td>Right to cancel within <strong>10 days</strong> of purchase for a refund (minus claims paid and a small administrative fee); after that, a refund based on 90% of the unearned pro rata premium minus claims paid</td></tr>
 <tr><td>Arizona</td><td>Pro rata refund minus benefits paid and an administrative fee of no more than the <strong>lesser of $75 or 10%</strong> of the price</td></tr>
 <tr><td>North Carolina (appliance service agreements)</td><td>Cancel any time; pro rata refund minus claims and an admin fee of no more than <strong>10% of the refund</strong></td></tr>
 <tr><td>California</td><td>Set by the contract (the state's general service-contract refund rule excludes home protection plans); Choice's California terms, for example, cap its admin fee at the lesser of 10% of the agreement fee or $25</td></tr>

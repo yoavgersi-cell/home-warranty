@@ -4,6 +4,7 @@ import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
 import { applianceInsuranceGuide } from "./articles/appliance-insurance";
 import { claimDeniedGuide } from "./articles/claim-denied";
 import { worthItGuide } from "./articles/worth-it";
+import { costGuide } from "./articles/cost";
 import { warrantyVsInsuranceGuide } from "./articles/warranty-vs-insurance";
 import { stateHubGuide, texasGuide, californiaGuide, floridaGuide, arizonaGuide, georgiaGuide, northCarolinaGuide } from "./articles/states";
 import { bestForWaterHeaters, bestForHeatPumps } from "./articles/best-for/water-heaters-heat-pumps";
@@ -1457,42 +1458,7 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     warrantyVsInsuranceGuide,
     worthItGuide,
-    {
-      slug: "how-much-does-a-home-warranty-cost",
-      title: "How Much Does a Home Warranty Cost in 2026?",
-      description:
-        "Typical home warranty prices, service call fees and add-on costs in 2026 - plus what drives the price and how to compare plans fairly.",
-      category: "Costs",
-      readTime: "6 min read",
-      publishedAt: "2026-10-12",
-      updatedAt: "2026-10-12",
-      heroColor: "#FFEBDD",
-      author: AUTHOR,
-      keyTakeaways: [
-        "Most plans run roughly $300-$700 a year; premium tiers and add-ons cost more.",
-        "Service call fees are commonly $60-$150 per visit, and at many companies are owed even if a claim is denied.",
-        "A higher service fee usually means a lower premium.",
-        "Compare the yearly premium plus expected service fees - and the caps - not just the monthly price.",
-      ],
-      sections: [
-        {
-          heading: "Typical price ranges",
-          body: `<p>Based on published quotes and third-party reviews in 2025-2026, here are rough monthly price ranges for the companies we track (always confirm for your address):</p><ul><li><strong>Choice Home Warranty:</strong> ~$46-$49 (Basic) to ~$55-$58 (Total).</li><li><strong>American Home Shield:</strong> ~$30-$40 (ShieldSilver), ~$50-$60 (ShieldGold), ~$80-$90 (ShieldPlatinum).</li><li><strong>Select Home Warranty:</strong> ~$36-$64 before promotions.</li><li><strong>First American:</strong> ~$40-$140 depending on plan and state.</li><li><strong>Home Warranty of America:</strong> ~$48 (Premier) to ~$61 (Premier Plus) in a sample quote.</li><li><strong>The Home Service Club:</strong> ~$54 (Standard) to ~$67 (Comprehensive).</li><li><strong>2-10 Home Buyers Warranty:</strong> from ~$27-$35.</li></ul>`,
-        },
-        {
-          heading: "Service call fees",
-          body: `<p>Every visit carries a service call (or "trade call") fee, typically $60-$150. Some companies let you choose: American Home Shield offers $100 or $125; First American offers $75, $100 or $125. Choosing a higher fee lowers your premium, which can make sense if you expect few claims.</p>`,
-        },
-        {
-          heading: "What drives the price",
-          body: `<ul><li><strong>Plan tier</strong> - systems-only and appliances-only plans cost less than combos.</li><li><strong>Location</strong> - prices vary by state and ZIP code.</li><li><strong>Home size and type</strong> - larger homes and multi-unit properties often cost more.</li><li><strong>Add-ons</strong> - pool/spa, well pump, septic, second refrigerator and similar extras.</li><li><strong>Billing</strong> - paying annually sometimes unlocks discounts or free months.</li></ul>`,
-        },
-        {
-          heading: "How to compare fairly",
-          body: `<p>Add the yearly premium to the service fees you expect to pay, then check the caps on the items you're most worried about. A cheaper plan with a $500 per-item cap can cost you far more after one big repair than a pricier plan with a $3,000-$5,000 cap. Compare head-to-head in <a href="/choice-home-warranty-vs-select-home-warranty">Choice vs Select</a> or <a href="/american-home-shield-vs-choice-home-warranty">American Home Shield vs Choice</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
-        },
-      ],
-    },
+    costGuide,
     {
       slug: "why-home-warranty-claims-get-denied",
       title: "Why Home Warranty Claims Get Denied (and How to Avoid It)",
