@@ -26,7 +26,7 @@ export default function ContactPage() {
           </div>
           <div>
             <p className="text-sm font-semibold text-[#191919]">Email us</p>
-            <a href="mailto:hello@thetophomewarranty.com" className="text-[15px] font-semibold text-[#C2570C] hover:underline">
+            <a href="mailto:hello@thetophomewarranty.com" className="inline-flex min-h-8 items-center break-all text-[15px] font-semibold text-[#C2570C] hover:underline">
               hello@thetophomewarranty.com
             </a>
           </div>

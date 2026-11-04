@@ -8,11 +8,12 @@ export function DisclosureBar() {
 
   return (
     <>
-      <div className="bg-[#FFF6EE] border-b-[1.5px] border-[#F5D9C2] px-4 py-1.5 sm:py-2 text-center text-[10px] sm:text-[13px] leading-tight sm:leading-normal text-gray-600">
-        Some providers featured on this site may compensate us. This may affect the order and placement of listings but does not influence our editorial ratings or reviews.{" "}
+      <div className="bg-[#FFF6EE] border-b-[1.5px] border-[#F5D9C2] px-4 py-1.5 sm:py-2 text-center text-[12px] sm:text-[13px] leading-snug sm:leading-normal text-gray-600">
+        <span className="sm:hidden">We may be paid by providers listed here. It never affects our ratings.</span>
+        <span className="hidden sm:inline">Some providers featured on this site may compensate us. This may affect the order and placement of listings but does not influence our editorial ratings or reviews.</span>{" "}
         <button
           onClick={() => setIsOpen(true)}
-          className="font-bold text-[#191919] underline underline-offset-2 hover:text-[#C2570C]"
+          className="inline-block py-1 font-bold text-[#191919] underline underline-offset-2 hover:text-[#C2570C]"
         >
           Advertising Disclosure
         </button>
@@ -27,7 +28,7 @@ export function DisclosureBar() {
           >
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute right-4 top-4 text-gray-500 hover:text-gray-600"
+              aria-label="Close" className="absolute right-2 top-2 flex h-10 w-10 items-center justify-center text-gray-500 hover:text-gray-600"
             >
               <X className="h-5 w-5" strokeWidth={1.5} />
             </button>

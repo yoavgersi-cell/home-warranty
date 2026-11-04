@@ -52,9 +52,9 @@ export function BattleStickyCta({
         {/* Brand accent line */}
         <div className="h-[3px] bg-gradient-to-r from-[#F08A3C] via-[#FBC9A0] to-[#F08A3C]" />
 
-        <div className="px-3 pt-2.5 pb-[calc(0.75rem+env(safe-area-inset-bottom))]">
+        <div className="px-3 pt-2 pb-[calc(0.5rem+env(safe-area-inset-bottom))]">
           {/* Reassurance strip - evergreen, always-positive, provider-agnostic */}
-          <div className="mb-2.5 flex items-center justify-center gap-1.5 text-[11px] font-medium text-gray-500">
+          <div className="mb-1.5 flex items-center justify-center gap-1.5 text-[12px] font-medium leading-none text-gray-500">
             <Check className="h-3.5 w-3.5 shrink-0 text-emerald-500" strokeWidth={2.5} />
             <span>Online quotes</span>
             <span className="text-gray-500">·</span>
@@ -73,7 +73,7 @@ export function BattleStickyCta({
                 <div key={p.id} className="min-w-0">
                   {recommendedId != null && (
                     <p
-                      className={`mb-1 text-center text-[10px] font-bold uppercase tracking-[0.08em] ${
+                      className={`mb-1 text-center text-[11px] font-bold uppercase tracking-[0.08em] ${
                         isPick ? "text-[#C2570C]" : "text-transparent"
                       }`}
                     >
@@ -88,8 +88,8 @@ export function BattleStickyCta({
                     sourceFlow="battle_page"
                     className={
                       isOther
-                        ? "flex h-[48px] items-center justify-center gap-1.5 rounded-xl border-2 border-[#F08A3C] bg-white px-2 text-[14px] font-bold text-[#C2570C] transition-transform active:scale-[0.98]"
-                        : "flex h-[48px] items-center justify-center gap-1.5 rounded-xl bg-gradient-to-b from-[#F08A3C] to-[#DE7429] px-2 text-[14px] font-bold text-white shadow-sm transition-transform active:scale-[0.98]"
+                        ? "flex h-[44px] items-center justify-center gap-1.5 rounded-xl border-2 border-[#F08A3C] bg-white px-2 text-[14px] font-bold text-[#C2570C] transition-transform active:scale-[0.98]"
+                        : "flex h-[44px] items-center justify-center gap-1.5 rounded-xl bg-gradient-to-b from-[#F08A3C] to-[#DE7429] px-2 text-[14px] font-bold text-white shadow-sm transition-transform active:scale-[0.98]"
                     }
                   >
                     <span className="truncate">Visit {p.name}</span>
