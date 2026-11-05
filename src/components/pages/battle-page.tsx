@@ -503,11 +503,11 @@ export async function BattlePageView({ slug, ctx }: { slug: string; ctx: SiteCon
                 as a single strand of muted metadata, so nothing here competes
                 with the H1 above or the value block below. No bold-dark names,
                 no uppercase pseudo-labels: this is a caption, not a headline. */}
-            <div className="mt-3 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[11.5px] leading-[1.5] text-gray-500 sm:mt-4 sm:text-[12.5px]">
+            <div className="mt-3 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-[12.5px] leading-[1.5] text-gray-500 sm:mt-4">
               {config.experts && config.experts.length > 0 && (
                 <span>
                   By{" "}
-                  <Link href={hubLink(ctx, "/about")} className="font-medium text-gray-600 underline-offset-2 hover:text-[#C2570C] hover:underline">
+                  <Link href={hubLink(ctx, "/about")} className="inline-flex min-h-6 items-center font-medium text-gray-600 underline-offset-2 hover:text-[#C2570C] hover:underline">
                     {ctx.brandTeam.replace(/\s+Team$/i, "")} Editorial Team
                   </Link>
                 </span>
@@ -1245,16 +1245,16 @@ export async function BattlePageView({ slug, ctx }: { slug: string; ctx: SiteCon
           )}
 
           {/* Related links */}
-          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 py-4 text-[13px]">
-            <Link href={hubLink(ctx, `/reviews/${p1.id}`)} className="font-semibold text-[#C2570C] hover:underline">
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 py-4 text-[13px]">
+            <Link href={hubLink(ctx, `/reviews/${p1.id}`)} className="inline-flex min-h-8 items-center font-semibold text-[#C2570C] hover:underline">
               {p1.name} Review
             </Link>
             <span className="text-gray-500">|</span>
-            <Link href={hubLink(ctx, `/reviews/${p2.id}`)} className="font-semibold text-[#C2570C] hover:underline">
+            <Link href={hubLink(ctx, `/reviews/${p2.id}`)} className="inline-flex min-h-8 items-center font-semibold text-[#C2570C] hover:underline">
               {p2.name} Review
             </Link>
             <span className="text-gray-500">|</span>
-            <Link href={hubLink(ctx, "/")} className="font-semibold text-[#C2570C] hover:underline">
+            <Link href={hubLink(ctx, "/")} className="inline-flex min-h-8 items-center font-semibold text-[#C2570C] hover:underline">
               Compare All Providers
             </Link>
           </div>

@@ -2,6 +2,11 @@ import type { BattleData, BattleFeatureRow, SiteConfig } from "@/lib/config";
 import { homeWarrantyGuide } from "./articles/home-warranty-guide";
 import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
 import { applianceInsuranceGuide } from "./articles/appliance-insurance";
+import { claimDeniedGuide } from "./articles/claim-denied";
+import { worthItGuide } from "./articles/worth-it";
+import { costGuide } from "./articles/cost";
+import { warrantyVsInsuranceGuide } from "./articles/warranty-vs-insurance";
+import { stateHubGuide, texasGuide, californiaGuide, floridaGuide, arizonaGuide, georgiaGuide, northCarolinaGuide } from "./articles/states";
 import { bestForWaterHeaters, bestForHeatPumps } from "./articles/best-for/water-heaters-heat-pumps";
 import { bestForElectrical, bestForDishwashers } from "./articles/best-for/electrical-dishwashers";
 import { mostComprehensive, noDeductible } from "./articles/best-for/comprehensive-deductible";
@@ -1391,6 +1396,14 @@ export const homeWarrantyConfig: SiteConfig = {
 
   articles: [
     homeWarrantyGuide,
+    claimDeniedGuide,
+    stateHubGuide,
+    texasGuide,
+    californiaGuide,
+    floridaGuide,
+    arizonaGuide,
+    georgiaGuide,
+    northCarolinaGuide,
     refrigerantTransitionGuide,
     applianceInsuranceGuide,
     bestForWaterHeaters,
@@ -1443,114 +1456,9 @@ export const homeWarrantyConfig: SiteConfig = {
         },
       ],
     },
-    {
-      slug: "home-warranty-vs-homeowners-insurance",
-      title: "Home Warranty vs Homeowners Insurance: What's the Difference?",
-      description:
-        "Home warranties and homeowners insurance protect against different things. Here's what each covers, how you pay, and whether you need both.",
-      category: "Guides",
-      readTime: "6 min read",
-      publishedAt: "2026-10-12",
-      updatedAt: "2026-10-12",
-      heroColor: "#FDE1CB",
-      author: AUTHOR,
-      keyTakeaways: [
-        "Homeowners insurance covers sudden, accidental damage and liability; a home warranty covers breakdowns from normal wear and tear.",
-        "Insurance is usually required by mortgage lenders; a home warranty is always optional.",
-        "Insurance claims carry a deductible; warranty claims carry a per-visit service fee.",
-        "Many homeowners carry both because they cover different risks.",
-      ],
-      sections: [
-        {
-          heading: "The core difference",
-          body: `<p><strong>Homeowners insurance</strong> protects your home and belongings against sudden, accidental events - fire, windstorms, hail, theft, some water damage - and covers liability if someone is hurt on your property. A <strong>home warranty</strong> is a service contract that repairs or replaces covered systems and appliances when they fail from normal wear and tear.</p><p>Put simply: if a storm destroys your AC unit, that's an insurance question. If your AC unit simply wears out, that's a warranty question.</p>`,
-        },
-        {
-          heading: "How you pay",
-          body: `<ul><li><strong>Insurance:</strong> an annual premium plus a deductible per claim - often $500 to $2,500 or more.</li><li><strong>Home warranty:</strong> an annual or monthly premium plus a service call fee per visit - often $60 to $150.</li></ul><p>That structure makes a warranty better suited to frequent small-to-mid repairs, and insurance better suited to rare, expensive events.</p>`,
-        },
-        {
-          heading: "Who does the work",
-          body: `<p>With insurance, you generally choose your own contractor and the insurer pays the claim. With most home warranties, the company assigns a technician from its own network; some plans let you use your own contractor with approval and reimburse you up to the plan's limits.</p>`,
-        },
-        {
-          heading: "Do you need both?",
-          body: `<p>If you have a mortgage, homeowners insurance is almost always required. A home warranty is optional and worth considering if you have several aging systems or appliances and want predictable repair costs. Read <a href="/articles/is-a-home-warranty-worth-it">is a home warranty worth it?</a> to decide, then compare plans on our <a href="/">rankings page</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
-        },
-      ],
-    },
-    {
-      slug: "is-a-home-warranty-worth-it",
-      title: "Is a Home Warranty Worth It? An Honest Cost-Benefit Look for 2026",
-      description:
-        "When a home warranty pays off, when it doesn't, and how to decide for your home - with the questions to ask before you buy.",
-      category: "Buying",
-      readTime: "7 min read",
-      publishedAt: "2026-10-12",
-      updatedAt: "2026-10-12",
-      heroColor: "#FFF3EA",
-      author: AUTHOR,
-      keyTakeaways: [
-        "A warranty tends to pay off for homes with several aging systems or appliances and owners without a large repair fund.",
-        "It's less likely to pay off on a new or recently renovated home.",
-        "Coverage caps and exclusions decide value as much as price - a low-cap plan can leave you paying most of a big repair.",
-        "Consumer surveys have found a large share of warranty holders had a claim denied or only partly paid.",
-      ],
-      sections: [
-        {
-          heading: "The basic math",
-          body: `<p>A typical plan costs roughly $300-$700 a year plus a service fee of $60-$150 per visit. A single furnace, AC or water heater replacement can cost several thousand dollars. So a warranty can come out well ahead in a year when a major item fails - and behind in a year when nothing does.</p>`,
-        },
-        {
-          heading: "When a home warranty is more likely to be worth it",
-          body: `<ul><li>Your home has <strong>several aging systems or appliances</strong> - especially HVAC and water heaters past mid-life.</li><li>You don't have a comfortable <strong>emergency fund</strong> for surprise repairs.</li><li>You're <strong>buying a home</strong> and want predictable costs in the first year (often the seller pays).</li><li>You're a <strong>landlord</strong> who wants a single number to call for tenant repairs.</li></ul>`,
-        },
-        {
-          heading: "When it's less likely to be worth it",
-          body: `<ul><li>Your home or major systems are <strong>new</strong> and still under manufacturer or builder warranties.</li><li>You can comfortably pay repairs from savings.</li><li>The plan's <strong>caps are too low</strong> to cover the repairs you're actually worried about.</li><li>You're handy and prefer to choose your own contractors.</li></ul>`,
-        },
-        {
-          heading: "Questions to ask before buying",
-          body: `<ol><li>What is the per-item cap for my HVAC, water heater and appliances?</li><li>Is there an overall annual or contract limit?</li><li>How are pre-existing conditions and maintenance defined?</li><li>Are code upgrades, permits and haul-away covered?</li><li>Can I choose my own contractor?</li><li>What's the workmanship guarantee on repairs?</li></ol><p>Our reviews answer these for each company - start with <a href="/reviews/choice-home-warranty">Choice</a>, <a href="/reviews/american-home-shield">American Home Shield</a> and <a href="/reviews/select-home-warranty">Select</a>, or read <a href="/articles/why-home-warranty-claims-get-denied">why claims get denied</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
-        },
-      ],
-    },
-    {
-      slug: "how-much-does-a-home-warranty-cost",
-      title: "How Much Does a Home Warranty Cost in 2026?",
-      description:
-        "Typical home warranty prices, service call fees and add-on costs in 2026 - plus what drives the price and how to compare plans fairly.",
-      category: "Costs",
-      readTime: "6 min read",
-      publishedAt: "2026-10-12",
-      updatedAt: "2026-10-12",
-      heroColor: "#FFEBDD",
-      author: AUTHOR,
-      keyTakeaways: [
-        "Most plans run roughly $300-$700 a year; premium tiers and add-ons cost more.",
-        "Service call fees are commonly $60-$150 per visit, and at many companies are owed even if a claim is denied.",
-        "A higher service fee usually means a lower premium.",
-        "Compare the yearly premium plus expected service fees - and the caps - not just the monthly price.",
-      ],
-      sections: [
-        {
-          heading: "Typical price ranges",
-          body: `<p>Based on published quotes and third-party reviews in 2025-2026, here are rough monthly price ranges for the companies we track (always confirm for your address):</p><ul><li><strong>Choice Home Warranty:</strong> ~$46-$49 (Basic) to ~$55-$58 (Total).</li><li><strong>American Home Shield:</strong> ~$30-$40 (ShieldSilver), ~$50-$60 (ShieldGold), ~$80-$90 (ShieldPlatinum).</li><li><strong>Select Home Warranty:</strong> ~$36-$64 before promotions.</li><li><strong>First American:</strong> ~$40-$140 depending on plan and state.</li><li><strong>Home Warranty of America:</strong> ~$48 (Premier) to ~$61 (Premier Plus) in a sample quote.</li><li><strong>The Home Service Club:</strong> ~$54 (Standard) to ~$67 (Comprehensive).</li><li><strong>2-10 Home Buyers Warranty:</strong> from ~$27-$35.</li></ul>`,
-        },
-        {
-          heading: "Service call fees",
-          body: `<p>Every visit carries a service call (or "trade call") fee, typically $60-$150. Some companies let you choose: American Home Shield offers $100 or $125; First American offers $75, $100 or $125. Choosing a higher fee lowers your premium, which can make sense if you expect few claims.</p>`,
-        },
-        {
-          heading: "What drives the price",
-          body: `<ul><li><strong>Plan tier</strong> - systems-only and appliances-only plans cost less than combos.</li><li><strong>Location</strong> - prices vary by state and ZIP code.</li><li><strong>Home size and type</strong> - larger homes and multi-unit properties often cost more.</li><li><strong>Add-ons</strong> - pool/spa, well pump, septic, second refrigerator and similar extras.</li><li><strong>Billing</strong> - paying annually sometimes unlocks discounts or free months.</li></ul>`,
-        },
-        {
-          heading: "How to compare fairly",
-          body: `<p>Add the yearly premium to the service fees you expect to pay, then check the caps on the items you're most worried about. A cheaper plan with a $500 per-item cap can cost you far more after one big repair than a pricier plan with a $3,000-$5,000 cap. Compare head-to-head in <a href="/choice-home-warranty-vs-select-home-warranty">Choice vs Select</a> or <a href="/american-home-shield-vs-choice-home-warranty">American Home Shield vs Choice</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
-        },
-      ],
-    },
+    warrantyVsInsuranceGuide,
+    worthItGuide,
+    costGuide,
     {
       slug: "why-home-warranty-claims-get-denied",
       title: "Why Home Warranty Claims Get Denied (and How to Avoid It)",

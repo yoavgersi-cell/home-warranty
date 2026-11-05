@@ -108,7 +108,7 @@ export const part5: ArticleSection[] = [
   },
   {
     heading: "Do home warranties cover pre-existing conditions?",
-    body: `<p>Generally no. Most contracts exclude problems that existed before coverage began, though some cover pre-existing issues that couldn't have been detected through a visual inspection or simple mechanical test. Read the exact wording in your contract, and keep inspection reports and maintenance records to help show items were working at the start of coverage.</p>`,
+    body: `<p>Generally no. Most contracts exclude problems that existed before coverage began, though some cover pre-existing issues that couldn't have been detected through a visual inspection or simple mechanical test. Read the exact wording in your contract, and keep inspection reports and maintenance records to help show items were working at the start of coverage. If a claim has already been denied, our guide to <a href="/articles/home-warranty-claim-denied">fighting a denied home warranty claim</a> walks through appeals, cash-out negotiation and state complaints.</p>`,
   },
   {
     heading: "Is a home warranty tax-deductible?",

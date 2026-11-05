@@ -22,6 +22,7 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
     title: "Guides",
     links: [
       { label: "Complete Home Warranty Guide", href: "/articles/home-warranty-guide" },
+      { label: "Claim Denied? How to Fight Back", href: "/articles/home-warranty-claim-denied" },
       { label: "R-410A Phase-Out & Warranties", href: "/articles/r-410a-phase-out-home-warranty" },
       { label: "Best Appliance Insurance", href: "/articles/best-appliance-insurance" },
       { label: "What Is a Home Warranty?", href: "/articles/what-is-a-home-warranty" },
@@ -42,6 +43,18 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
       { label: "Dishwashers & Appliances", href: "/articles/best-home-warranty-for-dishwashers" },
       { label: "Most Comprehensive", href: "/articles/most-comprehensive-home-warranty" },
       { label: "No / Low Deductible", href: "/articles/best-home-warranty-no-deductible" },
+    ],
+  },
+  {
+    title: "Home Warranty by State",
+    links: [
+      { label: "Texas", href: "/articles/best-home-warranty-texas" },
+      { label: "California", href: "/articles/best-home-warranty-california" },
+      { label: "Florida", href: "/articles/best-home-warranty-florida" },
+      { label: "Arizona", href: "/articles/best-home-warranty-arizona" },
+      { label: "Georgia", href: "/articles/best-home-warranty-georgia" },
+      { label: "North Carolina", href: "/articles/best-home-warranty-north-carolina" },
+      { label: "Laws by State", href: "/articles/home-warranty-by-state" },
     ],
   },
   {
@@ -81,7 +94,7 @@ export async function Footer() {
   return (
     <footer className="mt-auto border-t border-[#E5E5E5] bg-white">
       <div className="mx-auto max-w-6xl px-4 py-10">
-        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-7">
           {/* Brand blurb */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <p className="text-[13px] leading-relaxed text-gray-500">
@@ -93,9 +106,9 @@ export async function Footer() {
           {columns.map((col) => (
             <div key={col.title}>
               <h2 className="mb-2.5 text-[12px] font-bold uppercase tracking-wider text-[#191919]">{col.title}</h2>
-              <nav className="space-y-1.5">
+              <nav className="space-y-0.5">
                 {col.links.map((l) => (
-                  <Link key={l.label} href={l.href} className="block text-[13px] text-gray-500 hover:text-[#C2570C]">
+                  <Link key={l.label} href={l.href} className="block py-1 text-[13px] text-gray-500 hover:text-[#C2570C]">
                     {l.label}
                   </Link>
                 ))}
@@ -114,7 +127,7 @@ export async function Footer() {
             <p className="text-[12px] text-gray-500">
               &copy; {new Date().getFullYear()} Top Home Warranty. All rights reserved.
             </p>
-            <p className="text-[11px] text-gray-500">
+            <p className="text-[12px] text-gray-500">
               thetophomewarranty.com is not a home warranty company. Always read the full contract before buying.
             </p>
           </div>

@@ -73,6 +73,7 @@ const categoryColors: Record<string, string> = {
   Guides: "bg-emerald-50 text-emerald-700",
   Costs: "bg-amber-50 text-amber-700",
   Claims: "bg-blue-50 text-blue-700",
+  "State Guides": "bg-sky-50 text-sky-700",
   Buying: "bg-purple-50 text-purple-700",
   "Best For": "bg-[#FFF1E6] text-[#C2570C]",
 };
@@ -381,7 +382,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
               (featured snippets / AI overviews lift lists like this whole). */}
           {article.keyTakeaways && article.keyTakeaways.length > 0 && (
             <div className="mb-8 rounded-xl border border-[#F08A3C]/15 bg-[#FFF8F2] p-5 sm:p-6">
-              <p className="mb-3 text-[12px] font-bold uppercase tracking-wider text-[#C2570C]">Key takeaways</p>
+              <p className="mb-3 text-[12px] font-bold uppercase tracking-wider text-[#C2570C]">{article.keyTakeawaysTitle ?? "Key takeaways"}</p>
               <ul className="space-y-2">
                 {article.keyTakeaways.map((t) => (
                   <li key={t} className="flex items-start gap-2.5 text-[15px] leading-relaxed text-gray-800">
@@ -400,11 +401,11 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
               <p className="mb-3 text-[12px] font-bold uppercase tracking-wider text-gray-500">
                 In this article
               </p>
-              <ol className="space-y-1.5">
+              <ol className="space-y-0.5">
                 {article.sections.map((s, i) => (
                   <li key={i} className="flex gap-2 text-[14px] leading-snug">
-                    <span className="shrink-0 font-semibold text-gray-500">{i + 1}.</span>
-                    <a href={`#${slugifyHeading(s.heading)}`} className="text-[#C2570C] hover:underline">
+                    <span className="shrink-0 py-1 font-semibold text-gray-500">{i + 1}.</span>
+                    <a href={`#${slugifyHeading(s.heading)}`} className="block py-1 text-[#C2570C] hover:underline">
                       {s.heading}
                     </a>
                   </li>
@@ -586,7 +587,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                     className="group rounded-xl border border-gray-200 bg-white p-5 transition-shadow hover:shadow-md"
                   >
                     <span
-                      className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-semibold mb-2 ${categoryColors[ra.category] || "bg-gray-100 text-gray-600"}`}
+                      className={`inline-block rounded-full px-2 py-0.5 text-[11px] font-semibold mb-2 ${categoryColors[ra.category] || "bg-gray-100 text-gray-600"}`}
                     >
                       {ra.category}
                     </span>

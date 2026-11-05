@@ -101,6 +101,17 @@ html[data-hub] .hub-name {
   }
 }
 
+/* ───── Mobile layout safety ─────
+   Grid and flex children default to min-width:auto, so one long word, URL or
+   "truncate" label can push a card wider than the phone screen. Letting them
+   shrink keeps every card inside its column; truncation then works as meant. */
+.grid > * {
+  min-width: 0;
+}
+.truncate {
+  min-width: 0;
+}
+
 /* ───── Rich article typography (.article-body) ─────
    Article section bodies are author-written HTML (from code seeds or the CMS).
    These rules give plain semantic markup - p, ul, ol, table, strong - an
@@ -191,6 +202,11 @@ html[data-hub] .hub-name {
 .article-body table tr:last-child td {
   border-bottom: none;
 }
+/* Links inside table cells get a 24px+ tap height on touch screens. */
+.article-body table a {
+  display: inline-block;
+  padding: 4px 0;
+}
 .article-body table td:first-child {
   font-weight: 600;
   color: #191919;
@@ -208,6 +224,19 @@ html[data-hub] .hub-name {
   .article-body table td {
     min-width: 8.5rem;
     white-space: normal;
+  }
+  /* Tables with 3+ columns overflow a phone screen: show a pinned hint that
+     the table scrolls sideways (it stays in view while the table scrolls). */
+  .article-body table:has(tr > :nth-child(3))::before {
+    content: "Swipe to see the full table \2192";
+    display: block;
+    position: sticky;
+    left: 0;
+    width: max-content;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #9A4309;
   }
 }
 .article-body .qa {

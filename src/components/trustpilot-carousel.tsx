@@ -62,7 +62,7 @@ function ReviewCard({ r }: { r: TrustpilotReview }) {
       <div className="mb-2.5 flex items-center justify-between gap-2">
         <TrustpilotStars rating={r.rating} boxClass="h-4 w-4" />
         {r.date && (
-          <span className="shrink-0 text-[11px] text-gray-500">{r.date}</span>
+          <span className="shrink-0 text-[12px] text-gray-500">{r.date}</span>
         )}
       </div>
       {r.title && (
@@ -79,7 +79,7 @@ function ReviewCard({ r }: { r: TrustpilotReview }) {
         </div>
         <div className="min-w-0">
           <p className="truncate text-[12.5px] font-semibold text-[#191919]">{r.name}</p>
-          <p className="text-[11px] text-gray-500">{r.location}</p>
+          <p className="text-[12px] text-gray-500">{r.location}</p>
         </div>
       </div>
     </div>
@@ -168,16 +168,20 @@ export function TrustpilotCarousel({
             >
               <ChevronLeft className="h-4 w-4" strokeWidth={2} />
             </button>
-            <div className="flex gap-1.5">
+            <div className="flex">
               {Array.from({ length: pageCount }).map((_, i) => (
                 <button
                   key={i}
                   onClick={() => setPage(i)}
                   aria-label={`Go to reviews page ${i + 1}`}
-                  className={`h-1.5 rounded-full transition-all ${
-                    i === page ? "w-5 bg-[#F08A3C]" : "w-1.5 bg-gray-200 hover:bg-gray-300"
-                  }`}
-                />
+                  className="flex h-6 min-w-6 items-center justify-center px-[3px]"
+                >
+                  <span
+                    className={`block h-1.5 rounded-full transition-all ${
+                      i === page ? "w-5 bg-[#F08A3C]" : "w-1.5 bg-gray-200 hover:bg-gray-300"
+                    }`}
+                  />
+                </button>
               ))}
             </div>
             <button
@@ -207,16 +211,20 @@ export function TrustpilotCarousel({
 
         {/* Dots + arrows */}
         <div className="mt-3 flex items-center justify-between px-1">
-          <div className="flex gap-1.5">
+          <div className="flex flex-wrap">
             {reviews.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setCurrent(i)}
                 aria-label={`Go to review ${i + 1}`}
-                className={`h-1.5 rounded-full transition-all ${
-                  i === current ? "w-5 bg-[#F08A3C]" : "w-1.5 bg-gray-200"
-                }`}
-              />
+                className="flex h-6 min-w-6 items-center justify-center px-[3px]"
+              >
+                <span
+                  className={`block h-1.5 rounded-full transition-all ${
+                    i === current ? "w-5 bg-[#F08A3C]" : "w-1.5 bg-gray-200"
+                  }`}
+                />
+              </button>
             ))}
           </div>
           <div className="flex gap-1.5">
