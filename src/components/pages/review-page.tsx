@@ -75,8 +75,8 @@ const REVIEW_SEO_OVERRIDES: Record<string, { title: string; description: string 
 const REVIEW_LEGIT: Record<string, { verdict: string; signals: string[] }> = {
   "choice-home-warranty": {
     verdict:
-      "Yes - Choice Home Warranty is a real company that has sold home warranties since 2008 and serves most of the US. It also has a significant regulatory history: in early 2026 it agreed to an $11.8 million consent judgment with the Arizona Attorney General over claim-handling and disclosure allegations (without admitting wrongdoing), and it settled with New Jersey in 2015. Read the sample contract closely, especially the caps and exclusions.",
-    signals: ["In business since 2008", "Two simple plans plus add-ons", "Available in every state except Washington (per third-party sources)"],
+      "Yes - Choice Home Warranty is a real company that has sold home warranties since 2008 and serves most of the US. It also has a significant regulatory history: in early 2026 it agreed to an $11.8 million consent judgment with the Arizona Attorney General over claim-handling and disclosure allegations (without admitting wrongdoing), and it settled with New Jersey in 2015. Oregon regulators also issued an order citing insufficient cash payments and delays, while Georgia fully rescinded a 2024 sales ban after finding Choice's surety bond had been in place all along. Choice is owned by Rely Home, which also owns Home Warranty of America and The Home Service Club. Read the sample contract closely, especially the caps and exclusions.",
+    signals: ["In business since 2008", "Owned by Rely Home (sister brands: HWA, The Home Service Club)", "Available in every state except Washington (per third-party sources)"],
   },
   "american-home-shield": {
     verdict:
@@ -95,12 +95,12 @@ const REVIEW_LEGIT: Record<string, { verdict: string; signals: string[] }> = {
   },
   "home-warranty-of-america": {
     verdict:
-      "Yes - Home Warranty of America has operated since 1996 and has been owned by Choice Home Warranty since 2022, while still running as its own brand. It sells nationwide, but customer reviews on some sites are poor, so read the contract's caps and its short workmanship guarantee before you buy.",
+      "Yes - Home Warranty of America has operated since 1996 and has been part of the Choice Home Warranty family since 2022 - both are owned by Rely Home, which also owns The Home Service Club - while still running as its own brand. It sells nationwide, but customer reviews on some sites are poor, so read the contract's caps and its short workmanship guarantee before you buy.",
     signals: ["In business since 1996", "Available in all 50 states", "13-month contracts"],
   },
   "home-service-club": {
     verdict:
-      "Yes - The Home Service Club is a real company that has sold home warranties since around 2008-2009. Its standout feature is no age limit on covered items, but its per-item caps are low and it has no Trustpilot profile, so there is little public review data to check - a cautious pick.",
+      "Yes - The Home Service Club is a real company that has sold home warranties since around 2008-2009, and is a sister brand of Choice Home Warranty and Home Warranty of America under Rely Home. Its standout feature is no age limit on covered items, but its per-item caps are low and it has no Trustpilot profile, so there is little public review data to check - a cautious pick.",
     signals: ["Selling plans since about 2008", "No age limit on covered systems and appliances", "Two straightforward plans"],
   },
   "2-10-home-buyers-warranty": {
