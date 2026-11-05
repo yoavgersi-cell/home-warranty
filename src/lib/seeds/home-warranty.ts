@@ -5,6 +5,7 @@ import { applianceInsuranceGuide } from "./articles/appliance-insurance";
 import { claimDeniedGuide } from "./articles/claim-denied";
 import { worthItGuide } from "./articles/worth-it";
 import { costGuide } from "./articles/cost";
+import { ahsAlternativesGuide } from "./articles/ahs-alternatives";
 import { warrantyVsInsuranceGuide } from "./articles/warranty-vs-insurance";
 import { stateHubGuide, texasGuide, californiaGuide, floridaGuide, arizonaGuide, georgiaGuide, northCarolinaGuide } from "./articles/states";
 import { bestForWaterHeaters, bestForHeatPumps } from "./articles/best-for/water-heaters-heat-pumps";
@@ -1439,8 +1440,12 @@ export const homeWarrantyConfig: SiteConfig = {
           body: `<p>Most companies build plans from two groups of items:</p><ul><li><strong>Systems</strong> - heating, air conditioning, ductwork, plumbing, electrical and water heaters.</li><li><strong>Appliances</strong> - refrigerator, oven/range, dishwasher, built-in microwave, garbage disposal, clothes washer and dryer.</li></ul><p>Many sell systems-only and appliances-only plans, a combination plan, and a premium tier with higher caps and extras such as roof leak repair or code-upgrade coverage. Pools, spas, well pumps and septic systems are usually optional add-ons.</p>`,
         },
         {
-          heading: "How claims work",
+          heading: "How does a home warranty work?",
           body: `<p>When a covered item stops working, you file a claim online, in an app or by phone. The company assigns a contractor from its network (some plans let you choose your own with approval), you pay the service fee at the visit, and the technician diagnoses the problem. If it's covered, the company repairs it up to the plan's cap, replaces it if repair isn't practical, or sometimes offers cash instead. See our step-by-step guide to <a href="/articles/how-to-file-a-home-warranty-claim">filing a home warranty claim</a>.</p>`,
+        },
+        {
+          heading: "Is a home warranty insurance?",
+          body: `<p>No. A home warranty is a service contract, not an insurance policy - though some states regulate home warranty companies through their insurance departments, which is why people often call it "home warranty insurance." Homeowners insurance pays for sudden damage from events like fire, storms and burst pipes; a home warranty pays to repair or replace covered systems and appliances that wear out. Most homeowners who have a warranty also need insurance. Our <a href="/articles/home-warranty-vs-homeowners-insurance">home warranty vs homeowners insurance guide</a> maps exactly who pays for what.</p>`,
         },
         {
           heading: "What it costs",
@@ -1459,9 +1464,10 @@ export const homeWarrantyConfig: SiteConfig = {
     warrantyVsInsuranceGuide,
     worthItGuide,
     costGuide,
+    ahsAlternativesGuide,
     {
       slug: "home-warranty-for-home-buyers-and-sellers",
-      title: "Home Warranties for Buyers and Sellers: How They Work",
+      title: "Best Home Warranty for Sellers and Buyers: How It Works",
       description:
         "Why sellers offer home warranties, how buyer and seller coverage works at closing, and what to check before accepting a plan.",
       category: "Buying",
@@ -1480,6 +1486,10 @@ export const homeWarrantyConfig: SiteConfig = {
         {
           heading: "Why sellers offer home warranties",
           body: `<p>A home warranty can make a listing more appealing by giving buyers some protection against early breakdowns. It can also reduce post-sale disputes about systems that fail soon after closing. Real estate agents frequently recommend it, and brands such as <a href="/reviews/first-american">First American</a>, <a href="/reviews/american-home-shield">American Home Shield</a> and <a href="/reviews/2-10-home-buyers-warranty">2-10</a> have dedicated real estate plans.</p>`,
+        },
+        {
+          heading: "What is the best home warranty for sellers?",
+          body: `<p>For most sellers, the best home warranty is a <strong>one-year real estate plan</strong> from a company with a strong real estate program - typically about <strong>$400-$700</strong>, paid at closing - that also offers <strong>listing (seller) coverage</strong> while the home is on the market. Listing coverage can protect you if a covered system fails before closing, and many companies include it at no charge when the buyer's plan is ordered at closing. Terms vary: a First American sample real estate form shows seller coverage for up to 180 days, with a $60 charge if the sale doesn't close, and American Home Shield caps seller coverage at a set dollar amount. Real estate plans also often cover unknown pre-existing conditions, which gives the buyer more protection - one reason a seller-paid plan can make a listing more attractive. Compare plans in our <a href="/reviews/first-american">First American</a> and <a href="/reviews/american-home-shield">American Home Shield</a> reviews, and see the <a href="/articles/how-much-does-a-home-warranty-cost">home warranty cost guide</a> for real estate pricing.</p>`,
         },
         {
           heading: "How coverage works at closing",

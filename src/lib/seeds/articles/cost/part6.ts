@@ -26,6 +26,14 @@ export const part6: ArticleSection[] = [
 <p>When comparing, line up these numbers for each plan: HVAC limit, appliance limits, refrigerant and permit coverage, how cash-outs are calculated, and the service fee. Our <a href="/">2026 rankings</a> compare all seven companies on these terms, and our <a href="/articles/home-warranty-claim-denied">denied claims guide</a> explains how caps and cash-outs play out in real claims.</p>`,
   },
   {
+    heading: "What is the average cost of a home warranty?",
+    body: `<p>The average home warranty costs about $56 a month, or $672 a year, according to This Old House's analysis of more than 4,000 quotes; NerdWallet's 2026 analysis puts the average at $73 a month. Add a service fee of about $100-$125 per claim. Including fees and add-ons, many homeowners spend $700-$1,200 a year.</p>`,
+  },
+  {
+    heading: "How much is a one-year home warranty?",
+    body: `<p>A one-year home warranty typically costs about $480 to $1,000 in premiums, depending on the company, plan tier and location - for example, roughly $560 a year for Choice's Basic plan or $660 for its Total plan in 2026 quotes. One-year real estate plans bought at closing usually cost about $400-$700 and are often paid by the seller.</p>`,
+  },
+  {
     heading: "How much is a home warranty per month?",
     body: `<p>Most home warranties cost about $40 to $85 a month in 2026. This Old House's analysis of over 4,000 quotes found an average of $56 a month, while NerdWallet's 2026 analysis found $73. Basic and systems-only plans can start around $30.</p>`,
   },

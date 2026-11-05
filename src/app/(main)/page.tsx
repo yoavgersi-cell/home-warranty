@@ -18,13 +18,13 @@ const SITE_URL = "https://www.thetophomewarranty.com";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Best Home Warranty Companies of 2026: Compare Plans & Prices",
+    absolute: "Best Home Warranty Companies 2026, Compared | Top Home Warranty",
   },
   description:
     "Home warranty comparison for 2026: compare the top home warranty companies side by side by price, coverage, appliance and HVAC caps, service fees and reviews.",
   alternates: { canonical: SITE_URL },
   openGraph: {
-    title: "Best Home Warranty Companies of 2026: Compare Plans & Prices",
+    title: "Best Home Warranty Companies 2026, Compared | Top Home Warranty",
     description:
       "Compare the best home warranty plans of 2026 - top companies ranked by coverage, price, claims service and value.",
     url: SITE_URL,
@@ -92,7 +92,7 @@ export default async function HomePage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Best Home Warranty Companies of 2026: Compare Plans & Prices",
+    name: "Best Home Warranty Companies 2026, Compared | Top Home Warranty",
     description:
       "Compare coverage, pricing, service fees and overall value across the top home warranty companies of 2026.",
     url: SITE_URL,

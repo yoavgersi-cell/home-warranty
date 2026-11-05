@@ -23,6 +23,20 @@ export const part3: ArticleSection[] = [
 <p>For each one below we explain what the clause says, what it looks like in real claims, how strong the company's position usually is, and what you can do about it.</p>`,
   },
   {
+    heading: "Why do home warranty companies deny HVAC claims?",
+    body: `<div class="qa"><strong>Quick answer</strong>HVAC claims are denied most often because the company concludes the failure was <strong>pre-existing</strong>, caused by <strong>missing maintenance</strong> (dirty coils, clogged filters or condensate lines), or caused by <strong>improper installation or a mismatched system</strong>. Approved HVAC claims can still leave you paying for <strong>amounts over the HVAC cap</strong> (often $3,000-$5,000), <strong>refrigerant over a per-pound limit</strong>, and <strong>permits, code upgrades or "modifications"</strong> that the plan excludes. Keep tune-up records, get the technician's diagnosis in writing, and check your plan's HVAC limit and refrigerant terms before you need them.</div>
+<p>Heating and air conditioning claims are the most expensive claims home warranty companies handle, so they get the most scrutiny. Here's how each common reason plays out for HVAC specifically:</p>
+<ul>
+<li><strong>Pre-existing conditions</strong> - common when a system fails soon after a move-in or a new policy. Real estate plans that cover unknown or undetectable conditions give you more protection.</li>
+<li><strong>Lack of maintenance</strong> - dirty evaporator or condenser coils, clogged filters and blocked condensate drains are the classic findings. Annual tune-up invoices are your best defense.</li>
+<li><strong>Improper installation or mismatched equipment</strong> - for example, an indoor coil that doesn't match the outdoor unit. Some contracts exclude these failures outright.</li>
+<li><strong>Refrigerant limits</strong> - many plans cap refrigerant at roughly $10 per pound or cover it fully only on top tiers, which matters more since new systems switched from R-410A to R-454B and R-32 (see our <a href="/articles/r-410a-phase-out-home-warranty">refrigerant guide</a>).</li>
+<li><strong>Code, permits and modifications</strong> - a replacement may need new line sets, electrical work or a permit that the base plan won't pay for.</li>
+<li><strong>Caps</strong> - an approved replacement above the HVAC limit leaves you the balance.</li>
+</ul>
+<p>The sections below explain each reason in depth, with the contract language behind it and how to challenge it.</p>`,
+  },
+  {
     heading: "1. Pre-existing conditions: the most disputed denial",
     body: `<p><strong>What the contracts say.</strong> Nearly every home warranty excludes problems that existed before coverage began, but the wording varies in a way that matters enormously:</p>
 <ul>

@@ -208,6 +208,10 @@ export const noDeductible: ArticleData = {
 </ul>`,
     },
     {
+      heading: "Do all home warranties have deductibles?",
+      body: `<p>Almost all home warranties charge a per-claim fee - usually called a service fee or trade call fee rather than a deductible - of about $60-$150, and most major companies charge $100-$125. A few plans offer a $0 or low fee, usually in exchange for a higher monthly price or narrower coverage. Unlike an insurance deductible, the service fee is a flat amount per claim and is generally owed even if the claim is denied.</p>`,
+    },
+    {
       heading: "Is a $0 deductible home warranty worth it?",
       body: `<p>Sometimes, but compare the total cost. A $0 service fee typically means a higher monthly premium, a narrower list of covered items, lower caps, or all three. Add up the premium for a year plus expected fees, then compare caps and exclusions with standard plans. If you rarely file claims, a $0 fee rarely saves money.</p>`,
     },

@@ -7,7 +7,7 @@ import type { ArticleData } from "@/lib/config";
 // cover breakdowns. Figures reuse the researched facts in home-warranty.ts.
 export const applianceInsuranceGuide: ArticleData = {
   slug: "best-appliance-insurance",
-  title: "Best Appliance Insurance of 2026: Plans & Prices Compared",
+  title: "Best Appliance Insurance of 2026: Home Appliance Plans Compared",
   description:
     "Looking for home appliance insurance? Compare the best appliance protection plans of 2026 - home warranties, appliance caps, prices and what's really covered.",
   category: "Guides",
@@ -143,6 +143,10 @@ export const applianceInsuranceGuide: ArticleData = {
 <li><strong>Look at the company's record</strong> - complaint patterns and any regulatory actions.</li>
 </ol>
 <p class="cta-row"><a href="/articles/home-warranty-guide">→ The complete home warranty guide</a></p>`,
+    },
+    {
+      heading: "What is the best insurance for home appliances?",
+      body: `<p>For most homeowners, the best "home appliance insurance" is a home warranty appliance or combination plan, which pays to repair or replace refrigerators, ovens, dishwashers, washers and dryers that break down from normal wear and tear. Based on coverage, caps and price, our picks are Choice Home Warranty for value ($3,000 per covered item), American Home Shield for high appliance limits on a nationwide plan (up to $4,000 per appliance on ShieldPlatinum), and First American where available (up to $7,000 for appliances on its Premium plan). For a single new or high-end appliance, a manufacturer's extended warranty can be a better fit.</p>`,
     },
     {
       heading: "Does homeowners insurance cover broken appliances?",
