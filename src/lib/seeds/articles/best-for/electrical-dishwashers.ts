@@ -112,6 +112,10 @@ export const bestForElectrical: ArticleData = {
 </ul>`,
     },
     {
+      heading: "Does a home warranty cover electrical outlets?",
+      body: `<p>Usually, yes. Systems and combination plans from the companies we track typically cover the home's interior electrical system - wiring, outlets, switches, breakers and panels - when parts fail from normal wear and tear. Common exclusions include outlets or wiring that need upgrading to meet current code, inadequate electrical capacity, damage from power surges or lightning, and low-voltage or smart-home systems. Check the electrical section of your plan's sample contract for its exact list and limits.</p>`,
+    },
+    {
       heading: "Does a home warranty cover an electrical panel replacement?",
       body: `<p>It can, if the panel fails from normal wear and tear and the replacement fits within your plan's limit. Panel <em>upgrades</em> to increase capacity - for example, from 100 to 200 amps to support an EV charger or heat pump - are generally not covered, and code-required changes may be excluded unless your plan includes code and permit coverage.</p>`,
     },

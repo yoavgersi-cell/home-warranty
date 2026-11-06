@@ -79,7 +79,7 @@ export function EditorialContent({ midSlot }: { midSlot?: React.ReactNode }) {
         decide whether a plan pays off when something breaks: what is covered, how much each item is
         capped at, the service call fee, the exclusions in the fine print, and how claims are handled.
         Not sure where to start? Read our{" "}
-        <Link href="/articles/best-home-warranty-companies-compared" className={link}>
+        <Link href="/" className={link}>
           guide to the best home warranty companies
         </Link>{" "}
         for the full breakdown, or go deep with{" "}
@@ -163,7 +163,7 @@ export function EditorialContent({ midSlot }: { midSlot?: React.ReactNode }) {
         <strong> per-item coverage cap</strong>. A plan that caps an appliance at $500 can leave you
         paying most of a replacement, while another caps the same item at $2,000-$4,000. Always find
         the limits table in the sample contract before you buy. Learn more in{" "}
-        <Link href="/articles/why-home-warranty-claims-get-denied" className={link}>
+        <Link href="/articles/home-warranty-claim-denied" className={link}>
           why home warranty claims get denied
         </Link>.
       </p>
@@ -341,7 +341,7 @@ export function EditorialContent({ midSlot }: { midSlot?: React.ReactNode }) {
       <p className="mb-4">
         Generally no. Most contracts exclude problems that existed before coverage began, and many
         exclude failures caused by missing maintenance. See{" "}
-        <Link href="/articles/why-home-warranty-claims-get-denied" className={link}>
+        <Link href="/articles/home-warranty-claim-denied" className={link}>
           why home warranty claims get denied
         </Link>{" "}
         for the most common reasons.

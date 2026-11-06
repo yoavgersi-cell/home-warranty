@@ -8,6 +8,10 @@ export const part8: ArticleSection[] = [
     body: `<p>Yes. In most cases the denial decision is made after the technician reports what failed and why. That's why the technician's written diagnosis matters so much - ask for it, and make sure it reflects what you told them about when the problem started and how the item was maintained.</p>`,
   },
   {
+    heading: "How do home warranty claims get paid?",
+    body: `<p>For an approved claim, the home warranty company usually pays its network contractor directly for the covered repair or replacement, up to your plan's limits - you pay only the service fee and any costs the contract excludes. If the company decides an item isn't worth repairing, many contracts let it pay you cash instead, typically calculated at its own cost rather than retail. If you used your own contractor with prior approval, you're usually reimbursed after submitting an invoice.</p>`,
+  },
+  {
     heading: "Do I still have to pay the service fee if my claim is denied?",
     body: `<p>Usually, yes. Select's terms say the fee is due regardless of whether a claim is granted or denied, HWA's say the trade call fee applies to denied calls, and AHS collects a non-refundable fee when you submit a request. If you were charged for a visit that never happened, or for a repeat visit on the same problem within a workmanship guarantee period, ask for a refund.</p>`,
   },

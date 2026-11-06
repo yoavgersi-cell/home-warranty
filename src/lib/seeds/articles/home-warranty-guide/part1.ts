@@ -111,7 +111,7 @@ export const part1: ArticleSection[] = [
 <h3>9. Items outside the main structure</h3>
 <p>Outdoor plumbing, sprinkler systems, detached garages and guest units are often excluded unless you add specific coverage.</p>
 <blockquote><strong>Practical tip:</strong> Before buying, open the sample contract for your state and search it for four words: "pre-existing," "maintenance," "code" and "limit." Those four searches will show you most of what can go wrong.</blockquote>
-<p class="cta-row"><a href="/articles/why-home-warranty-claims-get-denied">→ Why home warranty claims get denied (and how to avoid it)</a></p>`,
+<p class="cta-row"><a href="/articles/home-warranty-claim-denied">→ Why home warranty claims get denied (and how to avoid it)</a></p>`,
   },
   {
     heading: "Coverage caps explained: the number that decides your payout",

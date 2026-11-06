@@ -29,7 +29,6 @@ const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
       { label: "Is a Home Warranty Worth It?", href: "/articles/is-a-home-warranty-worth-it" },
       { label: "Home Warranty Cost", href: "/articles/how-much-does-a-home-warranty-cost" },
       { label: "Warranty vs Insurance", href: "/articles/home-warranty-vs-homeowners-insurance" },
-      { label: "Why Claims Get Denied", href: "/articles/why-home-warranty-claims-get-denied" },
       { label: "How to File a Claim", href: "/articles/how-to-file-a-home-warranty-claim" },
       { label: "All Guides", href: "/articles" },
     ],

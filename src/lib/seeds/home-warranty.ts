@@ -5,6 +5,7 @@ import { applianceInsuranceGuide } from "./articles/appliance-insurance";
 import { claimDeniedGuide } from "./articles/claim-denied";
 import { worthItGuide } from "./articles/worth-it";
 import { costGuide } from "./articles/cost";
+import { ahsAlternativesGuide } from "./articles/ahs-alternatives";
 import { warrantyVsInsuranceGuide } from "./articles/warranty-vs-insurance";
 import { stateHubGuide, texasGuide, californiaGuide, floridaGuide, arizonaGuide, georgiaGuide, northCarolinaGuide } from "./articles/states";
 import { bestForWaterHeaters, bestForHeatPumps } from "./articles/best-for/water-heaters-heat-pumps";
@@ -74,7 +75,7 @@ import { hwaReviews, hwaVoice } from "./trustpilot/home-warranty-of-america";
 //    known for builder structural warranties. From ~$27-$35/mo. Service fee
 //    $65-$125. 2025 sample contract: $5,000 AC limit incl. $10/lb refrigerant
 //    (some reviews cite $2,000 system limits); $25,000 annual aggregate. Reported not
-//    available in AK, HI, NH, OK, WI, WY.
+//    available in AK, HI, MT, ND, NH, OK, SD, WY (sources vary).
 //
 // PLACEHOLDERS / OPERATOR TO VERIFY:
 //  - affiliateUrl values point to each provider's homepage. Replace them with
@@ -154,7 +155,7 @@ export const FACTS: Record<string, Record<FactKey, string>> = {
     plans: "Systems & combo tiers (check site)",
     caps: "$5,000 AC limit; $25,000 per year",
     wait: "30 days",
-    states: "AK, HI, NH, OK, WI, WY (reported)",
+    states: "AK, HI, MT, ND, NH, OK, SD, WY (reported; sources vary)",
     since: "~1980",
   },
 };
@@ -957,7 +958,7 @@ export const homeWarrantyConfig: SiteConfig = {
       ],
       affiliateUrl: "https://www.2-10.com/",
       ctaText: "Get a Quote",
-      excludedStates: ["AK", "HI", "NH", "OK", "WI", "WY"],
+      excludedStates: ["AK", "HI", "MT", "ND", "NH", "OK", "SD", "WY"],
     },
   ],
 
@@ -1439,8 +1440,12 @@ export const homeWarrantyConfig: SiteConfig = {
           body: `<p>Most companies build plans from two groups of items:</p><ul><li><strong>Systems</strong> - heating, air conditioning, ductwork, plumbing, electrical and water heaters.</li><li><strong>Appliances</strong> - refrigerator, oven/range, dishwasher, built-in microwave, garbage disposal, clothes washer and dryer.</li></ul><p>Many sell systems-only and appliances-only plans, a combination plan, and a premium tier with higher caps and extras such as roof leak repair or code-upgrade coverage. Pools, spas, well pumps and septic systems are usually optional add-ons.</p>`,
         },
         {
-          heading: "How claims work",
+          heading: "How does a home warranty work?",
           body: `<p>When a covered item stops working, you file a claim online, in an app or by phone. The company assigns a contractor from its network (some plans let you choose your own with approval), you pay the service fee at the visit, and the technician diagnoses the problem. If it's covered, the company repairs it up to the plan's cap, replaces it if repair isn't practical, or sometimes offers cash instead. See our step-by-step guide to <a href="/articles/how-to-file-a-home-warranty-claim">filing a home warranty claim</a>.</p>`,
+        },
+        {
+          heading: "Is a home warranty insurance?",
+          body: `<p>No. A home warranty is a service contract, not an insurance policy - though some states regulate home warranty companies through their insurance departments, which is why people often call it "home warranty insurance." Homeowners insurance pays for sudden damage from events like fire, storms and burst pipes; a home warranty pays to repair or replace covered systems and appliances that wear out. Most homeowners who have a warranty also need insurance. Our <a href="/articles/home-warranty-vs-homeowners-insurance">home warranty vs homeowners insurance guide</a> maps exactly who pays for what.</p>`,
         },
         {
           heading: "What it costs",
@@ -1448,7 +1453,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "What it doesn't cover",
-          body: `<p>The most common exclusions are <strong>pre-existing conditions</strong>, damage from <strong>lack of maintenance</strong> or improper installation, <strong>code upgrades and permits</strong> (unless the plan includes them), and anything over the plan's <strong>coverage cap</strong>. Most new plans also have a <strong>30-day waiting period</strong>. Read more in <a href="/articles/why-home-warranty-claims-get-denied">why home warranty claims get denied</a>.</p>`,
+          body: `<p>The most common exclusions are <strong>pre-existing conditions</strong>, damage from <strong>lack of maintenance</strong> or improper installation, <strong>code upgrades and permits</strong> (unless the plan includes them), and anything over the plan's <strong>coverage cap</strong>. Most new plans also have a <strong>30-day waiting period</strong>. Read more in <a href="/articles/home-warranty-claim-denied">why home warranty claims get denied</a>.</p>`,
         },
         {
           heading: "Home warranty vs homeowners insurance",
@@ -1459,49 +1464,10 @@ export const homeWarrantyConfig: SiteConfig = {
     warrantyVsInsuranceGuide,
     worthItGuide,
     costGuide,
-    {
-      slug: "why-home-warranty-claims-get-denied",
-      title: "Why Home Warranty Claims Get Denied (and How to Avoid It)",
-      description:
-        "The most common reasons home warranty claims are denied or partly paid - pre-existing conditions, maintenance, caps, code upgrades - and how to avoid them.",
-      category: "Claims",
-      readTime: "7 min read",
-      publishedAt: "2026-10-12",
-      updatedAt: "2026-10-12",
-      heroColor: "#FDE1CB",
-      author: AUTHOR,
-      keyTakeaways: [
-        "Pre-existing conditions and lack of maintenance are the most common reasons for denial.",
-        "Coverage caps often mean a claim is approved but only partly paid.",
-        "Code upgrades, permits and haul-away are frequently excluded unless your plan covers them.",
-        "Keep maintenance records and never pay for a repair before the company approves it.",
-      ],
-      sections: [
-        {
-          heading: "Pre-existing conditions",
-          body: `<p>Almost every contract excludes problems that existed before coverage began. That's one reason most new plans have a <strong>30-day waiting period</strong>. If a technician concludes a failure started before your plan, the claim can be denied.</p>`,
-        },
-        {
-          heading: "Lack of maintenance or improper installation",
-          body: `<p>Contracts typically exclude failures caused by missing routine maintenance - for example, an AC unit that was never serviced or a water heater never flushed - and by improper installation. <strong>Keep receipts</strong> for HVAC service and other maintenance so you can show the item was cared for.</p>`,
-        },
-        {
-          heading: "Coverage caps",
-          body: `<p>A claim can be approved and still leave you with a large bill if the repair exceeds the plan's cap. Caps vary enormously: some plans cap many items around $500, while others allow $2,000-$5,000 or more. Check the limits table before you buy - it's the single biggest difference between companies.</p>`,
-        },
-        {
-          heading: "Code upgrades, permits and haul-away",
-          body: `<p>When an old system is replaced, local codes may require upgrades (for example, new refrigerant standards or electrical changes). Many plans don't cover these costs unless you buy a tier that includes them - American Home Shield's ShieldPlatinum, for example, includes permits and code-violation coverage.</p>`,
-        },
-        {
-          heading: "How to protect yourself",
-          body: `<ol><li>Read the sample contract's exclusions and limits before buying.</li><li>Keep maintenance records and photos of major systems.</li><li>File claims promptly when something stops working.</li><li>Never pay for repairs before approval unless the company authorizes it.</li><li>If denied, ask for the reason in writing and escalate if you disagree.</li></ol><p>See <a href="/articles/how-to-file-a-home-warranty-claim">how to file a claim</a> and compare caps across companies on our <a href="/">rankings page</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
-        },
-      ],
-    },
+    ahsAlternativesGuide,
     {
       slug: "home-warranty-for-home-buyers-and-sellers",
-      title: "Home Warranties for Buyers and Sellers: How They Work",
+      title: "Best Home Warranty for Sellers and Buyers: How It Works",
       description:
         "Why sellers offer home warranties, how buyer and seller coverage works at closing, and what to check before accepting a plan.",
       category: "Buying",
@@ -1522,6 +1488,10 @@ export const homeWarrantyConfig: SiteConfig = {
           body: `<p>A home warranty can make a listing more appealing by giving buyers some protection against early breakdowns. It can also reduce post-sale disputes about systems that fail soon after closing. Real estate agents frequently recommend it, and brands such as <a href="/reviews/first-american">First American</a>, <a href="/reviews/american-home-shield">American Home Shield</a> and <a href="/reviews/2-10-home-buyers-warranty">2-10</a> have dedicated real estate plans.</p>`,
         },
         {
+          heading: "What is the best home warranty for sellers?",
+          body: `<p>For most sellers, the best home warranty is a <strong>one-year real estate plan</strong> from a company with a strong real estate program - typically about <strong>$400-$700</strong>, paid at closing - that also offers <strong>listing (seller) coverage</strong> while the home is on the market. Listing coverage can protect you if a covered system fails before closing, and many companies include it at no charge when the buyer's plan is ordered at closing. Terms vary: a First American sample real estate form shows seller coverage for up to 180 days, with a $60 charge if the sale doesn't close, and American Home Shield caps seller coverage at a set dollar amount. Real estate plans also often cover unknown pre-existing conditions, which gives the buyer more protection - one reason a seller-paid plan can make a listing more attractive. Compare plans in our <a href="/reviews/first-american">First American</a> and <a href="/reviews/american-home-shield">American Home Shield</a> reviews, and see the <a href="/articles/how-much-does-a-home-warranty-cost">home warranty cost guide</a> for real estate pricing.</p>`,
+        },
+        {
           heading: "How coverage works at closing",
           body: `<p>Real estate plans are typically bought before or at closing, and buyer coverage begins at closing - usually without the 30-day waiting period that applies to plans bought directly. Some plans also offer seller coverage while the home is on the market, and terms of 12-13 months are common.</p>`,
         },
@@ -1532,46 +1502,6 @@ export const homeWarrantyConfig: SiteConfig = {
         {
           heading: "Comparing real estate plans",
           body: `<p>Compare <a href="/american-home-shield-vs-first-american">American Home Shield vs First American</a> and <a href="/first-american-vs-2-10-home-buyers-warranty">First American vs 2-10</a>, or see all companies on our <a href="/">rankings page</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
-        },
-      ],
-    },
-    {
-      slug: "best-home-warranty-companies-compared",
-      title: "7 Home Warranty Companies Compared Side by Side (2026)",
-      description:
-        "Our side-by-side comparison of Choice, American Home Shield, Select, First American, Home Warranty of America, The Home Service Club and 2-10.",
-      category: "Provider Guides",
-      readTime: "8 min read",
-      publishedAt: "2026-10-12",
-      updatedAt: "2026-10-12",
-      heroColor: "#FFEBDD",
-      author: AUTHOR,
-      keyTakeaways: [
-        "Choice is our top pick for value: two simple plans and a $3,000 per-item cap.",
-        "American Home Shield offers the highest caps and broadest top-tier coverage.",
-        "Select is the lowest-cost option but has low per-item caps.",
-        "First American and HWA offer high limits; The Home Service Club and 2-10 suit narrower needs.",
-      ],
-      sections: [
-        {
-          heading: "How we compared",
-          body: `<p>We compared each company's published plans, reported prices, service fees, coverage caps, waiting periods, state availability and customer record. Full details are in <a href="/how-we-rank">how we rank</a>. Prices are approximate and vary by address.</p>`,
-        },
-        {
-          heading: "1. Choice Home Warranty - best overall value",
-          body: `<p>Two plans (Basic and Total), a $3,000 per-item cap and availability in 49 states at prices typically in the mid-$40s to high-$50s per month. Note its 2026 Arizona Attorney General settlement. <a href="/reviews/choice-home-warranty">Read the Choice review</a>.</p>`,
-        },
-        {
-          heading: "2. American Home Shield - best for high coverage limits",
-          body: `<p>The oldest name in the industry, with three tiers, up to $4,000 per appliance and $5,000 for HVAC, and permits/code coverage on ShieldPlatinum. <a href="/reviews/american-home-shield">Read the AHS review</a>.</p>`,
-        },
-        {
-          heading: "3. Select Home Warranty - best for a low price",
-          body: `<p>Among the cheapest plans, with frequent free months and free roof coverage, but per-item caps reported around $500. <a href="/reviews/select-home-warranty">Read the Select review</a>.</p>`,
-        },
-        {
-          heading: "4-7. First American, HWA, The Home Service Club and 2-10",
-          body: `<ul><li><a href="/reviews/first-american">First American</a> - high appliance limits and generous HVAC terms, but fewer states.</li><li><a href="/reviews/home-warranty-of-america">Home Warranty of America</a> - all 50 states and up to $5,000 on most repairs.</li><li><a href="/reviews/home-service-club">The Home Service Club</a> - no age limit on items, but low caps.</li><li><a href="/reviews/2-10-home-buyers-warranty">2-10 Home Buyers Warranty</a> - low starting price and builder expertise, modest caps.</li></ul><p>See our full <a href="/">rankings</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1611,7 +1541,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "If your claim is denied",
-          body: `<p>Ask for the reason and the contract clause in writing, provide maintenance records if relevant, and escalate to a supervisor. If you still disagree, you can file a complaint with your state's regulator or attorney general. Read <a href="/articles/why-home-warranty-claims-get-denied">why claims get denied</a> to avoid common pitfalls.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
+          body: `<p>Ask for the reason and the contract clause in writing, provide maintenance records if relevant, and escalate to a supervisor. If you still disagree, you can file a complaint with your state's regulator or attorney general. Read <a href="/articles/home-warranty-claim-denied">why claims get denied</a> to avoid common pitfalls.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },
@@ -1648,42 +1578,6 @@ export const homeWarrantyConfig: SiteConfig = {
         {
           heading: "Add-ons and service fees",
           body: `<p>Optional add-ons include pool/spa, well pump, septic pump, guest unit and electronics, reported at roughly $5-$18 a month each. You choose a $100 or $125 service fee per request. See the full <a href="/reviews/american-home-shield">American Home Shield review</a> or compare <a href="/american-home-shield-vs-choice-home-warranty">AHS vs Choice</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
-        },
-      ],
-    },
-    {
-      slug: "is-choice-home-warranty-legit",
-      title: "Is Choice Home Warranty Legit? Settlements & Reviews",
-      description:
-        "Choice Home Warranty is a real company with a notable regulatory history. What the Arizona and New Jersey settlements were about and how to protect yourself.",
-      category: "Provider Guides",
-      readTime: "6 min read",
-      publishedAt: "2026-10-12",
-      updatedAt: "2026-10-12",
-      heroColor: "#FFEBDD",
-      author: AUTHOR,
-      keyTakeaways: [
-        "Choice Home Warranty is a legitimate company that has sold home warranties since 2008.",
-        "In 2026 it agreed to an $11.8 million consent judgment with the Arizona Attorney General over claim-handling and disclosure allegations, without admitting wrongdoing.",
-        "It also settled with New Jersey in 2015.",
-        "Its Trustpilot score is 3.9 across 63,234 reviews (Oct 2026), while its BBB customer average is very low - a split common in the industry.",
-      ],
-      sections: [
-        {
-          heading: "Is Choice a real company?",
-          body: `<p>Yes. Choice Home Warranty was founded in 2008 in New Jersey, sells plans in every state except Washington, and has owned Home Warranty of America since 2022.</p>`,
-        },
-        {
-          heading: "The Arizona settlement (2026)",
-          body: `<p>In February 2026 the Arizona Attorney General announced an <strong>$11.8 million consent judgment</strong> with Choice, dated January 23, 2026. The AG alleged Choice refused advertised air conditioning and appliance claims and did not adequately disclose exclusions, citing more than 1,500 complaints since 2013. Choice denied wrongdoing. The AG opened a restitution process for eligible Arizona customers.</p>`,
-        },
-        {
-          heading: "Earlier history",
-          body: `<p>In 2015 Choice reached a settlement of roughly $780,000 with the New Jersey Attorney General's office related to consumer complaints.</p>`,
-        },
-        {
-          heading: "Should you buy from Choice?",
-          body: `<p>Choice offers good value on paper - two simple plans and a $3,000 per-item cap. If you buy, read the contract's exclusions carefully, keep maintenance records and document every claim. Compare it with <a href="/american-home-shield-vs-choice-home-warranty">American Home Shield</a> and <a href="/choice-home-warranty-vs-select-home-warranty">Select</a>, or read the full <a href="/reviews/choice-home-warranty">Choice review</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
     },

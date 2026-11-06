@@ -27,6 +27,11 @@ const nextConfig: NextConfig = {
     return [
       { source: "/online-hrt", destination: "/", permanent: true },
       { source: "/online-hrt/:state", destination: "/", permanent: true },
+      // Relevance consolidation (Nov 2026): thin pages that competed with a
+      // stronger page for the same search now point to that page.
+      { source: "/articles/why-home-warranty-claims-get-denied", destination: "/articles/home-warranty-claim-denied", permanent: true },
+      { source: "/articles/best-home-warranty-companies-compared", destination: "/", permanent: true },
+      { source: "/articles/is-choice-home-warranty-legit", destination: "/reviews/choice-home-warranty", permanent: true },
     ];
   },
   async rewrites() {
