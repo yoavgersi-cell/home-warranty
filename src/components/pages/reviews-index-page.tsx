@@ -49,6 +49,7 @@ export async function reviewsIndexMetadata(ctx: SiteContext): Promise<Metadata> 
       canonical: url,
     },
     openGraph: {
+      type: "website",
       title,
       description,
       url,

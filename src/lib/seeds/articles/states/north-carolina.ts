@@ -8,7 +8,7 @@ import { providerTable, otherStates } from "./shared";
 // QuickFacts, NC REALTORS (Form 2-T), WRAL, and our review study.
 export const northCarolinaGuide: ArticleData = {
   slug: "best-home-warranty-north-carolina",
-  title: "Best Home Warranty in North Carolina (2026): Companies & Laws",
+  title: "Best Home Warranty in North Carolina 2026: Companies & Laws",
   description:
     "The best home warranty companies in North Carolina for 2026, NC home warranty law, cancellation rights, and coverage for heat pumps, wells and septic.",
   category: "State Guides",

@@ -17,7 +17,7 @@ import { part11 } from "./part11";
 // Treasury/Senate/S&P/ICE/III data, regulator guidance and warranty contracts.
 export const warrantyVsInsuranceGuide: ArticleData = {
   slug: "home-warranty-vs-homeowners-insurance",
-  title: "Home Warranty vs Homeowners Insurance (2026): Who Pays for What",
+  title: "Home Warranty vs Homeowners Insurance (2026): Who Pays?",
   description:
     "What homeowners insurance and home warranties each cover, a 34-failure coverage map, the add-ons that fill the gaps, and how 2026 insurance costs change it.",
   category: "Guides",

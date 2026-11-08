@@ -615,7 +615,7 @@ const battles: BattleData[] = [
     matchupLabel: "Choice vs The Home Service Club",
     subtitle: "Higher per-item caps vs no age limits on covered items",
     description:
-      "Compare Choice Home Warranty and The Home Service Club - plans, cost, caps, age limits and customer reviews.",
+      "Compare Choice Home Warranty and The Home Service Club, sister brands under Rely Home: plans, cost, caps, age limits and customer reviews.",
     intro:
       "Choice and The Home Service Club both sell direct to homeowners. The Home Service Club's standout feature is no age limit on covered systems and appliances; Choice's is a higher, simpler $3,000 per-item cap. Here's how they compare.",
     verdict:
@@ -660,7 +660,7 @@ const battles: BattleData[] = [
     matchupLabel: "American Home Shield vs The Home Service Club",
     subtitle: "Industry leader vs a smaller, no-age-limit plan",
     description:
-      "Compare American Home Shield and The Home Service Club - plans, price, caps, age limits and reputation.",
+      "Compare American Home Shield and The Home Service Club side by side: plans, monthly price, coverage caps, age limits and reputation.",
     intro:
       "American Home Shield is the largest home warranty company in the US; The Home Service Club is a smaller provider that stands out for covering items regardless of age. Here's how they compare.",
     verdict:
@@ -705,7 +705,7 @@ const battles: BattleData[] = [
     matchupLabel: "HWA vs The Home Service Club",
     subtitle: "Higher repair limits vs no age limits",
     description:
-      "Compare Home Warranty of America and The Home Service Club - plans, price, caps, availability and reviews.",
+      "Compare Home Warranty of America and The Home Service Club, sister brands under Rely Home: plans, price, caps, availability and reviews.",
     intro:
       "HWA and The Home Service Club are mid-priced alternatives to the biggest brands. HWA offers higher repair limits and nationwide availability; The Home Service Club covers items regardless of age. Here's how they compare.",
     verdict:
@@ -1583,7 +1583,7 @@ export const homeWarrantyConfig: SiteConfig = {
     },
     {
       slug: "select-home-warranty-cost",
-      title: "Select Home Warranty Cost: Plans, Promotions and the Fine Print",
+      title: "Select Home Warranty Cost: Plans, Promos and Fine Print",
       description:
         "What Select Home Warranty really costs - plan prices, service fees, promotions that require annual payment, add-ons and coverage caps.",
       category: "Costs",

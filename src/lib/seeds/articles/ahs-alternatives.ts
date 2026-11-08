@@ -9,7 +9,7 @@ export const ahsAlternativesGuide: ArticleData = {
   slug: "american-home-shield-alternatives",
   title: "Best American Home Shield Alternatives (2026), Compared",
   description:
-    "The best alternatives to American Home Shield in 2026: how Choice, First American, HWA, 2-10, Select and The Home Service Club compare on price, caps and claims.",
+    "The best American Home Shield alternatives in 2026: how Choice, First American, HWA, 2-10, Select and The Home Service Club compare on price, caps and claims.",
   category: "Provider Guides",
   readTime: "14 min read",
   publishedAt: "2026-11-05",

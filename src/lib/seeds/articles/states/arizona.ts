@@ -7,7 +7,7 @@ import { providerTable, otherStates } from "./shared";
 // BLS OEWS, AAR purchase contract, company terms and our review study.
 export const arizonaGuide: ArticleData = {
   slug: "best-home-warranty-arizona",
-  title: "Best Home Warranty in Arizona (2026): Companies, Laws & Costs",
+  title: "Best Home Warranty in Arizona 2026: Companies, Laws & Costs",
   description:
     "The best home warranty companies in Arizona for 2026, its pre-existing condition rule, refund rights, AG settlements and AC coverage in desert heat.",
   category: "State Guides",

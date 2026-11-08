@@ -35,7 +35,7 @@ import { providerEntity } from "@/lib/schema";
 
 const REVIEW_SEO_OVERRIDES: Record<string, { title: string; description: string }> = {
   "choice-home-warranty": {
-    title: "Choice Home Warranty Review (2026): Cost, Caps & Is It Legit?",
+    title: "Choice Home Warranty Review 2026: Cost, Caps & Is It Legit?",
     description:
       "Choice Home Warranty reviewed: Basic vs Total plans, monthly cost, service fee, the $3,000 per-item cap, regulatory history and whether it's worth it.",
   },
@@ -55,7 +55,7 @@ const REVIEW_SEO_OVERRIDES: Record<string, { title: string; description: string 
       "First American Home Warranty reviewed: plan tiers, monthly cost, service fee options, high HVAC coverage, state availability and who it's best for.",
   },
   "home-warranty-of-america": {
-    title: "Home Warranty of America (HWA) Review (2026): Plans, Cost & Caps",
+    title: "Home Warranty of America Review (2026): Plans, Cost & Caps",
     description:
       "Home Warranty of America reviewed: Premier and Premier Plus plans, cost, the $5,000 repair limit, 13-month contracts, nationwide availability and complaints.",
   },
@@ -65,7 +65,7 @@ const REVIEW_SEO_OVERRIDES: Record<string, { title: string; description: string 
       "The Home Service Club reviewed: Standard vs Comprehensive plans, price, no age limits, per-item and annual caps, and what customers report about claims.",
   },
   "2-10-home-buyers-warranty": {
-    title: "2-10 Home Buyers Warranty Review (2026): Plans, Cost & Coverage",
+    title: "2-10 Home Buyers Warranty Review (2026): Plans & Coverage",
     description:
       "2-10 Home Buyers Warranty reviewed: home warranty plans, structural warranty background, cost, coverage caps, Frontdoor ownership and who it suits.",
   },
