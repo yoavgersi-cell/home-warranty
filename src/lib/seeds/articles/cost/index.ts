@@ -13,7 +13,7 @@ import { part6 } from "./part6";
 // economics, inflation context, cancellation rules and savings tactics.
 export const costGuide: ArticleData = {
   slug: "how-much-does-a-home-warranty-cost",
-  title: "How Much Does a Home Warranty Cost in 2026? Real Prices & Fees",
+  title: "How Much Does a Home Warranty Cost? 2026 Prices & Fees",
   description:
     "2026 home warranty prices by company, plan and add-on, service fee math, state and home-size factors, real estate plan costs, and 12 ways to pay less.",
   category: "Costs",

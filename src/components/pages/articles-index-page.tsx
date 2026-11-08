@@ -36,6 +36,7 @@ export async function articlesIndexMetadata(ctx: SiteContext): Promise<Metadata>
       canonical: url,
     },
     openGraph: {
+      type: "website",
       title,
       description,
       url,

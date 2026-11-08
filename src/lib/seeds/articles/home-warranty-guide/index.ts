@@ -12,7 +12,7 @@ import { part6 } from "./part6";
 // checked October 2026. Split into parts only to keep files manageable.
 export const homeWarrantyGuide: ArticleData = {
   slug: "home-warranty-guide",
-  title: "The Complete Home Warranty Guide (2026): Cost, Coverage & Claims",
+  title: "Complete Home Warranty Guide (2026): Cost, Coverage & Claims",
   description:
     "Everything to know before buying a home warranty in 2026: what's covered, real costs, service fees, coverage caps, exclusions, claims and the best companies.",
   category: "Guides",

@@ -10,7 +10,7 @@ export const revalidate = 60;
 export const metadata: Metadata = {
   title: { absolute: "About Top Home Warranty - Mission, Team & Methodology" },
   description:
-    "How thetophomewarranty.com independently ranks and reviews home warranty companies: our editorial methodology, review process and commitment to unbiased comparisons.",
+    "How Top Home Warranty independently ranks and reviews home warranty companies: our editorial methodology, review process and commitment to unbiased comparisons.",
   alternates: {
     canonical: "https://www.thetophomewarranty.com/about",
   },
