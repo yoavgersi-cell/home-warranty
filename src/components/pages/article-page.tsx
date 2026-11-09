@@ -541,10 +541,11 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                     "is X legit" articles: a trust-check page advertising the
                     reviewed provider's competitors undermines the article's
                     credibility and cannibalizes its own conversion. */}
-                {i === 1 && !/^is-.+-legit$/.test(slug) && topProviders.length > 0 && (
+                {i === (article.topProviders?.afterSection ?? 1) && !/^is-.+-legit$/.test(slug) && topProviders.length > 0 && (
                   <TopProviderCards
                     config={config}
                     limit={3}
+                    title={article.topProviders?.title}
                     linkPrefix=""
                     pageType="listing"
                     sourceFlow="main_comparison"
