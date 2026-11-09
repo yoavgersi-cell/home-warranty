@@ -79,7 +79,7 @@ export const part3: ArticleSection[] = [
 <tr><td><a href="/reviews/first-american">First American</a></td><td>1984</td><td>Starter, Essential, Premium</td><td>~$40-$140/mo</td><td>$3,500-$7,000 appliances</td><td>About 13-15 states incl. AK, CT, DE, HI, LA</td></tr>
 <tr><td><a href="/reviews/home-warranty-of-america">Home Warranty of America</a></td><td>1996</td><td>Premier, Premier Plus</td><td>~$48-$61/mo</td><td>Up to $5,000 most repairs</td><td>None - all 50 states</td></tr>
 <tr><td><a href="/reviews/home-service-club">The Home Service Club</a></td><td>~2008</td><td>Standard, Comprehensive</td><td>~$54-$67/mo</td><td>$300-$2,000 per item; $6,000-$9,000/yr</td><td>None reported</td></tr>
-<tr><td><a href="/reviews/2-10-home-buyers-warranty">2-10</a></td><td>~1980</td><td>Systems and combo tiers</td><td>From ~$27-$35/mo</td><td>$5,000 AC limit; $25,000/yr</td><td>AK, HI, MT, ND, NH, OK, SD, WY (reported)</td></tr>
+<tr><td><a href="/reviews/2-10-home-buyers-warranty">2-10</a></td><td>~1980</td><td>Systems and combo tiers</td><td>From ~$27-$35/mo</td><td>$5,000 AC limit; $50,000/term</td><td>AK, HI, MT, ND, NH, OK, SD, WY (reported)</td></tr>
 </tbody>
 </table>
 <h3>Choice Home Warranty</h3>
