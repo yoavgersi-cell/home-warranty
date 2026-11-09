@@ -52,6 +52,34 @@ export const part8: ArticleSection[] = [
     body: `<p>Yes. Every company we track publishes sample contracts. Download the one for your state, read the covered and not-covered lists for your plan, and note the limits for HVAC, refrigerator, water heater and plumbing. Search the document for "pre-existing," "maintenance," "code," "refrigerant" and "limit" to find the terms that most often cause denials.</p>`,
   },
   {
+    heading: "Does a home warranty cover a water softener or water filtration system?",
+    body: `<p>Usually not on a base plan. Water softeners, filtration systems and water quality problems are standard exclusions under plumbing, though a few companies - The Home Service Club, for example - sell water softener coverage as an add-on. Check the add-on's limit and whether it covers the resin tank and brine tank or only the control valve.</p>`,
+  },
+  {
+    heading: "Does a home warranty cover a second refrigerator or freezer?",
+    body: `<p>Usually only as an add-on. Base plans cover the main kitchen refrigerator; a garage refrigerator, wine cooler or standalone freezer typically needs extra coverage - Choice's second refrigerator add-on, for example, is reported at about $3.33 a month. NerdWallet notes that American Home Shield covers multiple refrigerators on its appliance plans, so check before you pay for an add-on you don't need.</p>`,
+  },
+  {
+    heading: "Home warranty coverage glossary",
+    body: `<p>Contracts use the same handful of terms over and over. Knowing them makes any sample contract much faster to read.</p>
+<ul>
+<li><strong>Aggregate limit:</strong> the most a company will pay across all claims during one contract term - for example, $6,000 at The Home Service Club Standard or $50,000 at AHS and 2-10.</li>
+<li><strong>Cash in lieu:</strong> a cash payment instead of a repair or replacement, usually based on the company's own negotiated cost rather than retail price.</li>
+<li><strong>Code violation / code upgrade:</strong> work required by current building codes to complete a repair or replacement, such as new venting or electrical work. Often excluded or capped.</li>
+<li><strong>Combination plan:</strong> a plan that covers both systems and appliances.</li>
+<li><strong>Consequential (secondary) damage:</strong> damage caused by a failed item, such as water damage from a leak. Not covered by home warranties.</li>
+<li><strong>Covered item:</strong> a system, appliance or component listed in your plan's coverage section.</li>
+<li><strong>Like quality:</strong> the standard for replacements - similar features, efficiency and capacity, not necessarily the same brand, color or finish.</li>
+<li><strong>Normal wear and tear:</strong> gradual deterioration from ordinary use - the cause home warranties are designed to cover.</li>
+<li><strong>Optional coverage (add-on):</strong> items you can add for an extra charge, such as a pool, well pump or septic system.</li>
+<li><strong>Per-item limit:</strong> the most a company will pay for one covered item, per claim or per term.</li>
+<li><strong>Pre-existing condition:</strong> a defect or malfunction that existed before coverage started. Usually excluded.</li>
+<li><strong>Service call fee (trade call fee):</strong> the fixed amount you pay each time a contractor is sent, commonly $75-$125.</li>
+<li><strong>Sub-limit:</strong> a smaller cap inside a covered item, such as a per-pound refrigerant limit or a tankless water heater limit.</li>
+<li><strong>Waiting period:</strong> the time after purchase before coverage begins, usually 30 days on new consumer plans.</li>
+</ul>`,
+  },
+  {
     heading: "The bottom line",
     body: `<p>A home warranty covers the things in your house that wear out - heating, cooling, plumbing, electrical, the water heater and your major appliances - and not the house itself, sudden damage or problems you already had. That basic promise is consistent across the industry. What varies, sometimes dramatically, is the detail: whether your plan covers the ice maker or the refrigerant, whether the limit is $500 or $7,000, whether code upgrades are included, and how a replacement gets paid.</p>
 <p>So start with your house, not the brochure. List your major equipment and its age, decide which items would hurt most if they failed, and compare plans on those items' limits and exclusions. If you have aging HVAC and appliances, a combination plan with high limits - such as <a href="/reviews/american-home-shield">American Home Shield</a> ShieldPlatinum, <a href="/reviews/first-american">First American</a> Premium where it's sold, or <a href="/reviews/choice-home-warranty">Choice</a> Total for a simple $3,000-per-item structure - gives the most protection. If your equipment is new, rely on builder and manufacturer warranties and build a repair fund instead.</p>
