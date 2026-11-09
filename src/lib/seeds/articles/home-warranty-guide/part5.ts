@@ -132,7 +132,7 @@ export const part5: ArticleSection[] = [
   },
   {
     heading: "How many claims can I file on a home warranty?",
-    body: `<p>Most contracts don't limit the number of claims, but every claim carries a service call fee, and per-item and aggregate caps limit how much the company will pay in total. A plan with an annual aggregate cap - such as The Home Service Club's reported $6,000-$9,000 or 2-10's reported $25,000 - can stop paying after a few large claims in the same year.</p>`,
+    body: `<p>Most contracts don't limit the number of claims, but every claim carries a service call fee, and per-item and aggregate caps limit how much the company will pay in total. A plan with an annual aggregate cap - such as The Home Service Club's reported $6,000-$9,000 or 2-10's $50,000 - can stop paying after a few large claims in the same year.</p>`,
   },
   {
     heading: "Your home warranty buying checklist",

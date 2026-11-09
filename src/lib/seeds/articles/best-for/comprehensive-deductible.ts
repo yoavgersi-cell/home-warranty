@@ -34,7 +34,7 @@ export const mostComprehensive: ArticleData = {
 <tbody>
 <tr><td><a href="/reviews/american-home-shield">AHS ShieldPlatinum</a></td><td>Systems + appliances (AHS cites 23-29 items)</td><td>HVAC $5,000 per system; appliances up to $4,000 each; roof leak $1,000</td><td>All AC refrigerant; permits and modifications up to $250 each; HVAC tune-up; SEER/refrigerant-standard upgrades within limits</td></tr>
 <tr><td><a href="/reviews/first-american">First American Premium</a></td><td>Systems + appliances, expanded list</td><td>Appliances up to $7,000 (reported); no water heater limit (NerdWallet)</td><td>100% refrigerant; luxury appliances; full garage door system; faucets, hose bibbs; roof leak as add-on</td></tr>
-<tr><td><a href="/reviews/2-10-home-buyers-warranty">2-10 Pinnacle Home</a></td><td>Complete Home plus upgrade items (exhaust fans, alarms, washer and dryer)</td><td>HVAC $5,000; $25,000 annual aggregate</td><td>SEER/refrigerant-standard upgrades; optional roof leak up to $1,000; Luxury Package raises appliance caps to $5,000</td></tr>
+<tr><td><a href="/reviews/2-10-home-buyers-warranty">2-10 Pinnacle Home</a></td><td>Complete Home plus upgrade items (exhaust fans, alarms, washer and dryer)</td><td>HVAC $5,000; $50,000 aggregate per term</td><td>SEER/refrigerant-standard upgrades; optional roof leak up to $1,000; Luxury Package raises appliance caps to $5,000</td></tr>
 <tr><td><a href="/reviews/home-warranty-of-america">HWA Premier Plus</a></td><td>All major systems and appliances, including AC</td><td>Up to $5,000 on most repairs; $15,000 aggregate (brochure)</td><td>Optional add-ons; sold in all 50 states</td></tr>
 <tr><td><a href="/reviews/choice-home-warranty">Choice Total</a></td><td>Systems + kitchen appliances + AC, refrigerator, washer, dryer</td><td>$3,000 per covered item</td><td>Add-ons including pool, roof leak and more</td></tr>
 <tr><td><a href="/reviews/home-service-club">Home Service Club Comprehensive</a></td><td>30-33 items</td><td>Item caps mostly $300-$2,000; HVAC $2,000; annual $9,000</td><td>No age limit on covered items</td></tr>
@@ -50,7 +50,7 @@ export const mostComprehensive: ArticleData = {
 <li><strong>Caps on your expensive items.</strong> What will the plan pay for your HVAC, water heater and major appliances? A comprehensive plan has limits in the thousands, not hundreds.</li>
 <li><strong>Code, permits and modifications.</strong> These are among the most common out-of-pocket costs on replacements. ShieldPlatinum covers permits and modifications (up to $250 each); most other plans don't.</li>
 <li><strong>Refrigerant.</strong> Per-pound limits ($10/lb is common) can leave a gap on AC and heat pump repairs. ShieldPlatinum and First American Premium cover refrigerant in full.</li>
-<li><strong>Aggregate limits.</strong> An annual cap - $9,000 at The Home Service Club, $25,000 at 2-10 - limits total payouts in a bad year.</li>
+<li><strong>Aggregate limits.</strong> An annual cap - $9,000 at The Home Service Club, $50,000 at 2-10 - limits total payouts in a bad year.</li>
 <li><strong>Extras that match your home.</strong> Roof leak, HVAC tune-ups, luxury appliances, garage door systems, pools and wells - only valuable if you have them.</li>
 </ol>`,
     },
@@ -61,7 +61,7 @@ export const mostComprehensive: ArticleData = {
 <h3>2. First American Premium - most comprehensive where available</h3>
 <p>Premium's standout terms are unlimited water heater coverage (per NerdWallet) and 100% refrigerant coverage, along with luxury appliances, the full garage door system, faucets and hose bibbs. An Appliance Plus upgrade can raise appliance limits to $7,000. It's not sold in about 13-15 states. <a href="/reviews/first-american">Read the First American review</a>.</p>
 <h3>3. 2-10 Pinnacle Home - comprehensive coverage at a lower price</h3>
-<p>Pinnacle Home adds items such as exhaust fans, alarms and laundry to 2-10's Complete Home plan, with a $5,000 HVAC limit, SEER and refrigerant-standard upgrade coverage, and an optional Luxury Package raising appliance caps to $5,000. A $25,000 annual aggregate applies. <a href="/reviews/2-10-home-buyers-warranty">Read the 2-10 review</a>.</p>
+<p>Pinnacle Home adds items such as exhaust fans, alarms and laundry to 2-10's Complete Home plan, with a $5,000 HVAC limit, SEER and refrigerant-standard upgrade coverage, and an optional Luxury Package raising appliance caps to $5,000. A $50,000 aggregate per term applies, per 2-10's help center (older materials listed $25,000). <a href="/reviews/2-10-home-buyers-warranty">Read the 2-10 review</a>.</p>
 <h3>Long lists, low limits</h3>
 <p>The Home Service Club Comprehensive covers 30-33 items and Select Platinum Care covers systems, appliances, ceiling fans and the garage door opener - but item caps of roughly $300-$2,000 (Home Service Club) and about $500 (Select) mean they're comprehensive in breadth, not depth.</p>`,
     },

@@ -3,6 +3,7 @@ import { homeWarrantyGuide } from "./articles/home-warranty-guide";
 import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
 import { applianceInsuranceGuide } from "./articles/appliance-insurance";
 import { claimDeniedGuide } from "./articles/claim-denied";
+import { coverageGuide } from "./articles/coverage";
 import { worthItGuide } from "./articles/worth-it";
 import { costGuide } from "./articles/cost";
 import { ahsAlternativesGuide } from "./articles/ahs-alternatives";
@@ -74,7 +75,7 @@ import { hwaReviews, hwaVoice } from "./trustpilot/home-warranty-of-america";
 //  - 2-10 HBW: since ~1980; Frontdoor acquired it Dec 2024 ($585M). Best
 //    known for builder structural warranties. From ~$27-$35/mo. Service fee
 //    $65-$125. 2025 sample contract: $5,000 AC limit incl. $10/lb refrigerant
-//    (some reviews cite $2,000 system limits); $25,000 annual aggregate. Reported not
+//    (some reviews cite $2,000 system limits); $50,000 aggregate per term per 2-10's help center (older materials: $25,000). Reported not
 //    available in AK, HI, MT, ND, NH, OK, SD, WY (sources vary).
 //
 // PLACEHOLDERS / OPERATOR TO VERIFY:
@@ -153,7 +154,7 @@ export const FACTS: Record<string, Record<FactKey, string>> = {
     price: "From ~$27-$35/mo",
     fee: "$65-$125",
     plans: "Systems & combo tiers (check site)",
-    caps: "$5,000 AC limit; $25,000 per year",
+    caps: "$5,000 AC limit; $50,000 per term",
     wait: "30 days",
     states: "AK, HI, MT, ND, NH, OK, SD, WY (reported; sources vary)",
     since: "~1980",
@@ -531,7 +532,7 @@ const battles: BattleData[] = [
     verdict:
       "American Home Shield wins for homeowners shopping on their own: higher caps, more add-ons, 48-state availability and a much larger customer record. 2-10 is a reasonable option if a builder or agent offers it, and its starting price is low - but check its caps and state list first.",
     verdictWinnerPoints: ["Higher appliance and HVAC caps", "48-state availability", "Wide add-on menu"],
-    verdictLoserPoints: ["Low starting price", "$25,000 annual aggregate", "Strong builder and real-estate presence"],
+    verdictLoserPoints: ["Low starting price", "$50,000 aggregate per term", "Strong builder and real-estate presence"],
     winnerId: "american-home-shield",
     categories: [
       {
@@ -952,7 +953,7 @@ export const homeWarrantyConfig: SiteConfig = {
       smallLogo: "/logos/2-10-home-buyers-warranty.png",
       highlights: [
         "Low starting price",
-        "$25,000 annual coverage limit",
+        "$50,000 total coverage per term",
         "Builder & real-estate expertise",
         "Owned by Frontdoor, Inc.",
       ],
@@ -1351,7 +1352,7 @@ export const homeWarrantyConfig: SiteConfig = {
       keyFeatures: [
         "Home warranty plans for systems and appliances",
         "$5,000 AC limit with a $10-per-pound refrigerant limit (2025 sample contract)",
-        "Reported $25,000 annual aggregate limit",
+        "$50,000 aggregate limit per term (2-10 help center)",
         "Service fee options of about $65-$125",
         "Network of 6,000+ independent contractors",
         "Owned by Frontdoor, Inc. since 2024",
@@ -1398,6 +1399,7 @@ export const homeWarrantyConfig: SiteConfig = {
   articles: [
     homeWarrantyGuide,
     claimDeniedGuide,
+    coverageGuide,
     stateHubGuide,
     texasGuide,
     californiaGuide,
@@ -1437,7 +1439,7 @@ export const homeWarrantyConfig: SiteConfig = {
         },
         {
           heading: "What a home warranty typically covers",
-          body: `<p>Most companies build plans from two groups of items:</p><ul><li><strong>Systems</strong> - heating, air conditioning, ductwork, plumbing, electrical and water heaters.</li><li><strong>Appliances</strong> - refrigerator, oven/range, dishwasher, built-in microwave, garbage disposal, clothes washer and dryer.</li></ul><p>Many sell systems-only and appliances-only plans, a combination plan, and a premium tier with higher caps and extras such as roof leak repair or code-upgrade coverage. Pools, spas, well pumps and septic systems are usually optional add-ons.</p>`,
+          body: `<p>Most companies build plans from two groups of items:</p><ul><li><strong>Systems</strong> - heating, air conditioning, ductwork, plumbing, electrical and water heaters.</li><li><strong>Appliances</strong> - refrigerator, oven/range, dishwasher, built-in microwave, garbage disposal, clothes washer and dryer.</li></ul><p>Many sell systems-only and appliances-only plans, a combination plan, and a premium tier with higher caps and extras such as roof leak repair or code-upgrade coverage. Pools, spas, well pumps and septic systems are usually optional add-ons.</p><p class="cta-row"><a href="/articles/what-does-a-home-warranty-cover">→ What does a home warranty cover? Our item-by-item guide</a></p>`,
         },
         {
           heading: "How does a home warranty work?",

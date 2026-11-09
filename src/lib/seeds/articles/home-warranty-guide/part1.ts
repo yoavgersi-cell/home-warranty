@@ -87,7 +87,7 @@ export const part1: ArticleSection[] = [
 </table>
 <h3>"Covered" has conditions</h3>
 <p>Even when an item is on the covered list, the contract usually limits which parts and causes are covered. A refrigerator may be covered, but not its ice maker, water dispenser or the food that spoiled. A plumbing system may be covered, but not a slab leak beneath the foundation, or only up to a lower sub-limit. Air conditioning may be covered, but refrigerant recharges may be capped. That is why the right question is never "Does this plan cover my AC?" but "<strong>Which parts and failures of my AC does this plan cover, and up to how much?</strong>"</p>
-<p class="cta-row"><a href="/articles/what-is-a-home-warranty">→ Read our shorter primer: What is a home warranty?</a></p>`,
+<p class="cta-row"><a href="/articles/what-does-a-home-warranty-cover">→ See our item-by-item guide: What does a home warranty cover?</a></p>`,
   },
   {
     heading: "What doesn't a home warranty cover? The exclusions that matter most",
@@ -119,7 +119,7 @@ export const part1: ArticleSection[] = [
 <ul>
 <li><strong>Per-item caps:</strong> the most the company pays for a specific item, such as $2,000 for a refrigerator or $5,000 for an HVAC system.</li>
 <li><strong>Sub-limits:</strong> lower caps for specific components or situations within an item - refrigerant, ductwork, slab leaks, access through walls or concrete, roof leaks.</li>
-<li><strong>Aggregate caps:</strong> the most the company pays across all claims in a contract term, such as $6,000, $9,000 or $25,000 per year.</li>
+<li><strong>Aggregate caps:</strong> the most the company pays across all claims in a contract term, such as $6,000, $9,000 or $50,000 per term.</li>
 </ul>
 <h3>How caps compare across companies</h3>
 <table>
@@ -129,7 +129,7 @@ export const part1: ArticleSection[] = [
 <tr><td><a href="/reviews/first-american">First American</a></td><td>$3,500 appliances on lower tiers, $7,000 on Premium; Premium covers 100% of refrigerant costs (lower tiers up to $20/lb)</td><td>High limits and generous HVAC terms where available</td></tr>
 <tr><td><a href="/reviews/home-warranty-of-america">Home Warranty of America</a></td><td>Up to $5,000 on most approved repairs; lower limits on some items</td><td>Solid headline limit; check plumbing and electrical sub-limits</td></tr>
 <tr><td><a href="/reviews/choice-home-warranty">Choice</a></td><td>$3,000 per covered item per term</td><td>Simple, solid single number for most items</td></tr>
-<tr><td><a href="/reviews/2-10-home-buyers-warranty">2-10</a></td><td>$5,000 AC limit (2025 sample contract); $25,000 annual aggregate</td><td>$10/lb refrigerant limit inside the AC limit; some reviews cite lower limits on other systems</td></tr>
+<tr><td><a href="/reviews/2-10-home-buyers-warranty">2-10</a></td><td>$5,000 AC limit (2025 sample contract); $50,000 aggregate per term (2-10 help center)</td><td>$10/lb refrigerant limit inside the AC limit; some reviews cite lower limits on other systems</td></tr>
 <tr><td><a href="/reviews/home-service-club">The Home Service Club</a></td><td>Mostly $300-$2,000 per item; $6,000 (Standard) or $9,000 (Comprehensive) per year</td><td>Low item caps plus an annual ceiling</td></tr>
 <tr><td><a href="/reviews/select-home-warranty">Select</a></td><td>About $500 per item for many appliances, plumbing and electrical; about $3,000 per term for HVAC</td><td>Lowest item caps we track - the trade-off for its low price</td></tr>
 </tbody>
