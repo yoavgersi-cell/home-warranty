@@ -4,6 +4,7 @@ import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
 import { applianceInsuranceGuide } from "./articles/appliance-insurance";
 import { claimDeniedGuide } from "./articles/claim-denied";
 import { coverageGuide } from "./articles/coverage";
+import { insuranceTrendsGuide } from "./articles/insurance-trends";
 import { worthItGuide } from "./articles/worth-it";
 import { costGuide } from "./articles/cost";
 import { ahsAlternativesGuide } from "./articles/ahs-alternatives";
@@ -1400,6 +1401,7 @@ export const homeWarrantyConfig: SiteConfig = {
     homeWarrantyGuide,
     claimDeniedGuide,
     coverageGuide,
+    insuranceTrendsGuide,
     stateHubGuide,
     texasGuide,
     californiaGuide,
