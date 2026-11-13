@@ -27,6 +27,7 @@ import { YoutubeReviewSection } from "@/components/youtube-review";
 import { ReadableProse } from "@/components/prose";
 import { ProviderAudit } from "@/components/provider-audit";
 import { providerEntity } from "@/lib/schema";
+import { INDEX_ROBOTS, OG_BASE } from "@/lib/seo";
 
 // Per-provider SEO overrides, "is X legit?" trust blocks and extra FAQs for
 // the home warranty reviews. Everything here is written from facts researched
@@ -238,11 +239,12 @@ export async function reviewMetadata(slug: string, ctx: SiteContext): Promise<Me
       ? { index: false, follow: false }
       : isThinNoindex
         ? { index: false, follow: true }
-        : undefined,
+        : INDEX_ROBOTS,
     alternates: {
       canonical: url,
     },
     openGraph: {
+      ...OG_BASE,
       title: pageTitle,
       description: pageDescription,
       url,

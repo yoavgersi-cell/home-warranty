@@ -8,6 +8,7 @@ import { ExpertTeam } from "@/components/expert-team";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { LastUpdated } from "@/components/last-updated";
 import { CONTENT_LAST_UPDATED } from "@/lib/config";
+import { OG_BASE, publisherSchema } from "@/lib/seo";
 
 export const revalidate = 60;
 
@@ -19,12 +20,13 @@ export const metadata: Metadata = {
     "How we rank home warranty companies: the 6 factors we score, where our data comes from, how we verify prices and caps, and how we pick comparison winners.",
   alternates: { canonical: CANONICAL },
   openGraph: {
+    ...OG_BASE,
     title: "How We Rank & Review Home Warranty Companies - Our Methodology",
     description:
       "The factors we score, where our data comes from, how we verify accuracy, and how we pick winners in our home warranty comparisons.",
     url: CANONICAL,
     type: "article",
-    images: [{ url: "https://www.thetophomewarranty.com/opengraph-image", width: 1200, height: 630 }],
+    images: [{ url: "https://www.thetophomewarranty.com/opengraph-image", width: 1200, height: 630, alt: "How Top Home Warranty ranks home warranty companies" }],
   },
 };
 
@@ -79,7 +81,7 @@ export default async function HowWeRankPage() {
       "Our full methodology for ranking and reviewing home warranty companies: the factors we score, where our data comes from, how we verify accuracy, and how we pick winners.",
     url: CANONICAL,
     ...pageReviewSchema("/how-we-rank"),
-    publisher: { "@type": "Organization", name: "thetophomewarranty.com", url: "https://www.thetophomewarranty.com" },
+    publisher: publisherSchema(),
   };
 
   const breadcrumbSchema = {

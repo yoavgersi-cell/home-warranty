@@ -1437,7 +1437,7 @@ export const homeWarrantyConfig: SiteConfig = {
       sections: [
         {
           heading: "The short definition",
-          body: `<p>A <strong>home warranty</strong> is a one-year (sometimes multi-year) <strong>service contract</strong> that pays to repair or replace covered home systems and appliances when they break down from normal wear and tear. You pay a premium, and when something covered fails you file a claim, pay a set <strong>service call fee</strong>, and the company sends a technician.</p><p>Home warranties are sold directly to homeowners and are also commonly bought during real estate transactions - often by sellers to reassure buyers.</p>`,
+          body: `<div class="qa"><strong>Quick answer</strong>A home warranty is a one-year service contract that pays to repair or replace covered home systems (heating, cooling, plumbing, electrical, the water heater) and appliances when they fail from normal wear and tear. You pay a premium - roughly $30 to $90 a month depending on the plan - plus a service call fee, commonly $75-$125, each time a technician comes out. It isn't insurance: it doesn't cover fire, storm or water damage.</div><p>A <strong>home warranty</strong> is a one-year (sometimes multi-year) <strong>service contract</strong> that pays to repair or replace covered home systems and appliances when they break down from normal wear and tear. You pay a premium, and when something covered fails you file a claim, pay a set <strong>service call fee</strong>, and the company sends a technician.</p><p>Home warranties are sold directly to homeowners and are also commonly bought during real estate transactions - often by sellers to reassure buyers.</p>`,
         },
         {
           heading: "What a home warranty typically covers",
@@ -1489,7 +1489,7 @@ export const homeWarrantyConfig: SiteConfig = {
       sections: [
         {
           heading: "Why sellers offer home warranties",
-          body: `<p>A home warranty can make a listing more appealing by giving buyers some protection against early breakdowns. It can also reduce post-sale disputes about systems that fail soon after closing. Real estate agents frequently recommend it, and brands such as <a href="/reviews/first-american">First American</a>, <a href="/reviews/american-home-shield">American Home Shield</a> and <a href="/reviews/2-10-home-buyers-warranty">2-10</a> have dedicated real estate plans.</p>`,
+          body: `<div class="qa"><strong>Quick answer</strong>Sellers often buy a one-year home warranty for the buyer to make a listing more attractive and reduce disputes after closing, and many real estate plans also include seller coverage while the home is listed. The buyer's coverage usually starts at closing without the usual 30-day waiting period, but problems that existed before closing are still excluded.</div><p>A home warranty can make a listing more appealing by giving buyers some protection against early breakdowns. It can also reduce post-sale disputes about systems that fail soon after closing. Real estate agents frequently recommend it, and brands such as <a href="/reviews/first-american">First American</a>, <a href="/reviews/american-home-shield">American Home Shield</a> and <a href="/reviews/2-10-home-buyers-warranty">2-10</a> have dedicated real estate plans.</p>`,
         },
         {
           heading: "What is the best home warranty for sellers?",
@@ -1529,7 +1529,7 @@ export const homeWarrantyConfig: SiteConfig = {
       sections: [
         {
           heading: "Step 1: Check your contract",
-          body: `<p>Confirm the item is covered by your plan, note the cap, and check that you're past any waiting period.</p>`,
+          body: `<div class="qa"><strong>Quick answer</strong>To file a home warranty claim, confirm the item is covered and that you're past the waiting period, file online or by phone as soon as the problem starts, pay the service fee when the technician visits, and let the company decide whether to repair, replace or pay cash. Don't hire your own contractor first - unauthorized repairs are a common reason claims are denied.</div><p>Confirm the item is covered by your plan, note the cap, and check that you're past any waiting period.</p>`,
         },
         {
           heading: "Step 2: File the claim",
@@ -1544,7 +1544,7 @@ export const homeWarrantyConfig: SiteConfig = {
           body: `<p>Covered items are repaired up to the cap, replaced if repair isn't practical, or the company may offer cash. If parts are on backorder, ask for a timeline in writing.</p>`,
         },
         {
-          heading: "If your claim is denied",
+          heading: "What should you do if your home warranty claim is denied?",
           body: `<p>Ask for the reason and the contract clause in writing, provide maintenance records if relevant, and escalate to a supervisor. If you still disagree, you can file a complaint with your state's regulator or attorney general. Read <a href="/articles/home-warranty-claim-denied">why claims get denied</a> to avoid common pitfalls.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
@@ -1569,7 +1569,7 @@ export const homeWarrantyConfig: SiteConfig = {
       sections: [
         {
           heading: "ShieldSilver",
-          body: `<p>Covers home systems only - heating, cooling, plumbing, electrical, water heater and more (14 systems). Reported at roughly $30-$40 a month. Best for homes with newer appliances.</p>`,
+          body: `<div class="qa"><strong>Quick answer</strong>American Home Shield sells three plans. ShieldSilver covers home systems only (reported at about $30-$40 a month). ShieldGold adds kitchen and laundry appliances with a $2,000 per-appliance limit (about $50-$60). ShieldPlatinum adds roof leak repair up to $1,000, an annual HVAC tune-up, permits and code coverage, unlimited refrigerant and a $4,000 appliance limit (about $80-$90). You choose a $100 or $125 service fee.</div><p>Covers home systems only - heating, cooling, plumbing, electrical, water heater and more. Reported at roughly $30-$40 a month. Best for homes with newer appliances.</p>`,
         },
         {
           heading: "ShieldGold",
@@ -1580,7 +1580,7 @@ export const homeWarrantyConfig: SiteConfig = {
           body: `<p>Everything in ShieldGold plus roof leak repair (up to $1,000), an HVAC tune-up, and permits and code-violation coverage, with appliance caps of $4,000 each. Reported at roughly $80-$90 a month. Best for older homes where code upgrades could come up.</p>`,
         },
         {
-          heading: "Add-ons and service fees",
+          heading: "What add-ons and service fees does American Home Shield offer?",
           body: `<p>Optional add-ons include pool/spa, well pump, septic pump, guest unit and electronics, reported at roughly $5-$18 a month each. You choose a $100 or $125 service fee per request. See the full <a href="/reviews/american-home-shield">American Home Shield review</a> or compare <a href="/american-home-shield-vs-choice-home-warranty">AHS vs Choice</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],
@@ -1604,8 +1604,8 @@ export const homeWarrantyConfig: SiteConfig = {
       ],
       sections: [
         {
-          heading: "Plan prices",
-          body: `<p>Select's Bronze Care (appliances), Gold Care (systems) and Platinum Care (both) are reported at roughly $36-$64 a month before promotions, and around $480-$525 a year with promotions applied.</p>`,
+          heading: "How much does Select Home Warranty cost?",
+          body: `<div class="qa"><strong>Quick answer</strong>Select Home Warranty's plans are reported at roughly $36-$64 a month before promotions, or about $480-$525 a year with promotions applied, plus a service fee of about $60-$75 per claim. The trade-off for the low price is low caps - about $500 per item for many appliances and systems, according to third-party reviews.</div><p>Select's Bronze Care (appliances), Gold Care (systems) and Platinum Care (both) are reported at roughly $36-$64 a month before promotions, and around $480-$525 a year with promotions applied.</p>`,
         },
         {
           heading: "Promotions",
@@ -1616,7 +1616,7 @@ export const homeWarrantyConfig: SiteConfig = {
           body: `<p>The service fee is typically about $60-$75. Reported add-on prices include pool (~$8.33/mo), spa (~$5.83), septic (~$5.83) and well pump (~$3.33). Select's terms list a $75 cancellation fee.</p>`,
         },
         {
-          heading: "The fine print: caps",
+          heading: "What are Select Home Warranty's coverage caps?",
           body: `<p>Third-party reviews report caps of about $500 per item for many appliances, plumbing and electrical repairs, and about $3,000 per term for HVAC. That's the key trade-off. Compare with <a href="/choice-home-warranty-vs-select-home-warranty">Choice vs Select</a> or read the full <a href="/reviews/select-home-warranty">Select review</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
         },
       ],

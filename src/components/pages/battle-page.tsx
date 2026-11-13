@@ -28,6 +28,7 @@ import { RedditThreadCarousel, REDDIT_COMMUNITY_FEEDBACK } from "@/components/re
 import { threeWayBySlug, THREE_WAY_COMPARISONS } from "@/lib/three-way";
 import { ThreeWayPageView, threeWayMetadata } from "@/components/pages/three-way-page";
 import { providerEntity } from "@/lib/schema";
+import { INDEX_ROBOTS, OG_BASE, publisherSchema } from "@/lib/seo";
 
 // Per-battle 12-month cost math and code-side CTR overrides were a weight-loss-
 // vertical feature (all keyed by WL matchup slugs and gated to ctx.vertical ===
@@ -88,9 +89,10 @@ export async function battleMetadata(slug: string, ctx: SiteContext): Promise<Me
     return {
       title: landing.seoTitle,
       description: landingDesc,
-      robots: ctx.noindex ? { index: false, follow: false } : undefined,
+      robots: ctx.noindex ? { index: false, follow: false } : INDEX_ROBOTS,
       alternates: { canonical: url },
       openGraph: {
+        ...OG_BASE,
         title: landing.seoTitle,
         description: landingDesc,
         url,
@@ -157,9 +159,10 @@ export async function battleMetadata(slug: string, ctx: SiteContext): Promise<Me
       ? { index: false, follow: false }
       : isThinNoindex
         ? { index: false, follow: true }
-        : undefined,
+        : INDEX_ROBOTS,
     alternates: { canonical: url },
     openGraph: {
+      ...OG_BASE,
       title: metaTitle,
       description: metaDescription,
       url,
@@ -227,7 +230,7 @@ export async function BattlePageView({ slug, ctx }: { slug: string; ctx: SiteCon
       description: landing.seoDescription,
       url: canonicalUrl(ctx, `/${landing.slug}`),
       dateModified: landing.updatedAt || CONTENT_LAST_UPDATED,
-      publisher: { "@type": "Organization", name: ctx.brandDomain, url: ctx.origin },
+      publisher: publisherSchema(),
     };
 
     const itemListSchema = {
@@ -453,7 +456,8 @@ export async function BattlePageView({ slug, ctx }: { slug: string; ctx: SiteCon
     datePublished: "2026-06-01",
     dateModified: battleUpdatedAt,
     author: { "@type": "Organization", name: ctx.brandTeam, url: ctx.origin },
-    publisher: { "@type": "Organization", name: ctx.brandDomain, url: ctx.origin },
+    publisher: publisherSchema(),
+    image: canonicalUrl(ctx, `/${battle.slug}/opengraph-image`),
     mainEntityOfPage: canonicalUrl(ctx, `/${battle.slug}`),
     about: [providerEntity(p1), providerEntity(p2)],
   };

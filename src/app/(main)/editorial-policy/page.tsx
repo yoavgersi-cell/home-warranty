@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ShieldCheck } from "lucide-react";
 import { Breadcrumbs } from "@/components/breadcrumbs";
 import { SITE_ORIGIN, REVIEWERS, reviewerDisplayName, reviewerPath, reviewerPersonSchema } from "@/data/reviewers";
+import { OG_BASE, breadcrumbSchema } from "@/lib/seo";
 
 const CANONICAL = `${SITE_ORIGIN}/editorial-policy`;
 const TITLE = "Editorial Policy: How We Research Home Warranties";
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   title: { absolute: TITLE },
   description: DESCRIPTION,
   alternates: { canonical: CANONICAL },
-  openGraph: { title: TITLE, description: DESCRIPTION, url: CANONICAL, type: "article", images: [{ url: "https://www.thetophomewarranty.com/opengraph-image", width: 1200, height: 630 }], },
+  openGraph: { ...OG_BASE, title: TITLE, description: DESCRIPTION, url: CANONICAL, type: "article", images: [{ url: "https://www.thetophomewarranty.com/opengraph-image", width: 1200, height: 630, alt: "Top Home Warranty editorial policy" }], },
 };
 
 export default function EditorialPolicyPage() {
@@ -34,6 +35,7 @@ export default function EditorialPolicyPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Editorial Policy", path: "/editorial-policy" }])) }} />
       <div className="border-b border-[#E5E5E5] bg-white">
         <div className="mx-auto max-w-[900px] px-4 py-12 sm:px-6 sm:py-16">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Editorial policy" }]} />

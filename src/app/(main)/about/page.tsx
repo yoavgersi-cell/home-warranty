@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Shield, Users, Award, BookOpen, Search, BarChart3 } from "lucide-react";
 import { getConfig } from "@/lib/config-store";
 import { ExpertTeam } from "@/components/expert-team";
+import { ORG_ID, LOGO_URL, breadcrumbSchema } from "@/lib/seo";
 
 export const revalidate = 60;
 
@@ -23,8 +24,10 @@ export default async function AboutPage() {
   const teamSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "thetophomewarranty.com",
+    "@id": ORG_ID,
+    name: "Top Home Warranty",
     url: "https://www.thetophomewarranty.com",
+    logo: { "@type": "ImageObject", url: LOGO_URL },
     employee: [
       ...REVIEWERS.map(reviewerPersonSchema),
       ...experts.map((e) => ({
@@ -39,6 +42,7 @@ export default async function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(teamSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Home", path: "/" }, { name: "About", path: "/about" }])) }} />
       {/* Hero */}
       <div className="border-b border-gray-200 bg-white">
         <div className="mx-auto max-w-[900px] px-4 py-12 sm:px-6 sm:py-16">
