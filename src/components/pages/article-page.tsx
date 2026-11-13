@@ -16,6 +16,7 @@ import { TopProvidersBlock } from "@/components/top-providers-block";
 import { TopProviderCards } from "@/components/top-provider-cards";
 import { RedditThreadCarousel, REDDIT_COMMUNITY_FEEDBACK } from "@/components/reddit-community";
 import { notFound, permanentRedirect } from "next/navigation";
+import { INDEX_ROBOTS, OG_BASE, publisherSchema } from "@/lib/seo";
 
 // Code-side CTR overrides and quick-answer boxes for high-impression articles
 // were a weight-loss-vertical feature (applied only when ctx.vertical ===
@@ -48,11 +49,12 @@ export async function articleMetadata(slug: string, ctx: SiteContext): Promise<M
       ? { index: false, follow: false }
       : NOINDEX_ARTICLE_SLUGS.includes(slug)
         ? { index: false, follow: true }
-        : undefined,
+        : INDEX_ROBOTS,
     alternates: {
       canonical: url,
     },
     openGraph: {
+      ...OG_BASE,
       title: override?.title ?? article.title,
       description: override?.description ?? article.description,
       url,
@@ -216,15 +218,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
           name: article.author || ctx.brandDomain,
           url: ctx.origin,
         },
-    publisher: {
-      "@type": "Organization",
-      name: ctx.brandDomain,
-      url: ctx.origin,
-      logo: {
-        "@type": "ImageObject",
-        url: `${ctx.origin}/logo-mark.png`,
-      },
-    },
+    publisher: publisherSchema(),
     // Medical guides are typed as a MedicalWebPage so reviewedBy /
     // lastReviewed sit on the page entity, where schema.org defines them
     // (they are not Article properties). Provider-business pages (cost,
@@ -348,7 +342,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
             <p className="mt-2.5 max-w-[640px] text-[15px] leading-[1.55] text-gray-600 sm:text-[16px]">
               {article.description}
             </p>
-            <p className="mt-3 text-[12px] text-gray-500">Updated {formattedDate}</p>
+            <p className="mt-3 text-[12px] text-gray-500">Updated <time dateTime={latestUpdate(article.updatedAt)}>{formattedDate}</time></p>
             <MedicalReviewBar path={`/articles/${slug}`} className="mt-4 max-w-[760px]" />
           </div>
         </div>

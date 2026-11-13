@@ -47,6 +47,8 @@ export function BattleStickyCta({
         show ? "translate-y-0" : "translate-y-full"
       }`}
       aria-hidden={!show}
+      // inert keeps the off-screen CTA buttons out of the tab order while hidden
+      inert={!show}
     >
       <div className="overflow-hidden rounded-t-2xl border-t border-gray-200 bg-white/95 shadow-[0_-6px_24px_rgba(0,0,0,0.10)] backdrop-blur">
         {/* Brand accent line */}

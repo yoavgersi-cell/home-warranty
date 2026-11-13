@@ -11,6 +11,7 @@ import {
   reviewerPersonSchema,
   reviewerUrl,
 } from "@/data/reviewers";
+import { OG_BASE } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -29,6 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description,
     alternates: { canonical: reviewerUrl(r) },
     openGraph: {
+      ...OG_BASE,
       title,
       description,
       url: reviewerUrl(r),

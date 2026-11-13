@@ -17,7 +17,7 @@ export function Header() {
   return (
     <header className="border-b-2 border-[#F9D3B4] bg-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
-        <Link href="/" className="flex items-baseline gap-1.5" aria-label="Top Home Warranty home">
+        <Link href="/" className="flex items-baseline gap-1.5">
           <span className="text-[20px] font-extrabold tracking-tight text-[#C2570C]">Top Home Warranty</span>
           <span className="text-[11px] font-semibold uppercase tracking-wider text-[#6B6B6B]">
             .com

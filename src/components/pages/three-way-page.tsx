@@ -11,6 +11,7 @@ import { LicensedTelehealthBadge } from "@/components/licensed-badge";
 import { LastUpdated } from "@/components/last-updated";
 import { MedicalSources, TrustDisclosure } from "@/components/medical-sources";
 import { TRIO_FACTS, type ThreeWayComparison } from "@/lib/three-way";
+import { INDEX_ROBOTS, OG_BASE, publisherSchema } from "@/lib/seo";
 
 // Matrix rows rendered for every trio - one place to add a row site-wide.
 // Three-way pages are not used on this single-vertical home warranty site (the registry is
@@ -35,9 +36,9 @@ export function threeWayMetadata(trio: ThreeWayComparison, ctx: SiteContext): Me
       ? { index: false, follow: false }
       : isThinNoindex
         ? { index: false, follow: true }
-        : undefined,
+        : INDEX_ROBOTS,
     alternates: { canonical: url },
-    openGraph: { title: trio.metaTitle, description: trio.description, url, type: "article" },
+    openGraph: { ...OG_BASE, title: trio.metaTitle, description: trio.description, url, type: "article" },
   };
 }
 
@@ -63,7 +64,7 @@ export async function ThreeWayPageView({ trio, ctx }: { trio: ThreeWayComparison
     description: trio.description,
     url,
     dateModified: TEMPLATES_LAST_UPDATED,
-    publisher: { "@type": "Organization", name: ctx.brandDomain, url: ctx.origin },
+    publisher: publisherSchema(),
     mainEntity: {
       "@type": "ItemList",
       itemListElement: providers.map((p, i) => ({

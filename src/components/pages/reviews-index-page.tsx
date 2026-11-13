@@ -6,6 +6,7 @@ import { getConfig } from "@/lib/config-store";
 import { VERTICALS } from "@/lib/config";
 import { type SiteContext, canonicalUrl, hubLink } from "@/lib/site-context";
 import { RatingBadge } from "@/components/rating-badge";
+import { INDEX_ROBOTS, OG_BASE } from "@/lib/seo";
 
 function verticalName(id: string): string {
   return VERTICALS.find((v) => v.id === id)?.name ?? "Home Warranty";
@@ -44,16 +45,17 @@ export async function reviewsIndexMetadata(ctx: SiteContext): Promise<Metadata> 
   return {
     title: { absolute: title },
     description,
-    robots: ctx.noindex ? { index: false, follow: false } : undefined,
+    robots: ctx.noindex ? { index: false, follow: false } : INDEX_ROBOTS,
     alternates: {
       canonical: url,
     },
     openGraph: {
+      ...OG_BASE,
       type: "website",
       title,
       description,
       url,
-      images: [{ url: "https://www.thetophomewarranty.com/opengraph-image", width: 1200, height: 630 }],
+      images: [{ url: "https://www.thetophomewarranty.com/opengraph-image", width: 1200, height: 630, alt: "Home warranty company reviews - Top Home Warranty" }],
     },
   };
 }

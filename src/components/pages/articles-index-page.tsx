@@ -6,6 +6,7 @@ import { Clock, ArrowRight, Trophy } from "lucide-react";
 import { getConfig } from "@/lib/config-store";
 import { VERTICALS } from "@/lib/config";
 import { type SiteContext, canonicalUrl, hubLink } from "@/lib/site-context";
+import { INDEX_ROBOTS, OG_BASE, breadcrumbSchema } from "@/lib/seo";
 
 function verticalName(id: string): string {
   return VERTICALS.find((v) => v.id === id)?.name ?? "Home Warranty";
@@ -31,16 +32,17 @@ export async function articlesIndexMetadata(ctx: SiteContext): Promise<Metadata>
   return {
     title,
     description,
-    robots: ctx.noindex ? { index: false, follow: false } : undefined,
+    robots: ctx.noindex ? { index: false, follow: false } : INDEX_ROBOTS,
     alternates: {
       canonical: url,
     },
     openGraph: {
+      ...OG_BASE,
       type: "website",
       title,
       description,
       url,
-      images: [{ url: "https://www.thetophomewarranty.com/opengraph-image", width: 1200, height: 630 }],
+      images: [{ url: "https://www.thetophomewarranty.com/opengraph-image", width: 1200, height: 630, alt: "Home warranty guides and articles - Top Home Warranty" }],
     },
   };
 }
@@ -134,6 +136,7 @@ export async function ArticlesIndexView({ ctx }: { ctx: SiteContext }) {
   return (
     <div className="min-h-screen bg-gray-50">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema([{ name: "Home", path: "/" }, { name: "Guides", path: "/articles" }])) }} />
       <div className="mx-auto max-w-[1100px] px-4 py-12 sm:px-6">
         {/* Page header */}
         <div className="mb-10">

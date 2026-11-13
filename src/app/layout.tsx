@@ -87,14 +87,15 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": `${SITE_URL}/#organization`,
               name: "Top Home Warranty",
+              alternateName: "thetophomewarranty.com",
               url: SITE_URL,
-              logo: `${SITE_URL}/logo-mark.png`,
+              logo: { "@type": "ImageObject", url: `${SITE_URL}/logo-mark.png` },
               areaServed: { "@type": "Country", name: "United States" },
               knowsAbout: ["Home warranties", "Home warranty plans", "Home service contracts", "Home warranty claims"],
               description:
                 "Independent guides and provider comparisons for home warranties - in-depth reviews, pricing research, and side-by-side comparisons.",
-              sameAs: [],
             }),
           }}
         />
@@ -104,8 +105,12 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
+              "@id": `${SITE_URL}/#website`,
               name: "Top Home Warranty",
+              alternateName: "thetophomewarranty.com",
               url: SITE_URL,
+              inLanguage: "en-US",
+              publisher: { "@id": `${SITE_URL}/#organization` },
               description:
                 "Compare trusted home warranty companies side by side.",
             }),

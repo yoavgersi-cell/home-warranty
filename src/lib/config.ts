@@ -326,7 +326,7 @@ export interface LandingPageData {
 
 // Stable fallback "last updated" date for schema when an item has no CMS
 // updatedAt. Avoids emitting today's date on every request (fake freshness).
-export const CONTENT_LAST_UPDATED = "2026-10-12";
+export const CONTENT_LAST_UPDATED = "2026-11-09";
 
 // Floor date for battle, review and article pages: the shared page templates
 // were last reworked on this date (quick answer, fit finder, accordions,
@@ -347,7 +347,7 @@ export const latestUpdate = (updatedAt?: string) =>
 // "Sources & methodology" block ("Checked August 2026"). Bump this only when
 // the data behind the comparisons is actually re-verified - it is a claim, not
 // a render timestamp.
-export const PROVIDER_DATA_CHECKED = "October 2026";
+export const PROVIDER_DATA_CHECKED = "November 2026";
 
 // ── Verticals ────────────────────────────────────────────────────────────────
 // The hub (treatmentshub.com) is split into fully-separated verticals. Each one

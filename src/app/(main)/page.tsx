@@ -11,6 +11,7 @@ import { MedicalReviewBar } from "@/components/medical-review-bar";
 import { pageReviewSchema } from "@/data/reviewers";
 import { getConfig } from "@/lib/config-store";
 import { CONTENT_LAST_UPDATED } from "@/lib/config";
+import { OG_BASE, publisherSchema } from "@/lib/seo";
 
 export const revalidate = 60;
 
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
     "Home warranty comparison for 2026: compare the top home warranty companies side by side by price, coverage, appliance and HVAC caps, service fees and reviews.",
   alternates: { canonical: SITE_URL },
   openGraph: {
+    ...OG_BASE,
     title: "Best Home Warranty Companies 2026 | Top Home Warranty",
     description:
       "Compare the best home warranty plans of 2026 - top companies ranked by coverage, price, claims service and value.",
@@ -105,12 +107,7 @@ export default async function HomePage() {
       author: { "@type": "Organization", name: author.name, url: `${SITE_URL}/about` },
     }),
     ...pageReviewSchema("/"),
-    publisher: {
-      "@type": "Organization",
-      name: "Top Home Warranty",
-      url: SITE_URL,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/icon.png` },
-    },
+    publisher: publisherSchema(),
     mainEntity: {
       "@type": "ItemList",
       itemListElement: displayList.map((product, index) => ({
