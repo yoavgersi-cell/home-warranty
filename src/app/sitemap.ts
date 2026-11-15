@@ -75,6 +75,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: flooredLastModified(a.updatedAt),
       changeFrequency: "monthly",
       priority: 0.6,
+      // Image sitemap entry so Google/Bing index the article's hero image.
+      ...(a.image ? { images: [`${SITE_URL}${a.image}`] } : {}),
     });
   }
 

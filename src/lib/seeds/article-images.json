@@ -1,0 +1,42 @@
+{
+  "what-does-a-home-warranty-cover": {
+    "image": "/article-images/what-does-a-home-warranty-cover.webp",
+    "imageAlt": "Woman with clipboard points at leaking pipes under kitchen sink while a technician inspects the plumbing.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-15"
+  },
+  "home-warranty-for-home-buyers-and-sellers": {
+    "image": "/article-images/home-warranty-for-home-buyers-and-sellers.webp",
+    "imageAlt": "Real estate agent handing keys to smiling couple standing in a modern kitchen with stainless steel appliances.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-15"
+  },
+  "home-insurance-trends-2026": {
+    "image": "/article-images/home-insurance-trends-2026.webp",
+    "imageAlt": "Mailbox filled with envelopes in front of a house where workers are installing new roofing materials on the roof.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-15"
+  },
+  "best-appliance-insurance": {
+    "image": "/article-images/best-appliance-insurance.webp",
+    "imageAlt": "Modern kitchen with stainless steel refrigerator, dishwasher, and oven under soft lighting and insurance-related icons above.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-15"
+  },
+  "american-home-shield-alternatives": {
+    "image": "/article-images/american-home-shield-alternatives.webp",
+    "imageAlt": "Man sitting at a wooden kitchen table reviewing papers in a binder with a tablet and coffee mug nearby.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-15"
+  }
+}

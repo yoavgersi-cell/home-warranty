@@ -1,4 +1,5 @@
 import type { BattleData, BattleFeatureRow, SiteConfig } from "@/lib/config";
+import { applyArticleImages } from "@/lib/article-images";
 import { homeWarrantyGuide } from "./articles/home-warranty-guide";
 import { refrigerantTransitionGuide } from "./articles/refrigerant-transition";
 import { applianceInsuranceGuide } from "./articles/appliance-insurance";
@@ -1674,3 +1675,6 @@ export const homeWarrantyConfig: SiteConfig = {
   landingPages: [],
   sidebars: [],
 };
+
+// Attach generated article images (public/article-images + article-images.json).
+homeWarrantyConfig.articles = applyArticleImages(homeWarrantyConfig.articles ?? []);
