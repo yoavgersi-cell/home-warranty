@@ -235,10 +235,10 @@ export interface ArticleData {
   keyTakeaways?: string[];
   // Optional label for the takeaways box (defaults to "Key takeaways").
   keyTakeawaysTitle?: string;
-  // Optional placement/heading for the ranked "top 3 providers" cards (the
+  // Optional placement/heading/count for the ranked "top providers" cards (the
   // homepage's ComparisonCard block). Defaults to after the 2nd section with
   // the generic "Top-Rated Providers" eyebrow.
-  topProviders?: { afterSection?: number; title?: string };
+  topProviders?: { afterSection?: number; title?: string; limit?: number };
   sections: ArticleSection[];
   sidebarId?: string;
 }

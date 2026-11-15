@@ -5,6 +5,7 @@ import { applianceInsuranceGuide } from "./articles/appliance-insurance";
 import { claimDeniedGuide } from "./articles/claim-denied";
 import { coverageGuide } from "./articles/coverage";
 import { insuranceTrendsGuide } from "./articles/insurance-trends";
+import { buyersSellersGuide } from "./articles/buyers-sellers";
 import { worthItGuide } from "./articles/worth-it";
 import { costGuide } from "./articles/cost";
 import { ahsAlternativesGuide } from "./articles/ahs-alternatives";
@@ -1469,46 +1470,7 @@ export const homeWarrantyConfig: SiteConfig = {
     worthItGuide,
     costGuide,
     ahsAlternativesGuide,
-    {
-      slug: "home-warranty-for-home-buyers-and-sellers",
-      title: "Best Home Warranty for Sellers and Buyers: How It Works",
-      description:
-        "Why sellers offer home warranties, how buyer and seller coverage works at closing, and what to check before accepting a plan.",
-      category: "Buying",
-      readTime: "6 min read",
-      publishedAt: "2026-10-12",
-      updatedAt: "2026-10-12",
-      heroColor: "#FFF3EA",
-      author: AUTHOR,
-      keyTakeaways: [
-        "Sellers often buy a home warranty to reassure buyers and smooth negotiations.",
-        "Real estate plans commonly have no 30-day waiting period - coverage starts at closing.",
-        "Some plans cover the seller while the home is listed.",
-        "Buyers should still read the contract and can usually choose or upgrade the plan.",
-      ],
-      sections: [
-        {
-          heading: "Why sellers offer home warranties",
-          body: `<div class="qa"><strong>Quick answer</strong>Sellers often buy a one-year home warranty for the buyer to make a listing more attractive and reduce disputes after closing, and many real estate plans also include seller coverage while the home is listed. The buyer's coverage usually starts at closing without the usual 30-day waiting period, but problems that existed before closing are still excluded.</div><p>A home warranty can make a listing more appealing by giving buyers some protection against early breakdowns. It can also reduce post-sale disputes about systems that fail soon after closing. Real estate agents frequently recommend it, and brands such as <a href="/reviews/first-american">First American</a>, <a href="/reviews/american-home-shield">American Home Shield</a> and <a href="/reviews/2-10-home-buyers-warranty">2-10</a> have dedicated real estate plans.</p>`,
-        },
-        {
-          heading: "What is the best home warranty for sellers?",
-          body: `<p>For most sellers, the best home warranty is a <strong>one-year real estate plan</strong> from a company with a strong real estate program - typically about <strong>$400-$700</strong>, paid at closing - that also offers <strong>listing (seller) coverage</strong> while the home is on the market. Listing coverage can protect you if a covered system fails before closing, and many companies include it at no charge when the buyer's plan is ordered at closing. Terms vary: a First American sample real estate form shows seller coverage for up to 180 days, with a $60 charge if the sale doesn't close, and American Home Shield caps seller coverage at a set dollar amount. Real estate plans also often cover unknown pre-existing conditions, which gives the buyer more protection - one reason a seller-paid plan can make a listing more attractive. Compare plans in our <a href="/reviews/first-american">First American</a> and <a href="/reviews/american-home-shield">American Home Shield</a> reviews, and see the <a href="/articles/how-much-does-a-home-warranty-cost">home warranty cost guide</a> for real estate pricing.</p>`,
-        },
-        {
-          heading: "How coverage works at closing",
-          body: `<p>Real estate plans are typically bought before or at closing, and buyer coverage begins at closing - usually without the 30-day waiting period that applies to plans bought directly. Some plans also offer seller coverage while the home is on the market, and terms of 12-13 months are common.</p>`,
-        },
-        {
-          heading: "What buyers should check",
-          body: `<ul><li>Which plan tier the seller bought, and whether you can upgrade it.</li><li>The caps on HVAC, water heater and appliances.</li><li>How the home inspection affects pre-existing condition exclusions.</li><li>Whether the plan auto-renews, and at what price.</li></ul>`,
-        },
-        {
-          heading: "Comparing real estate plans",
-          body: `<p>Compare <a href="/american-home-shield-vs-first-american">American Home Shield vs First American</a> and <a href="/first-american-vs-2-10-home-buyers-warranty">First American vs 2-10</a>, or see all companies on our <a href="/">rankings page</a>.</p><p class="cta-row"><a href="/articles/home-warranty-guide">→ Read the complete home warranty guide</a></p>${DISCLAIMER}`,
-        },
-      ],
-    },
+    buyersSellersGuide,
     {
       slug: "how-to-file-a-home-warranty-claim",
       title: "How to File a Home Warranty Claim: Step by Step",

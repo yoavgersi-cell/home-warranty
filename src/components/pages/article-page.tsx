@@ -538,7 +538,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                 {i === (article.topProviders?.afterSection ?? 1) && !/^is-.+-legit$/.test(slug) && topProviders.length > 0 && (
                   <TopProviderCards
                     config={config}
-                    limit={3}
+                    limit={article.topProviders?.limit ?? 3}
                     title={article.topProviders?.title}
                     linkPrefix=""
                     pageType="listing"
