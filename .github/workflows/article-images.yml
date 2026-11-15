@@ -1,0 +1,76 @@
+name: Article images
+
+# Generates hero images + alt text for articles that don't have one yet
+# (5 per day by default) with the OpenAI API, then commits them to main.
+# The push triggers a Vercel production deploy, and that deploy triggers the
+# IndexNow ping workflow.
+#
+# Requires a repository secret named OPENAI_API_KEY
+# (Settings -> Secrets and variables -> Actions -> New repository secret).
+
+on:
+  schedule:
+    - cron: "17 13 * * *" # daily, 13:17 UTC
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "How many articles to illustrate"
+        default: "5"
+      slugs:
+        description: "Optional: comma-separated slugs to (re)generate instead"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: article-images
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Generate images
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          LIMIT: ${{ github.event.inputs.limit || '5' }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::Repository secret OPENAI_API_KEY is not set."
+            exit 1
+          fi
+          SLUGS="${{ github.event.inputs.slugs }}"
+          if [ -n "$SLUGS" ]; then
+            npm run images:generate -- --slug="$SLUGS"
+          else
+            npm run images:generate
+          fi
+
+      - name: Verify the site still builds
+        run: npm run build
+
+      - name: Commit and push
+        run: |
+          git config user.name "article-images-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/article-images src/lib/seeds/article-images.json
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit."
+            exit 0
+          fi
+          COUNT=$(git diff --cached --name-only -- public/article-images | wc -l)
+          git commit -m "Add ${COUNT} article image(s) with alt text"
+          git push origin HEAD:main

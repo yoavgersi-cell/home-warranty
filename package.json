@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "tsx scripts/check-article-images.ts",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "images:generate": "tsx scripts/generate-article-images.ts",
+    "images:check": "tsx scripts/check-article-images.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
@@ -29,6 +32,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }

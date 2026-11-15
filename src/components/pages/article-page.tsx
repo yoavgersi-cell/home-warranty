@@ -17,6 +17,7 @@ import { TopProviderCards } from "@/components/top-provider-cards";
 import { RedditThreadCarousel, REDDIT_COMMUNITY_FEEDBACK } from "@/components/reddit-community";
 import { notFound, permanentRedirect } from "next/navigation";
 import { INDEX_ROBOTS, OG_BASE, publisherSchema } from "@/lib/seo";
+import { articleImageSize } from "@/lib/article-images";
 
 // Code-side CTR overrides and quick-answer boxes for high-impression articles
 // were a weight-loss-vertical feature (applied only when ctx.vertical ===
@@ -183,6 +184,8 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
     ),
   ].slice(0, 3);
 
+  const heroSize = articleImageSize(slug);
+
   const formattedDate = new Date(latestUpdate(article.updatedAt)).toLocaleDateString(
     "en-US",
     { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }
@@ -201,7 +204,18 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
     "@type": "Article",
     headline: article.title,
     description: article.description,
-    image: canonicalUrl(ctx, `/articles/${slug}/opengraph-image`),
+    image: article.image
+      ? [
+          {
+            "@type": "ImageObject",
+            url: `${ctx.origin}${article.image}`,
+            width: heroSize.width,
+            height: heroSize.height,
+            caption: article.imageAlt || article.title,
+          },
+          canonicalUrl(ctx, `/articles/${slug}/opengraph-image`),
+        ]
+      : canonicalUrl(ctx, `/articles/${slug}/opengraph-image`),
     datePublished: article.publishedAt,
     dateModified: latestUpdate(article.updatedAt),
     wordCount,
@@ -344,6 +358,21 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
             </p>
             <p className="mt-3 text-[12px] text-gray-500">Updated <time dateTime={latestUpdate(article.updatedAt)}>{formattedDate}</time></p>
             <MedicalReviewBar path={`/articles/${slug}`} className="mt-4 max-w-[760px]" />
+            {article.image && (
+              // Hero image: the LCP element on most article pages, so it loads
+              // eagerly with high priority and explicit dimensions (no CLS).
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={article.image}
+                alt={article.imageAlt || article.title}
+                width={heroSize.width}
+                height={heroSize.height}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                className="mt-6 aspect-video w-full max-w-[880px] rounded-xl border border-gray-200 bg-gray-100 object-cover"
+              />
+            )}
           </div>
         </div>
 
