@@ -7,6 +7,7 @@ import { claimDeniedGuide } from "./articles/claim-denied";
 import { coverageGuide } from "./articles/coverage";
 import { insuranceTrendsGuide } from "./articles/insurance-trends";
 import { buyersSellersGuide } from "./articles/buyers-sellers";
+import { olderHomesGuide } from "./articles/older-homes";
 import { worthItGuide } from "./articles/worth-it";
 import { costGuide } from "./articles/cost";
 import { ahsAlternativesGuide } from "./articles/ahs-alternatives";
@@ -1404,6 +1405,7 @@ export const homeWarrantyConfig: SiteConfig = {
     claimDeniedGuide,
     coverageGuide,
     insuranceTrendsGuide,
+    olderHomesGuide,
     stateHubGuide,
     texasGuide,
     californiaGuide,

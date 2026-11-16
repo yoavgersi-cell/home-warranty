@@ -16,7 +16,7 @@ export const part6: ArticleSection[] = [
 <h3>3. Maintenance requirements</h3>
 <p>Contracts expect "proper maintenance," and companies can ask for proof. For HVAC, that means filter changes and ideally annual service; for water heaters, periodic flushing; for dryers, vent cleaning. Keep receipts and dated photos.</p>
 <h3>4. Code upgrades, permits and modifications</h3>
-<p>Replacing an old system often requires upgrades to meet current code - new electrical work, venting, pads, line sets, or carpentry to fit a new unit. Many base plans exclude these costs. Coverage where it exists is capped: AHS ShieldPlatinum includes $250 per term; First American's Advantage coverage on Essential and Premium reportedly combines code, permits, crane fees and concrete access under caps of $500 and $1,500.</p>
+<p>Replacing an old system often requires upgrades to meet current code - new electrical work, venting, pads, line sets, or carpentry to fit a new unit. Many base plans exclude these costs. Coverage where it exists is capped: AHS ShieldPlatinum includes $250 per term; First American's Advantage coverage on Essential and Premium combines code, permits, crane fees and other items under caps of $500 (Essential) and $1,000 (Premium) per First American's own materials (some reviews report $1,500).</p>
 <h3>5. Access and restoration</h3>
 <p>If a technician has to open a wall, ceiling or concrete floor to reach a covered pipe or duct, the access may be covered but restoring the finish usually isn't. Concrete access is a common sub-limit.</p>
 <h3>6. Repair, replace or cash</h3>
