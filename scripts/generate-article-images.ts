@@ -89,8 +89,9 @@ function plain(html: string, words = 120): string {
 async function generate(a: (typeof homeWarrantyConfig.articles)[number]): Promise<ArticleImageEntry> {
   const summary = [a.description, ...(a.keyTakeaways ?? []).slice(0, 2), plain(a.sections[0]?.body ?? "")].join(" ");
 
-  // 1. Scene
-  const scene = await chat(
+  // 1. Scene (SCENE env var overrides the model's scene - useful when the
+  // model keeps producing an unrealistic composition for one article)
+  const scene = process.env.SCENE?.trim() || await chat(
     "You art-direct hero images for articles about home warranties, home systems, appliances and home insurance. Reply with ONE concrete visual scene (2-3 sentences) that a reader would instantly connect to the article's topic: name the specific objects, room and action. Make the physical home, system or appliance at the heart of the topic the subject (for example an outdoor AC condenser, a water heater, a roof, a refrigerator, a home exterior) - do NOT use generic scenes of people reviewing paperwork, laptops, charts or tablets. Avoid text, logos, brands, money and identifiable faces. No preamble.",
     `Article title: ${a.title}\nCategory: ${a.category}\nSummary: ${summary}`,
     220,

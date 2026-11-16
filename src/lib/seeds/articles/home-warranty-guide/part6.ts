@@ -76,7 +76,7 @@ export const part6: ArticleSection[] = [
 <h3>4. Document condition at the start</h3>
 <p>Photograph equipment, keep the home inspection report, and schedule an HVAC tune-up early so you have a dated record that systems were working when coverage began.</p>
 <h3>5. Consider what happens after a replacement</h3>
-<p>Once a covered system is replaced with a new unit, it will often have its own manufacturer warranty. Reassess at renewal whether you still need the same level of coverage.</p>`,
+<p>Once a covered system is replaced with a new unit, it will often have its own manufacturer warranty. Reassess at renewal whether you still need the same level of coverage. </p><p class="cta-row"><a href="/articles/best-home-warranty-for-older-homes">→ Read our full guide: the best home warranty for older homes</a></p>`,
   },
   {
     heading: "Home warranties for landlords and rental properties",

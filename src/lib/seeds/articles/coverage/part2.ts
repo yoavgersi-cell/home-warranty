@@ -13,7 +13,7 @@ export const part2: ArticleSection[] = [
 <table>
 <thead><tr><th>Company</th><th>HVAC limit (as published or reported)</th><th>Refrigerant</th><th>Code, permits, modifications</th></tr></thead>
 <tbody>
-<tr><td><a href="/reviews/first-american">First American</a></td><td>No dollar limit for conventional HVAC; $1,500 for geothermal and specialty systems</td><td>Premium: 100% of recharge cost. Starter and Essential: up to $20/lb</td><td>Included through its "Advantage" coverage on Essential and Premium (reported combined caps of $500 and $1,500)</td></tr>
+<tr><td><a href="/reviews/first-american">First American</a></td><td>No dollar limit for conventional HVAC; $1,500 for geothermal and specialty systems</td><td>Premium: 100% of recharge cost. Starter and Essential: up to $20/lb</td><td>Included through its "Advantage" coverage on Essential and Premium (combined caps of $500 and $1,000 per First American; some reviews report $1,500 on Premium)</td></tr>
 <tr><td><a href="/reviews/american-home-shield">American Home Shield</a></td><td>$5,000 per HVAC system per term</td><td>ShieldSilver and ShieldGold: $10/lb, counted inside the item limit. ShieldPlatinum: unlimited</td><td>ShieldPlatinum only, up to $250 per term</td></tr>
 <tr><td><a href="/reviews/2-10-home-buyers-warranty">2-10</a></td><td>$5,000 per covered HVAC system (2-10 help center)</td><td>$10/lb, inside the item limit (2025 sample agreement); unlimited refrigerant sold as an option</td><td>Check contract</td></tr>
 <tr><td><a href="/reviews/home-warranty-of-america">Home Warranty of America</a></td><td>Up to $5,000 per item; NerdWallet reports a $1,500 sub-limit on some heating systems</td><td>Up to $10/lb (2022 contract)</td><td>Check contract</td></tr>

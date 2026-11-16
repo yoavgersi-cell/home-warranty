@@ -38,5 +38,13 @@
     "height": 864,
     "model": "gpt-image-2",
     "generatedAt": "2026-11-15"
+  },
+  "best-home-warranty-for-older-homes": {
+    "image": "/article-images/best-home-warranty-for-older-homes.webp",
+    "imageAlt": "Older home basement with a vintage boiler, water heater, copper pipes, and a wooden workbench with tools.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-16"
   }
 }

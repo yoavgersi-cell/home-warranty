@@ -49,8 +49,11 @@ jobs:
           LIMIT: ${{ github.event.inputs.limit || '5' }}
         run: |
           if [ -z "$OPENAI_API_KEY" ]; then
-            echo "::error::Repository secret OPENAI_API_KEY is not set."
-            exit 1
+            # Images are currently produced by a daily Claude scheduled task
+            # (which has the key); this Action takes over once the secret exists.
+            echo "::notice::OPENAI_API_KEY secret not set - skipping."
+            echo "SKIP=1" >> "$GITHUB_ENV"
+            exit 0
           fi
           SLUGS="${{ github.event.inputs.slugs }}"
           if [ -n "$SLUGS" ]; then
@@ -60,9 +63,11 @@ jobs:
           fi
 
       - name: Verify the site still builds
+        if: env.SKIP != '1'
         run: npm run build
 
       - name: Commit and push
+        if: env.SKIP != '1'
         run: |
           git config user.name "article-images-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
