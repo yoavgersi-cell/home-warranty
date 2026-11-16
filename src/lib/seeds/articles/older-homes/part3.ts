@@ -23,7 +23,7 @@ export const part3: ArticleSection[] = [
 <li><strong>Inventory your systems and their ages.</strong> Note the furnace or boiler, AC, water heater, panel and plumbing type. Data plates usually show manufacture dates.</li>
 <li><strong>Fix known problems first.</strong> Anything already failing will be excluded as pre-existing. Repair it, then buy coverage.</li>
 <li><strong>Get an HVAC tune-up before coverage starts</strong> - and keep the invoice. It documents that the system worked and was maintained, the two things older-home claims are most often denied over.</li>
-<li><strong>Photograph equipment and keep your inspection report.</strong> Dated evidence of working condition protects you against pre-existing-condition denials.</li>
+<li><strong>Photograph equipment and keep your inspection report.</strong> Dated evidence of working condition protects you against pre-existing-condition denials. If you're buying, our <a href="/articles/home-warranty-for-home-buyers-and-sellers">buyers and sellers guide</a> explains how the inspection and the warranty work together.</li>
 <li><strong>Choose the plan for your worst-case system,</strong> not the cheapest headline price: an HVAC limit that covers a replacement, hydronic sub-limits if you have a boiler, and code and permit coverage.</li>
 <li><strong>Read the four terms</strong> - age language, pre-existing conditions, code and permits, and how replacements are paid - in the sample contract for your state.</li>
 <li><strong>Add only the add-ons you need</strong> (well pump, septic, second refrigerator).</li>
@@ -95,7 +95,7 @@ export const part3: ArticleSection[] = [
     heading: "The bottom line",
     body: `<p>Older homes are where home warranties can deliver the most value - and where the wrong contract disappoints the most. Every major company will cover a 40- or 80-year-old house. The difference is in the fine print: whether unknown pre-existing problems are covered, whether code upgrades and refrigerant are paid, how boilers and steam heat are limited, and whether a replacement is paid at full value or depreciated value.</p>
 <p>For most older homes, <a href="/reviews/american-home-shield">American Home Shield</a> offers the best balance of age-friendly terms and national availability, and <a href="/reviews/first-american">First American</a> is the strongest choice for older HVAC and boilers where it's sold. Whichever you choose, fix known problems first, document working condition, keep up maintenance - and budget separately for the rewiring, repiping and sewer work no warranty will cover.</p>
-<p><strong>Related guides:</strong> <a href="/articles/what-does-a-home-warranty-cover">what a home warranty covers</a>, <a href="/articles/home-warranty-claim-denied">why claims get denied</a>, <a href="/articles/most-comprehensive-home-warranty">the most comprehensive home warranty</a> and our <a href="/articles/how-much-does-a-home-warranty-cost">cost guide</a>.</p>`,
+<p><strong>Related guides:</strong> <a href="/articles/what-does-a-home-warranty-cover">what a home warranty covers</a>, <a href="/articles/home-warranty-claim-denied">why claims get denied</a>, <a href="/articles/most-comprehensive-home-warranty">the most comprehensive home warranty</a>, <a href="/articles/american-home-shield-plans">American Home Shield's plans compared</a> and our <a href="/articles/how-much-does-a-home-warranty-cost">cost guide</a>.</p>`,
   },
   {
     heading: "Sources and methodology",

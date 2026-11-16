@@ -13,7 +13,8 @@ export const part5: ArticleSection[] = [
 <li><strong>Listing coverage for sellers:</strong> many companies cover the seller's home while it's on the market, sometimes free if the buyer's plan is ordered at closing. A First American sample real estate form shows seller coverage for up to 180 days, with a $60 charge if the sale never closes and some coverage capped at $1,500.</li>
 <li><strong>Timing:</strong> American Home Shield offers real estate pricing for up to 60 days after closing, with coverage starting on closing day.</li>
 </ul>
-<p><strong>Buyer tip:</strong> real estate plans often cover unknown or undetectable pre-existing conditions that direct-to-consumer plans exclude, and they typically skip the 30-day waiting period - genuinely valuable features in your first year. But only about 29% of Frontdoor's real estate customers renew after year one, versus about 81% of established customers, so decide at renewal based on what you learned about the house.</p>`,
+<p><strong>Buyer tip:</strong> real estate plans often cover unknown or undetectable pre-existing conditions that direct-to-consumer plans exclude, and they typically skip the 30-day waiting period - genuinely valuable features in your first year. But only about 29% of Frontdoor's real estate customers renew after year one, versus about 81% of established customers, so decide at renewal based on what you learned about the house.</p>
+<p class="cta-row"><a href="/articles/home-warranty-for-home-buyers-and-sellers">→ Buying or selling? Our full guide to home warranties in a home sale</a></p>`,
   },
   {
     heading: "What customers really pay: the view from the industry's financials",

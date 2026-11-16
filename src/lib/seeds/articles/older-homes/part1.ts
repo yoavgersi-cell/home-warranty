@@ -80,6 +80,6 @@ export const part1: ArticleSection[] = [
 </tbody>
 </table>
 <h3>4. How replacements are paid</h3>
-<p>When a company replaces an item or pays cash instead, the formula matters more in an older home because the item is old. Select's terms allow replacement or cash at the item's <strong>depreciated value</strong> - which NerdWallet called unlikely to be enough, and which customer reviews describe in practice as offers of a few hundred dollars toward items costing well over $1,000. Choice pays cash at its own cost, which can be below retail. We found no depreciation clause in American Home Shield's or First American's terms. For an older home, a depreciation-based payout can turn a "covered" replacement into a small check.</p>`,
+<p>When a company replaces an item or pays cash instead, the formula matters more in an older home because the item is old. <a href="/articles/select-home-warranty-cost">Select</a>'s terms allow replacement or cash at the item's <strong>depreciated value</strong> - which NerdWallet called unlikely to be enough, and which customer reviews describe in practice as offers of a few hundred dollars toward items costing well over $1,000. Choice pays cash at its own cost, which can be below retail. We found no depreciation clause in American Home Shield's or First American's terms. For an older home, a depreciation-based payout can turn a "covered" replacement into a small check.</p>`,
   },
 ];
