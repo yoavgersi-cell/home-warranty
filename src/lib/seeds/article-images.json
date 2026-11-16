@@ -46,5 +46,45 @@
     "height": 864,
     "model": "gpt-image-2",
     "generatedAt": "2026-11-16"
+  },
+  "how-much-does-a-home-warranty-cost": {
+    "image": "/article-images/how-much-does-a-home-warranty-cost.webp",
+    "imageAlt": "Modern smart thermostat mounted on a wall next to a table with a clipboard and pen in a cozy living room.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-16"
+  },
+  "home-warranty-vs-homeowners-insurance": {
+    "image": "/article-images/home-warranty-vs-homeowners-insurance.webp",
+    "imageAlt": "A leaking water heater with water dripping onto the floor and a wall showing water damage and peeling paint.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-16"
+  },
+  "is-a-home-warranty-worth-it": {
+    "image": "/article-images/is-a-home-warranty-worth-it.webp",
+    "imageAlt": "A person adjusts the control panel on a modern gray furnace unit in a basement utility room.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-16"
+  },
+  "home-warranty-by-state": {
+    "image": "/article-images/home-warranty-by-state.webp",
+    "imageAlt": "Wooden front door with glass panels, a clipboard with home maintenance icons leaning against the wall, and a framed certificate.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-16"
+  },
+  "best-home-warranty-texas": {
+    "image": "/article-images/best-home-warranty-texas.webp",
+    "imageAlt": "Outdoor air conditioning unit installed next to a beige stucco house with desert landscaping under a clear sky.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-16"
   }
 }
