@@ -86,5 +86,45 @@
     "height": 864,
     "model": "gpt-image-2",
     "generatedAt": "2026-11-16"
+  },
+  "best-home-warranty-california": {
+    "image": "/article-images/best-home-warranty-california.webp",
+    "imageAlt": "Man walking in a garage toward a water heater and furnace with a bicycle and storage shelves nearby.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-17"
+  },
+  "best-home-warranty-florida": {
+    "image": "/article-images/best-home-warranty-florida.webp",
+    "imageAlt": "Technician in a cap inspecting an outdoor air conditioning unit next to a house with palm trees in the background.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-17"
+  },
+  "best-home-warranty-arizona": {
+    "image": "/article-images/best-home-warranty-arizona.webp",
+    "imageAlt": "Technician adjusting pressure gauges on an outdoor air conditioning unit beside a stucco wall in a desert landscape.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-17"
+  },
+  "best-home-warranty-georgia": {
+    "image": "/article-images/best-home-warranty-georgia.webp",
+    "imageAlt": "Man crouching in a crawl space holding a flashlight, inspecting ductwork and brick support columns.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-17"
+  },
+  "best-home-warranty-north-carolina": {
+    "image": "/article-images/best-home-warranty-north-carolina.webp",
+    "imageAlt": "Outdoor air conditioning unit installed next to a house with a landscaped yard and greenery in the background.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-17"
   }
 }
