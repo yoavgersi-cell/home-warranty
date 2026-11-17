@@ -39,7 +39,7 @@ export const part3: ArticleSection[] = [
   },
   {
     heading: "Where home warranties fit in a tighter insurance market",
-    body: `<p>Home insurance and home warranties are often confused, but they cover opposite kinds of problems. Insurance pays for sudden damage - fire, wind, hail, theft, a burst pipe's water damage. A home warranty pays to repair or replace systems and appliances that wear out - the furnace that dies at 15 years old, the water heater that rusts through, the refrigerator compressor that fails.</p>
+    body: `<p>Home insurance and home warranties are often confused, but they cover opposite kinds of problems. Insurance pays for sudden damage - fire, wind, hail, theft, a burst pipe's water damage. <a href="/articles/what-is-a-home-warranty">A home warranty</a> pays to repair or replace systems and appliances that wear out - the furnace that dies at 15 years old, the water heater that rusts through, the refrigerator compressor that fails.</p>
 <table>
 <thead><tr><th>Situation</th><th>Homeowners insurance</th><th>Home warranty</th></tr></thead>
 <tbody>

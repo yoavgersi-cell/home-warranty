@@ -822,7 +822,8 @@ export const homeWarrantyConfig: SiteConfig = {
         "Online claims, 24/7",
         "Available in 49 states",
       ],
-      affiliateUrl: "https://www.choicehomewarranty.com/",
+      // Commission Junction (CJ) affiliate deep link, Nov 2026.
+      affiliateUrl: "https://chwsavings.com/nlp/a/a6/index.php?utm_source=cjfm&utm_campaign=SUBID&token=CJEVENT",
       ctaText: "Get a Quote",
       excludedStates: ["WA"],
       // Trustpilot profile header captured Oct 26, 2026: 3.9 across 63,234

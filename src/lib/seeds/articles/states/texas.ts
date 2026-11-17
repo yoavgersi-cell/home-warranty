@@ -156,7 +156,7 @@ ${providerTable("Texas", {
     },
     {
       heading: "Who pays for the home warranty in a Texas home sale?",
-      body: `<p>Under paragraph 7H of the TREC resale contract, the buyer may buy a residential service contract and the seller reimburses the buyer at closing up to a negotiated amount. The amount - including zero - is up to the parties.</p>`,
+      body: `<p>Under paragraph 7H of the TREC resale contract, the buyer may buy a residential service contract and the seller reimburses the buyer at closing up to a negotiated amount. The amount - including zero - is up to the parties. Our <a href="/articles/home-warranty-for-home-buyers-and-sellers">guide to home warranties for buyers and sellers</a> explains how to set the amount and choose the plan.</p>`,
     },
     {
       heading: "Does a home warranty cover frozen pipes in Texas?",
