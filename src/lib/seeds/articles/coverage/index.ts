@@ -33,6 +33,6 @@ export const coverageGuide: ArticleData = {
     "Limits decide payouts: per-appliance caps range from about $500 (Select) to $7,000 (First American Premium), and HVAC limits from about $3,000 to no dollar limit for conventional systems at First American.",
     "In This Old House's January 2026 survey of 2,000 customers, 29% of denials were for pre-existing conditions, 29% for items not covered and 20% for costs over the limit - all checkable in the sample contract before you buy.",
   ],
-  topProviders: { afterSection: 0, title: "Our top 3 home warranty companies" },
+  topProviders: { afterSection: 0, limit: 1 },
   sections: [...part1, ...part2, ...part3, ...part4, ...part5, ...part6, ...part7, ...part7b, ...part8],
 };

@@ -30,6 +30,6 @@ export const buyersSellersGuide: ArticleData = {
     "Problems found in the inspection are excluded as pre-existing; some real estate plans cover pre-existing problems no inspection could detect - so negotiate known issues separately and keep the report.",
     "A home warranty is never required by a lender, the buyer can choose the company, and federal rules bar warranty companies from paying agents for referrals.",
   ],
-  topProviders: { afterSection: 0, limit: 2, title: "Our top 2 home warranty companies" },
+  topProviders: { afterSection: 0, limit: 1 },
   sections: [...part1, ...part2, ...part2b, ...part3, ...part4],
 };

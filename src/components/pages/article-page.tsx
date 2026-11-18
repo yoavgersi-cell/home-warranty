@@ -567,8 +567,10 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                 {i === (article.topProviders?.afterSection ?? 1) && !/^is-.+-legit$/.test(slug) && topProviders.length > 0 && (
                   <TopProviderCards
                     config={config}
-                    limit={article.topProviders?.limit ?? 3}
-                    title={article.topProviders?.title}
+                    // One card by default: the #1-ranked provider (Choice), our
+                    // featured partner. Articles can override count/heading.
+                    limit={article.topProviders?.limit ?? 1}
+                    title={article.topProviders?.title ?? "Our top-rated home warranty company"}
                     linkPrefix=""
                     pageType="listing"
                     sourceFlow="main_comparison"

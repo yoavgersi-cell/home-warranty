@@ -29,6 +29,6 @@ export const olderHomesGuide: ArticleData = {
     "The median US owner-occupied home is 42 years old and about 47% were built before 1980 (NAHB, 2024 ACS) - so HVAC limits matter more than any other number in the contract.",
     "No warranty pays to rewire knob-and-tube or aluminum wiring, replace an outdated panel, repipe or replace a sewer line - budget for those separately.",
   ],
-  topProviders: { afterSection: 0, limit: 3, title: "Our top 3 home warranty companies overall" },
+  topProviders: { afterSection: 0, limit: 1, title: "Our top-rated home warranty company overall" },
   sections: [...part1, ...part2, ...part3],
 };
