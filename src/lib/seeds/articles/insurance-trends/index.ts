@@ -26,6 +26,6 @@ export const insuranceTrendsGuide: ArticleData = {
     "Insurers earned a homeowners underwriting profit of about $16.5 billion in 2025, the first since 2019 (AM Best), and raised home insurance ad spending 84% in 2026 (MediaAlpha) - a good time to shop.",
     "Policies cover less: percentage deductibles, roofs paid at depreciated value and cosmetic exclusions are spreading, and wear and tear was never covered - plan for those costs separately.",
   ],
-  topProviders: { afterSection: 16, title: "Top-rated home warranty companies" },
+  topProviders: { afterSection: 16, limit: 1 },
   sections: [...part1, ...part2, ...part3],
 };
