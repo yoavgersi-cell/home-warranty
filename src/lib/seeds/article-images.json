@@ -126,5 +126,45 @@
     "height": 864,
     "model": "gpt-image-2",
     "generatedAt": "2026-11-17"
+  },
+  "home-warranty-claim-denied": {
+    "image": "/article-images/home-warranty-claim-denied.webp",
+    "imageAlt": "Leaking water heater with a puddle forming on the floor beside a toolbox and a crumpled paper pinned to the wall.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-20"
+  },
+  "best-home-warranty-for-water-heaters": {
+    "image": "/article-images/best-home-warranty-for-water-heaters.webp",
+    "imageAlt": "Tankless water heater mounted on a bathroom wall next to a traditional tank water heater inside a closet.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-20"
+  },
+  "best-home-warranty-for-heat-pumps": {
+    "image": "/article-images/best-home-warranty-for-heat-pumps.webp",
+    "imageAlt": "Outdoor heat pump unit with icicles hanging on its side, installed next to a house in a snowy yard.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-20"
+  },
+  "best-home-warranty-for-electrical-systems": {
+    "image": "/article-images/best-home-warranty-for-electrical-systems.webp",
+    "imageAlt": "Electrical panel with circuit breakers and wiring inside a residential wall near a light switch and power outlet.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-20"
+  },
+  "best-home-warranty-for-dishwashers": {
+    "image": "/article-images/best-home-warranty-for-dishwashers.webp",
+    "imageAlt": "Open dishwasher loaded with dishes in a kitchen with a tool bag on the counter and a person working at the sink.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-20"
   }
 }
