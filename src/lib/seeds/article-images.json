@@ -166,5 +166,45 @@
     "height": 864,
     "model": "gpt-image-2",
     "generatedAt": "2026-11-20"
+  },
+  "most-comprehensive-home-warranty": {
+    "image": "/article-images/most-comprehensive-home-warranty.webp",
+    "imageAlt": "Woman adjusting a thermostat on a wall inside a modern home with a view of an outdoor air conditioning unit.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-21"
+  },
+  "best-home-warranty-no-deductible": {
+    "image": "/article-images/best-home-warranty-no-deductible.webp",
+    "imageAlt": "A repair technician carrying a toolbox walks up to a house porch where a woman stands at the door greeting him.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-21"
+  },
+  "r-410a-phase-out-home-warranty": {
+    "image": "/article-images/r-410a-phase-out-home-warranty.webp",
+    "imageAlt": "Technician using pressure gauges to check an outdoor air conditioning unit with a pink refrigerant tank nearby.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-21"
+  },
+  "home-warranty-guide": {
+    "image": "/article-images/home-warranty-guide.webp",
+    "imageAlt": "Modern kitchen with an open dishwasher showing wet dishes inside, next to a stainless steel oven and refrigerator.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-21"
+  },
+  "what-is-a-home-warranty": {
+    "image": "/article-images/what-is-a-home-warranty.webp",
+    "imageAlt": "Modern kitchen with stainless steel appliances including refrigerator, dishwasher, oven, and a water heater next to a thermostat.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-21"
   }
 }
