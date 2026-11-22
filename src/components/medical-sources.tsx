@@ -100,7 +100,7 @@ export function MedicalSources({ vertical }: { vertical: string }) {
 // being repeated here.
 export function TrustDisclosure({ disclaimerHref }: { disclaimerHref: string }) {
   return (
-    <p className="mt-2.5 max-w-[720px] text-[11.5px] leading-[1.55] text-gray-500 sm:mt-3 sm:text-[12px]">
+    <p className="mt-2.5 max-w-[720px] text-[12px] leading-[1.55] text-gray-500 sm:mt-3">
       We may earn a commission from links on this page - it never affects our rankings (
       <a href={disclaimerHref} className="font-medium text-[#C2570C] hover:underline">
         how we stay objective
