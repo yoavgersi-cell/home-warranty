@@ -206,5 +206,13 @@
     "height": 864,
     "model": "gpt-image-2",
     "generatedAt": "2026-11-21"
+  },
+  "home-warranty-coverage-limits": {
+    "image": "/article-images/home-warranty-coverage-limits.webp",
+    "imageAlt": "Technician wearing a cap and boots kneels beside a home air conditioning unit, checking gauges and connections outdoors.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-23"
   }
 }
