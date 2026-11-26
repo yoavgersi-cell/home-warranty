@@ -214,5 +214,29 @@
     "height": 864,
     "model": "gpt-image-2",
     "generatedAt": "2026-11-23"
+  },
+  "how-to-file-a-home-warranty-claim": {
+    "image": "/article-images/how-to-file-a-home-warranty-claim.webp",
+    "imageAlt": "Open dishwasher with water leaking onto the kitchen floor and a person standing in the background.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-26"
+  },
+  "american-home-shield-plans": {
+    "image": "/article-images/american-home-shield-plans.webp",
+    "imageAlt": "A woman stands in a kitchen with appliances and home systems outlined in colored neon, highlighting key household equipment.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-26"
+  },
+  "select-home-warranty-cost": {
+    "image": "/article-images/select-home-warranty-cost.webp",
+    "imageAlt": "Stainless steel refrigerator and oven with price tags in a kitchen next to a utility room housing a water heater.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-26"
   }
 }
