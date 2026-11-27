@@ -9,6 +9,7 @@ import { insuranceTrendsGuide } from "./articles/insurance-trends";
 import { buyersSellersGuide } from "./articles/buyers-sellers";
 import { olderHomesGuide } from "./articles/older-homes";
 import { coverageLimitsGuide } from "./articles/coverage-limits";
+import { scamLettersGuide } from "./articles/scam-letters";
 import { worthItGuide } from "./articles/worth-it";
 import { costGuide } from "./articles/cost";
 import { ahsAlternativesGuide } from "./articles/ahs-alternatives";
@@ -1410,6 +1411,7 @@ export const homeWarrantyConfig: SiteConfig = {
     insuranceTrendsGuide,
     olderHomesGuide,
     coverageLimitsGuide,
+    scamLettersGuide,
     stateHubGuide,
     texasGuide,
     californiaGuide,

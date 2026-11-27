@@ -238,5 +238,13 @@
     "height": 864,
     "model": "gpt-image-2",
     "generatedAt": "2026-11-26"
+  },
+  "home-warranty-scam-letters": {
+    "image": "/article-images/home-warranty-scam-letters.webp",
+    "imageAlt": "Person holding a letter and envelope while sitting at a kitchen counter with a stack of mail nearby.",
+    "width": 1536,
+    "height": 864,
+    "model": "gpt-image-2",
+    "generatedAt": "2026-11-26"
   }
 }
