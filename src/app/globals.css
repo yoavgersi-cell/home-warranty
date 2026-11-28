@@ -255,14 +255,14 @@ html[data-hub] .hub-name {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #C2570C;
+  color: #B4500B;
 }
 .article-body .cta-row {
   margin: 1em 0;
 }
 .article-body .cta-row a {
   font-weight: 700;
-  color: #C2570C;
+  color: #B4500B;
   text-decoration: none;
   border-bottom: 2px solid rgba(194, 87, 12, 0.25);
   padding-bottom: 1px;

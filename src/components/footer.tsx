@@ -97,7 +97,7 @@ export async function Footer() {
           {/* Brand blurb */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-1">
             <p className="text-[13px] leading-relaxed text-gray-500">
-              <span className="font-bold text-[#C2570C]">Top Home Warranty</span> is an independent comparison
+              <span className="font-bold text-[#B4500B]">Top Home Warranty</span> is an independent comparison
               publisher for home warranty plans and companies.
             </p>
           </div>
@@ -107,7 +107,7 @@ export async function Footer() {
               <h2 className="mb-2.5 text-[12px] font-bold uppercase tracking-wider text-[#191919]">{col.title}</h2>
               <nav className="space-y-0.5">
                 {col.links.map((l) => (
-                  <Link key={l.label} href={l.href} className="block py-1 text-[13px] text-gray-500 hover:text-[#C2570C]">
+                  <Link key={l.label} href={l.href} className="block py-1 text-[13px] text-gray-500 hover:text-[#B4500B]">
                     {l.label}
                   </Link>
                 ))}

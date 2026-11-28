@@ -13,7 +13,7 @@ import { part4 } from "./part4";
 // math, cash-in-lieu valuation compared, sub-limits, state disclosure rules.
 export const coverageLimitsGuide: ArticleData = {
   slug: "home-warranty-coverage-limits",
-  title: "Home Warranty Coverage Limits Compared (2026): What Each Pays",
+  title: "Home Warranty Coverage Limits (2026): What Each Company Pays",
   description:
     "Home warranty coverage limits for 7 companies: HVAC, appliance, refrigerant and annual caps, cash-out rules, and how limits compare with 2026 repair costs.",
   category: "Guides",

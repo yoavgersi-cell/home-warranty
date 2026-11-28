@@ -72,13 +72,13 @@ const categoryColors: Record<string, string> = {
   Guide: "bg-emerald-50 text-emerald-700",
   Advice: "bg-amber-50 text-amber-700",
   Wellness: "bg-purple-50 text-purple-700",
-  "Provider Guides": "bg-[#FFF1E6] text-[#C2570C]",
+  "Provider Guides": "bg-[#FFF1E6] text-[#B4500B]",
   Guides: "bg-emerald-50 text-emerald-700",
   Costs: "bg-amber-50 text-amber-700",
   Claims: "bg-blue-50 text-blue-700",
   "State Guides": "bg-sky-50 text-sky-700",
   Buying: "bg-purple-50 text-purple-700",
-  "Best For": "bg-[#FFF1E6] text-[#C2570C]",
+  "Best For": "bg-[#FFF1E6] text-[#B4500B]",
 };
 
 // Article categories typed as MedicalWebPage in schema (see the note below).
@@ -405,7 +405,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
               (featured snippets / AI overviews lift lists like this whole). */}
           {article.keyTakeaways && article.keyTakeaways.length > 0 && (
             <div className="mb-8 rounded-xl border border-[#F08A3C]/15 bg-[#FFF8F2] p-5 sm:p-6">
-              <p className="mb-3 text-[12px] font-bold uppercase tracking-wider text-[#C2570C]">{article.keyTakeawaysTitle ?? "Key takeaways"}</p>
+              <p className="mb-3 text-[12px] font-bold uppercase tracking-wider text-[#B4500B]">{article.keyTakeawaysTitle ?? "Key takeaways"}</p>
               <ul className="space-y-2">
                 {article.keyTakeaways.map((t) => (
                   <li key={t} className="flex items-start gap-2.5 text-[15px] leading-relaxed text-gray-800">
@@ -428,7 +428,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                 {article.sections.map((s, i) => (
                   <li key={i} className="flex gap-2 text-[14px] leading-snug">
                     <span className="shrink-0 py-1 font-semibold text-gray-500">{i + 1}.</span>
-                    <a href={`#${slugifyHeading(s.heading)}`} className="block py-1 text-[#C2570C] hover:underline">
+                    <a href={`#${slugifyHeading(s.heading)}`} className="block py-1 text-[#B4500B] hover:underline">
                       {s.heading}
                     </a>
                   </li>
@@ -446,7 +446,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                   {/* div (not p) so author HTML can include block elements -
                       lists, tables, callouts - styled via .article-body css */}
                   <div
-                    className="article-body text-[16px] leading-[1.75] text-gray-800 [&_a]:text-[#C2570C] [&_a]:font-medium [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-[#9A4309]"
+                    className="article-body text-[16px] leading-[1.75] text-gray-800 [&_a]:text-[#B4500B] [&_a]:font-medium [&_a]:underline [&_a]:underline-offset-2 hover:[&_a]:text-[#9A4309]"
                     dangerouslySetInnerHTML={{ __html: enhanceArticleHtml(section.body) }}
                   />
                 </section>
@@ -534,7 +534,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                   <div className="my-10 overflow-hidden rounded-xl bg-transparent">
                     <div className="flex flex-col sm:flex-row">
                       <div className="flex-1 py-6 pr-6 sm:py-8 sm:pr-8">
-                        <h3 className="mb-3 text-[18px] font-bold leading-tight text-[#C2570C] sm:text-[20px]">
+                        <h3 className="mb-3 text-[18px] font-bold leading-tight text-[#B4500B] sm:text-[20px]">
                           What To Know Before Starting GLP-1 Treatment
                         </h3>
                         <p className="mb-3 text-[16px] leading-[1.75] text-gray-800">
@@ -617,7 +617,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                     >
                       {ra.category}
                     </span>
-                    <p className="text-[14px] font-semibold leading-snug text-[#191919] group-hover:text-[#C2570C] transition-colors">
+                    <p className="text-[14px] font-semibold leading-snug text-[#191919] group-hover:text-[#B4500B] transition-colors">
                       {ra.title}
                     </p>
                     <p className="mt-1.5 text-[12px] text-gray-500 line-clamp-2">
@@ -636,12 +636,12 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                 href={hubLink(ctx, `/articles/${prevArticle.slug}`)}
                 className="group flex items-start gap-3 rounded-xl border border-gray-200 bg-white p-5 transition-shadow hover:shadow-md"
               >
-                <ArrowLeft className="mt-0.5 h-4 w-4 shrink-0 text-gray-500 group-hover:text-[#C2570C] transition-colors" strokeWidth={2} />
+                <ArrowLeft className="mt-0.5 h-4 w-4 shrink-0 text-gray-500 group-hover:text-[#B4500B] transition-colors" strokeWidth={2} />
                 <div>
                   <span className="text-[11px] font-semibold uppercase tracking-wider text-gray-500">
                     Previous
                   </span>
-                  <p className="mt-0.5 text-[14px] font-semibold leading-snug text-[#191919] group-hover:text-[#C2570C] transition-colors">
+                  <p className="mt-0.5 text-[14px] font-semibold leading-snug text-[#191919] group-hover:text-[#B4500B] transition-colors">
                     {prevArticle.title}
                   </p>
                 </div>
@@ -654,12 +654,12 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                 href={hubLink(ctx, `/articles/${nextArticle.slug}`)}
                 className="group flex items-start gap-3 rounded-xl border border-gray-200 bg-white p-5 transition-shadow hover:shadow-md sm:text-right sm:flex-row-reverse"
               >
-                <ArrowRight className="mt-0.5 h-4 w-4 shrink-0 text-gray-500 group-hover:text-[#C2570C] transition-colors" strokeWidth={2} />
+                <ArrowRight className="mt-0.5 h-4 w-4 shrink-0 text-gray-500 group-hover:text-[#B4500B] transition-colors" strokeWidth={2} />
                 <div>
                   <span className="text-[11px] font-semibold uppercase tracking-wider text-gray-500">
                     Next
                   </span>
-                  <p className="mt-0.5 text-[14px] font-semibold leading-snug text-[#191919] group-hover:text-[#C2570C] transition-colors">
+                  <p className="mt-0.5 text-[14px] font-semibold leading-snug text-[#191919] group-hover:text-[#B4500B] transition-colors">
                     {nextArticle.title}
                   </p>
                 </div>
@@ -686,7 +686,7 @@ export async function ArticlePageView({ slug, ctx }: { slug: string; ctx: SiteCo
                   <Link
                     key={c.href}
                     href={c.href}
-                    className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-[14px] font-semibold text-[#C2570C] transition-colors hover:border-[#F08A3C]/30 hover:bg-[#F08A3C]/[0.02]"
+                    className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-[14px] font-semibold text-[#B4500B] transition-colors hover:border-[#F08A3C]/30 hover:bg-[#F08A3C]/[0.02]"
                   >
                     <span className="truncate">{c.label}</span>
                     <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0" strokeWidth={2} />

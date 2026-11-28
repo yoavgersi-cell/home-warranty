@@ -225,7 +225,7 @@ export default async function HowWeRankPage() {
             {SOURCES.map(({ icon: Icon, title, desc }) => (
               <div key={title} className="rounded-xl border border-gray-200 bg-white p-5">
                 <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-[#F08A3C]/5">
-                  <Icon className="h-5 w-5 text-[#C2570C]" strokeWidth={1.5} />
+                  <Icon className="h-5 w-5 text-[#B4500B]" strokeWidth={1.5} />
                 </div>
                 <h3 className="mb-1 text-[15px] font-bold text-[#191919]">{title}</h3>
                 <p className="text-[13px] leading-relaxed text-gray-500">{desc}</p>
@@ -293,7 +293,7 @@ export default async function HowWeRankPage() {
         {/* Freshness */}
         <section className="mb-12">
           <div className="flex items-start gap-4 rounded-xl border border-gray-200 bg-white p-6">
-            <RefreshCw className="mt-0.5 h-6 w-6 shrink-0 text-[#C2570C]" strokeWidth={2} />
+            <RefreshCw className="mt-0.5 h-6 w-6 shrink-0 text-[#B4500B]" strokeWidth={2} />
             <div>
               <h2 className="mb-2 text-[22px] font-bold text-[#191919]">Keeping reviews current</h2>
               <p className="text-[15px] leading-[1.75] text-gray-600">
@@ -319,7 +319,7 @@ export default async function HowWeRankPage() {
               compensate us through affiliate partnerships when you click through and sign up. This may
               affect how providers are displayed, but it does not influence our scores or the content of
               our reviews. See our{" "}
-              <Link href="/disclaimer" className="font-semibold text-[#C2570C] hover:underline">full disclaimer</Link>.
+              <Link href="/disclaimer" className="font-semibold text-[#B4500B] hover:underline">full disclaimer</Link>.
             </p>
           </div>
         </section>

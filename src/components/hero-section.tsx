@@ -59,7 +59,7 @@ export function HeroSection({
           </h1>
 
           {h2 && (
-            <h2 className="mt-2 hidden sm:block text-[24px] lg:text-[26px] leading-[1.25] font-semibold text-[#C2570C]">
+            <h2 className="mt-2 hidden sm:block text-[24px] lg:text-[26px] leading-[1.25] font-semibold text-[#B4500B]">
               {h2}
             </h2>
           )}
@@ -77,7 +77,7 @@ export function HeroSection({
               { label: "Free Online Quotes", icon: Zap },
             ].map(({ label, icon: Icon }) => (
               <span key={label} className="flex items-center gap-1 text-[11px] sm:text-[13px] font-medium text-gray-500 whitespace-nowrap">
-                <Icon className="h-3 w-3 sm:h-3.5 sm:w-3.5 shrink-0 text-[#C2570C]" strokeWidth={1.5} />
+                <Icon className="h-3 w-3 sm:h-3.5 sm:w-3.5 shrink-0 text-[#B4500B]" strokeWidth={1.5} />
                 {label}
               </span>
             ))}

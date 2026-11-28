@@ -30,7 +30,7 @@ export default function EditorialPolicyPage() {
     isPartOf: { "@type": "WebSite", name: "Top Home Warranty", url: SITE_ORIGIN },
     about: { "@type": "Organization", name: "Top Home Warranty", url: SITE_ORIGIN, employee: REVIEWERS.map(reviewerPersonSchema) },
   };
-  const ext = "font-semibold text-[#C2570C] hover:underline";
+  const ext = "font-semibold text-[#B4500B] hover:underline";
 
   return (
     <div className="min-h-screen bg-gray-50">

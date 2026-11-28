@@ -27,7 +27,7 @@ export function BestForLinks() {
             className="flex items-start gap-3 rounded-xl border border-gray-200 bg-white p-4 transition-colors hover:border-[#F08A3C]/50 hover:bg-[#FFF8F2]"
           >
             <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#FFF1E6]">
-              <Icon className="h-[18px] w-[18px] text-[#C2570C]" strokeWidth={2} />
+              <Icon className="h-[18px] w-[18px] text-[#B4500B]" strokeWidth={2} />
             </span>
             <span>
               <span className="block text-[15px] font-bold text-[#191919]">Best home warranty for {label.toLowerCase()}</span>

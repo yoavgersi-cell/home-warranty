@@ -64,7 +64,7 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
           <h3 className="text-[12px] font-semibold text-[#1A1A1A]">{product.name}</h3>
           <a
             href={`${linkPrefix}/reviews/${product.id}`}
-            className="text-[12px] font-semibold text-[#C2570C] hover:underline"
+            className="text-[12px] font-semibold text-[#B4500B] hover:underline"
           >
             Read Review
           </a>
@@ -72,7 +72,7 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
           <ul className="mt-1 space-y-0.5">
             {product.highlights.slice(0, 3).map((highlight) => (
               <li key={highlight} className="flex items-center gap-2 text-[12px] leading-[1.35] text-gray-800">
-                <Check className="h-3.5 w-3.5 shrink-0 text-[#C2570C]" strokeWidth={2} />
+                <Check className="h-3.5 w-3.5 shrink-0 text-[#B4500B]" strokeWidth={2} />
                 {highlight}
               </li>
             ))}
@@ -133,7 +133,7 @@ export function ComparisonCard({ product, hideRank, pageType = "listing", source
         <ul className="mt-1.5 space-y-1">
           {product.highlights.slice(0, 3).map((highlight) => (
             <li key={highlight} className="flex items-start gap-2 text-[14px] leading-[1.4] text-gray-800">
-              <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#C2570C]" strokeWidth={2} />
+              <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#B4500B]" strokeWidth={2} />
               {highlight}
             </li>
           ))}

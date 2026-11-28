@@ -266,7 +266,7 @@ export default function AdminPage() {
             <select
               value={vertical}
               onChange={(e) => switchVertical(e.target.value)}
-              className="rounded-md border border-gray-200 bg-white px-2.5 py-1 text-sm font-semibold text-[#C2570C] focus:outline-none focus:ring-2 focus:ring-[#F08A3C]/30"
+              className="rounded-md border border-gray-200 bg-white px-2.5 py-1 text-sm font-semibold text-[#B4500B] focus:outline-none focus:ring-2 focus:ring-[#F08A3C]/30"
             >
               {VERTICALS.map((v) => (
                 <option key={v.id} value={v.id}>{v.name}</option>
@@ -371,7 +371,7 @@ export default function AdminPage() {
                             enabled: e.target.checked,
                           })
                         }
-                        className="h-4 w-4 rounded border-gray-300 text-[#C2570C] focus:ring-[#F08A3C]"
+                        className="h-4 w-4 rounded border-gray-300 text-[#B4500B] focus:ring-[#F08A3C]"
                       />
                       Enable popup for {provider.name || "this provider"}
                     </label>
@@ -464,7 +464,7 @@ export default function AdminPage() {
                         const reviews: TrustpilotReview[] = [...(provider.trustpilotReviews ?? []), { title: "", text: "", name: "", location: "", rating: 5 }];
                         updateProvider(index, "trustpilotReviews", reviews);
                       }}
-                      className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+                      className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
                     >
                       + Add Trustpilot Review
                     </button>
@@ -473,7 +473,7 @@ export default function AdminPage() {
               ))}
             <button
               onClick={addProvider}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
             >
               + Add Provider
             </button>
@@ -558,7 +558,7 @@ export default function AdminPage() {
                     });
                     select.value = "";
                   }}
-                  className="rounded border border-[#F08A3C] px-4 py-2 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5"
+                  className="rounded border border-[#F08A3C] px-4 py-2 text-xs font-semibold text-[#B4500B] hover:bg-[#F08A3C]/5"
                 >
                   Add
                 </button>
@@ -733,7 +733,7 @@ export default function AdminPage() {
             ))}
             <button
               onClick={addFaq}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
             >
               + Add FAQ
             </button>
@@ -1000,7 +1000,7 @@ export default function AdminPage() {
                       articles[index] = { ...articles[index], sections };
                       setConfig({ ...config, articles });
                     }}
-                    className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+                    className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
                   >
                     + Add Section
                   </button>
@@ -1022,7 +1022,7 @@ export default function AdminPage() {
                 };
                 setConfig({ ...config, articles: [...(config.articles ?? []), newArticle] });
               }}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
             >
               + Add Article
             </button>
@@ -1150,7 +1150,7 @@ export default function AdminPage() {
                         </div>
                       ))}
                     </div>
-                    <button onClick={() => updateBattle({ categories: [...battle.categories, { name: "", winner: "tie" as const, explanation: "", supportingPoints: [] }] })} className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]">+ Add Category</button>
+                    <button onClick={() => updateBattle({ categories: [...battle.categories, { name: "", winner: "tie" as const, explanation: "", supportingPoints: [] }] })} className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]">+ Add Category</button>
                   </div>
 
                   {/* Feature Table */}
@@ -1170,7 +1170,7 @@ export default function AdminPage() {
                         </div>
                       ))}
                     </div>
-                    <button onClick={() => updateBattle({ features: [...(battle.features ?? []), { feature: "", provider1Value: "", provider2Value: "" }] })} className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]">+ Add Feature Row</button>
+                    <button onClick={() => updateBattle({ features: [...(battle.features ?? []), { feature: "", provider1Value: "", provider2Value: "" }] })} className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]">+ Add Feature Row</button>
                   </div>
                 </div>
               );
@@ -1202,7 +1202,7 @@ export default function AdminPage() {
                 };
                 setConfig({ ...config, battles: [...(config.battles ?? []), newBattle] });
               }}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
             >
               + Add Battle Page
             </button>
@@ -1325,7 +1325,7 @@ export default function AdminPage() {
                           updateLP({ providerOrder: [...(lp.providerOrder ?? []), select.value] });
                           select.value = "";
                         }}
-                        className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5"
+                        className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#B4500B] hover:bg-[#F08A3C]/5"
                       >
                         Add
                       </button>
@@ -1397,7 +1397,7 @@ export default function AdminPage() {
                         const sections = [...(lp.editorialSections ?? []), { heading: "", body: "", bullets: [] }];
                         updateLP({ editorialSections: sections });
                       }}
-                      className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+                      className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
                     >
                       + Add Section
                     </button>
@@ -1419,7 +1419,7 @@ export default function AdminPage() {
                 };
                 setConfig({ ...config, landingPages: [...(config.landingPages ?? []), newLP] });
               }}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
             >
               + Add Landing Page
             </button>
@@ -1505,7 +1505,7 @@ export default function AdminPage() {
                         <option value="" disabled>Add provider...</option>
                         {config.providers.filter((p) => !(sb.providerIds ?? []).includes(p.id)).map((p) => (<option key={p.id} value={p.id}>{p.name}</option>))}
                       </select>
-                      <button onClick={() => { const el = document.getElementById(`sb-prov-${index}`) as HTMLSelectElement; if (el?.value) { updateSB({ providerIds: [...(sb.providerIds ?? []), el.value] }); el.value = ""; } }} className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5">Add</button>
+                      <button onClick={() => { const el = document.getElementById(`sb-prov-${index}`) as HTMLSelectElement; if (el?.value) { updateSB({ providerIds: [...(sb.providerIds ?? []), el.value] }); el.value = ""; } }} className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#B4500B] hover:bg-[#F08A3C]/5">Add</button>
                     </div>
                   </div>
 
@@ -1539,7 +1539,7 @@ export default function AdminPage() {
                         <option value="" disabled>Add article...</option>
                         {(config.articles ?? []).filter((a) => !(sb.articleSlugs ?? []).includes(a.slug)).map((a) => (<option key={a.slug} value={a.slug}>{a.title}</option>))}
                       </select>
-                      <button onClick={() => { const el = document.getElementById(`sb-art-${index}`) as HTMLSelectElement; if (el?.value) { updateSB({ articleSlugs: [...(sb.articleSlugs ?? []), el.value] }); el.value = ""; } }} className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5">Add</button>
+                      <button onClick={() => { const el = document.getElementById(`sb-art-${index}`) as HTMLSelectElement; if (el?.value) { updateSB({ articleSlugs: [...(sb.articleSlugs ?? []), el.value] }); el.value = ""; } }} className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#B4500B] hover:bg-[#F08A3C]/5">Add</button>
                     </div>
                   </div>
                 </div>
@@ -1563,7 +1563,7 @@ export default function AdminPage() {
                 };
                 setConfig({ ...config, sidebars: [...(config.sidebars ?? []), newSB] });
               }}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
             >
               + Add Sidebar
             </button>
@@ -1584,7 +1584,7 @@ export default function AdminPage() {
                     onClick={() => setConfig({ ...config, quiz: { ...config.quiz, panelType: type } })}
                     className={`flex-1 rounded-lg border px-4 py-3 text-sm font-medium transition-colors ${
                       (config.quiz.panelType || "classic") === type
-                        ? "border-[#F08A3C] bg-[#F08A3C]/5 text-[#C2570C]"
+                        ? "border-[#F08A3C] bg-[#F08A3C]/5 text-[#B4500B]"
                         : "border-gray-200 text-gray-500 hover:border-gray-300"
                     }`}
                   >
@@ -1690,7 +1690,7 @@ export default function AdminPage() {
                     setConfig({ ...config, quiz: { ...config.quiz, providerOrder: order } });
                     select.value = "";
                   }}
-                  className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5"
+                  className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#B4500B] hover:bg-[#F08A3C]/5"
                 >
                   Add
                 </button>
@@ -1785,7 +1785,7 @@ export default function AdminPage() {
                   const testimonials = [...(config.quiz.testimonials ?? []), { text: "", name: "", state: "" }];
                   setConfig({ ...config, quiz: { ...config.quiz, testimonials } });
                 }}
-                className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+                className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
               >
                 + Add Testimonial
               </button>
@@ -1879,7 +1879,7 @@ export default function AdminPage() {
                       setConfig({ ...config, quiz: { ...config.quiz, loadingScreen: { ...(config.quiz.loadingScreen ?? { headline: "Finding your best match", supportingTexts: [], providerLogos: [], durationMs: 5000 }), providerLogos: [...(config.quiz.loadingScreen?.providerLogos ?? []), select.value] } } });
                       select.value = "";
                     }}
-                    className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5"
+                    className="rounded border border-[#F08A3C] px-3 py-1.5 text-xs font-semibold text-[#B4500B] hover:bg-[#F08A3C]/5"
                   >
                     Add
                   </button>
@@ -1990,7 +1990,7 @@ export default function AdminPage() {
                   const order = overrides[key] ?? [];
                   return (
                     <div key={key} className="rounded-lg border bg-gray-50 p-3">
-                      <p className="mb-2 text-xs font-bold text-[#C2570C]">{label}</p>
+                      <p className="mb-2 text-xs font-bold text-[#B4500B]">{label}</p>
                       <div className="space-y-1.5 mb-2">
                         {order.map((pid, pi) => {
                           const provider = config.providers.find((p) => p.id === pid);
@@ -2100,7 +2100,7 @@ export default function AdminPage() {
             ))}
             <button
               onClick={() => setConfig({ ...config, experts: [...(config.experts ?? []), { id: `expert-${Date.now()}`, name: "New Expert", role: "Health Researcher", bio: "" }] })}
-              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+              className="w-full rounded-lg border-2 border-dashed border-gray-300 py-4 text-sm font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
             >
               + Add Team Member
             </button>
@@ -2166,7 +2166,7 @@ export default function AdminPage() {
               </div>
               <button
                 onClick={() => setConfig({ ...config, reviewTestimonials: [...(config.reviewTestimonials ?? []), { text: "", name: "", state: "" }] })}
-                className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+                className="mt-2 w-full rounded border-2 border-dashed border-gray-200 py-2 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
               >
                 + Add Testimonial
               </button>
@@ -2245,7 +2245,7 @@ function ImageField({
           className="flex-1 rounded border px-3 py-2 text-sm focus:border-[#F08A3C] focus:outline-none"
           placeholder="URL or upload..."
         />
-        <label className="flex cursor-pointer items-center gap-1 rounded border border-[#F08A3C] px-3 py-2 text-xs font-semibold text-[#C2570C] hover:bg-[#F08A3C]/5">
+        <label className="flex cursor-pointer items-center gap-1 rounded border border-[#F08A3C] px-3 py-2 text-xs font-semibold text-[#B4500B] hover:bg-[#F08A3C]/5">
           {uploading ? "Uploading..." : "Upload"}
           <input
             type="file"
@@ -2302,7 +2302,7 @@ function ArrayField({
       </div>
       <button
         onClick={onAdd}
-        className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#C2570C]"
+        className="mt-2 rounded border border-dashed border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-400 hover:border-[#F08A3C] hover:text-[#B4500B]"
       >
         + Add Item
       </button>

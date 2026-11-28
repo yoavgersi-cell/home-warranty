@@ -85,7 +85,7 @@ export default async function AboutPage() {
             ].map(({ icon: Icon, title, desc }) => (
               <div key={title} className="rounded-xl border border-gray-200 bg-white p-5">
                 <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-[#F08A3C]/5">
-                  <Icon className="h-5 w-5 text-[#C2570C]" strokeWidth={1.5} />
+                  <Icon className="h-5 w-5 text-[#B4500B]" strokeWidth={1.5} />
                 </div>
                 <h3 className="mb-1 text-[15px] font-bold text-[#191919]">{title}</h3>
                 <p className="text-[13px] leading-relaxed text-gray-500">{desc}</p>
@@ -108,10 +108,10 @@ export default async function AboutPage() {
                   <p className="text-[13px] text-gray-500">{r.jobTitle} · {r.headline}</p>
                   <p className="mt-2 text-[14px] leading-relaxed text-gray-600">{r.shortBio}</p>
                   <p className="mt-3 flex flex-wrap gap-x-4 text-[13.5px] font-semibold">
-                    <Link href={reviewerPath(r)} className="text-[#C2570C] hover:underline">Full profile</Link>
-                    <Link href="/editorial-policy" className="text-[#C2570C] hover:underline">How we review</Link>
+                    <Link href={reviewerPath(r)} className="text-[#B4500B] hover:underline">Full profile</Link>
+                    <Link href="/editorial-policy" className="text-[#B4500B] hover:underline">How we review</Link>
                     {r.linkedin && (
-                      <a href={r.linkedin} target="_blank" rel="noopener noreferrer" className="text-[#C2570C] hover:underline">LinkedIn</a>
+                      <a href={r.linkedin} target="_blank" rel="noopener noreferrer" className="text-[#B4500B] hover:underline">LinkedIn</a>
                     )}
                   </p>
                 </div>
@@ -152,7 +152,7 @@ export default async function AboutPage() {
           </div>
           <p className="mt-6 text-[15px] leading-[1.75] text-gray-600">
             Want the full picture? Read our detailed{" "}
-            <Link href="/how-we-rank" className="font-semibold text-[#C2570C] hover:underline">
+            <Link href="/how-we-rank" className="font-semibold text-[#B4500B] hover:underline">
               ranking &amp; review methodology
             </Link>{" "}
             - the factors we score, where our data comes from, and how we pick winners.
@@ -190,21 +190,21 @@ export default async function AboutPage() {
         <section className="mb-12">
           <div className="grid gap-4 sm:grid-cols-3">
             <div className="flex items-center gap-3 rounded-xl border border-gray-200 bg-white p-4">
-              <Users className="h-8 w-8 shrink-0 text-[#C2570C]" strokeWidth={1.5} />
+              <Users className="h-8 w-8 shrink-0 text-[#B4500B]" strokeWidth={1.5} />
               <div>
                 <p className="text-[18px] font-extrabold text-[#191919]">6</p>
                 <p className="text-[12px] text-gray-500">Weighted ranking categories</p>
               </div>
             </div>
             <div className="flex items-center gap-3 rounded-xl border border-gray-200 bg-white p-4">
-              <Award className="h-8 w-8 shrink-0 text-[#C2570C]" strokeWidth={1.5} />
+              <Award className="h-8 w-8 shrink-0 text-[#B4500B]" strokeWidth={1.5} />
               <div>
                 <p className="text-[18px] font-extrabold text-[#191919]">{config.providers.length}</p>
                 <p className="text-[12px] text-gray-500">Providers independently reviewed</p>
               </div>
             </div>
             <div className="flex items-center gap-3 rounded-xl border border-gray-200 bg-white p-4">
-              <Shield className="h-8 w-8 shrink-0 text-[#C2570C]" strokeWidth={1.5} />
+              <Shield className="h-8 w-8 shrink-0 text-[#B4500B]" strokeWidth={1.5} />
               <div>
                 <p className="text-[18px] font-extrabold text-[#191919]">6+</p>
                 <p className="text-[12px] text-gray-500">In-depth guides published</p>

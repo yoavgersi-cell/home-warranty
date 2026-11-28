@@ -29,7 +29,7 @@ function TestimonialCard({ t }: { t: Testimonial }) {
         &ldquo;{t.text}&rdquo;
       </p>
       <div className="flex items-center gap-2">
-        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#F08A3C]/10 text-[12px] font-bold text-[#C2570C]">
+        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#F08A3C]/10 text-[12px] font-bold text-[#B4500B]">
           {t.name.charAt(0)}
         </div>
         <div>

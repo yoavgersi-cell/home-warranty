@@ -74,7 +74,7 @@ function ReviewCard({ r }: { r: TrustpilotReview }) {
         &ldquo;{r.text}&rdquo;
       </p>
       <div className="mt-auto flex items-center gap-2">
-        <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#F08A3C]/10 text-[11px] font-bold text-[#C2570C]">
+        <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#F08A3C]/10 text-[11px] font-bold text-[#B4500B]">
           {r.name.charAt(0)}
         </div>
         <div className="min-w-0">

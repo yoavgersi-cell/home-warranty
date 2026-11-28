@@ -468,15 +468,15 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
           ) : (
             <>
               <div className="flex items-center gap-2 text-[13px] text-gray-600">
-                <Shield className="h-4 w-4 text-[#C2570C]" strokeWidth={1.5} />
+                <Shield className="h-4 w-4 text-[#B4500B]" strokeWidth={1.5} />
                 Published Contracts
               </div>
               <div className="flex items-center gap-2 text-[13px] text-gray-600">
-                <Clock className="h-4 w-4 text-[#C2570C]" strokeWidth={1.5} />
+                <Clock className="h-4 w-4 text-[#B4500B]" strokeWidth={1.5} />
                 24/7 Claims
               </div>
               <div className="flex items-center gap-2 text-[13px] text-gray-600">
-                <Users className="h-4 w-4 text-[#C2570C]" strokeWidth={1.5} />
+                <Users className="h-4 w-4 text-[#B4500B]" strokeWidth={1.5} />
                 Ongoing Support
               </div>
             </>
@@ -487,7 +487,7 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
             it" doesn't hide at the bottom of the page. */}
         {review.finalVerdict && (
           <div className="mb-8 rounded-2xl border border-[#F08A3C]/20 bg-white p-5 shadow-sm sm:p-6">
-            <p className="mb-2 text-[12px] font-bold uppercase tracking-[0.07em] text-[#C2570C]">The bottom line</p>
+            <p className="mb-2 text-[12px] font-bold uppercase tracking-[0.07em] text-[#B4500B]">The bottom line</p>
             <ReadableProse text={review.finalVerdict} paragraphClassName="text-[15px] leading-[1.8] text-gray-800" />
           </div>
         )}
@@ -581,7 +581,7 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
                   <div className="flex items-center justify-between gap-2">
                     <h4 className="text-[15px] font-bold text-[#191919]">{plan.name}</h4>
                     {plan.cadence && (
-                      <span className="rounded-full bg-[#F08A3C]/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-[#C2570C]">
+                      <span className="rounded-full bg-[#F08A3C]/10 px-2.5 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-[#B4500B]">
                         {plan.cadence}
                       </span>
                     )}
@@ -631,7 +631,7 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
                   </div>
                   <div>
                     {step.timing && (
-                      <span className="text-[11px] font-semibold uppercase tracking-wide text-[#C2570C]">
+                      <span className="text-[11px] font-semibold uppercase tracking-wide text-[#B4500B]">
                         {step.timing}
                       </span>
                     )}
@@ -710,7 +710,7 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
           <ul className="space-y-2.5">
             {review.bestFor.map((item) => (
               <li key={item} className="flex items-start gap-2.5 text-[14px] text-gray-800">
-                <ArrowRight className="mt-0.5 h-4 w-4 shrink-0 text-[#C2570C]" strokeWidth={2} />
+                <ArrowRight className="mt-0.5 h-4 w-4 shrink-0 text-[#B4500B]" strokeWidth={2} />
                 {item}
               </li>
             ))}
@@ -900,7 +900,7 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
                     href={hubLink(ctx, `/${battle.slug}`)}
                     className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-[14px] font-medium text-[#191919] transition-colors hover:border-[#F08A3C]/30 hover:bg-[#F08A3C]/[0.02]"
                   >
-                    <span className="text-[#C2570C]">{provider.name} vs {otherProvider?.name}</span>
+                    <span className="text-[#B4500B]">{provider.name} vs {otherProvider?.name}</span>
                     <span className="ml-auto text-[12px] text-gray-500">Compare</span>
                   </Link>
                 );
@@ -933,7 +933,7 @@ export async function ReviewPageView({ slug, ctx }: { slug: string; ctx: SiteCon
                 <Link
                   key={c.slug}
                   href={hubLink(ctx, `/articles/${c.slug}`)}
-                  className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-[14px] font-semibold text-[#C2570C] transition-colors hover:border-[#F08A3C]/30 hover:bg-[#F08A3C]/[0.02]"
+                  className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-[14px] font-semibold text-[#B4500B] transition-colors hover:border-[#F08A3C]/30 hover:bg-[#F08A3C]/[0.02]"
                 >
                   <span className="truncate">{c.label}</span>
                   <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0" strokeWidth={2} />

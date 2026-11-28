@@ -117,7 +117,7 @@ export async function ThreeWayPageView({ trio, ctx }: { trio: ThreeWayComparison
       <div className="mx-auto max-w-[1100px] px-4 pb-16 pt-10 sm:px-6">
         {/* Intro */}
         <div className="mb-10 max-w-[780px]">
-          <p className="mb-2.5 text-[12px] font-bold uppercase tracking-[0.07em] text-[#C2570C]">
+          <p className="mb-2.5 text-[12px] font-bold uppercase tracking-[0.07em] text-[#B4500B]">
             Here&rsquo;s the short version
           </p>
           <p className="text-[16px] leading-[1.85] text-gray-600">{trio.intro}</p>
@@ -193,7 +193,7 @@ export async function ThreeWayPageView({ trio, ctx }: { trio: ThreeWayComparison
 
         {/* Verdict */}
         <div className="mb-12 rounded-2xl border border-[#F08A3C]/20 bg-white p-6 shadow-sm sm:p-8">
-          <p className="mb-2.5 text-[12px] font-bold uppercase tracking-[0.07em] text-[#C2570C]">Our verdict</p>
+          <p className="mb-2.5 text-[12px] font-bold uppercase tracking-[0.07em] text-[#B4500B]">Our verdict</p>
           <p className="text-[16px] leading-[1.85] text-gray-800">{trio.verdict}</p>
         </div>
 
@@ -223,7 +223,7 @@ export async function ThreeWayPageView({ trio, ctx }: { trio: ThreeWayComparison
                 <Link
                   key={b.slug}
                   href={hubLink(ctx, `/${b.slug}`)}
-                  className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-[14px] font-semibold text-[#C2570C] transition-colors hover:border-[#F08A3C]/30 hover:bg-[#F08A3C]/[0.02]"
+                  className="flex items-center gap-2 rounded-lg border border-gray-200 bg-white px-4 py-3 text-[14px] font-semibold text-[#B4500B] transition-colors hover:border-[#F08A3C]/30 hover:bg-[#F08A3C]/[0.02]"
                 >
                   <span className="truncate">{b.matchupLabel ?? b.title.split(":")[0]}</span>
                   <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0" strokeWidth={2} />

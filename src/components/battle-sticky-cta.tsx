@@ -76,7 +76,7 @@ export function BattleStickyCta({
                   {recommendedId != null && (
                     <p
                       className={`mb-1 text-center text-[11px] font-bold uppercase tracking-[0.08em] ${
-                        isPick ? "text-[#C2570C]" : "text-transparent"
+                        isPick ? "text-[#B4500B]" : "text-transparent"
                       }`}
                     >
                       Our pick
@@ -90,7 +90,7 @@ export function BattleStickyCta({
                     sourceFlow="battle_page"
                     className={
                       isOther
-                        ? "flex h-[44px] items-center justify-center gap-1.5 rounded-xl border-2 border-[#F08A3C] bg-white px-2 text-[14px] font-bold text-[#C2570C] transition-transform active:scale-[0.98]"
+                        ? "flex h-[44px] items-center justify-center gap-1.5 rounded-xl border-2 border-[#F08A3C] bg-white px-2 text-[14px] font-bold text-[#B4500B] transition-transform active:scale-[0.98]"
                         : "flex h-[44px] items-center justify-center gap-1.5 rounded-xl bg-gradient-to-b from-[#F08A3C] to-[#DE7429] px-2 text-[14px] font-bold text-white shadow-sm transition-transform active:scale-[0.98]"
                     }
                   >

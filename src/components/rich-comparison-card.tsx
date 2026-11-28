@@ -86,7 +86,7 @@ export function RichComparisonCard({
                   />
                 ))}
               </div>
-              <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-[#C2570C] sm:text-[11px]">{product.ratingLabel}</p>
+              <p className="mt-0.5 text-[10px] font-bold uppercase tracking-wide text-[#B4500B] sm:text-[11px]">{product.ratingLabel}</p>
             </div>
             <div className="flex flex-col items-center justify-center rounded-lg bg-[#F08A3C] px-2.5 py-1 text-white sm:rounded-xl sm:px-3 sm:py-1.5">
               <span className="text-[20px] font-extrabold leading-none sm:text-[24px]">{product.rating.toFixed(1)}</span>
@@ -191,7 +191,7 @@ export function RichComparisonCard({
               </ProviderCta>
               <Link
                 href={reviewHref}
-                className="text-center text-[12.5px] font-semibold text-[#C2570C] hover:underline"
+                className="text-center text-[12.5px] font-semibold text-[#B4500B] hover:underline"
               >
                 Read full review
               </Link>
@@ -213,7 +213,7 @@ export function RichComparisonCard({
             <p className="text-[12.5px] leading-relaxed text-gray-700 line-clamp-2 sm:text-[13.5px] sm:line-clamp-3">{intro}</p>
             <Link
               href={reviewHref}
-              className="mt-1.5 inline-flex items-center gap-1 text-[12.5px] font-semibold text-[#C2570C] hover:underline sm:text-[13px]"
+              className="mt-1.5 inline-flex items-center gap-1 text-[12.5px] font-semibold text-[#B4500B] hover:underline sm:text-[13px]"
             >
               Read full {product.name} review
               <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={2.5} />

@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { MetaPixel } from "@/components/meta-pixel";
 import { GoogleAnalytics } from "@/components/google-analytics";
 import { hreflangLanguages } from "@/lib/regions";
+import { INDEX_ROBOTS } from "@/lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -57,17 +58,7 @@ export const metadata: Metadata = {
     canonical: SITE_URL,
     languages: hreflangLanguages(SITE_URL, "/"),
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
+  robots: INDEX_ROBOTS,
 };
 
 export default function RootLayout({

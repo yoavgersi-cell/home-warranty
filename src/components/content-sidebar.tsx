@@ -97,7 +97,7 @@ export function ContentSidebar({ config, providers, articles, pageType, sourceFl
                         href={`/articles/${article.slug}`}
                         className="group block"
                       >
-                        <p className="text-[13px] font-semibold leading-snug text-[#191919] group-hover:text-[#C2570C] transition-colors">
+                        <p className="text-[13px] font-semibold leading-snug text-[#191919] group-hover:text-[#B4500B] transition-colors">
                           {article.title}
                         </p>
                         {article.category && (

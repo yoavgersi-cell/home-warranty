@@ -19,6 +19,11 @@ export const LOGO_URL = `${SITE_URL}/logo-mark.png`;
 export const INDEX_ROBOTS = {
   index: true,
   follow: true,
+  // Also on the generic robots meta so Bing and other engines get the same
+  // large-image and full-snippet permissions as Googlebot.
+  "max-image-preview": "large" as const,
+  "max-snippet": -1,
+  "max-video-preview": -1,
   googleBot: {
     index: true,
     follow: true,

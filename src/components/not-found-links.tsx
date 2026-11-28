@@ -53,7 +53,7 @@ export function NotFoundLinks({
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={p.logo} alt={`${p.name} logo`} className="max-h-full max-w-full object-contain" />
                 </div>
-                <span className="ml-auto text-[13px] font-semibold text-[#C2570C] group-hover:underline">Read review</span>
+                <span className="ml-auto text-[13px] font-semibold text-[#B4500B] group-hover:underline">Read review</span>
               </Link>
             ))}
           </div>
@@ -71,7 +71,7 @@ export function NotFoundLinks({
                 className="group flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-4 py-3 text-[13px] font-semibold text-[#191919] transition-colors hover:border-[#F08A3C]/30"
               >
                 {c.name}
-                <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0 text-[#C2570C]" strokeWidth={2.5} />
+                <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0 text-[#B4500B]" strokeWidth={2.5} />
               </Link>
             ))}
           </div>

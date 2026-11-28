@@ -13,7 +13,7 @@ export function DisclosureBar() {
         <span className="hidden sm:inline">Some providers featured on this site may compensate us. This may affect the order and placement of listings but does not influence our editorial ratings or reviews.</span>{" "}
         <button
           onClick={() => setIsOpen(true)}
-          className="inline-block py-1 font-bold text-[#191919] underline underline-offset-2 hover:text-[#C2570C]"
+          className="inline-block py-1 font-bold text-[#191919] underline underline-offset-2 hover:text-[#B4500B]"
         >
           Advertising Disclosure
         </button>

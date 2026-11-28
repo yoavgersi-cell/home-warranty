@@ -37,9 +37,9 @@ export function ExpertTeam({ experts }: { experts: Expert[] }) {
                     {expert.name}
                     {expert.credentials && <span className="text-gray-500">, {expert.credentials}</span>}
                   </span>
-                  <BadgeCheck className="h-4 w-4 shrink-0 text-[#C2570C]" strokeWidth={2} />
+                  <BadgeCheck className="h-4 w-4 shrink-0 text-[#B4500B]" strokeWidth={2} />
                 </h3>
-                <p className="mt-0.5 text-[13px] font-semibold text-[#C2570C]">{expert.role}</p>
+                <p className="mt-0.5 text-[13px] font-semibold text-[#B4500B]">{expert.role}</p>
               </div>
             </div>
 
@@ -50,7 +50,7 @@ export function ExpertTeam({ experts }: { experts: Expert[] }) {
             {expert.specialties && expert.specialties.length > 0 && (
               <div className="mt-4 flex flex-wrap gap-1.5">
                 {expert.specialties.map((s) => (
-                  <span key={s} className="rounded-full bg-[#F08A3C]/[0.06] px-2.5 py-1 text-[11px] font-semibold text-[#C2570C]">
+                  <span key={s} className="rounded-full bg-[#F08A3C]/[0.06] px-2.5 py-1 text-[11px] font-semibold text-[#B4500B]">
                     {s}
                   </span>
                 ))}

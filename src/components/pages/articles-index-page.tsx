@@ -52,12 +52,12 @@ const categoryColors: Record<string, string> = {
   Guide: "bg-emerald-50 text-emerald-700",
   Advice: "bg-amber-50 text-amber-700",
   Wellness: "bg-purple-50 text-purple-700",
-  "Provider Guides": "bg-[#FFF1E6] text-[#C2570C]",
+  "Provider Guides": "bg-[#FFF1E6] text-[#B4500B]",
   Guides: "bg-emerald-50 text-emerald-700",
   Costs: "bg-amber-50 text-amber-700",
   Claims: "bg-blue-50 text-blue-700",
   Buying: "bg-purple-50 text-purple-700",
-  "Best For": "bg-[#FFF1E6] text-[#C2570C]",
+  "Best For": "bg-[#FFF1E6] text-[#B4500B]",
 };
 
 export async function ArticlesIndexView({ ctx }: { ctx: SiteContext }) {
@@ -170,7 +170,7 @@ export async function ArticlesIndexView({ ctx }: { ctx: SiteContext }) {
                   decoding="async"
                 />
               ) : (
-                <span className="text-[40px] font-extrabold text-[#C2570C]/35 select-none">
+                <span className="text-[40px] font-extrabold text-[#B4500B]/35 select-none">
                   01
                 </span>
               )}
@@ -187,13 +187,13 @@ export async function ArticlesIndexView({ ctx }: { ctx: SiteContext }) {
                   {articles[0].readTime}
                 </span>
               </div>
-              <h2 className="text-[20px] font-bold leading-tight text-[#191919] group-hover:text-[#C2570C] transition-colors sm:text-[22px]">
+              <h2 className="text-[20px] font-bold leading-tight text-[#191919] group-hover:text-[#B4500B] transition-colors sm:text-[22px]">
                 {articles[0].title}
               </h2>
               <p className="mt-2 text-[14px] leading-relaxed text-gray-500 line-clamp-2">
                 {articles[0].description}
               </p>
-              <span className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#C2570C]">
+              <span className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#B4500B]">
                 Read article
                 <ArrowRight className="h-3.5 w-3.5" strokeWidth={2} />
               </span>
@@ -223,7 +223,7 @@ export async function ArticlesIndexView({ ctx }: { ctx: SiteContext }) {
                     decoding="async"
                   />
                 ) : (
-                  <span className="text-[36px] font-extrabold text-[#C2570C]/35 select-none">
+                  <span className="text-[36px] font-extrabold text-[#B4500B]/35 select-none">
                     {String(i + 2).padStart(2, "0")}
                   </span>
                 )}
@@ -240,13 +240,13 @@ export async function ArticlesIndexView({ ctx }: { ctx: SiteContext }) {
                     {article.readTime}
                   </span>
                 </div>
-                <h2 className="text-[16px] font-bold leading-snug text-[#191919] group-hover:text-[#C2570C] transition-colors">
+                <h2 className="text-[16px] font-bold leading-snug text-[#191919] group-hover:text-[#B4500B] transition-colors">
                   {article.title}
                 </h2>
                 <p className="mt-2 flex-1 text-[13px] leading-relaxed text-gray-500 line-clamp-3">
                   {article.description}
                 </p>
-                <span className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#C2570C]">
+                <span className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#B4500B]">
                   Read article
                   <ArrowRight className="h-3.5 w-3.5" strokeWidth={2} />
                 </span>
@@ -279,13 +279,13 @@ export async function ArticlesIndexView({ ctx }: { ctx: SiteContext }) {
                   >
                     {g.category}
                   </span>
-                  <h3 className="text-[16px] font-bold leading-snug text-[#191919] transition-colors group-hover:text-[#C2570C]">
+                  <h3 className="text-[16px] font-bold leading-snug text-[#191919] transition-colors group-hover:text-[#B4500B]">
                     {g.title}
                   </h3>
                   <p className="mt-2 flex-1 text-[13px] leading-relaxed text-gray-500 line-clamp-3">
                     {g.description}
                   </p>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#C2570C]">
+                  <span className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#B4500B]">
                     Read guide
                     <ArrowRight className="h-3.5 w-3.5" strokeWidth={2} />
                   </span>
@@ -325,7 +325,7 @@ export async function ArticlesIndexView({ ctx }: { ctx: SiteContext }) {
                         className="max-h-full max-w-[110px] object-contain"
                       />
                     </div>
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-[#F08A3C]/20 bg-white text-[11px] font-extrabold text-[#C2570C]">
+                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-[#F08A3C]/20 bg-white text-[11px] font-extrabold text-[#B4500B]">
                       VS
                     </span>
                     <div className="flex h-[36px] flex-1 items-center justify-center">
@@ -338,7 +338,7 @@ export async function ArticlesIndexView({ ctx }: { ctx: SiteContext }) {
                     </div>
                   </div>
 
-                  <h3 className="text-center text-[16px] font-bold leading-snug text-[#191919] group-hover:text-[#C2570C] transition-colors">
+                  <h3 className="text-center text-[16px] font-bold leading-snug text-[#191919] group-hover:text-[#B4500B] transition-colors">
                     {p1.name} vs {p2.name}
                   </h3>
 
@@ -357,7 +357,7 @@ export async function ArticlesIndexView({ ctx }: { ctx: SiteContext }) {
                         Close call
                       </span>
                     )}
-                    <span className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#C2570C]">
+                    <span className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#B4500B]">
                       Compare
                       <ArrowRight className="h-3.5 w-3.5" strokeWidth={2} />
                     </span>

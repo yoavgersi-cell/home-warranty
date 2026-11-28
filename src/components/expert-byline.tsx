@@ -29,7 +29,7 @@ export function ExpertByline({
   return (
     <Link href={href} className={`group inline-flex items-center ${compact ? "gap-2" : "gap-2.5"}`}>
       <span
-        className={`flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#F08A3C]/10 font-bold text-[#C2570C] ${
+        className={`flex shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#F08A3C]/10 font-bold text-[#B4500B] ${
           compact ? "h-7 w-7 text-[11px]" : "h-9 w-9 text-[12px]"
         }`}
       >
@@ -42,7 +42,7 @@ export function ExpertByline({
       </span>
       <span className={`leading-tight text-gray-500 ${compact ? "text-[13px]" : "text-[14px]"}`}>
         {label}{" "}
-        <span className="font-bold text-[#191919] group-hover:text-[#C2570C]">{credit}</span>
+        <span className="font-bold text-[#191919] group-hover:text-[#B4500B]">{credit}</span>
         {showRole && <span className="ml-1 font-medium text-gray-500">· {expert.role}</span>}
       </span>
     </Link>
